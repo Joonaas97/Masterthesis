@@ -1,0 +1,38 @@
+\input{header.tex}
+
+\begin{document}
+\newgeometry{left=3.5cm, right=2.5cm, top=2cm, bottom=2cm}%Seitenränder der Titelseite anpassen
+\input{content/Titelseite}
+\restoregeometry%Seitenränder auf defaultwert
+%\input{content/Titelseite}
+\input{content/Erklaerung}
+\frontmatter%Beginn des Vorspanns
+\pagenumbering{Roman}%Große römische Seitennummerierung
+\input{content/Abstract}
+\tableofcontents%Inhaltsverzeichnis
+\listoffigures%Abbildungsverzeichnis
+\listoftables%Tabellenverzeichnis
+%%\cleardoublepage
+\printglossary[type=\acronymtype,title=Abkürzungsverzeichnis]%Abkürzungsverzeichnis
+%%\cleardoublepage
+%\printglossary[type=symbols]%Symbolverzeichnis
+%%\cleardoublepage
+
+\clearpage
+\mainmatter 				%Beginn des Haupteils (arabische Seitennummerierung)
+\input{content/Kapitel_1}
+\input{content/Kapitel_2}
+\input{content/Kapitel_3}
+\input{content/Kapitel_4}
+\input{content/Kapitel_5}
+\input{content/Kapitel_6}
+\appendix					%Beginn des Anhangs, nummeriert in lateinischen Buchstaben
+\backmatter					%Ende des Dokuments
+%\printbibheading 
+%\printbibliography[type=online,heading=subbibliography,title={Onlinequellen}]
+\printbibliography
+%\input{content/Acknowledgements}
+%\cleardoublepage
+%\listoftodos
+\input{content/Anhang}		%Anhang hier einfügen
+\end{document}
