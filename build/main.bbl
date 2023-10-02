@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{InstituteofElectricalandElectronicsEngineers.2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=67621ae398b25f2576645300fc72fe82}{%
+           family={{Callaway J. Cass, Rolando Burgos, Fred Wang and Dushan Boroyevich}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Institute of Electrical and Electronics Engineers}%
+        {IEEE Power Electronics Society}%
+      }
+      \list{location}{1}{%
+        {Piscataway, NJ}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Service Center}%
+      }
+      \strng{namehash}{67621ae398b25f2576645300fc72fe82}
+      \strng{fullhash}{67621ae398b25f2576645300fc72fe82}
+      \strng{bibnamehash}{67621ae398b25f2576645300fc72fe82}
+      \strng{authorbibnamehash}{67621ae398b25f2576645300fc72fe82}
+      \strng{authornamehash}{67621ae398b25f2576645300fc72fe82}
+      \strng{authorfullhash}{67621ae398b25f2576645300fc72fe82}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1424406544}
+      \field{title}{Three-Phase Ac Buck Rectifier using Normally-On SiC JFETs at 150 kHz Switching Frequency: PESC 07] ; Orlando, Florida, 17 - 21 June 2007}
+      \field{year}{2007}
+    \endentry
     \entry{1/3PWMPFC}{book}{}
       \name{author}{1}{}{%
         {{hash=56db1261a2814b49c0144ae793f81237}{%
@@ -44,23 +74,44 @@
       \field{title}{Three-Phase Two-Phase-Clamped Boost-Buck Unity Power Factor Rectifier Employing Novel Variable DC Link Voltage Input Current Control}
       \field{year}{2018}
     \endentry
-    \entry{InstituteofElectricalandElectronicsEngineers.2007}{book}{}
-      \list{institution}{2}{%
-        {Institute of Electrical and Electronics Engineers}%
-        {IEEE Power Electronics Society}%
+    \entry{IAFcontrol}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6e82b992114055d49b69719bb129179f}{%
+           family={Soeiro},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=09ccbdbe67f9de4fc58644d10ee40b60}{%
+           family={Friedli},
+           familyi={F\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f27f8f73bc9f171f6248cbf2eb5ac473}{%
+           family={Kolar},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Piscataway, NJ}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Service Center}%
-      }
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \strng{namehash}{e890d6175e3c980a1610b122e44f19ad}
+      \strng{fullhash}{e890d6175e3c980a1610b122e44f19ad}
+      \strng{bibnamehash}{e890d6175e3c980a1610b122e44f19ad}
+      \strng{authorbibnamehash}{e890d6175e3c980a1610b122e44f19ad}
+      \strng{authornamehash}{e890d6175e3c980a1610b122e44f19ad}
+      \strng{authorfullhash}{e890d6175e3c980a1610b122e44f19ad}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{1424406544}
-      \field{title}{Three-Phase Ac Buck Rectifier using Normally-On SiC JFETs at 150 kHz Switching Frequency: PESC 07] ; Orlando, Florida, 17 - 21 June 2007}
-      \field{year}{2007}
+      \field{abstract}{2012 Twenty-Seventh Annual IEEE Applied Power Electronics Conference and Exposition (APEC);2012; ; ;10.1109/APEC.2012.6166190}
+      \field{title}{Three-phase high power factor mains interface concepts for Electric Vehicle battery charging systems}
+      \field{pages}{2603\bibrangedash 2610}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/APEC.2012.6166190
+      \endverb
+      \verb{file}
+      \verb Three-phase{\_}high{\_}power{\_}factor{\_}mains{\_}interface{\_}concepts{\_}for{\_}Electric{\_}Vehicle{\_}battery{\_}charging{\_}systems:Attachments/Three-phase{\_}high{\_}power{\_}factor{\_}mains{\_}interface{\_}concepts{\_}for{\_}Electric{\_}Vehicle{\_}battery{\_}charging{\_}systems.pdf:application/pdf
+      \endverb
     \endentry
     \entry{VDEARN4120}{book}{}
       \name{author}{1}{}{%
@@ -89,8 +140,8 @@
     \endentry
     \entry{HydrogenRectifier}{book}{}
       \name{author}{1}{}{%
-        {{hash=d86a5693195de2bb6654d6c07eeae572}{%
-           family={{Zhiyu Cao, Peter Wallmeier}},
+        {{hash=1f22ef05db1709764a7710ecd0b4e935}{%
+           family={{Zhiyu Cao and Peter Wallmeier}},
            familyi={Z\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -99,12 +150,12 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{d86a5693195de2bb6654d6c07eeae572}
-      \strng{fullhash}{d86a5693195de2bb6654d6c07eeae572}
-      \strng{bibnamehash}{d86a5693195de2bb6654d6c07eeae572}
-      \strng{authorbibnamehash}{d86a5693195de2bb6654d6c07eeae572}
-      \strng{authornamehash}{d86a5693195de2bb6654d6c07eeae572}
-      \strng{authorfullhash}{d86a5693195de2bb6654d6c07eeae572}
+      \strng{namehash}{1f22ef05db1709764a7710ecd0b4e935}
+      \strng{fullhash}{1f22ef05db1709764a7710ecd0b4e935}
+      \strng{bibnamehash}{1f22ef05db1709764a7710ecd0b4e935}
+      \strng{authorbibnamehash}{1f22ef05db1709764a7710ecd0b4e935}
+      \strng{authornamehash}{1f22ef05db1709764a7710ecd0b4e935}
+      \strng{authorfullhash}{1f22ef05db1709764a7710ecd0b4e935}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}
