@@ -1,0 +1,417 @@
+\documentclass[
+  numbers=noenddot,			% Kein . am Ende einer Nummerierung
+  bibliography=totoc,       % Literatur im Inhaltsverzeichnis
+  listof=totoc,				% Verzeichnisse im Inhaltsverzeichnis
+  captions=tableheading,    % Tabellenüberschriften
+  fontsize=12pt, 			% Schiftgröße anpassen
+]{scrbook}
+
+%Zeilenabstand
+\usepackage[onehalfspacing]{setspace}			%Zeilenabstand 1,5
+
+%SVG Import
+\usepackage{svg}
+
+\usepackage[automark]{scrlayer-scrpage} 												
+\setcounter{tocdepth}{4}   %Maximale Gliederungsebene im Inhaltsverziechnis
+\setcounter{secnumdepth}{4}   %Maximale Nummerierungsebene im Inhaltsverziechnis
+\KOMAoptions{twoside=false}																						%Einseitige einstellung
+
+% Bei der Klasse "book" ist LaTeX bemüht, den Text auf zwei gegenüberliegenden Seiten auf die gleiche Höhe zu bringen.
+% Dies wird dadurch erreicht, dass der Text unter Überschriften oder Zeilenumbrüchen minimal (und nicht sichtbar) variiert wird.
+% Bei manchen Dokumenten funktioniert das nicht, da - beispielsweise durch viele Grafiken und wenig Text - nicht genug Spielraum bleibt.
+% Das kann dazu führen, dass der Text in einem bestimmten Abstand vom unteren Seitenrand endet und oben noch sehr viel frei ist.
+% Durch Aktivieren oder Kommentieren der folgenden Zeilen, kann dieses Verhalten beeinflusst werden.
+%\flushbottom  	%Der Text aller Seiten ist gleich lang
+\raggedbottom 	%Der Text kann auch unterschiedlich lang sein.
+
+%Abschnittsnummerierungen in Caption und Formelnummerierung
+\usepackage{chngcntr}
+
+%Definition der Seitenränder
+\usepackage[
+  left=4cm,	%Linker Seitenrand (Bindung beachten!!!)
+  right=2cm,
+  top=3.5cm,
+  bottom=3cm,
+]{geometry}
+
+% Paket float verbessern
+\usepackage{scrhack}
+
+
+% Warnung, falls nochmal kompiliert werden muss
+\usepackage[aux]{rerunfilecheck}
+
+% unverzichtbare Mathe-Befehle
+\usepackage[fleqn]{amsmath}
+\setlength\mathindent{1cm}%Abstand der Formeln vom linken Seitenrand
+
+% viele Mathe-Symbole
+\usepackage{amssymb}
+
+% Erweiterungen für amsmath
+\usepackage{mathtools}
+
+% Fonteinstellungen
+\usepackage{fontspec}
+
+% Latin Modern Fonts werden automatisch geladen
+% Alternativ:
+%\setromanfont{Libertinus Serif}
+%\setsansfont{Libertinus Sans}
+%\setmonofont{Libertinus Mono}
+%\recalctypearea % Wenn man andere Schriftarten gesetzt hat,
+% sollte man das Seiten-Layout neu berechnen lassen
+
+% deutsche Spracheinstellungen
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+\usepackage[
+  math-style=ISO,    % ┐
+  bold-style=ISO,    % │
+  sans-style=italic, % │ ISO-Standard folgen
+  nabla=upright,     % │
+  partial=upright,   % ┘
+  warnings-off={           % ┐
+    mathtools-colon,       % │ unnötige Warnungen ausschalten
+    mathtools-overbracket, % │
+  },                       % ┘
+]{unicode-math}
+
+% traditionelle Fonts für Mathematik
+\setmathfont{Latin Modern Math}
+% Alternativ:
+%\setmathfont{Libertinus Math}
+\usepackage{amsmath}
+\usepackage{amssymb}\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+\setlength{\delimitershortfall}{-1sp}
+
+%\setmathfont{Cambria Math}
+
+% Zahlen und Einheiten
+\usepackage[
+  locale=DE,                   % deutsche Einstellungen
+  separate-uncertainty=true,   % immer Fehler mit \pm
+  per-mode=symbol-or-fraction, % / in inline math, fraction in display math
+  range-phrase = ~\text{bis}~ ,
+]{siunitx}
+
+% richtige Anführungszeichen
+\usepackage[autostyle]{csquotes}
+
+% schöne Brüche im Text
+\usepackage{xfrac}
+
+% Standardplatzierung für Floats einstellen
+% Die Reihenfolge der Befehle bestimmt was Priorität hat
+% tb!hp bedeutet versuche eine Grafik oder Tabelle zuerst oben auf der Seite zu plazieren
+% wenn das nicht geht versuche sie unten auf der Seite zu platzieren
+% wenn das auch nicht geht setze sie genau an die Stelle wo sie im Text vorkommt
+% und im Worst-Case schiebe sie auf eine separate Seite
+\usepackage{float}
+\floatplacement{figure}{tb!hp}
+\floatplacement{table}{tb!hp}
+
+% Floats innerhalb einer Section halten
+\usepackage[
+  section, % Floats innerhalb der Section halten
+  below,   % unterhalb der Section aber auf der selben Seite ist ok
+]{placeins}
+
+% Seite drehen für breite Tabellen: landscape Umgebung
+\usepackage{pdflscape}
+
+% Captions schöner machen.
+\usepackage[
+  labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+  font=small,          % Schrift etwas kleiner als Dokument
+  width=0.9\textwidth, % maximale Breite einer Caption schmaler
+  labelsep=colon,      % Doppelpunkt als Trenner
+  format=plain,%Beschriftung wird als Absatz gesetzt
+  indention=0pt%Einzug der Beschriftung ist 0
+]{caption}
+
+% subfigure, subtable, subref
+\usepackage{subcaption}
+
+% Grafiken können eingebunden werden
+\usepackage{graphicx}
+
+%Erstellen von Plots
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usetikzlibrary{calc}
+
+% Schaltpläne
+\usepackage[european,siunitx,straightvoltages]{circuitikz}
+
+% schöne Tabellen
+\usepackage{booktabs}
+
+% Verbesserungen am Schriftbild
+\usepackage{microtype}
+
+% Literaturverzeichnis
+\usepackage[
+  backend=biber,
+  style=numeric,
+  %doi=true
+  %isbn=false,
+]{biblatex}
+
+% Quellendatenbank
+\addbibresource{bibliography.bib}
+
+%Mehr Einstellungsmöglichkeiten bei Aufzählungen
+\usepackage{enumitem}
+
+%Für Einbinden von z.B. pdf_tex mit relativem Pfad
+\usepackage{import}
+
+%Konfiguration der Todos
+\usepackage[prependcaption]{todonotes}			%Für Todos eingeblendet
+%\usepackage[prependcaption,disable]{todonotes}	%Für Todos ausgeblendet
+
+%Für Programmlistings
+\usepackage{listings}
+
+%Für MATLAB Listings
+\usepackage[numbered,framed]{matlab-prettifier}
+
+%Setzen von Optionen zur Darstellung von Listings
+%Quelle: https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings (angepasst)
+\lstdefinestyle{C}{
+	backgroundcolor=\color{white},     % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize\ttfamily, % the size of the fonts that are used for the code
+	breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                   % sets automatic line breaking
+	captionpos=b,                      % sets the caption-position to bottom
+	commentstyle=\itshape\color{purple!40!black},    % comment style
+	deletekeywords={...},              % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
+	extendedchars=true,                % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                   % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\bfseries\color{green!40!black},       % keyword style
+	language=C,                 	   % the language of the code
+	morekeywords={*,...},              % if you want to add more keywords to the set
+	numbers=left,                      % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                     % how far the line-numbers are from the code
+	numberstyle=\tiny\color{gray},     % the style that is used for the line-numbers
+	rulecolor=\color{black},           % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                  % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,            % underline spaces within strings only
+	showtabs=false,                    % show tabs within strings adding particular underscores
+	stepnumber=1,                      % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{orange},        % string literal style
+	identifierstyle=\color{blue},
+	tabsize=2,	                   	  % sets default tabsize to 2 spaces
+	title=\lstname                    % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\lstdefinestyle{C++}{
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\itshape\color{purple!40!black},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\bfseries\color{green!40!black},       % keyword style
+	language=C++,                 	   % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{gray},   % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{orange},      % string literal style
+	identifierstyle=\color{blue},
+	tabsize=2,	                     % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\lstdefinestyle{Java}{
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\itshape\color{purple!40!black},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\bfseries\color{green!40!black},       % keyword style
+	language=Java,                 	   % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{gray},   % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{orange},      % string literal style
+	identifierstyle=\color{blue},
+	tabsize=2,	                     % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\lstdefinestyle{ML}{
+	basicstyle         = \mlttfamily,
+	language           = Matlab,
+	style              = Matlab-editor,
+	escapechar         = `,
+	mlshowsectionrules = true,
+	captionpos=b,
+}
+
+% Hyperlinks im Dokument
+\usepackage[
+hidelinks,       %Keine Markierung um den Link
+unicode,        % Unicode in PDF-Attributen erlauben
+pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+pdfcreator={},  % ┐ PDF-Attribute säubern
+pdfproducer={}, % ┘
+]{hyperref}
+
+%Abkürzungsverzeichnis
+\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
+%Anpassen der Breite der zweiten Spalte um einen zu frühen Zeilenumbruch zu verhindern
+\setlength{\glsdescwidth}{0.8\textwidth}
+\newglossary[slg]{symbols}{sym}{sbl}{Symbolverzeichnis}%Definition Symbolverzeichnis
+\loadglsentries{glossary.tex}%Einbinden de Glossars
+\makeglossaries
+
+% erweiterte Bookmarks im PDF
+\usepackage{bookmark}
+
+% Trennung von Wörtern mit Strichen
+\usepackage[shortcuts]{extdash}
+
+%Kopf/Fußzeile=====================
+\KOMAoptions{headsepline=true}
+\KOMAoptions{footsepline=true}
+%\rohead*{\textnormal{\headmark}}
+%\lehead*{\textnormal{\headmark}}
+\cofoot*{\pagemark}
+\cefoot*{\pagemark}
+\rofoot*{}
+\lefoot*{}
+
+\newpairofpagestyles{kapitel}{%Kapitelseiten formatieren
+	\clearpairofpagestyles
+	\KOMAoptions{headsepline=false}
+	\KOMAoptions{footsepline=true}
+	%\lofoot*{\footnotesize\textnormal{}}
+	\cofoot*{\pagemark}
+	\cefoot*{\pagemark}
+}
+\renewcommand*{\chapterpagestyle}{kapitel}
+%Kopf/Fußzeile=====================
+
+
+
+%Anpassen der Abbildungs- und Tabellennummerierung========
+\counterwithin*{figure}{chapter}
+\counterwithin*{figure}{section}
+\counterwithin*{figure}{subsection}
+\counterwithin*{figure}{subsubsection}
+
+\renewcommand{\thefigure}{%
+ \ifnum\value{section}=0
+  \thechapter-\arabic{figure}%
+ \else
+  \ifnum\value{subsection}=0
+	\thesection-\arabic{figure}%
+  \else
+   \ifnum\value{subsubsection}=0
+	\thesubsection-\arabic{figure}%
+   \else
+	 \thesubsubsection-\arabic{figure}%
+   \fi
+  \fi
+ \fi
+}
+
+\counterwithin*{table}{chapter}
+\counterwithin*{table}{section}
+\counterwithin*{table}{subsection}
+\counterwithin*{table}{subsubsection}
+
+\renewcommand{\thetable}{%
+ \ifnum\value{section}=0
+  \thechapter-\arabic{table}%
+ \else
+  \ifnum\value{subsection}=0
+   \thesection-\arabic{table}%
+  \else
+   \ifnum\value{subsubsection}=0
+ \thesubsection-\arabic{table}%
+   \else
+	\thesubsubsection-\arabic{table}%
+   \fi
+  \fi
+\fi
+}
+
+\counterwithin*{equation}{chapter}
+\counterwithin*{equation}{section}
+\counterwithin*{equation}{subsection}
+\counterwithin*{equation}{subsubsection}
+
+\renewcommand{\theequation}{%
+ \ifnum\value{section}=0
+  \thechapter-\arabic{equation}%
+ \else
+  \ifnum\value{subsection}=0
+   \thesection-\arabic{equation}%
+  \else
+   \ifnum\value{subsubsection}=0
+	\thesubsection-\arabic{equation}%
+   \else
+    \thesubsubsection-\arabic{equation}%
+   \fi
+  \fi
+ \fi
+}
+
+%Da die Bezeichnung nun länger ist, muss der Abstand in den Verzeichnissen angepasst werden
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4.2em}}% 3.2em statt 2.3em
+\let\l@table\l@figure
+\makeatother
+%Ende Anpassen der Abbildungs- und Tabellennummerierung========
+
+%Komplexe Zahlen
+\newcommand{\komp}[2]{\underline{#1}_\text{#2}}
+
+%Formelzeichen
+\newcommand{\flet}[2]{#1_\text{#2}}
+
+%Gleiche Linienstärke in circutikz für Leitungen und Bipoles
+\ctikzset{bipoles/thickness=1}
+
+%Einheit für Jahr
+\DeclareSIUnit[number-unit-product = \,]{\year}{yr}
+
+% Werden Funktionen in LaTeX direkt geplottet, kann dies zu einer sehr langen Kompilezeit führen.
+% Aus diesem Grund wird die Anzahl der zu berechnenden Datenpunkte in einer Variable definiert und kann
+% so bei Bedarf reduziert, und für die Endfassung entsprechend erhöht werden.
+\newcommand{\NumOfSampels}{1000}%Anzahl der Samples für Plots
