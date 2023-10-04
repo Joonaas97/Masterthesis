@@ -5,16 +5,15 @@
 \contentsline {chapter}{\nonumberline Tabellenverzeichnis}{V}{chapter*.7}%
 \contentsline {chapter}{Abkürzungsverzeichnis}{VI}{section*.8}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}H2Giga}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Stand der Technik}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Ziel der Arbeit}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.1}Stand der Technik}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{1}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Grundlagen}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Wasserstoff-Elektrolyse}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Stromrichter}{2}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}title}{2}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Gleichrichter}{2}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Wechselrichter}{2}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}DC-DC Wandler}{2}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Power Factor Correction}{2}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}IAF Rectifier}{2}{section.2.3}%
+\contentsline {section}{\numberline {2.3}IAF Rectifier}{3}{section.2.3}%
 \contentsline {section}{\numberline {2.4}1/3 PWM PFC Rectifier}{3}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Bewertungskriterien}{3}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Leistungshalbleiter}{3}{section.2.6}%
