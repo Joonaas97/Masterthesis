@@ -74,43 +74,35 @@
       \field{title}{Three-Phase Two-Phase-Clamped Boost-Buck Unity Power Factor Rectifier Employing Novel Variable DC Link Voltage Input Current Control}
       \field{year}{2018}
     \endentry
-    \entry{IAFcontrol}{article}{}
-      \name{author}{3}{}{%
-        {{hash=6e82b992114055d49b69719bb129179f}{%
-           family={Soeiro},
-           familyi={S\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=09ccbdbe67f9de4fc58644d10ee40b60}{%
-           family={Friedli},
-           familyi={F\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=f27f8f73bc9f171f6248cbf2eb5ac473}{%
-           family={Kolar},
-           familyi={K\bibinitperiod},
-           given={J.\bibnamedelimi W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+    \entry{IAFfirst}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9f88eb775337d1d147c5ffc074834259}{%
+           family={Jantsch},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1e6d60fd25b87e60f540459da037b763}{%
+           family={Verhoeve},
+           familyi={V\bibinitperiod},
+           given={Cornelis\bibnamedelima Wilhelmus},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
-      \strng{namehash}{e890d6175e3c980a1610b122e44f19ad}
-      \strng{fullhash}{e890d6175e3c980a1610b122e44f19ad}
-      \strng{bibnamehash}{e890d6175e3c980a1610b122e44f19ad}
-      \strng{authorbibnamehash}{e890d6175e3c980a1610b122e44f19ad}
-      \strng{authornamehash}{e890d6175e3c980a1610b122e44f19ad}
-      \strng{authorfullhash}{e890d6175e3c980a1610b122e44f19ad}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \strng{namehash}{cd2bcf9fd89b1e6b2dbc1d42f56aeab6}
+      \strng{fullhash}{cd2bcf9fd89b1e6b2dbc1d42f56aeab6}
+      \strng{bibnamehash}{cd2bcf9fd89b1e6b2dbc1d42f56aeab6}
+      \strng{authorbibnamehash}{cd2bcf9fd89b1e6b2dbc1d42f56aeab6}
+      \strng{authornamehash}{cd2bcf9fd89b1e6b2dbc1d42f56aeab6}
+      \strng{authorfullhash}{cd2bcf9fd89b1e6b2dbc1d42f56aeab6}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{2012 Twenty-Seventh Annual IEEE Applied Power Electronics Conference and Exposition (APEC);2012; ; ;10.1109/APEC.2012.6166190}
-      \field{title}{Three-phase high power factor mains interface concepts for Electric Vehicle battery charging systems}
-      \field{pages}{2603\bibrangedash 2610}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1109/APEC.2012.6166190
+      \field{title}{Inverters with three phase output and without electrolyte capacitor for improved lifetime, efficiency and costs of grid connected systems}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:51795249
       \endverb
-      \verb{file}
-      \verb Three-phase{\_}high{\_}power{\_}factor{\_}mains{\_}interface{\_}concepts{\_}for{\_}Electric{\_}Vehicle{\_}battery{\_}charging{\_}systems:Attachments/Three-phase{\_}high{\_}power{\_}factor{\_}mains{\_}interface{\_}concepts{\_}for{\_}Electric{\_}Vehicle{\_}battery{\_}charging{\_}systems.pdf:application/pdf
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:51795249
       \endverb
     \endentry
     \entry{VDEARN4120}{book}{}
