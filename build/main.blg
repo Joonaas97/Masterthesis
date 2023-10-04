@@ -1,15 +1,13 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'build/main.blg'
-[109] biber-MSWIN64:340> INFO - === 
-[154] Biber.pm:419> INFO - Reading 'build/main.bcf'
-[252] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
-[264] Biber.pm:4419> INFO - Processing section 0
-[275] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[344] bibtex.pm:1713> INFO - LaTeX decoding ...
-[352] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[405] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[405] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[405] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[405] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
-[416] bbl.pm:660> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[419] bbl.pm:763> INFO - Output to build/main.bbl
+[130] biber-MSWIN64:340> INFO - === 
+[180] Biber.pm:419> INFO - Reading 'build/main.bcf'
+[290] Biber.pm:979> INFO - Found 8 citekeys in bib section 0
+[303] Biber.pm:4419> INFO - Processing section 0
+[314] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[394] bibtex.pm:1713> INFO - LaTeX decoding ...
+[408] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[457] Utils.pm:410> ERROR - BibTeX subsystem: C:\Users\JHEINE~1\AppData\Local\Temp\biber_tmp_EI9c\f4d088b3f9f145b5c3058da33afd57d4_12616.utf8, line 58, syntax error: found "author", expected ","
+[457] Biber.pm:131> WARN - book entry 'Elektrolyse' (bibliography.bib): Invalid format '22.03.2023' of date field 'urldate' - ignoring
+[458] Biber.pm:133> INFO - WARNINGS: 1
+[458] Biber.pm:136> INFO - ERRORS: 1
