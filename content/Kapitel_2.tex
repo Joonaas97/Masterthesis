@@ -2,14 +2,25 @@
 
 
 \section{Wasserstoff-Elektrolyse}
-Unter Wasserstoff-Elektrolyse versteht man grundlegend die Funktion Wasser in seine Bestandteile Wasserstoff und Sauerstoff zu spalten. Die verbreitetste Variante ist die alkalische Elektrolyse, welche bereits im großen Maßstab eingesetzt wird. Unter anderem in einer zwei Gigawatt Anlage in Saudi-Arabien \cite{2GWely}. Des weiteren wird viel Potential in der Weiterentwicklung der PEM Elektrolyse gesetzt, da diese durch einen simpleren Aufbau und höhere Stromdichten bessere Skalierbarkeit bieten kann. Außerdem wird die Hochtemperatur Elektrolyse verwendet, wenn sich die Nutzung von Prozess technischer Abwärme anbietet, wodurch der Gesamtwirkungsgrad steigt.  
+Unter Wasserstoff-Elektrolyse versteht man grundlegend die Funktion Wasser in seine Bestandteile Wasserstoff und Sauerstoff zu spalten. Die verbreitetste Variante ist die alkalische Elektrolyse, welche bereits im großen Maßstab eingesetzt wird. Unter anderem in einer zwei Gigawatt Anlage in Saudi-Arabien \cite{2GWely} . Des weiteren wird viel Potential in der Weiterentwicklung der PEM Elektrolyse gesetzt, da diese durch einen simpleren Aufbau und höhere Stromdichten bessere Skalierbarkeit bieten kann. Außerdem wird die Hochtemperatur Elektrolyse verwendet, wenn sich die Nutzung von Prozess technischer Abwärme anbietet, wodurch der Gesamtwirkungsgrad steigt.  
 
 \section{Stromrichter}
+\subsection{Gleichrichter}
+Ein Gleichrichter wird verwendet, um aus einer Wechselspannung eine Gleichspannung zu erzeugen. Die einfachste Form ist der Diodengleichrichter, dieser kann für einphasige Wechselspannung durch eine einzelne Diode realisiert werden. Jedoch würde so nur die halbe Periode des Sinus am Ausgang zur Verfügung stehen. 
+Anhand des Diodengleichrichters wird schnell klar, das eine solche Schaltung nur bedingt für einen gewünschten Stromverlauf sorgt.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
+	\caption[B6DiodRect]{Strom und Spannungsverlauf am B6 Diodengleichrichter}
+	\label{fig:b6-diodengleichrichter-eingangsverlauf}
+\end{figure}
+
+
 \subsection{Wechselrichter}
 
 ungesteuerte Topologien
 
-Netzgesteuerte Topologien
+Netz gesteuerte Topologien
 
 \subsection{DC-DC Wandler}
 Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesentlichen aus einer Diode, einem Schalter und einer Induktivität. 
@@ -20,10 +31,10 @@ Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesent
 	
 	
 \section{IAF Rectifier}
-Der \gls{IAF} Gleichrichter wurde erstmals vorgestellt in \cite{IAFfirst} im Jahr 1997 . Dieser besteht für den Hauptleistungspfad aus einem Diodengleichrichter, um passende Ströme in allen drei Phasen einzuprägen wird dieser durch ein Netzwerk aus bidirektional Sperrenden Leistungshalbleitern ergänzt, welche einen Strom in den Gleichrichter einprägen. Durch die Integration des Filters in den Leistungspfad, kann die Kompensation effizienter funktionieren. Aufgrund des ungesteuerten Diodengleichrichters wird jedoch eine anschließende Spannungsregelung durch einen Tiefsetzsteller benötigt.
+Der \gls{IAF} Gleichrichter wurde erstmals vorgestellt in \cite{IAFfirst} im Jahr 1997 . Dieser besteht für den Hauptleistungspfad aus einem Diodengleichrichter, um sinusförmige Ströme in allen drei Phasen einzuprägen wird dieser durch ein Netzwerk aus bidirektional Sperrenden Leistungshalbleitern ergänzt, welche einen Strom in den Gleichrichter einprägen. Durch die Integration des Filters in den Leistungspfad, kann die Kompensation effizienter funktionieren. Aufgrund des ungesteuerten Diodengleichrichters wird jedoch eine anschließende Spannungsregelung durch einen Tiefsetzsteller benötigt.
 
 \section{1/3 PWM PFC Rectifier}
-Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ein neuartiges Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite eine Reduzierung der Schaltverluste bewirkt und Blindleistung ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{1/3PWMPFC}.
+Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ein neuartiges Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite eine Reduzierung der Schaltverluste bewirkt und Blindleistung ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}.
 
 
 \section{Bewertungskriterien}
