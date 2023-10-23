@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1697436119 "build/main.bcf" "build/main.bbl" "build/main" 1697436156 0
+["biber build/main"] 1698069875 "build/main.bcf" "build/main.bbl" "build/main" 1698069891 0
   "./bibliography.bib" 1697212776 3107 4391d898aa01cfced020dee964463c49 ""
-  "build/main.bcf" 1697436155 108252 10372f8f397b7333c1558824cf4ab439 "lualatex"
+  "build/main.bcf" 1698069889 108318 2b0d99bebfa4f1e0848b66397adc70cc "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["lualatex"] 1697436142 "main.tex" "build/main.pdf" "main" 1697436156 0
+["lualatex"] 1698069879 "main.tex" "build/main.pdf" "main" 1698069891 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233955454 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233955454 908 2921f8a10601f252058503cc6570e581 ""
@@ -415,22 +415,22 @@
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1692868842 291861 5bd84244fd45e75edda3a40171566321 ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1692878308 5591 1378090917598c9a21b0e94959c30bea ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz" 1692868842 58233 928999858f115f20176f7e8008f62a5c ""
-  "build/main.aux" 1697436155 18522 cf945ae65ea07dcdda19c9dffeed19ca "lualatex"
-  "build/main.bbl" 1697436122 10055 a68a164f27995b52f5d6f3478cec766f "biber build/main"
+  "build/main.aux" 1698069889 18624 77490982b67c02fe377d42100bc034fb "lualatex"
+  "build/main.bbl" 1698069879 10055 a68a164f27995b52f5d6f3478cec766f "biber build/main"
   "build/main.gls" 0 -1 0 ""
-  "build/main.lof" 1697436155 398 c541fffa2b229f0649d310442aaec260 "lualatex"
-  "build/main.lot" 1697436155 304 77e692a42b15e89067aee349b6197739 "lualatex"
-  "build/main.run.xml" 1697436155 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
-  "build/main.toc" 1697436155 2831 5e5e87a79efc1bb93a2d02a05806892e "lualatex"
+  "build/main.lof" 1698069889 440 44c6b0f3f9aa6ef60fc33e2d42e3155e "lualatex"
+  "build/main.lot" 1698069889 304 77e692a42b15e89067aee349b6197739 "lualatex"
+  "build/main.run.xml" 1698069889 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
+  "build/main.toc" 1698069889 2822 9a7959e4ede44f3500d62fda8812cc89 "lualatex"
   "content/Abstract.tex" 1696586714 1077 f41bc11f97115aa00f0a18da725c37a6 ""
   "content/Anhang.tex" 1696586715 297 8136183ccc902ec4c842d55faf19ffa2 ""
   "content/Erklaerung.tex" 1693906591 983 d54fd34c456adc13caefc8a2bf55b26a ""
   "content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png" 1696844751 6762422 97caaa4d3a2989ad18f931d121d2036e ""
   "content/Grafiken/BRS.png" 1660140022 31356 4328497fbf3cc907300a6d73289809e5 ""
   "content/Grafiken/H-BRS_Logo.jpg" 1630942806 664451 e57c7792eee9dcf96fd98e763e5c13f6 ""
-  "content/Kapitel_1.tex" 1696424529 1680 99577a78c23a238a5fee1da2783ab530 ""
-  "content/Kapitel_2.tex" 1696861645 3540 85e5853aa0e944dd84ff5c445d64d9aa ""
-  "content/Kapitel_3.tex" 1693907019 779 9e03662a924e95bb4c830a0ac2083332 ""
+  "content/Kapitel_1.tex" 1697538639 1796 bfb174a7e5e1b738ac15163989625f34 ""
+  "content/Kapitel_2.tex" 1698069856 4001 b0c44c7857228bd4194cde8c04aadd5c ""
+  "content/Kapitel_3.tex" 1698066935 1397 9f27a764dcde7bf8bc8e429915b1e17e ""
   "content/Kapitel_4.tex" 1696837945 270 1c83d60530c81186f0a1bc7a000305cb ""
   "content/Kapitel_5.tex" 1696416613 431 168383526ec24d8cee14db497eee1179 ""
   "content/Kapitel_6.tex" 1692967088 47 caf4607644d23011d2dadf7cba1cccf5 ""
