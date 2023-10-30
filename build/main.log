@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  23 OCT 2023 16:04
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  30 OCT 2023 15:47
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -678,12 +678,12 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            synonyms	
-(polyglossia)            lefthyphenmin	2 on input line 16
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
 Package polyglossia Info: Option: German, spelling=new.
@@ -2365,12 +2365,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            synonyms	
-(polyglossia)            lefthyphenmin	2 on input line 580
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 580
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 580
 )
@@ -2536,47 +2536,52 @@ No file main.gls.
 
 ] (./content/Kapitel_1.tex
 chapter 1.
-) (./content/Kapitel_2.tex
+<content/Grafiken/Ely_Cost.png, id=132, 683.55376pt x 569.9866pt>
+File: content/Grafiken/Ely_Cost.png Graphic file (type png)
+<use content/Grafiken/Ely_Cost.png>
+Package luatex.def Info: content/Grafiken/Ely_Cost.png  used on input line 13.
+(luatex.def)             Requested size: 298.75269pt x 249.1163pt.
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
 
 
-]
+]) (./content/Kapitel_2.tex
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2<./content/Grafiken/Ely_Cost.png>]
 chapter 2.
-<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=136, 361.35pt 
+<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=158, 361.35pt 
 x 361.35pt>
 File: content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png Graphic file 
 (type png)
 <use content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png>
 Package luatex.def Info: content/Grafiken/B6-Diodengleichrichter-Eingangsverlau
-f.png  used on input line 13.
+f.png  used on input line 14.
 (luatex.def)             Requested size: 298.75269pt x 298.75702pt.
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2
+[3
 
 
-] [3<./content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png>])
-(./content/Kapitel_3.tex [4]
+] [4<./content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png>])
+(./content/Kapitel_3.tex [5]
 chapter 3.
-) (./content/Kapitel_4.tex [5
+) (./content/Kapitel_4.tex [6
 
 
 ]
 chapter 4.
-) (./content/Kapitel_5.tex [6
+) (./content/Kapitel_5.tex [7
 
 
 ]
 chapter 5.
-) (./content/Kapitel_6.tex [7
+) (./content/Kapitel_6.tex [8
 
 
 ]
 chapter 6.
-) [8
+) [9
 
 
 ]
@@ -2591,14 +2596,14 @@ Overfull \hbox (8.59212pt too wide) in paragraph at lines 37--37
 grunen - wasser -
  []
 
-[9
+[10
 
 
 
 
-] (./content/Anhang.tex [10]
+] (./content/Anhang.tex [11]
 chapter without number
-[11
+[12
 
 
 ]
@@ -2741,17 +2746,17 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {nswissgerman/target}  =>  {german}
 >  {nswissgerman/variant}  =>  {swiss}
 >  {nswissgerman/options}  =>  {variant=swiss,spelling=new}.
- [12
+ [13
 
 
 ]
 (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 77490982B67C02FE377D42100BC034FB;18624.
+(rerunfilecheck)             Checksum: 72396BF811F03E4899D1B861F6DD16F6;19159.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 9A7959E4EDE44F3500D62FDA8812CC89;2822.
+(rerunfilecheck)             Checksum: 9AF7E47B0CA34B21FFC260E9855919BC;2828.
 Package rerunfilecheck Info: File `main.lof' has not changed.
-(rerunfilecheck)             Checksum: 44C6B0F3F9AA6EF60FC33E2D42E3155E;440.
+(rerunfilecheck)             Checksum: 8EC4C9FEE5627B95C385D480481B5571;550.
 Package rerunfilecheck Info: File `main.lot' has not changed.
 (rerunfilecheck)             Checksum: 77E692A42B15E89067AEE349B6197739;304.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2760,15 +2765,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 89315 strings out of 478278
+ 89373 strings out of 478278
  100000,4101490 words of node,token memory allocated
- 760 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 13
- attribute, 87 glue_spec, 13 attribute_list, 2 write, 4 pdf_action nodes
-   avail lists: 1:4,2:1310,3:438,4:179,5:339,6:137,7:5045,8:226,9:697,10:15,11:5
-28,12:2
- 106986 multiletter control sequences out of 65536+600000
- 65 fonts using 21414967 bytes
+ 780 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 15
+ attribute, 87 glue_spec, 15 attribute_list, 2 write, 6 pdf_action nodes
+   avail lists: 1:4,2:1306,3:438,4:182,5:364,6:135,7:5502,8:226,9:697,10:24,11:6
+51,12:2
+ 107030 multiletter control sequences out of 65536+600000
+ 65 fonts using 21415051 bytes
  113i,19n,118p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:IVS'
@@ -2780,6 +2785,10 @@ warning  (pdf backend): unreferenced destination with name 'glo:VDE'
 warning  (pdf backend): unreferenced destination with name 'glo:IAF'
 
 warning  (pdf backend): unreferenced destination with name 'glo:PFC'
+
+warning  (pdf backend): unreferenced destination with name 'glo:PEM'
+
+warning  (pdf backend): unreferenced destination with name 'glo:IRENA'
 <//?/c:/program files/miktex/fonts/opentype/public/lm/lmmono12-regular.otf><//?/
 c:/program files/miktex/fonts/opentype/public/lm/lmromancaps10-regular.otf><//?/
 c:/program files/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:/pr
@@ -2789,9 +2798,9 @@ m files/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/program files
 s/miktex/fonts/opentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex
 /fonts/opentype/public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/font
 s/opentype/public/lm/lmroman12-regular.otf>
-Output written on main.pdf (19 pages, 7587837 bytes).
+Output written on main.pdf (20 pages, 7841053 bytes).
 
-PDF statistics: 395 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 131072)
+PDF statistics: 417 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 131072)
  304 words of extra memory for PDF output out of 10000 (max. 100000000)
 
