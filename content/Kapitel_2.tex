@@ -1,11 +1,12 @@
 \chapter{Grundlagen}
-
+Die Leistungselektronik ist ein komplexes Thema das im Grunde mit dem Beginn der Elektrizität beginnt, die Wandlung und Übertragung von Strom stellte die ersten großen Hindernisse dar. Insbesondere die Entscheidung zwischen Wechsel- und Gleichspannung in den Übertragungs- und Verteilnetzen stellte eine erste Große Debatte dar. Durch die Weiterentwicklung in der Halbleitertechnik zeigt sich, dass Gleichstromtechnik insbesondere bei langen Übertragungsstrecken Vorteile gegenüber der Wechselstromtechnik besitzt. Um die Anforderungen und Zusammenhänge verstehen zu können, werden Details zur Elektrolyse, zu Stromrichtern sowie Komponenten und der verwendeten Simulationsumgebung dargestellt.
 
 \section{Wasserstoff-Elektrolyse}
+\label{sec:Elektrolyse}
 Unter Wasserstoff-Elektrolyse versteht man grundlegend die Funktion Wasser in seine Bestandteile Wasserstoff und Sauerstoff zu spalten. Die verbreitetste Variante ist die \gls{AEL}, welche bereits im großen Maßstab von bis zu zwei Giga Watt eingesetzt wird \cite{2GWely}. Des weiteren wird viel Potential in der Weiterentwicklung der \gls{PEM} Elektrolyse gesehen, da diese durch einen simpleren Aufbau und höhere Stromdichten bessere Skalierbarkeit bieten kann. Außerdem wird die \gls{HTEL} verwendet, wenn sich die Nutzung von Prozess technischer Abwärme anbietet, wodurch der Gesamtwirkungsgrad steigt \cite{Elektrolyse}.\\
 Das Prinzip der \gls{AEL} wird, im Gegensatz zur neueren \gls{PEM}, Elektrolyse bereits seit langer Zeit verwendet und optimiert. Die \gls{AEL} benötigt in der Regel eine wässrige KOH-Lauge und kann durch Reihenschaltung der Zellen Wasserstoff und Sauerstoff mit erhöhtem Druck von Beispielsweise 30 Bar bereitstellen. Die Entwicklung und insbesondere Steigerung der Stromdichte und Effizienz brachte in den letzten Jahren jedoch keine großen Änderungen. Der Spannungswirkungsgrad liegt zwischen 62 und 82 Prozent \cite{NOWH2}.\\
 Die \gls{PEM} Elektrolyse bietet Vorteile durch erhöhte Stromdichte, bei größeren Anlagen spart dies unter anderem Platzbedarf, außerdem ist zu erwarten, dass Druckelektrolyse bis 100 Bar möglich ist. Jedoch gibt es noch Optimierungsbedarf bei der  Langlebigkeit der Membranen und der benötigten Edelmetalle \cite{NOWH2}. \\
-Die erwähnte \gls{HTEL} 
+Die \gls{HTEL} nutzt die Vorteile durch höhere Temperatur, welche auf der Seite der Energieniveaus Vorteile für die Effizienz bringen, jedoch hohe Anforderungen an die verwendeten Materialien stellen.
 
 \begin{figure}
 	\centering
@@ -16,6 +17,7 @@ Die erwähnte \gls{HTEL}
 
 
 \section{Stromrichter}
+\label{sec:Stromrichter}
 Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient als Stromrichter bezeichnen, dabei wird unterschieden zwischen Wechsel- und Gleichspannungsvarianten. Außerdem kann bei Netzanwendungen in gesteuerte, Netz-gesteuerte und ungesteuerte unterschieden werden, sowie die Umsetzung einer \gls{PFC} betrachtet werden. 
 \subsection{Gleichrichter}
 Ein Gleichrichter wird verwendet, um aus einer Wechselspannung eine Gleichspannung zu erzeugen. Die einfachste Form ist der Diodengleichrichter, dieser kann für einphasige Wechselspannung durch eine einzelne Diode realisiert werden. Jedoch würde so nur die halbe Periode des Sinus am Ausgang zur Verfügung stehen, da die Diode nur während der positiven Halbwelle Leitet. Dies lässt sich durch die Ergänzung zum Brückengleichrichter mit vier und für dreiphasige Anwendungen mit sechs Dioden ausgestattet ist.\\
@@ -57,3 +59,4 @@ Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ei
 Zur Bewertung und Betrachtung der Umsetzbarkeit, der Topologien ist es nötig diese in einer Umfassenden Simulation zu betrachten. Dies ermöglicht es die Funktionalität und den Einfluss der Parameter im direkten Zusammenspiel zu untersuchen. Insbesondere das Verhalten für Systemdienstleistungen, wie Phasenverschiebung und die dadurch beeinflusste Verteilung der Verlustleistungen sollen als Entscheidungsgrundlage dienen. 
 
 	\subsection{PLECS}
+	Die Software \gls{PLECS} aus dem Haus PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  
