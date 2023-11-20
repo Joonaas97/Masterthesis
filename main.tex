@@ -4,7 +4,7 @@
 \newgeometry{left=3.5cm, right=2.5cm, top=2cm, bottom=2cm}%Seitenränder der Titelseite anpassen
 \input{content/Titelseite}
 \restoregeometry%Seitenränder auf defaultwert
-%%\input{content/Titelseite}
+
 \input{content/Erklaerung}
 \frontmatter%Beginn des Vorspanns
 \pagenumbering{Roman}%Große römische Seitennummerierung
@@ -14,9 +14,7 @@
 \listoftables%Tabellenverzeichnis
 %%\cleardoublepage
 \printglossary[type=\acronymtype,title=Abkürzungsverzeichnis] %Abkürzungsverzeichnis
-%%\cleardoublepage
-%\printglossary[type=symbols]%Symbolverzeichnis
-%%\cleardoublepage
+
 
 \clearpage
 \mainmatter 				%Beginn des Haupteils (arabische Seitennummerierung)
@@ -32,7 +30,6 @@
 %\printbibliography[type=online,heading=subbibliography,title={Onlinequellen}]
 \printbibliography
 %\input{content/Acknowledgements}
-%\cleardoublepage
-%\listoftodos
+\cleardoublepage
 \input{content/Anhang}		%Anhang hier einfügen
 \end{document}
