@@ -22,18 +22,14 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 		\subsection{Gleichrichter}
 		Ein Gleichrichter wird verwendet, um aus einer Wechselspannung eine Gleichspannung zu erzeugen. Die einfachste Form ist der Diodengleichrichter, dieser kann für einphasige Wechselspannung durch eine einzelne Diode realisiert werden. Jedoch würde so nur die halbe Periode des Sinus am Ausgang zur Verfügung stehen, da die Diode nur während der positiven Halbwelle Leitet. Dies lässt sich durch die Ergänzung zum Brückengleichrichter mit vier und für dreiphasige Anwendungen mit sechs Dioden ausgestattet ist.\\
 		Anhand des Diodengleichrichters wird schnell klar, dass eine solche Schaltung nur bedingt für einen gewünschten Stromverlauf sorgt. In Abbildung \ref{B6DiodRect} sind Netzspannung und Strom dargestellt, der Stromverlauf zeigt Starke Sprünge und der gewünschte Sinusförmige Verlauf ist nur schwer erkennbar. Außerdem lässt sich mit dieser Schaltung die Ausgangsspannung sowie der Strom nicht variieren.
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
 			\caption{Strom und Spannungsverlauf am B6 Diodengleichrichter}
 			\label{B6DiodRect}
 		\end{figure}
 		
-		
-		
-		ungesteuerte Topologien
-		
-		Netz gesteuerte Topologien
+		Für Elektrolyseanlagen mit mehreren Megawatt Leistung müssen Zwangsweise Leistungshalbleiter parallelisiert werden, da bei Spannungen bis 1000 V die Ströme für einzelne Halbleiter zu hoch sind. Außerdem bietet die Parallelisierung durch Interleaving und Phasenverschiebung deutliche Vorteile für die Verzerrung und damit Filterung. 
 		
 		\subsection{DC-DC Wandler}
 		Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesentlichen aus einer Diode, einem Schalter und einer Induktivität. 
