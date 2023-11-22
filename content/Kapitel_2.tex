@@ -29,7 +29,8 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 			\label{B6DiodRect}
 		\end{figure}
 		
-		Für Elektrolyseanlagen mit mehreren Megawatt Leistung müssen Zwangsweise Leistungshalbleiter parallelisiert werden, da bei Spannungen bis 1000 V die Ströme für einzelne Halbleiter zu hoch sind. Außerdem bietet die Parallelisierung durch Interleaving und Phasenverschiebung deutliche Vorteile für die Verzerrung und damit Filterung. 
+		Für Elektrolyseanlagen mit mehreren Megawatt Leistung müssen Zwangsweise Leistungshalbleiter parallelisiert werden, da bei Spannungen bis 1000 V die Ströme für einzelne Halbleiter zu hoch sind. Außerdem bietet die Parallelisierung durch Interleaving und Phasenverschiebung deutliche Vorteile für die Verzerrung und damit Filterung. Durch Thyristor basierte Schaltungen können große Leistungen effizient umgesetzt werden, jedoch führen diese zu deutlichen Verzerrungen des Stromverlaufs und schlechterem Leistungsfaktor. Daher benötigen diese passive oder aktive Filter, welche die Systemkosten erhöhen \cite{HydrogenElectronicTopologies}.
+		Als Alternative dazu werden \gls{AFE} Gleichrichter eingesetzt diese bieten deutlich geringere Verzerrungen und völlige Freiheit bei der Regelung des Eingangsstroms. Daher können die Filter und Blindleistungskompensation in diesem Fall eingespart werden \cite{HydrogenElectronicTopologies}.
 		
 		\subsection{DC-DC Wandler}
 		Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesentlichen aus einer Diode, einem Schalter und einer Induktivität. 
@@ -46,9 +47,12 @@ Der \gls{IAF} Gleichrichter wurde erstmals vorgestellt in \cite{IAFfirst} im Jah
 \section{1/3 PWM PFC Rectifier}
 Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ein neuartiges Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite eine Reduzierung der Schaltverluste bewirkt und Blindleistung ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}.
 
+\includesvg{content/Grafiken/B6_Buck}
+
 
 
 \section{Leistungshalbleiter}
+Halbleiter sind prinzipiell alle Komponenten mit mindestens einem PN-Übergang, wenn diese größere Leistungen Schalten können, werden sie als Leistungshalbleiter bezeichnet. Dazu sind für die verwendete Topologie, neben der klassischen Diode, MOSFET relevant. Diese lösen in der Leistungselektronik aktuell den verbreiteteren IGBT ab aufgrund der günstiger gewordenen Silicium Carbide Variante \cite{SiCTrend}. Die Vorteile dieser neuen Technologie liegen in der Ermöglichung höherer Schaltfrequenzen, dies wiederum ermöglicht die Reduzierung der Energie welche in den Induktiven Komponenten gespeichert werden muss und somit Kostenersparnis. 
 
 \section{Induktivitäten}
 
@@ -56,4 +60,4 @@ Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ei
 Zur Bewertung und Betrachtung der Umsetzbarkeit, der Topologien ist es nötig diese in einer Umfassenden Simulation zu betrachten. Dies ermöglicht es die Funktionalität und den Einfluss der Parameter im direkten Zusammenspiel zu untersuchen. Insbesondere das Verhalten für Systemdienstleistungen, wie Phasenverschiebung und die dadurch beeinflusste Verteilung der Verlustleistungen sollen als Entscheidungsgrundlage dienen. 
 
 	\subsection{PLECS}
-	Die Software \gls{PLECS} aus dem Haus PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  
+	Die Software \gls{PLECS} aus dem Haus PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  Diese ermöglicht die Modellierung von Schaltungen mit der Betrachtung des Thermischen Verhaltens durch elektrische Modelle der Verlustleistung. Dazu wird die Energie im Schaltvorgang sowie im Durchgeschalteten Zustand in der Schaltung berücksichtigt. Dies ermöglicht es die Verlustleistung innerhalb der Halbleiter zur betrachten und damit den Aufwand für die Kühlung und eine Abschätzung der Schaltungseffizienz. 

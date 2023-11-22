@@ -2,8 +2,7 @@
 \label{chap:Anforderungen}
 
 \section {Stromnetz}
-In Deutschland sind die Vorgaben für den Anschluss von Anlagen an das Stromnetz durch den \gls{VDE} definiert. 
-Je nach Anschlussleistung, Standort und Betriebsverhalten, wird eine unterschiedliche Netzspannungsklasse gewählt, welche geringfügig abweichende Anschlussrichtlinien besitzt. Aufgrund der Skalierbarkeit zu höheren Leistungsklassen und der erwartbar steigenden Anforderungen, wird sich für die Anforderungen der Hochspannung entschieden. Diese hat die Bezeichnung VDE-AR-N 4120 "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)" \cite{VDEARN4120}.
+In Deutschland sind die Vorgaben für den Anschluss von Anlagen an das Stromnetz durch den \gls{VDE} definiert. Je nach Anschlussleistung, Standort und Betriebsverhalten, wird eine unterschiedliche Netzspannungsklasse gewählt, welche geringfügig abweichende Anschlussrichtlinien besitzt. Aufgrund der Skalierbarkeit zu höheren Leistungsklassen und der erwartbar steigenden Anforderungen, wird sich für die Anforderungen der Hochspannung entschieden. Diese hat die Bezeichnung VDE-AR-N 4120 "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)" \cite{VDEARN4120}.
 Hierzu zählt unter anderem die Anforderung an die Phasenverschiebung, bei Wirkleistungsbezug darf eine maximale Verschiebung von $cos(\phi)=0,95$ was einem Winkel von etwa 18 Grad entspricht auftreten vgl. Abb. \ref{fig:tar4120pq}. Jedoch kann der Netzbetreiber mit dem Anlagenbetreiber gesonderte Vereinbarungen treffen, dies ermöglicht es Netzdienstleistungen anzubieten. Dies führt zur Anforderung an die Topologie eine Phasenverschiebung von mindestens 18 Grad zu ermöglichen.\\
 \begin{figure}[H]
 	\centering
@@ -22,7 +21,7 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig 
 \qquad
 \subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/Grenzkurve}}%
 
-\caption[quasistationären Betrieb (a) und \gls{FRT} (b)]{[Mindestanforderungen an den quasistationären Betrieb (a) und \gls{FRT} (b)}
+\caption[quasistationären Betrieb (a) und \gls{FRT} (b)]{Mindestanforderungen an den quasistationären Betrieb (a) und \gls{FRT} (b)}
 \label{fig:vde4120-Anforderungen}
 \end{figure}
 
@@ -35,6 +34,23 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig 
 \subsection{Überspannungsschutz}
 
 \section{Elektrolyseur}
-Zur Elektrolyse wird eine Gleichspannung benötigt welche aufgrund von Alterungsprozessen, innerhalb der Zellmembrane, mit der Zeit ansteigt \cite{HydrogenElectronicTopologies}.
+Zur Elektrolyse wird eine Gleichspannung benötigt welche aufgrund von Alterungsprozessen, innerhalb der Zellmembrane, mit der Zeit ansteigt \cite{HydrogenElectronicTopologies}. Daher wird eine Ausgangsspannung 
+\section{Zusammenfassung}
+Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammengefasst, für die Implementierung wird die Zukünftige Betrachtung als relevant betrachtet.
+\begin{tabular}{c|c|c}
+
+	& Aktuell & Zukünftig \\
+	\hline
+	Leistungsfaktor stationär & >0.95 & >0.99 \\
+		\hline
+	Leistungsfaktor als Systemdienstleistung & keine Angabe & +/- 30° \\
+	\hline
+	$THD_i$ & <5\% &  \\
+	\hline
+	Ausgangsstromrippel & keine Angabe & <5\% \\
+	
+	
+	\label{tab:AnfZsm}
+\end{tabular}
 \section{Bewertungskriterien}
 Die Kriterien zur finalen Auswahl der Topologie setzen sich aus der Erfüllung der Anforderungen zusammen sowie der Bewertung der Hardware. Die Grundlegenden Anforderungen aus Seiten des Stromnetzes und Elektrolyseur wurden bereits in der Vorauswahl berücksichtigt und können nun im Detail anhand von \gls{THD} und Rippelgrößen betrachtet werden. Die Quantifizierung der Hardware wird zum einen anhand der Verlustleistung in den Halbleitern, welche indirekt auch den Kühlungsaufwand repliziert, zum anderen durch die Größe und den Aufwand für die Komponenten berücksichtigt.  

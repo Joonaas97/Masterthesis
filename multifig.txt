@@ -1,8 +1,0 @@
-\begin{figure}[H]
-	\centering
-	\subfloat[][]{\includegraphics[width=1\linewidth]{content/Grafiken/Verlustenergie_BSP2}}%
-	\qquad
-	\subfloat[][]{\includegraphics[width=1\linewidth]{content/Grafiken/Verlustenergie_BSP3}}%
-	\caption{Verlustenergie Bestimmung}
-	\label{fig:verlustenergiebsp}
-\end{figure}

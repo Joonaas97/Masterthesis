@@ -12,6 +12,22 @@
 %SVG Import
 \usepackage{svg}
 
+\usepackage{ifluatex}
+\ifluatex
+\usepackage{pdftexcmds}
+\makeatletter
+\let\pdfstrcmp\pdf@strcmp
+\let\pdffilemoddate\pdf@filemoddate
+\makeatother
+\fi\usepackage{ifluatex}
+\ifluatex
+\usepackage{pdftexcmds}
+\makeatletter
+\let\pdfstrcmp\pdf@strcmp
+\let\pdffilemoddate\pdf@filemoddate
+\makeatother
+\fi
+
 \usepackage[automark]{scrlayer-scrpage} 												
 \setcounter{tocdepth}{4}   %Maximale Gliederungsebene im Inhaltsverziechnis
 \setcounter{secnumdepth}{4}   %Maximale Nummerierungsebene im Inhaltsverziechnis

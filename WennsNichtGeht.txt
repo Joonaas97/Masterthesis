@@ -1,1 +1,0 @@
-main.blg und bibliography.blg anschauen (und ggf build ornder und bibliography.bbl löschen!!)

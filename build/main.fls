@@ -197,6 +197,30 @@ INPUT C:\Program Files\MiKTeX\tex\latex\tools\shellesc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\shellesc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\shellesc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\shellesc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifluatex.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
@@ -1239,12 +1263,6 @@ INPUT C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
@@ -1489,6 +1507,7 @@ INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT "inkscape" -V 
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
@@ -1623,57 +1642,5 @@ INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\Ely-Efficiency.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
-INPUT .\content\Kapitel_3.tex
-INPUT .\content\Kapitel_3.tex
-INPUT .\content\Kapitel_3.tex
-INPUT .\content\Kapitel_3.tex
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
-INPUT .\content\Kapitel_4.tex
-INPUT .\content\Kapitel_4.tex
-INPUT .\content\Kapitel_4.tex
-INPUT .\content\Kapitel_4.tex
-INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Kapitel_5.tex
-INPUT .\content\Kapitel_5.tex
-INPUT .\content\Kapitel_5.tex
-INPUT .\content\Kapitel_5.tex
-INPUT .\content\Kapitel_6.tex
-INPUT .\content\Kapitel_6.tex
-INPUT .\content\Kapitel_6.tex
-INPUT .\content\Kapitel_6.tex
-INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman12-italic.luc
-INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmromancaps10-regular.luc
-INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmmono12-regular.luc
-INPUT .\content\Anhang.tex
-INPUT .\content\Anhang.tex
-INPUT .\content\Anhang.tex
-INPUT .\content\Anhang.tex
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.toc
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.lof
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.lot
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.run.xml
-INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.run.xml
-OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.run.xml
-OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.run.xml
+INPUT .\content\Grafiken\B6_Buck.svg
+INPUT .\content\Grafiken\B6_Buck.svg
