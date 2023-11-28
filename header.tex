@@ -3,58 +3,36 @@
   bibliography=totoc,       % Literatur im Inhaltsverzeichnis
   listof=totoc,				% Verzeichnisse im Inhaltsverzeichnis
   captions=tableheading,    % Tabellenüberschriften
-  fontsize=12pt, 			% Schiftgröße anpassen
 ]{scrbook}
 
-%Zeilenabstand
-\usepackage[onehalfspacing]{setspace}			%Zeilenabstand 1,5
-
-%SVG Import
-\usepackage{svg}
-
-\usepackage{ifluatex}
-\ifluatex
-\usepackage{pdftexcmds}
-\makeatletter
-\let\pdfstrcmp\pdf@strcmp
-\let\pdffilemoddate\pdf@filemoddate
-\makeatother
-\fi\usepackage{ifluatex}
-\ifluatex
-\usepackage{pdftexcmds}
-\makeatletter
-\let\pdfstrcmp\pdf@strcmp
-\let\pdffilemoddate\pdf@filemoddate
-\makeatother
-\fi
-
-\usepackage[automark]{scrlayer-scrpage} 												
+\usepackage[automark]{scrlayer-scrpage}
 \setcounter{tocdepth}{4}   %Maximale Gliederungsebene im Inhaltsverziechnis
 \setcounter{secnumdepth}{4}   %Maximale Nummerierungsebene im Inhaltsverziechnis
-\KOMAoptions{twoside=false}																						%Einseitige einstellung
 
 % Bei der Klasse "book" ist LaTeX bemüht, den Text auf zwei gegenüberliegenden Seiten auf die gleiche Höhe zu bringen.
 % Dies wird dadurch erreicht, dass der Text unter Überschriften oder Zeilenumbrüchen minimal (und nicht sichtbar) variiert wird.
 % Bei manchen Dokumenten funktioniert das nicht, da - beispielsweise durch viele Grafiken und wenig Text - nicht genug Spielraum bleibt.
 % Das kann dazu führen, dass der Text in einem bestimmten Abstand vom unteren Seitenrand endet und oben noch sehr viel frei ist.
 % Durch Aktivieren oder Kommentieren der folgenden Zeilen, kann dieses Verhalten beeinflusst werden.
-%\flushbottom  	%Der Text aller Seiten ist gleich lang
-\raggedbottom 	%Der Text kann auch unterschiedlich lang sein.
+\flushbottom  	%Der Text aller Seiten ist gleich lang
+%\raggedbottom 	%Der Text kann auch unterschiedlich lang sein.
 
 %Abschnittsnummerierungen in Caption und Formelnummerierung
 \usepackage{chngcntr}
 
 %Definition der Seitenränder
 \usepackage[
-  left=4cm,	%Linker Seitenrand (Bindung beachten!!!)
+  left=3.5cm,	%Linker Seitenrand (Bindung beachten!!!)
   right=2cm,
-  top=3.5cm,
-  bottom=3cm,
+  top=2.5cm,
+  bottom=2.5cm
 ]{geometry}
 
 % Paket float verbessern
 \usepackage{scrhack}
 
+%Einstellbarer Zeilenabstand
+\usepackage{setspace}
 
 % Warnung, falls nochmal kompiliert werden muss
 \usepackage[aux]{rerunfilecheck}
@@ -71,7 +49,6 @@
 
 % Fonteinstellungen
 \usepackage{fontspec}
-
 % Latin Modern Fonts werden automatisch geladen
 % Alternativ:
 %\setromanfont{Libertinus Serif}
@@ -100,8 +77,8 @@
 \setmathfont{Latin Modern Math}
 % Alternativ:
 %\setmathfont{Libertinus Math}
-\usepackage{amsmath}
-\usepackage{amssymb}\setmathfont{XITS Math}[range={scr, bfscr}]
+
+\setmathfont{XITS Math}[range={scr, bfscr}]
 \setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
 \setlength{\delimitershortfall}{-1sp}
 
@@ -173,9 +150,8 @@
 % Literaturverzeichnis
 \usepackage[
   backend=biber,
-  style=numeric,
-  %doi=true
-  %isbn=false,
+  %style=authoryear,
+  doi=true
 ]{biblatex}
 
 % Quellendatenbank
@@ -300,11 +276,11 @@
 
 % Hyperlinks im Dokument
 \usepackage[
-hidelinks,       %Keine Markierung um den Link
-unicode,        % Unicode in PDF-Attributen erlauben
-pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
-pdfcreator={},  % ┐ PDF-Attribute säubern
-pdfproducer={}, % ┘
+  hidelinks,       %Keine Markierung um den Link
+  unicode,        % Unicode in PDF-Attributen erlauben
+  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+  pdfcreator={},  % ┐ PDF-Attribute säubern
+  pdfproducer={}, % ┘
 ]{hyperref}
 
 %Abkürzungsverzeichnis
@@ -315,8 +291,6 @@ pdfproducer={}, % ┘
 \loadglsentries{glossary.tex}%Einbinden de Glossars
 \makeglossaries
 
-
-
 % erweiterte Bookmarks im PDF
 \usepackage{bookmark}
 
@@ -326,8 +300,8 @@ pdfproducer={}, % ┘
 %Kopf/Fußzeile=====================
 \KOMAoptions{headsepline=true}
 \KOMAoptions{footsepline=true}
-%\rohead*{\textnormal{\headmark}}
-%\lehead*{\textnormal{\headmark}}
+\rohead*{\textnormal{\headmark}}
+\lehead*{\textnormal{\headmark}}
 \cofoot*{\pagemark}
 \cefoot*{\pagemark}
 \rofoot*{}
@@ -343,8 +317,6 @@ pdfproducer={}, % ┘
 }
 \renewcommand*{\chapterpagestyle}{kapitel}
 %Kopf/Fußzeile=====================
-
-
 
 %Anpassen der Abbildungs- und Tabellennummerierung========
 \counterwithin*{figure}{chapter}
@@ -433,5 +405,3 @@ pdfproducer={}, % ┘
 % Aus diesem Grund wird die Anzahl der zu berechnenden Datenpunkte in einer Variable definiert und kann
 % so bei Bedarf reduziert, und für die Endfassung entsprechend erhöht werden.
 \newcommand{\NumOfSampels}{1000}%Anzahl der Samples für Plots
-
-

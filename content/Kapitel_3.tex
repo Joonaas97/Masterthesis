@@ -11,7 +11,7 @@ Hierzu zählt unter anderem die Anforderung an die Phasenverschiebung, bei Wirkl
 	\label{fig:tar4120pq}
 \end{figure}
 Des weiteren sind zeitlich begrenzte Frequenz und Spannungsänderung die auftreten können definiert als quasistationärer Betrieb. Die Netzspannung kann im Bereich von +/- 15 Prozent Schwanken, sowie die Frequenz von 50 Hertz zwischen 47,5 und 51,5 variieren vgl. Abb \ref{fig:vde4120-Anforderungen} (a). Innerhalb dieses Bandes muss die Anlage im regulären Betrieb bleiben. Dabei wird ein Gradient von  <5 \%  im Spannungsband sowie <0,5 \% pro Minute im Frequenzband vorausgesetzt. \\
-Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig deutlich stärkere Spannungsschwankungen mit machen. Diese Anforderung wird als \gls{FRT} bezeichnet und kann für bis zu 100 Millisekunden die Spannung um 25 Prozent erhöhen vgl. Abb. \ref{fig:vde4120-Anforderungen} (b). Aufgrund eines Kurzschluss kann die Spannung auf 15 Prozent der eigentlichen Netzspannung abfallen. Dies stellt für Verbraucheranlagen eine große Herausforderung dar, da die zu betreibenden Systeme meist eine mindest Spannung benötigen.
+Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig deutlich stärkere Spannungsschwankungen mit machen. Diese Anforderung wird als \gls{FRT} bezeichnet und kann für bis zu 100 Millisekunden die Spannung um 25 Prozent erhöhen vgl. Abb. \ref{fig:vde4120-Anforderungen} (b). Aufgrund eines Kurzschluss kann die Spannung auf 15 Prozent der eigentlichen Netzspannung abfallen. Dies stellt für Verbraucheranlagen eine große Herausforderung dar, da die zu betreibenden Systeme meist eine minimal Spannung benötigen.
 
 \begin{figure}[H]
 \centering
@@ -34,9 +34,10 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig 
 \subsection{Überspannungsschutz}
 
 \section{Elektrolyseur}
-Zur Elektrolyse wird eine Gleichspannung benötigt welche aufgrund von Alterungsprozessen, innerhalb der Zellmembrane, mit der Zeit ansteigt \cite{HydrogenElectronicTopologies}. Daher wird eine Ausgangsspannung 
+Zur Elektrolyse wird eine Gleichspannung benötigt welche aufgrund von Alterungsprozessen, innerhalb der Zellmembrane, mit der Zeit ansteigt \cite{HydrogenElectronicTopologies}. Außerdem wird zu Beginn der Elektrolyse eine niedrige Spannung benötigt um den Prozess zu starten. Daher wird ein Bandbreite von 0 bis einigen 100 Volt benötigt. Um die gewünschte Leistung umsetzen zu können ist es für die Wirtschaftlichkeit relevant den Strom möglichst zu reduzieren, woraus eine höhere Spannung resultiert. Dies wird durch den modularen Zellaufbau unterstützt der eine Flexible Systemspannung ermöglicht. \\
 \section{Zusammenfassung}
-Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammengefasst, für die Implementierung wird die Zukünftige Betrachtung als relevant betrachtet.
+Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammengefasst, für die Implementierung wird die Zukünftige Betrachtung als relevant betrachtet.\\
+
 \begin{tabular}{c|c|c}
 
 	& Aktuell & Zukünftig \\
@@ -45,12 +46,15 @@ Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammen
 		\hline
 	Leistungsfaktor als Systemdienstleistung & keine Angabe & +/- 30° \\
 	\hline
-	$THD_i$ & <5\% &  \\
+	$THD_i$ & <5 \% & <5\% \\
 	\hline
-	Ausgangsstromrippel & keine Angabe & <5\% \\
+	Ausgangsstromrippel & keine Angabe & <5 \% \\
+	\hline
+	Ausgangsspannung & < 1000 V & < 1500 V \\
 	
 	
 	\label{tab:AnfZsm}
 \end{tabular}
+
 \section{Bewertungskriterien}
 Die Kriterien zur finalen Auswahl der Topologie setzen sich aus der Erfüllung der Anforderungen zusammen sowie der Bewertung der Hardware. Die Grundlegenden Anforderungen aus Seiten des Stromnetzes und Elektrolyseur wurden bereits in der Vorauswahl berücksichtigt und können nun im Detail anhand von \gls{THD} und Rippelgrößen betrachtet werden. Die Quantifizierung der Hardware wird zum einen anhand der Verlustleistung in den Halbleitern, welche indirekt auch den Kühlungsaufwand repliziert, zum anderen durch die Größe und den Aufwand für die Komponenten berücksichtigt.  
