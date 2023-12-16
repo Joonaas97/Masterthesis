@@ -1,19 +1,24 @@
 \documentclass[
+	table,
   numbers=noenddot,			% Kein . am Ende einer Nummerierung
   bibliography=totoc,       % Literatur im Inhaltsverzeichnis
   listof=totoc,				% Verzeichnisse im Inhaltsverzeichnis
   captions=tableheading,    % Tabellenüberschriften
 ]{scrbook}
 
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage[automark]{scrlayer-scrpage}
 \setcounter{tocdepth}{4}   %Maximale Gliederungsebene im Inhaltsverziechnis
 \setcounter{secnumdepth}{4}   %Maximale Nummerierungsebene im Inhaltsverziechnis
+\KOMAoptions{twoside=false}	 	%Einseitige einstellung
 
 % Bei der Klasse "book" ist LaTeX bemüht, den Text auf zwei gegenüberliegenden Seiten auf die gleiche Höhe zu bringen.
 % Dies wird dadurch erreicht, dass der Text unter Überschriften oder Zeilenumbrüchen minimal (und nicht sichtbar) variiert wird.
 % Bei manchen Dokumenten funktioniert das nicht, da - beispielsweise durch viele Grafiken und wenig Text - nicht genug Spielraum bleibt.
 % Das kann dazu führen, dass der Text in einem bestimmten Abstand vom unteren Seitenrand endet und oben noch sehr viel frei ist.
 % Durch Aktivieren oder Kommentieren der folgenden Zeilen, kann dieses Verhalten beeinflusst werden.
+
+%%%%%Checken welches besser ist!!!
 \flushbottom  	%Der Text aller Seiten ist gleich lang
 %\raggedbottom 	%Der Text kann auch unterschiedlich lang sein.
 
@@ -22,10 +27,10 @@
 
 %Definition der Seitenränder
 \usepackage[
-  left=3.5cm,	%Linker Seitenrand (Bindung beachten!!!)
+  left=4cm,	%Linker Seitenrand (Bindung beachten!!!)
   right=2cm,
-  top=2.5cm,
-  bottom=2.5cm
+  top=3.5cm,
+  bottom=3cm
 ]{geometry}
 
 % Paket float verbessern
@@ -77,6 +82,9 @@
 \setmathfont{Latin Modern Math}
 % Alternativ:
 %\setmathfont{Libertinus Math}
+
+\usepackage{amsmath}
+\usepackage{amssymb}\setmathfont{XITS Math}[range={scr, bfscr}]
 
 \setmathfont{XITS Math}[range={scr, bfscr}]
 \setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
@@ -150,8 +158,8 @@
 % Literaturverzeichnis
 \usepackage[
   backend=biber,
-  %style=authoryear,
-  doi=true
+  isbn=false,
+  style=numeric
 ]{biblatex}
 
 % Quellendatenbank
@@ -276,11 +284,11 @@
 
 % Hyperlinks im Dokument
 \usepackage[
-  hidelinks,       %Keine Markierung um den Link
-  unicode,        % Unicode in PDF-Attributen erlauben
-  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
-  pdfcreator={},  % ┐ PDF-Attribute säubern
-  pdfproducer={}, % ┘
+ hidelinks,       %Keine Markierung um den Link
+ unicode,        % Unicode in PDF-Attributen erlauben
+ pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+ pdfcreator={},  % ┐ PDF-Attribute säubern
+ pdfproducer={}, % ┘
 ]{hyperref}
 
 %Abkürzungsverzeichnis
@@ -300,8 +308,8 @@
 %Kopf/Fußzeile=====================
 \KOMAoptions{headsepline=true}
 \KOMAoptions{footsepline=true}
-\rohead*{\textnormal{\headmark}}
-\lehead*{\textnormal{\headmark}}
+%\rohead*{\textnormal{\headmark}}
+%\lehead*{\textnormal{\headmark}}
 \cofoot*{\pagemark}
 \cefoot*{\pagemark}
 \rofoot*{}
@@ -405,3 +413,4 @@
 % Aus diesem Grund wird die Anzahl der zu berechnenden Datenpunkte in einer Variable definiert und kann
 % so bei Bedarf reduziert, und für die Endfassung entsprechend erhöht werden.
 \newcommand{\NumOfSampels}{1000}%Anzahl der Samples für Plots
+
