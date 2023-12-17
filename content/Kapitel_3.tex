@@ -7,7 +7,7 @@ Hierzu zählt unter anderem die Anforderung an die Phasenverschiebung, bei Wirkl
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{content/Grafiken/TAR4120_PQ}
-	\caption[Zulässiger Bereich des Verschiebungsfaktors cos φ bei Wirkleistungsbezug \cite{VDE4120FNN}]{VDE TAR4120: Zulässiger Bereich des Verschiebungsfaktors}
+	\caption[Zulässiger Bereich des Verschiebungsfaktors cos $\phi$ bei Wirkleistungsbezug]{VDE TAR4120: Zulässiger Bereich des Verschiebungsfaktors \cite{VDEARN4120}}
 	\label{fig:tar4120pq}
 \end{figure}
 Des weiteren sind zeitlich begrenzte Frequenz und Spannungsänderung die auftreten können definiert als quasistationärer Betrieb. Die Netzspannung kann im Bereich von +/- 15 Prozent Schwanken, sowie die Frequenz von 50 Hertz zwischen 47,5 und 51,5 variieren vgl. Abb \ref{fig:vde4120-Anforderungen} (a). Innerhalb dieses Bandes muss die Anlage im regulären Betrieb bleiben. Dabei wird ein Gradient von  <5 \%  im Spannungsband sowie <0,5 \% pro Minute im Frequenzband vorausgesetzt. \\
@@ -38,9 +38,11 @@ Zur Elektrolyse wird eine Gleichspannung benötigt welche aufgrund von Alterungs
 Um die Effizienz und Lebensdauer des 
 \section{Zusammenfassung}
 Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammengefasst, für die Implementierung wird die Zukünftige Betrachtung als relevant betrachtet.\\
+\begin{table}
+\caption{ Anforderungen an den Gleichrichter heute und in Zukunft}
 
 \begin{tabular}{c|c|c}
-
+	
 	& Aktuell & Zukünftig \\
 	\hline
 	Leistungsfaktor stationär & >0.95 & >0.99 \\
@@ -56,6 +58,6 @@ Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammen
 	
 	\label{tab:AnfZsm}
 \end{tabular}
-
+\end{table}
 \section{Bewertungskriterien}
 Die Kriterien zur finalen Auswahl der Topologie setzen sich aus der Erfüllung der Anforderungen zusammen sowie der Bewertung der Hardware. Die Grundlegenden Anforderungen aus Seiten des Stromnetzes und Elektrolyseur wurden bereits in der Vorauswahl berücksichtigt und können nun im Detail anhand von \gls{THD} und Rippelgrößen betrachtet werden. Die Quantifizierung der Hardware wird zum einen anhand der Verlustleistung in den Halbleitern, welche indirekt auch den Kühlungsaufwand repliziert, zum anderen durch die Größe und den Aufwand für die Komponenten berücksichtigt.  

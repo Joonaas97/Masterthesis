@@ -1,39 +1,49 @@
 \chapter{Vorauswahl}
+Um die möglichen Optionen einzugrenzen wird im folgenden eine Auflistung der Topologien erstellt und anhand einfacher Kriterien die Auswahl eingegrenzt. Einen guten Überblick über Schaltungen für Dreiphasige Gleichrichter mit Leistungsfaktorkorrektur gibt die Präsentation von Dominik Bortis et al. \cite{Advanced3PhPFC}. Diese bezieht sich auf Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund gewünschter Systemdienstleistungen und flexibler Blindleistungsbereitstellung sind Systeme mit Hybrider Kompensation nicht ausreichend.
+
 
 \section{Mögliche Topologien}
-% TODO: \usepackage{array} required
+
+Zur Eingrenzung des Lösungsraums wird zunächst eine Auflistung der möglichen Schaltungstopologien zum Anschluss an das dreiphasige Stromnetz erstellt, vgl. Tabelle \ref{tab:vorauswahl}. Die 15 aufgelisteten Topologien, begonnen mit dem in \ref{B6DiodRect} dargestellten Diodengleichrichter, werden anhand der benötigten Induktivitäten, Dioden, Schalter und Stufen, sowie der Funktionsweise Hoch- bzw. Tiefstellend bewertet.\\
+Die Tabelle \ref{B6DiodRect} zeigt, dass sich für eine engere Betrachtung die vier in grün dargestellten Topologien eignen, da diese die im Vergleich wenigstens Induktivitäten und Halbleiter benötigen. Dioden sind aufgrund ihrer simpleren Funktionsweise günstiger als Leistungsschalter und fallen daher nicht so stark ins Gewicht.\\
+Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in dieser Arbeit der \gls{IAF} und \gls{B6PFC} betrachtet und die Ergebnisse für eine finale Bewertung aufbereitet.
+
+\begin{table}
+	\caption{Topologievergleich zur Vorauswahl}
+	\label{tab:vorauswahl}
 \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|c|c|c|c|c|}
 	\hline
 	& Induktivitäten & Dioden & Schalter & Buck/Boost & Stufen \\
 	\hline
-	3-ΦDiode Bridge Rectifier & 3 & 6 & 0 & \cellcolor{red!25}- & \cellcolor{green!25} 1 \\
+	3-ΦDiode Bridge Rectifier & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 &\cellcolor{green!25} 0 & \cellcolor{red!25}- & \cellcolor{green!25}1 \\
 	\hline
-	6-Switch Boost PFC Rectifier & 3 &\cellcolor{green!25} 0 & 6 & \cellcolor{red!25}Boost & \cellcolor{green!25} 1 \\
+	6-Switch Boost PFC Rectifier & \cellcolor{yellow!25}3 &\cellcolor{green!25} 0 & \cellcolor{green!25}6 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	Vienna Rectifier & 3 & 6 & 6 & \cellcolor{red!25}Boost & \cellcolor{green!25} 1 \\
+	Vienna Rectifier & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 & \cellcolor{green!25}6 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	6-Switch Buck PFC Rectifier & \cellcolor{green!25}1 & 6 & 6 & \cellcolor{green!25}Buck & \cellcolor{green!25} 1 \\
+	\cellcolor{green!10}6-Switch Buck PFC Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}6 &\cellcolor{green!25} 6 & \cellcolor{green!25}Buck & \cellcolor{green!25}1 \\
 	\hline
-	Integr. Active Filter (IAF) PFC Rectifier + Buck & \cellcolor{green!25} 2 & 6 & 10 & \cellcolor{green!25}Buck & \cellcolor{green!25} 1 \\
+	\cellcolor{green!10}Integr. Active Filter (IAF) PFC Rectifier + Buck & \cellcolor{green!25} 2 &\cellcolor{red!25}6 & \cellcolor{yellow!25}10 & \cellcolor{green!25}Buck & \cellcolor{red!25}2 \\
 	\hline
-	Swiss Rectifier & \cellcolor{green!25}1 & 8 & 8 & \cellcolor{green!25} Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10}Swiss Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}8 &\cellcolor{green!25} 8 & \cellcolor{green!25} Buck & \cellcolor{red!25}2 \\
 	\hline
-	1/3 PWM Boost \& Buck PFC Rectifier & 4 & \cellcolor{green!25} 0 & 8 &\cellcolor{green!25} Boost/Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10}1/3 PWM Boost \& Buck PFC Rectifier &\cellcolor{yellow!25}4 & \cellcolor{green!25} 0 &\cellcolor{green!25} 8 &\cellcolor{green!25} Boost/Buck & \cellcolor{red!25}2 \\
 	\hline
-	2/3 PWM Buck \& Boost Current Source Rectifier & \cellcolor{green!25} 1 & \cellcolor{green!25}0 & 14 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
+	2/3 PWM Buck \& Boost Current Source Rectifier & \cellcolor{green!25} 1 & \cellcolor{green!25}0 & \cellcolor{yellow!25}14 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
-	Trident Rectifier & 6 &\cellcolor{green!25}0 & 12 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
+	Trident Rectifier & \cellcolor{red!25}6 &\cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
-	Y-Rectifier & 3 &\cellcolor{green!25}0 & 12 &\cellcolor{green!25} Buck/Boost & \cellcolor{red!25}2 \\
+	Y-Rectifier & \cellcolor{yellow!25}3 &\cellcolor{green!25}0 & \cellcolor{yellow!25}12 &\cellcolor{green!25} Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
-	3-Level Neutral Point Clamped & 3 & 6 & 12 & \cellcolor{red!25}Boost & \cellcolor{green!25} 1 \\
+	3-Level Neutral Point Clamped & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	3-Level Active Neutral Point Clamped  & 3 & \cellcolor{green!25}0 & 18 & \cellcolor{red!25}Boost & \cellcolor{green!25} 1 \\
+	3-Level Active Neutral Point Clamped  & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{red!25}18 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	3-Level Active Neutral Point Clamped + Tiefsetzsteller & 4 &\cellcolor{green!25} 0 & 20 & \cellcolor{green!25}Boost/Buck & \cellcolor{red!25}2 \\
+	3-Level Active Neutral Point Clamped + Tiefsetzsteller & \cellcolor{yellow!25}4 &\cellcolor{green!25} 0 & \cellcolor{red!25}20 & \cellcolor{green!25}Boost/Buck & \cellcolor{red!25}2 \\
 	\hline
-	Three-Level Flying Capacitor (FC) Boost-Type Rectifier System & 3 & \cellcolor{green!25}0 & 12 & \cellcolor{red!25}Boost & \cellcolor{green!25} 1 \\
+	Three-Level Flying Capacitor (FC) Boost-Type Rectifier System & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	Three-Level Flying Capacitor (FC + Tiefsetzsteller & 4 &\cellcolor{green!25} 0 & 14 &\cellcolor{green!25} Boost/Buck &\cellcolor{red!25} 2 \\
+	Three-Level Flying Capacitor (FC + Tiefsetzsteller & \cellcolor{yellow!25}4 &\cellcolor{green!25}0 & \cellcolor{yellow!25}14 &\cellcolor{green!25} Boost/Buck &\cellcolor{red!25} 2 \\
 	\hline
 \end{tabular}
+\end{table}
