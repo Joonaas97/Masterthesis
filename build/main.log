@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  28 DEC 2023 22:48
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  28 DEC 2023 22:57
  system commands enabled.
 **main.tex
 (./main.tex
@@ -590,11 +590,11 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            synonyms	 on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
@@ -2357,11 +2357,11 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            synonyms	 on input line 580
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 580
@@ -2705,12 +2705,16 @@ Overfull \hbox (27.55289pt too wide) in paragraph at lines 7--62
 [][] 
  []
 
-) (./content/Kapitel_7.tex [19
+) (./content/Kapitel_7.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19
 
 
 ]
+[20]
 chapter 7.
-) [20
+) [21
 
 
 ]
@@ -2732,14 +2736,14 @@ mr/m/n/10.95 . 2023. \TU/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n/
 10.95 http : / / schmidt - walter - schaltnetzteile .
  []
 
-[21
+[22
 
 
 
 
-] [22] (./content/Anhang.tex
+] [23] (./content/Anhang.tex
 chapter without number
-[23
+[24
 
 
 
@@ -2884,19 +2888,19 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {nswissgerman/target}  =>  {german}
 >  {nswissgerman/variant}  =>  {swiss}
 >  {nswissgerman/options}  =>  {variant=swiss,spelling=new}.
- [24
+ [25
 
 
 ]
 (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: DEA5F1265DDB91A3D6DF7C169147C1A9;28578.
+(rerunfilecheck)             Checksum: C5386228AE606D13F4E408F03C749884;28578.
 
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F8B4E288233808DE83756A3DBED5752B;3436.
+(rerunfilecheck)             Checksum: 6D536EFB89C17A9BB2EA5C525258F06F;3436.
 Package rerunfilecheck Info: File `main.lof' has not changed.
 (rerunfilecheck)             Checksum: 1F3F94A7767CF7B6421172FC5605EAE5;1807.
 Package rerunfilecheck Info: File `main.lot' has not changed.
@@ -2907,7 +2911,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 89608 strings out of 478278
+ 89609 strings out of 478278
  100000,4101490 words of node,token memory allocated
  922 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 30
@@ -2915,7 +2919,7 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 1:4,2:1655,3:587,4:393,5:669,6:174,7:7219,8:226,9:1390,10:31,11:
 843,12:2
  107134 multiletter control sequences out of 65536+600000
- 67 fonts using 21678815 bytes
+ 67 fonts using 21678983 bytes
  113i,20n,118p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:TAR'
@@ -2946,9 +2950,9 @@ s/opentype/public/lm/lmromanslant10-regular.otf><//?/c:/program files/miktex/fon
 ts/opentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opent
 ype/public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/p
 ublic/lm/lmroman10-regular.otf>
-Output written on main.pdf (32 pages, 8538800 bytes).
+Output written on main.pdf (33 pages, 8540284 bytes).
 
-PDF statistics: 727 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 131072)
+PDF statistics: 733 PDF objects out of 1000 (max. 8388607)
+ 141 named destinations out of 1000 (max. 131072)
  360 words of extra memory for PDF output out of 10000 (max. 100000000)
 
