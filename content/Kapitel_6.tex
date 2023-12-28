@@ -1,5 +1,65 @@
 \chapter{Auswertung}
 \section{Simulationsergebnisse}
+
+\begin{table}
+	\caption{Auflistung der Simulationsergebnisse und Bewertung}
+	\label{tab:Auswertung}
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	& Topologie & B6\_Buck & IAF & Gewichtung: \\
+	\hline
+	Induktivitäten [uH] & L1 Netzinduktivität & 136,0 & 1,0 &  \\
+	\hline
+	& L2 DC Induktivität & 136,0 & 136,0 &  \\
+	\hline
+	& Gespeicherte Energie & 7,8 & 7,8 &  \\
+	\hline
+	& L3 IAF IVS Induktivität & - & 302,2 &  \\
+	\hline
+	& Induktivität normiert: & 1,00 & 0,43 & 50\% \\
+	\hline
+	Kapazitäten [uF] & C1 Netzkapazität & - & 50,0 &  \\
+	\hline
+	& C2 Kondensator am Elektrolyseur & 1,0 & 1,0 &  \\
+	\hline
+	& C3 DC Zwischenkreis & 25,0 & 50,0 &  \\
+	\hline
+	& Kapazität normiert: & 0,26 & 1,00 & 5\% \\
+	\hline
+	Halbleiter & SiC 4 mOhm & 0,0 & 2,0 &  \\
+	\hline
+	& SiC 2 mOhm & 10,0 & 4,0 &  \\
+	\hline
+	& Vienna SiC 5 mOhm & 0,0 & 6,0 &  \\
+	\hline
+	& SiC normiert: & 1,00 & 0,64 & 15\% \\
+	\hline
+	& Vienna Diode & 0,0 & 6,0 &  \\
+	\hline
+	& Dioden normiert & 0,0 & 1,0 & 5\% \\
+	\hline
+	Treiber & Treiberanzahl & 8,0 & 7,0 &  \\
+	\hline
+	& Treiber normiert: & 1,00 & 0,88 & 5\% \\
+	\hline
+	Verluste [W] & Schaltverluste 30 Grad & 567,0 & 503,0 &  \\
+	\hline
+	& Leitverluste 30 Grad & 254,0 & 1311,0 &  \\
+	\hline
+	& Gewichtung 30 Grad & 75\% & 75\% &  \\
+	\hline
+	& Schaltverluste 0 Grad & 554,0 & 511,0 &  \\
+	\hline
+	& Leitverluste 0 Grad & 326,0 & 748,0 &  \\
+	\hline
+	& Gewichtung 0 Grad & 25\% & 25\% &  \\
+	\hline
+	& Verluste normiert: & 0,50 & 1,00 & 20\% \\
+	\hline
+	Gesamt &  &  0,813 & 0,654 & 100\% \\
+	\hline
+\end{tabular}
+\end{table}
+\section{Auswertung}
 \subsection{IAF}
 Aufgrund der Anforderung an Blindleistungsbereitstellung hat die Topologie durch den \gls{IVS} einen Nachteil, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die \gls{THD} des Stroms deutlich verschlechtert wird. Somit kann der \gls{IAF} den Anforderungen nicht gerecht werden.
-\section{Auswertung}
