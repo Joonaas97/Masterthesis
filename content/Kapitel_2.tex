@@ -46,12 +46,14 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 			\label{eq:BuckL}
 			L=\dfrac{U_{emax}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{emax}}
 		\end{equation}
-		Wenn die Eingangsspannung durch einen, wie in Abb. \ref{fig:B6DiodRect} dargestellten, Dreiphasigen Diodengleichrichter implementiert ist, kann die Eingangsspannung mit $U_{LL} \cdot \sqrt{2}$ berechnet werden. Daraus folgt Formel \ref{eq:BuckLB6}
+		Wenn die Eingangsspannung durch einen, wie in Abb. \ref{fig:B6DiodRect} dargestellten, Dreiphasigen Diodengleichrichter implementiert ist, kann die Eingangsspannung mit $U_{LL} \cdot \sqrt{2}$ berechnet werden. Daraus folgt Formel \ref{eq:BuckLB6} bezogen auf die Phasenspannungen. \\
 		\begin{equation}
 			\label{eq:BuckLB6}
 			L=\dfrac{U_{LL} \cdot \sqrt{2}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{LL} \cdot \sqrt{2}}
 		\end{equation}
-			
+		Eine weitere Optimierungsmöglichkeit bietet das Interleaving, hierbei werden zwei Schaltungen parallel betrieben und die Regelung gekoppelt, dass Sie abwechselnd schalten. Dies ermöglicht es zum einen die Drosseln besser auslasten zu können und zum anderen den Rippel zu halbieren. 
+		
+		
 		\subsection{Power Factor Correction (PFC)}
 			Die \gls{PFC} ist eine nötige Maßnahme um den Blindleistungsanteil im Netz zu reduzieren und wird daher in aktuellen Geräten Standardmäßig implementiert. Ein Beispiel aus der Industrie bei dem bereits eine einfache Blindleistungskompensation durchgeführt wurde, war bei Leuchtmitteln mit Halogenröhren. Diese wurden zur Erzeugung der nötigen Spannung mit einem Transformator ausgestattet, welcher jedoch Blindleistung verursachte, dies konnte durch einfache Ergänzung eines Kondensators optimiert werden. \\
 			In gängigen Gleichrichtersystemen werden getrennte Einheiten bestehend aus einer dreiphasigen PFC-Gleichrichterschaltung und einem Gleichspannungswandler (DC/DC-Buck-Wandler) eingesetzt, um die Anforderungen zu erfüllen. Die Regelung der beiden Wandlerstufen ist in der Regel entkoppelt, wobei der Gleichrichter sinusförmige Netzströme zieht und der nachfolgende DC/DC-Wandler die Spannung auf den erforderlichen Ausgang anpasst. Auf der Suche nach kompakten und leichten Systemen sind hohe Schaltfrequenzen notwendig, was jedoch zu erhöhten Schaltverlusten und verringerter Wandlereffizienz führen kann. Um dies zu adressieren, werden fortgeschrittene Modulationstechniken wie Einfügen der dritten harmonischen und Raumzeigermodulation möglich. Alternativ kann auch Diskontinuierliche Pulsweitenmodulation (DPWM) als Methode zur Reduzierung der Schaltverluste in dreiphasigen PFC-Gleichrichtern verwendet werden, um sinusförmige Eingangsströme und eine konstante Gleichspannung sicherzustellen. Im Gegensatz dazu müssen Einstufen-Wandlersysteme beide Anforderungen gleichzeitig erfüllen, während Zweistufen-Systeme trotz niederfrequenter Spannungsschwankungen im Zwischengleichspannungsnetz eine konstante Ausgangsspannung sicherstellen können.			
@@ -68,7 +70,8 @@ Das Netzwerk aus bidirektionalen Schaltern, auch als \gls{IVS} bezeichnet, ermö
 
 
 \section{1/3 PWM PFC Rectifier}
-Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ein neuartiges Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite eine Reduzierung der Schaltverluste bewirkt und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.
+\label{sec:GrundlagenB6}
+Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ein adaptives Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite eine Reduzierung der Schaltverluste bewirkt und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.
 
 
 
