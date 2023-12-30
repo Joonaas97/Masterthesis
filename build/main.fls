@@ -1490,13 +1490,13 @@ INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\german.lbx
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\german.lbx
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bcf
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bcf
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.pdf
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.pdf
 INPUT .\content\Titelseite.tex
@@ -1645,6 +1645,7 @@ INPUT .\content\Grafiken\TAR4120_PQ.png
 INPUT .\content\Grafiken\TAR4120_PQ.png
 INPUT .\content\Grafiken\TAR4120_PQ.png
 INPUT .\content\Grafiken\TAR4120_PQ.png
+INPUT .\content\Grafiken\TAR4120_PQ.png
 INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
 INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
 INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
@@ -1659,7 +1660,6 @@ INPUT .\content\Grafiken\Grenzkurve.png
 INPUT .\content\Grafiken\Grenzkurve.png
 INPUT .\content\Grafiken\Grenzkurve.png
 INPUT .\content\Grafiken\Grenzkurve.png
-INPUT .\content\Grafiken\TAR4120_PQ.png
 INPUT .\content\Grafiken\VDE-FNN-TAR.png
 INPUT .\content\Grafiken\VDE-FNN-TAR.png
 INPUT .\content\Grafiken\VDE-FNN-TAR.png
@@ -1723,6 +1723,9 @@ INPUT .\content\Grafiken\DPT.pdf
 INPUT .\content\Grafiken\DPT.pdf
 INPUT .\content\Grafiken\DPT.pdf
 INPUT .\content\Grafiken\DPT.pdf
+INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman10-italic.luc
+INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmromancaps10-regular.luc
+INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmmono10-regular.luc
 INPUT .\content\Anhang.tex
 INPUT .\content\Anhang.tex
 INPUT .\content\Anhang.tex

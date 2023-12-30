@@ -21,27 +21,28 @@
 \contentsline {subsection}{\numberline {2.7.1}PLECS}{10}{subsection.2.7.1}%
 \contentsline {chapter}{\numberline {3}Anforderungen}{12}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Stromnetz}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Systemdienstleistungen (\gls {SDL})}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}Systemdienstleistungen (\gls {SDL})}{13}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Fault-Ride-Through (\gls {FRT})}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Elektrolyseur}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Elektrolyseur}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Zusammenfassung}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Bewertungskriterien}{16}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Vorauswahl}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Mögliche Topologien}{17}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Simulation}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Randbedingungen}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}IAF}{19}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Auslegung der Induktivitäten}{19}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Regelung}{19}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Ergebnisse}{19}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}B6 1/3 PFC Buck}{19}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Auslegung der Induktivitäten}{19}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Regelung}{19}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {6}Auswertung}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}\gls {B6PFC}}{23}{section.6.1}%
-\contentsline {section}{\numberline {6.2}\gls {IAF}}{23}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{24}{chapter.7}%
-\contentsline {chapter}{\nonumberline Inhalt der CD}{25}{chapter*.28}%
-\contentsline {chapter}{\nonumberline Anhang}{26}{chapter*.29}%
+\contentsline {section}{\numberline {3.4}Bewertungskriterien}{15}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Vorauswahl}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Mögliche Topologien}{16}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Simulation}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Randbedingungen}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}IAF}{18}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Auslegung der Induktivitäten}{18}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Regelung}{18}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Ergebnisse}{18}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}B6 1/3 PFC Buck}{18}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Auslegung der Induktivitäten}{18}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Regelung}{18}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Auswertung}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1}\gls {B6PFC}}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}\gls {IAF}}{22}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{23}{chapter.7}%
+\contentsline {chapter}{\nonumberline Literatur}{24}{chapter*.28}%
+\contentsline {chapter}{\nonumberline Inhalt der CD}{26}{chapter*.29}%
+\contentsline {chapter}{\nonumberline Anhang}{27}{chapter*.30}%
 \xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
