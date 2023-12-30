@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1703956245 "build/main.bcf" "build/main.bbl" "build/main" 1703956424 0
+["biber build/main"] 1703956245 "build/main.bcf" "build/main.bbl" "build/main" 1703962345 0
   "./bibliography.bib" 1703956180 6960 28cfa57b5f2f6ff828094e0ffd64a572 ""
-  "build/main.bcf" 1703956423 110091 ee7ce0e9c611bd94fb47499547c022e1 "lualatex"
+  "build/main.bcf" 1703962343 110091 ee7ce0e9c611bd94fb47499547c022e1 "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["lualatex"] 1703956413 "main.tex" "build/main.pdf" "main" 1703956424 0
+["lualatex"] 1703962332 "main.tex" "build/main.pdf" "main" 1703962345 0
   "C:/Program Files/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf" 1409936340 733736 20d3eb5d31e6373942bca10f39f669ce ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -419,14 +419,14 @@
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1692865242 291861 5bd84244fd45e75edda3a40171566321 ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1703880500 9798 e49d2650656a636deb4ec608c6b5cc5d ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz" 1692865242 58233 928999858f115f20176f7e8008f62a5c ""
-  "build/main.aux" 1703956423 29885 9d783fb5f2e174e2ebb8f63aa5b07700 "lualatex"
+  "build/main.aux" 1703962343 29885 9d783fb5f2e174e2ebb8f63aa5b07700 "lualatex"
   "build/main.bbl" 1703956248 22714 8b4fc87fdfe9fc0031ba15403b944513 "biber build/main"
   "build/main.gls" 1703956396 4397 be7721a41f5b6f14d684de19ee5c2959 ""
-  "build/main.lof" 1703956423 2024 048ce8c1c867b7edb5c1e82307c22ec8 "lualatex"
-  "build/main.lot" 1703956423 831 404f1015069a7ddb495c5185af22c1de "lualatex"
-  "build/main.run.xml" 1703956423 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
-  "build/main.toc" 1703956423 3532 de5bfe0c31914077a45c085e0e52d6e7 "lualatex"
-  "content/Abstract.tex" 1698928641 1295 6b1c5980fe5887e8c56be9f8a2f3471a ""
+  "build/main.lof" 1703962343 2024 048ce8c1c867b7edb5c1e82307c22ec8 "lualatex"
+  "build/main.lot" 1703962343 831 404f1015069a7ddb495c5185af22c1de "lualatex"
+  "build/main.run.xml" 1703962343 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
+  "build/main.toc" 1703962343 3532 de5bfe0c31914077a45c085e0e52d6e7 "lualatex"
+  "content/Abstract.tex" 1703962321 1624 1b57ca8f3329902dc461992a943ff1df ""
   "content/Anhang.tex" 1699988166 346 5c77b989b73a3ab0d52d7b9d8634935d ""
   "content/Erklaerung.tex" 1693902991 983 d54fd34c456adc13caefc8a2bf55b26a ""
   "content/Grafiken/B6-Control-orig.png" 1703879005 490262 6316248ce7a61b4689c61cb092a8e2dd ""
