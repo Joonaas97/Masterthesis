@@ -1,13 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1703956245 "build/main.bcf" "build/main.bbl" "build/main" 1703962345 0
+["biber build/main"] 1703967955 "build/main.bcf" "build/main.bbl" "build/main" 1703968243 0
   "./bibliography.bib" 1703956180 6960 28cfa57b5f2f6ff828094e0ffd64a572 ""
-  "build/main.bcf" 1703962343 110091 ee7ce0e9c611bd94fb47499547c022e1 "lualatex"
+  "build/main.bcf" 1703968242 108590 21ccfc0f089bb7cf7a77d9b090d67a62 "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["lualatex"] 1703962332 "main.tex" "build/main.pdf" "main" 1703962345 0
-  "C:/Program Files/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf" 1409936340 733736 20d3eb5d31e6373942bca10f39f669ce ""
+["lualatex"] 1703968232 "main.tex" "build/main.pdf" "main" 1703968243 2
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
@@ -419,15 +418,13 @@
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1692865242 291861 5bd84244fd45e75edda3a40171566321 ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1703880500 9798 e49d2650656a636deb4ec608c6b5cc5d ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz" 1692865242 58233 928999858f115f20176f7e8008f62a5c ""
-  "build/main.aux" 1703962343 29885 9d783fb5f2e174e2ebb8f63aa5b07700 "lualatex"
-  "build/main.bbl" 1703956248 22714 8b4fc87fdfe9fc0031ba15403b944513 "biber build/main"
+  "build/main.aux" 1703968242 27993 1bee60d140e0fd3628bdd823c0863e62 "lualatex"
+  "build/main.bbl" 1703967958 25168 70cc2b5038abb3ff149a02de8b313975 "biber build/main"
   "build/main.gls" 1703956396 4397 be7721a41f5b6f14d684de19ee5c2959 ""
-  "build/main.lof" 1703962343 2024 048ce8c1c867b7edb5c1e82307c22ec8 "lualatex"
-  "build/main.lot" 1703962343 831 404f1015069a7ddb495c5185af22c1de "lualatex"
-  "build/main.run.xml" 1703962343 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
-  "build/main.toc" 1703962343 3532 de5bfe0c31914077a45c085e0e52d6e7 "lualatex"
-  "content/Abstract.tex" 1703962321 1624 1b57ca8f3329902dc461992a943ff1df ""
-  "content/Anhang.tex" 1699988166 346 5c77b989b73a3ab0d52d7b9d8634935d ""
+  "build/main.lof" 1703968239 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "build/main.lot" 1703968239 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "build/main.toc" 1703968239 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "content/Abstract.tex" 1703962510 1784 a4b51c1b43e5811060a3223bc21dcc7b ""
   "content/Erklaerung.tex" 1693902991 983 d54fd34c456adc13caefc8a2bf55b26a ""
   "content/Grafiken/B6-Control-orig.png" 1703879005 490262 6316248ce7a61b4689c61cb092a8e2dd ""
   "content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png" 1696841151 6762422 97caaa4d3a2989ad18f931d121d2036e ""
@@ -447,12 +444,12 @@
   "content/Grafiken/VDE-FNN-TAR.png" 1703699470 175193 31c93f1c20b20a0255b3a9addc8fc623 ""
   "content/Grafiken/VDE4120-quasistationarerbetrieb.png" 1700492996 25773 36b41dc537154857a3cd4881a4b474ca ""
   "content/Kapitel_1.tex" 1703955226 4006 9c1b53be265316f76416c02914f5536b ""
-  "content/Kapitel_2.tex" 1703881164 15897 5eccd071c012f744237d0e9d809c11fc ""
+  "content/Kapitel_2.tex" 1703965232 15937 0a7d1f836353cd57684918ec8d958b3b ""
   "content/Kapitel_3.tex" 1703955725 7330 65ecd60ec907c2f98fc1beadae765e0e ""
   "content/Kapitel_4.tex" 1703797806 4498 03d4ec66e841004cc6318b11e882931f ""
-  "content/Kapitel_5.tex" 1703954899 2242 ecb2a079c631b7e6fac9a0ec938683e3 ""
+  "content/Kapitel_5.tex" 1703968231 3737 67bdd62b68e7b27e3e767237921727f2 ""
   "content/Kapitel_6.tex" 1703955226 3819 9157bbca5105e0dc007c3c89eaf2d7cb ""
-  "content/Kapitel_7.tex" 1703953922 1757 60a6207636822bf4e59718d82476085a ""
+  "content/Kapitel_7.tex" 1703962879 2078 40a3c770398965416568f4b7b7c3619b ""
   "content/Titelseite.tex" 1695902111 1247 fee496454be1d7c6c56757dd2a6603c8 ""
   "glossary.tex" 1703950287 3349 e543b05de9a9aff00d9428f0544ee46f ""
   "header.tex" 1703696701 17026 626beab7de3b5d3b2c34074d68d412fc ""
@@ -466,7 +463,6 @@
   "build/main.log"
   "build/main.lot"
   "build/main.pdf"
-  "build/main.run.xml"
   "build/main.sbl"
   "build/main.toc"
   (rewritten before read)

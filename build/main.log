@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  30 DEC 2023 19:52
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  30 DEC 2023 21:30
  system commands enabled.
 **main.tex
 (./main.tex
@@ -590,12 +590,12 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
 Module polyglossia Info: Language data for german
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2 on input line 16
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	 on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
 Package polyglossia Info: Option: German, spelling=new.
@@ -2357,12 +2357,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2 on input line 580
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	 on input line 580
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 580
 )
@@ -2386,22 +2386,7 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
-(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                IFAG-FF2
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                schmidt-walter
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 \c@lstlisting=\count547
@@ -2444,7 +2429,8 @@ Module polyglossia Info: Language ngerman already loaded; id is 4 on input line
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./content/Titelseite.tex
+
+(./content/Titelseite.tex
 warning  (file content/Grafiken/H-BRS_Logo.jpg) (readjpg): Bad Exif resolution 0
 dpi x 0dpi (zero or negative value of a signed integer)
 <content/Grafiken/H-BRS_Logo.jpg, id=6, 284.5029pt x 55.6479pt>
@@ -2499,27 +2485,21 @@ chapter without number
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
- (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.toc
-LaTeX Info: Redefining \rmfamily on input line 2.
-LaTeX Info: Redefining \sffamily on input line 2.
-LaTeX Info: Redefining \ttfamily on input line 2.
-[2
-
-
-])
+ (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.toc)
 \tf@toc=\write8
 
 \openout8 = main.toc
- [3]
+ [2
+
+
+]
 Package tocbasic Info: character protrusion at lof deactivated on input line 13
 .
-
-(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.lof)
+ (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.lof)
 \tf@lof=\write9
 
 \openout9 = main.lof
-
-[4
+ [3
 
 
 ]
@@ -2529,9 +2509,8 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 14
 \tf@lot=\write10
 
 \openout10 = main.lot
-
-(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.gls
-[5
+ (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.gls
+[4
 
 
 ])
@@ -2539,19 +2518,19 @@ Overfull \hbox (13.32202pt too wide) in paragraph at lines 2--17
 [] 
  []
 
-[6
+[5
 
 
 
 
 ] (./content/Kapitel_1.tex
 chapter 1.
-<content/Grafiken/ElyCost.png, id=228, 683.55376pt x 569.9866pt>
+<content/Grafiken/ElyCost.png, id=92, 683.55376pt x 569.9866pt>
 File: content/Grafiken/ElyCost.png Graphic file (type png)
 <use content/Grafiken/ElyCost.png>
 Package luatex.def Info: content/Grafiken/ElyCost.png  used on input line 11.
 (luatex.def)             Requested size: 298.75269pt x 249.1163pt.
-<content/Grafiken/Ely_Capacity.png, id=234, 383.71928pt x 421.14482pt>
+<content/Grafiken/Ely_Capacity.png, id=98, 383.71928pt x 421.14482pt>
 File: content/Grafiken/Ely_Capacity.png Graphic file (type png)
 <use content/Grafiken/Ely_Capacity.png>
 Package luatex.def Info: content/Grafiken/Ely_Capacity.png  used on input line 
@@ -2570,27 +2549,27 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 (./content/Kapitel_2.tex [3]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-<content/Grafiken/Ely-Efficiency.png, id=268, 628.92107pt x 301.125pt>
+<content/Grafiken/Ely-Efficiency.png, id=137, 628.92107pt x 301.125pt>
 File: content/Grafiken/Ely-Efficiency.png Graphic file (type png)
 <use content/Grafiken/Ely-Efficiency.png>
 Package luatex.def Info: content/Grafiken/Ely-Efficiency.png  used on input lin
-e 14.
+e 15.
 (luatex.def)             Requested size: 298.75269pt x 143.04045pt.
 [4
 
 
 ]
-<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=282, 361.35pt 
+<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=154, 361.35pt 
 x 361.35pt>
 File: content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png Graphic file 
 (type png)
 <use content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png>
 Package luatex.def Info: content/Grafiken/B6-Diodengleichrichter-Eingangsverlau
-f.png  used on input line 28.
+f.png  used on input line 29.
 (luatex.def)             Requested size: 298.75269pt x 298.75702pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2598,14 +2577,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5<./content/Grafiken/Ely-Efficiency.png>]
 warning  (file content/Grafiken/Buck.pdf) (pdf inclusion): PDF inclusion: found 
 PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Buck.pdf, id=296, 283.0575pt x 147.55125pt>
+<content/Grafiken/Buck.pdf, id=172, 283.0575pt x 147.55125pt>
 File: content/Grafiken/Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/Buck.pdf>
-Package luatex.def Info: content/Grafiken/Buck.pdf  used on input line 40.
+Package luatex.def Info: content/Grafiken/Buck.pdf  used on input line 41.
 (luatex.def)             Requested size: 298.75269pt x 155.74614pt.
-
-LaTeX Warning: Citation 'schmidt-walter' on page 6 undefined on input line 44.
-
 
 Underfull \vbox (badness 2837) has occurred while \output is active []
 
@@ -2613,43 +2589,43 @@ Underfull \vbox (badness 2837) has occurred while \output is active []
 /Grafiken/Buck.pdf>]
 warning  (file content/Grafiken/IAF.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/IAF.pdf, id=329, 403.0257pt x 149.71935pt>
+<content/Grafiken/IAF.pdf, id=210, 403.0257pt x 149.71935pt>
 File: content/Grafiken/IAF.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF.pdf>
-Package luatex.def Info: content/Grafiken/IAF.pdf  used on input line 66.
+Package luatex.def Info: content/Grafiken/IAF.pdf  used on input line 67.
 (luatex.def)             Requested size: 384.10966pt x 142.70088pt.
 
 warning  (file content/Grafiken/B6_Buck.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/B6_Buck.pdf, id=334, 1000.09634pt x 402.5439pt>
+<content/Grafiken/B6_Buck.pdf, id=215, 1000.09634pt x 402.5439pt>
 File: content/Grafiken/B6_Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_Buck.pdf>
-Package luatex.def Info: content/Grafiken/B6_Buck.pdf  used on input line 80.
+Package luatex.def Info: content/Grafiken/B6_Buck.pdf  used on input line 81.
 (luatex.def)             Requested size: 384.10966pt x 154.60211pt.
 [8<./content/Grafiken/IAF.pdf>]
-<content/Grafiken/PLECS_FF2ThermalModel.png, id=354, 414.04688pt x 310.15875pt>
+<content/Grafiken/PLECS_FF2ThermalModel.png, id=238, 414.04688pt x 310.15875pt>
 
 File: content/Grafiken/PLECS_FF2ThermalModel.png Graphic file (type png)
 <use content/Grafiken/PLECS_FF2ThermalModel.png>
 Package luatex.def Info: content/Grafiken/PLECS_FF2ThermalModel.png  used on in
-put line 91.
+put line 92.
 (luatex.def)             Requested size: 298.75269pt x 223.79686pt.
  [9<./content/Grafiken/B6_Buck.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 [10<./content/Grafiken/PLECS_FF2ThermalModel.png>]
-<content/Grafiken/PLECS_Buck.png, id=381, 824.32968pt x 687.31781pt>
+<content/Grafiken/PLECS_Buck.png, id=271, 824.32968pt x 687.31781pt>
 File: content/Grafiken/PLECS_Buck.png Graphic file (type png)
 <use content/Grafiken/PLECS_Buck.png>
 Package luatex.def Info: content/Grafiken/PLECS_Buck.png  used on input line 11
-2.
+8.
 (luatex.def)             Requested size: 298.75269pt x 249.09126pt.
 ) (./content/Kapitel_3.tex
 [11<./content/Grafiken/PLECS_Buck.png>]
 chapter 3.
-<content/Grafiken/TAR4120_PQ.png, id=392, 437.92178pt x 389.74179pt>
+<content/Grafiken/TAR4120_PQ.png, id=283, 437.92178pt x 389.74179pt>
 File: content/Grafiken/TAR4120_PQ.png Graphic file (type png)
 <use content/Grafiken/TAR4120_PQ.png>
 Package luatex.def Info: content/Grafiken/TAR4120_PQ.png  used on input line 9.
@@ -2664,7 +2640,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--12
 
 
 <./content/Grafiken/TAR4120_PQ.png>]
-<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=406, 770.88pt x 537.0
+<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=300, 770.88pt x 537.0
 0626pt>
 File: content/Grafiken/VDE4120-quasistationarerbetrieb.png Graphic file (type p
 ng)
@@ -2672,7 +2648,7 @@ ng)
 Package luatex.def Info: content/Grafiken/VDE4120-quasistationarerbetrieb.png  
 used on input line 18.
 (luatex.def)             Requested size: 298.75269pt x 208.11235pt.
-<content/Grafiken/Grenzkurve.png, id=407, 357.04822pt x 171.21107pt>
+<content/Grafiken/Grenzkurve.png, id=301, 357.04822pt x 171.21107pt>
 File: content/Grafiken/Grenzkurve.png Graphic file (type png)
 <use content/Grafiken/Grenzkurve.png>
 Package luatex.def Info: content/Grafiken/Grenzkurve.png  used on input line 22
@@ -2683,14 +2659,17 @@ Package luatex.def Info: content/Grafiken/Grenzkurve.png  used on input line 22
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\gls' on input line 31.
 
-<content/Grafiken/VDE-FNN-TAR.png, id=414, 1317.42188pt x 695.59875pt>
+<content/Grafiken/VDE-FNN-TAR.png, id=308, 1317.42188pt x 695.59875pt>
 File: content/Grafiken/VDE-FNN-TAR.png Graphic file (type png)
 <use content/Grafiken/VDE-FNN-TAR.png>
 Package luatex.def Info: content/Grafiken/VDE-FNN-TAR.png  used on input line 3
 5.
 (luatex.def)             Requested size: 384.10966pt x 202.8117pt.
-[13<./content/Grafiken/VDE4120-quasistationarerbetrieb.png><./content/Grafiken/G
-renzkurve.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13<./content/Grafiken/VDE4120-quasistationarerbetrieb.png><./content/Grafiken/
+Grenzkurve.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\gls' on input line 43.
@@ -2711,18 +2690,19 @@ LaTeX Warning: Reference `B6DiodRect' on page 16 undefined on input line 7.
 ] [17]
 chapter 5.
 
-LaTeX Warning: Citation 'IFAG-FF2' on page 18 undefined on input line 19.
+LaTeX Warning: Reference `eq:DeltaIIVS' on page 18 undefined on input line 34.
 
-<content/Grafiken/B6-Control-orig.png, id=464, 1768.35657pt x 892.83563pt>
+[18
+
+
+]
+<content/Grafiken/B6-Control-orig.png, id=387, 1768.35657pt x 892.83563pt>
 File: content/Grafiken/B6-Control-orig.png Graphic file (type png)
 <use content/Grafiken/B6-Control-orig.png>
 Package luatex.def Info: content/Grafiken/B6-Control-orig.png  used on input li
-ne 31.
+ne 59.
 (luatex.def)             Requested size: 384.10966pt x 193.93134pt.
-) (./content/Kapitel_6.tex [18
-
-
-] [19<./content/Grafiken/B6-Control-orig.png>]
+) (./content/Kapitel_6.tex [19] [20<./content/Grafiken/B6-Control-orig.png>]
 chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2734,10 +2714,10 @@ Overfull \hbox (27.55289pt too wide) in paragraph at lines 28--83
 [][] 
  []
 
-[20
+[21
 
 
-] [21]
+] [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\gls' on input line 85.
@@ -2746,7 +2726,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\gls' on input line 88.
 
-) (./content/Kapitel_7.tex [22]
+) (./content/Kapitel_7.tex [23]
 chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2761,12 +2741,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
 warning  (file content/Grafiken/DPT.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/DPT.pdf, id=510, 722.7pt x 285.9502pt>
+<content/Grafiken/DPT.pdf, id=445, 722.7pt x 285.9502pt>
 File: content/Grafiken/DPT.pdf Graphic file (type pdf)
 <use content/Grafiken/DPT.pdf>
 Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 10.
 (luatex.def)             Requested size: 384.10966pt x 151.98047pt.
-) [23
+) [24
 
 
 <./content/Grafiken/DPT.pdf>]
@@ -2781,205 +2761,23 @@ Overfull \hbox (20.85544pt too wide) in paragraph at lines 32--32
 ? _ _ blob = publicationFile&v =
  []
 
-[24
-
-
-
-
-] [25] (./content/Anhang.tex
-chapter without number
-[26
-
-
-
-
-]
-chapter without number
-)
-The property list \polyglossia@langsetup contains the pairs (without outer
-braces):
->  {latex/script}  =>  {latin}
->  {latex/lcscript}  =>  {latin}
->  {latex/scripttag}  =>  {}
->  {latex/language}  =>  {Latex}
->  {latex/langtag}  =>  {ENG}
->  {latex/bcp47}  =>  {en-US}
->  {latex/bcp47-language}  =>  {en}
->  {latex/bcp47-region}  =>  {US}
->  {latex/bcp47-script}  =>  {Latn}
->  {latex/bcp47-variant}  =>  {}
->  {latex/bcp47-extension-t}  =>  {}
->  {latex/bcp47-extension-u}  =>  {}
->  {latex/bcp47-extension-x}  =>  {}
->  {latex/bcp47-casing}  =>  {}
->  {latex/hyphennames}  =>  {english}
->  {latex/direction}  =>  {LR}
->  {latex/hyphenmins}  =>  {2,3}
->  {latex/frenchspacing}  =>  {false}
->  {latex/indentfirst}  =>  {false}
->  {latex/fontsetup}  =>  {true}
->  {latex/envname}  =>  {latex}
->  {latex/babelname}  =>  {latex}
->  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
->  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
->  {latex/DefineCommandsCmd}  =>  {use_none:n}
->  {german/script}  =>  {latin}
->  {german/lcscript}  =>  {latin}
->  {german/scripttag}  =>  {}
->  {german/language}  =>  {German}
->  {german/langtag}  =>  {DEU}
->  {german/bcp47}  =>  {de-DE}
->  {german/bcp47-language}  =>  {de}
->  {german/bcp47-region}  =>  {DE}
->  {german/bcp47-script}  =>  {Latn}
->  {german/bcp47-variant}  =>  {1996}
->  {german/bcp47-extension-t}  =>  {}
->  {german/bcp47-extension-u}  =>  {}
->  {german/bcp47-extension-x}  =>  {}
->  {german/bcp47-casing}  =>  {}
->  {german/hyphennames}  =>  {}
->  {german/direction}  =>  {LR}
->  {german/hyphenmins}  =>  {2,2}
->  {german/frenchspacing}  =>  {true}
->  {german/indentfirst}  =>  {false}
->  {german/fontsetup}  =>  {true}
->  {german/envname}  =>  {german}
->  {german/babelname}  =>  {ngerman}
->  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
->  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
->  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
-The property list \__xpg_alias contains the pairs (without outer braces):
->  {latex/target}  =>  {latex}
->  {german/target}  =>  {german}
->  {de/target}  =>  {german}
->  {de-CH/target}  =>  {german}
->  {de-CH/variant}  =>  {swiss}
->  {de-CH/options}  =>  {variant=swiss,spelling=new}
->  {de-AT/target}  =>  {german}
->  {de-AT/variant}  =>  {austrian}
->  {de-AT/options}  =>  {variant=austrian,spelling=new}
->  {de-DE/target}  =>  {german}
->  {de-DE/variant}  =>  {german}
->  {de-DE/options}  =>  {variant=german,spelling=new}
->  {de-Latf-CH/target}  =>  {german}
->  {de-Latf-CH/variant}  =>  {swiss}
->  {de-Latf-CH/options}  =>  {variant=swiss,spelling=new,script=blackletter}
->  {de-Latf-DE/target}  =>  {german}
->  {de-Latf-DE/variant}  =>  {german}
->  {de-Latf-DE/options}  =>  {variant=german,spelling=new,script=blackletter}
->  {de-Latf-AT/target}  =>  {german}
->  {de-Latf-AT/variant}  =>  {austrian}
->  {de-Latf-AT/options}  => 
-{variant=austrian,spelling=new,script=blackletter}
->  {de-AT-1901/target}  =>  {german}
->  {de-AT-1901/variant}  =>  {austrian}
->  {de-AT-1901/options}  =>  {variant=austrian,spelling=old}
->  {de-CH-1996/target}  =>  {german}
->  {de-CH-1996/variant}  =>  {swiss}
->  {de-CH-1996/options}  =>  {variant=swiss,spelling=new}
->  {de-AT-1996/target}  =>  {german}
->  {de-AT-1996/variant}  =>  {austrian}
->  {de-AT-1996/options}  =>  {variant=austrian,spelling=new}
->  {de-DE-1901/target}  =>  {german}
->  {de-DE-1901/variant}  =>  {german}
->  {de-DE-1901/options}  =>  {variant=german,spelling=old}
->  {de-Latf-CH-1901/target}  =>  {german}
->  {de-Latf-CH-1901/variant}  =>  {swiss}
->  {de-Latf-CH-1901/options}  => 
-{variant=swiss,spelling=old,script=blackletter}
->  {de-CH-1901/target}  =>  {german}
->  {de-CH-1901/variant}  =>  {swiss}
->  {de-CH-1901/options}  =>  {variant=swiss,spelling=old}
->  {de-Latf-AT-1901/target}  =>  {german}
->  {de-Latf-AT-1901/variant}  =>  {austrian}
->  {de-Latf-AT-1901/options}  => 
-{variant=austrian,spelling=old,script=blackletter}
->  {de-Latf-CH-1996/target}  =>  {german}
->  {de-Latf-CH-1996/variant}  =>  {swiss}
->  {de-Latf-CH-1996/options}  => 
-{variant=swiss,spelling=new,script=blackletter}
->  {de-Latf/target}  =>  {german}
->  {de-Latf/options}  =>  {script=blackletter}
->  {de-DE-1996/target}  =>  {german}
->  {de-DE-1996/variant}  =>  {german}
->  {de-DE-1996/options}  =>  {variant=german,spelling=new}
->  {de-Latf-DE-1901/target}  =>  {german}
->  {de-Latf-DE-1901/variant}  =>  {german}
->  {de-Latf-DE-1901/options}  => 
-{variant=german,spelling=old,script=blackletter}
->  {de-Latf-DE-1996/target}  =>  {german}
->  {de-Latf-DE-1996/variant}  =>  {german}
->  {de-Latf-DE-1996/options}  => 
-{variant=german,spelling=new,script=blackletter}
->  {de-Latf-AT-1996/target}  =>  {german}
->  {de-Latf-AT-1996/variant}  =>  {austrian}
->  {de-Latf-AT-1996/options}  => 
-{variant=austrian,spelling=new,script=blackletter}
->  {austrian/target}  =>  {german}
->  {austrian/variant}  =>  {austrian}
->  {austrian/options}  =>  {variant=austrian,spelling=old}
->  {naustrian/target}  =>  {german}
->  {naustrian/variant}  =>  {austrian}
->  {naustrian/options}  =>  {variant=austrian,spelling=new}
->  {germanb/target}  =>  {german}
->  {germanb/variant}  =>  {german}
->  {germanb/options}  =>  {variant=german,spelling=old}
->  {ngerman/target}  =>  {german}
->  {ngerman/variant}  =>  {german}
->  {ngerman/options}  =>  {variant=german,spelling=new}
->  {swissgerman/target}  =>  {german}
->  {swissgerman/variant}  =>  {swiss}
->  {swissgerman/options}  =>  {variant=swiss,spelling=old}
->  {nswissgerman/target}  =>  {german}
->  {nswissgerman/variant}  =>  {swiss}
->  {nswissgerman/options}  =>  {variant=swiss,spelling=new}.
- [27
-
-
-]
-(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.aux)
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 9D783FB5F2E174E2EBB8F63AA5B07700;29885.
-
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: DE5BFE0C31914077A45C085E0E52D6E7;3532.
-Package rerunfilecheck Info: File `main.lof' has not changed.
-(rerunfilecheck)             Checksum: 048CE8C1C867B7EDB5C1E82307C22EC8;2024.
-Package rerunfilecheck Info: File `main.lot' has not changed.
-(rerunfilecheck)             Checksum: 404F1015069A7DDB495C5185AF22C1DE;831.
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-)
+! Missing $ inserted.
+<inserted text> 
+$
+l.32 \cleardoublepage
+                   
 
 Here is how much of LuaTeX's memory you used:
- 89790 strings out of 478278
+ 89739 strings out of 478278
  100000,4101490 words of node,token memory allocated
- 908 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 28
- attribute, 89 glue_spec, 28 attribute_list, 2 write, 17 pdf_action nodes
-   avail lists: 1:4,2:1622,3:575,4:393,5:669,6:170,7:7410,8:226,9:1390,10:31,11:
-825,12:2
- 107293 multiletter control sequences out of 65536+600000
- 105 fonts using 38197651 bytes
+ 21056 words of node memory still in use:
+   51 hlist, 4 vlist, 3 rule, 8 mark, 153 disc, 10 local_par, 1 dir, 10 math, 43
+2 glue, 142 kern, 119 penalty, 34 margin_kern, 1794 glyph, 240 attribute, 109 gl
+ue_spec, 240 attribute_list, 1 temp, 1 if_stack, 1 shape, 8 write, 5 pdf_start_l
+ink, 5 pdf_end_link, 9 pdf_dest, 15 pdf_action, 18 pdf_colorstack nodes
+   avail lists: 1:4,2:1119,3:183,4:341,5:505,6:118,7:4940,8:151,9:1329,10:31,11:
+672,12:2
+ 107259 multiletter control sequences out of 65536+600000
+ 105 fonts using 38197979 bytes
  113i,20n,118p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<//?/c:/program files/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><//?/
-c:/program files/miktex/fonts/opentype/public/lm/lmromancaps10-regular.otf><//?/
-c:/program files/miktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/c:/pr
-ogram files/miktex/fonts/opentype/public/lm/lmroman9-bold.otf><//?/c:/program fi
-les/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><C:/Program Files/MiKTeX/
-fonts/opentype/public/lm-math/latinmodern-math.otf><C:/Program Files/MiKTeX/font
-s/opentype/public/lm-math/latinmodern-math.otf><//?/c:/program files/miktex/font
-s/opentype/public/lm/lmromanslant10-regular.otf><//?/c:/program files/miktex/fon
-ts/opentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opent
-ype/public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/p
-ublic/lm/lmroman10-regular.otf>
-Output written on main.pdf (35 pages, 9160397 bytes).
-
-PDF statistics: 781 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 131072)
- 368 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!
