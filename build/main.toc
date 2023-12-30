@@ -38,12 +38,11 @@
 \contentsline {subsection}{\numberline {5.3.1}Auslegung der Induktivitäten}{18}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Regelung}{18}{subsection.5.3.2}%
 \contentsline {chapter}{\numberline {6}Auswertung}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Simulationsergebnisse}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Auswertung}{21}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}IAF}{21}{subsection.6.2.1}%
-\contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{22}{chapter.7}%
-\contentsline {chapter}{\nonumberline Literatur}{23}{chapter*.26}%
-\contentsline {chapter}{\nonumberline Inhalt der CD}{25}{chapter*.27}%
-\contentsline {chapter}{\nonumberline Anhang}{26}{chapter*.28}%
+\contentsline {section}{\numberline {6.1}\gls {B6PFC}}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}\gls {IAF}}{22}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{23}{chapter.7}%
+\contentsline {chapter}{\nonumberline Literatur}{24}{chapter*.28}%
+\contentsline {chapter}{\nonumberline Inhalt der CD}{26}{chapter*.29}%
+\contentsline {chapter}{\nonumberline Anhang}{27}{chapter*.30}%
 \xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

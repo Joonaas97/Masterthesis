@@ -1,6 +1,27 @@
 \chapter{Auswertung}
-\section{Simulationsergebnisse}
-Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. Diese beinhaltet die Hardware, welche zum Großteil durch die Induktivitäten beeinflusst wird, sowie die Kapazitäten, Halbleiter und Treiber. Außerdem werden die Ergebnisse der Simulation durch die Verlustleistung der Halbleiter bewertet. 
+Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. Diese beinhaltet die Hardware, welche zum Großteil durch die Induktivitäten beeinflusst wird, sowie die Kapazitäten, Halbleiter und Treiber. Außerdem werden die Ergebnisse der Simulation durch die Verlustleistung der Halbleiter bewertet. Für die Simulation werden die in Tabelle \ref{tab:Betriebspara} aufgelisteten Betriebsparameter festgelegt. Die beiden Topologien werden für den Betriebspunkt mit 0° und 30° Phasenverschiebung verglichen, um den Einfluss der Systemdienstleistungen zu betrachten. Um einen Vergleich der Kategorien und eine Gesamtbewertung durchzuführen, werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor die Summe über alle Kategorien gebildet. Aufgrund des großen Einflusses der Drosseln, werden diese mit 50 Prozent gewichtet. Die Kapazitäten stellen nur einen sehr geringen Einfluss auf das Gesamtsystem dar und werden daher nur mit fünf Prozent bewertet. Die restlichen 45 Prozent fallen auf die Halbleiter in Form der Chipfläche (über den \gls{RDSON}), Treiberanzahl und Verlustleistung ab. Je geringer die Punktzahl, desto besser ist die Bewertung. \\
+
+	
+\begin{table}
+	\caption{Auflistung der Simulationsbetriebsparameter}
+	\label{tab:Betriebspara}
+	\centering
+\begin{tabular}{|c|c|}
+	\hline
+	Netzspannung \gls{Ull} & 617 \si{\volt} \\
+	\hline
+	Leistung & 200 kW bei $\phi$ 0° \\
+	\hline
+	Phasenverschiebung & 0 / 30 Grad \\
+	\hline
+	Kühlplattentemperatur & 100 °C \\
+	\hline
+	Schaltfrequenz & 20 kHz \\
+	\hline
+\end{tabular}
+\end{table}
+
+
 \begin{table}
 	\caption{Auflistung der Simulationsergebnisse und Bewertung}
 	\label{tab:Auswertung}
@@ -56,10 +77,12 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 	\hline
 	& Verluste normiert: & 0,50 & 1,00 & 20\% \\
 	\hline
-	Gesamt &  &  0,813 & 0,654 & 100\% \\
+	Gesamt &  &  0,813 & 0,654 & \\
 	\hline
 \end{tabular}
 \end{table}
-\section{Auswertung}
-\subsection{IAF}
-Aufgrund der Anforderung an Blindleistungsbereitstellung hat die Topologie durch den \gls{IVS} einen Nachteil, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die \gls{THD} des Stroms deutlich verschlechtert wird. Somit kann der \gls{IAF} den Anforderungen nicht gerecht werden.
+\section{\gls{B6PFC}}
+Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und somit den Hardwarekosten mit sich bringt.
+
+\section{\gls{IAF}}
+Aufgrund der Anforderung an Blindleistungsbereitstellung hat die Topologie durch den \gls{IVS} einen Nachteil, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die \gls{THD} des Stroms deutlich verschlechtert wird. Somit kann der \gls{IAF} den Anforderungen nur sehr schwer gerecht werden, da weitere Filterstufen benötigt würden.

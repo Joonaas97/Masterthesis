@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1703880689 "build/main.bcf" "build/main.bbl" "build/main" 1703881188 0
+["biber build/main"] 1703880689 "build/main.bcf" "build/main.bbl" "build/main" 1703953933 0
   "./bibliography.bib" 1703880305 6981 33a4c833162661271dcf0241326e12d0 ""
-  "build/main.bcf" 1703881187 110028 db570dc7fb0335a402516e0e1c516fd4 "lualatex"
+  "build/main.bcf" 1703953931 110028 db570dc7fb0335a402516e0e1c516fd4 "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["lualatex"] 1703881177 "main.tex" "build/main.pdf" "main" 1703881188 0
+["lualatex"] 1703953922 "main.tex" "build/main.pdf" "main" 1703953933 0
   "C:/Program Files/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf" 1409936340 733736 20d3eb5d31e6373942bca10f39f669ce ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -419,13 +419,13 @@
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1692865242 291861 5bd84244fd45e75edda3a40171566321 ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1703880500 9798 e49d2650656a636deb4ec608c6b5cc5d ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz" 1692865242 58233 928999858f115f20176f7e8008f62a5c ""
-  "build/main.aux" 1703881187 29945 b5aee8609a9457955cdf28db311940ab "lualatex"
+  "build/main.aux" 1703953931 29904 33b146ca07620175c056fc1d9b8211db "lualatex"
   "build/main.bbl" 1703880692 23881 49f1fd306ae65695932397d865971e56 "biber build/main"
   "build/main.gls" 1703696878 2664 cec87fa5b9f9a6cab88da4b9f84ee46d ""
-  "build/main.lof" 1703881187 1918 99d7228613cd965c9c50d9d57e6ccb43 "lualatex"
-  "build/main.lot" 1703881187 710 cb2737eb26a74785889534d9ae2ec6ff "lualatex"
-  "build/main.run.xml" 1703881187 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
-  "build/main.toc" 1703881187 3615 ecbb31801f13aed88f83074f5ebf4d06 "lualatex"
+  "build/main.lof" 1703953931 2024 048ce8c1c867b7edb5c1e82307c22ec8 "lualatex"
+  "build/main.lot" 1703953931 831 404f1015069a7ddb495c5185af22c1de "lualatex"
+  "build/main.run.xml" 1703953931 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
+  "build/main.toc" 1703953931 3532 de5bfe0c31914077a45c085e0e52d6e7 "lualatex"
   "content/Abstract.tex" 1698928641 1295 6b1c5980fe5887e8c56be9f8a2f3471a ""
   "content/Anhang.tex" 1699988166 346 5c77b989b73a3ab0d52d7b9d8634935d ""
   "content/Erklaerung.tex" 1693902991 983 d54fd34c456adc13caefc8a2bf55b26a ""
@@ -434,6 +434,7 @@
   "content/Grafiken/B6_Buck.pdf" 1700735266 10680 41cd364071a1fea7f67263c8cd6e4441 ""
   "content/Grafiken/BRS.png" 1660136422 31356 4328497fbf3cc907300a6d73289809e5 ""
   "content/Grafiken/Buck.pdf" 1703778041 37356 680c312d7671c96a9f1a1ee8100aa11a ""
+  "content/Grafiken/DPT.pdf" 1703951477 203803 40daf8c4b1fbf654bbb81bbf3db14bc3 ""
   "content/Grafiken/Ely-Efficiency.png" 1699020027 112674 d4c28a6dfebf4a30a52dcb9208a7df80 ""
   "content/Grafiken/ElyCost.png" 1698675755 287251 9e3d9ed5369e3dc007543229de39c50e ""
   "content/Grafiken/Ely_Capacity.png" 1699894293 38286 9148a70b16cbff0c60447d1783bee21d ""
@@ -450,10 +451,10 @@
   "content/Kapitel_3.tex" 1703799733 7331 ed1656cd740f382788640fe65313d673 ""
   "content/Kapitel_4.tex" 1703797806 4498 03d4ec66e841004cc6318b11e882931f ""
   "content/Kapitel_5.tex" 1703880915 2226 2dd8d320413cb40f67a467080f93d8fb ""
-  "content/Kapitel_6.tex" 1703800633 2363 d985688df66211fbaad72e111f119b90 ""
-  "content/Kapitel_7.tex" 1703798443 437 97837cc0c1c531d6e95764d831cb61ef ""
+  "content/Kapitel_6.tex" 1703950703 3817 4737a162ea0bfcdd8a799e5aedd6d36b ""
+  "content/Kapitel_7.tex" 1703953922 1757 60a6207636822bf4e59718d82476085a ""
   "content/Titelseite.tex" 1695902111 1247 fee496454be1d7c6c56757dd2a6603c8 ""
-  "glossary.tex" 1703879258 3296 13dff7d8103e41b4296bc686329f944a ""
+  "glossary.tex" 1703950287 3349 e543b05de9a9aff00d9428f0544ee46f ""
   "header.tex" 1703696701 17026 626beab7de3b5d3b2c34074d68d412fc ""
   "main.tex" 1702721717 1054 cd24f530b2c7ee97fd4cb32752273095 ""
   (generated)
