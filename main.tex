@@ -1,10 +1,8 @@
 \input{header.tex}
-
 \begin{document}
 \newgeometry{left=3.5cm, right=2.5cm, top=2cm, bottom=2cm}%Seitenränder der Titelseite anpassen
 \input{content/Titelseite}
 \restoregeometry%Seitenränder auf defaultwert
-
 \input{content/Erklaerung}
 \frontmatter%Beginn des Vorspanns
 \pagenumbering{Roman}%Große römische Seitennummerierung
@@ -12,10 +10,7 @@
 \tableofcontents%Inhaltsverzeichnis
 \listoffigures%Abbildungsverzeichnis
 \listoftables%Tabellenverzeichnis
-
 \printglossary[type=\acronymtype,title=Abkürzungsverzeichnis] %Abkürzungsverzeichnis
-
-
 \clearpage
 \mainmatter 				%Beginn des Haupteils (arabische Seitennummerierung)
 \input{content/Kapitel_1}
@@ -27,8 +22,7 @@
 \input{content/Kapitel_7}
 \appendix					%Beginn des Anhangs, nummeriert in lateinischen Buchstaben
 \backmatter					%Ende des Dokuments
-
-\printbibliography
+%\printbibliography
 \cleardoublepage
 \input{content/Anhang}		%Anhang hier einfügen
 \end{document}

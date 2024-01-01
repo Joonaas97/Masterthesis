@@ -1,5 +1,12 @@
 \chapter{Simulation}
+Die Simulationen werden vom Grundaufbau wie folgt umgesetzt, sie bestehen aus einem Konfigurationsskript, welches die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsdurchläufe umsetzt. Das Modell wird in Simulink über PLECS Blockset aufgebaut und durch einen Output als gebündelte Schnittstelle werden die Daten an Matlab zurückgeführt. Die Rückführung der Daten wird für die Simulationen einheitlich in festgelegter Reihenfolge zusammengeführt, siehe Abb. 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{content/Grafiken/Plecs_Out}
+	\caption[Zusammenfassung der Simulationsoutputs]{Zusammenfassung der Simulationsoutputs}
+	\label{fig:plecsout}
+\end{figure}
 
 \section{Randbedingungen}
 Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung für die Simulation durchführen zu können. 
@@ -20,10 +27,10 @@ Die Regelung benötigt eine Erkennung des aktuellen Phasenwinkelabschnitts, dies
 \section{Tiefsetzsteller}
 
 	\subsection{Auslegung der Induktivität}
-	Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $ U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V} $ und die Ausgangsspannung bei mindestens 482 V. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}.
+	Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $ U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V} $ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}.
 	 \begin{equation}
 	 	\label{eq:BuckLwert}
-	 	L_{T}=\dfrac{959,8\si{\V} - 482 \si{\V}}{20 \si{\kilo \hertz}\cdot 0,3 \cdot 295 \si{\A}}\cdot \dfrac{482 \si{\V}}{969,8 \si{\V}}= 134,16 \si{\micro \henry} 
+	 	L_{T}=\dfrac{959,8\si{\V} - 482 \si{\V}}{20 \si{\kilo \hertz}\cdot 0,3 \cdot 295 \si{\ampere}}\cdot \dfrac{482 \si{\V}}{969,8 \si{\V}}= 134,16 \si{\micro \henry} 
 	 \end{equation}
 
 \section{IAF}

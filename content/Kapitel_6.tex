@@ -3,8 +3,6 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 
 	
 \begin{table}
-	\caption{Auflistung der Simulationsbetriebsparameter}
-	\label{tab:Betriebspara}
 	\centering
 \begin{tabular}{|c|c|}
 	\hline
@@ -19,12 +17,12 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 	Schaltfrequenz & 20 kHz \\
 	\hline
 \end{tabular}
+\caption{Auflistung der Simulationsbetriebsparameter}
+\label{tab:Betriebspara}
 \end{table}
 
 
 \begin{table}
-	\caption{Auflistung der Simulationsergebnisse und Bewertung}
-	\label{tab:Auswertung}
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
 	& Topologie & B6\_Buck & IAF & Gewichtung: \\
@@ -80,10 +78,12 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 	Gesamt &  &  0,813 & 0,654 & \\
 	\hline
 \end{tabular}
+\caption{Auflistung der Simulationsergebnisse und Bewertung}
+\label{tab:Auswertung}
 \end{table}
 
-\section{\gls{B6PFC}}
+\section{B6PFC}
 Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und somit den Hardwarekosten mit sich bringt.
 
-\section{\gls{IAF}}
+\section{IAF}
 Aufgrund der Anforderung an Blindleistungsbereitstellung hat die Topologie durch den \gls{IVS} einen Nachteil, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die \gls{THD} des Stroms deutlich verschlechtert wird. Somit kann der \gls{IAF} den Anforderungen nur sehr schwer gerecht werden, da weitere Filterstufen benötigt würden.
