@@ -69,6 +69,13 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	\end{equation}
 	
 	\subsection{Regelung}
+	Der Tiefsetzsteller wird durch einen PI Regler für die Fehlerkorrektur angesteuert, der ideale Tastgrad wird anhand der gewünschten Ausgangsspannung, welche über den Sollstrom und bekannten Lastwiderstand generiert wird, und der Zwischenkreisspannung \gls{Upn} bestimmt. Der Tastgrad wird dann in einen PWM-Generator gegeben, welcher das Signal mit der gewünschten Schaltfrequenz von 20 kHz generiert. Um die Schaltverluste und insbesondere Leitverluste beim kommutieren in den Dioden zu berücksichtigen wird eine Totzeit von 500 \si{\nano \second} eingestellt, vgl. Abb. \ref{fig:iafbuckcontrol}.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_BuckControl}
+		\caption{Regelung des Tiefsetzstellers des IAF}
+		\label{fig:iafbuckcontrol}
+	\end{figure}
 	
 
 

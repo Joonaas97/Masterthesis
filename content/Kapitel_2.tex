@@ -60,64 +60,64 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 			In gängigen Gleichrichtersystemen werden getrennte Einheiten bestehend aus einer dreiphasigen PFC-Gleichrichterschaltung und einem Gleichspannungswandler (DC/DC-Buck-Wandler) eingesetzt, um die Anforderungen zu erfüllen. Die Regelung der beiden Wandlerstufen ist in der Regel entkoppelt, wobei der Gleichrichter sinusförmige Netzströme zieht und der nachfolgende DC/DC-Wandler die Spannung auf den erforderlichen Ausgang anpasst. Auf der Suche nach kompakten und leichten Systemen sind hohe Schaltfrequenzen notwendig, was jedoch zu erhöhten Schaltverlusten und verringerter Wandlereffizienz führen kann. Um dies zu adressieren, werden fortgeschrittene Modulationstechniken wie Einfügen der dritten harmonischen und Raumzeigermodulation möglich. Alternativ kann auch Diskontinuierliche Pulsweitenmodulation (DPWM) als Methode zur Reduzierung der Schaltverluste in dreiphasigen PFC-Gleichrichtern verwendet werden, um sinusförmige Eingangsströme und eine konstante Gleichspannung sicherzustellen. Im Gegensatz dazu müssen Einstufen-Wandlersysteme beide Anforderungen gleichzeitig erfüllen, während Zweistufen-Systeme trotz niederfrequenter Spannungsschwankungen im Zwischengleichspannungsnetz eine konstante Ausgangsspannung sicherstellen können.			
 			
 \section{IAF Rectifier }
-Der \gls{IAF} Gleichrichter wurde erstmals vorgestellt in \cite{IAFfirst} im Jahr 1997, zur Verwendung in Photovoltaik Anwendungen. Dieser besteht für den Hauptleistungspfad aus einem Diodengleichrichter. Um sinusförmige Ströme in allen drei Phasen einzuprägen wird dieser durch ein Netzwerk aus bidirektional Sperrenden Leistungshalbleitern mit einer Induktivität und Halbbrücke ergänzt, dies wird als \gls{THI} Schaltung bezeichnet. Durch die Integration des Filters in den Leistungspfad, wird keine externe Blindleistungskompensation benötigt und die Filter können kleiner ausfallen. Aufgrund des ungesteuerten Diodengleichrichters wird jedoch eine anschließende Spannungsregelung durch einen Tiefsetzsteller benötigt \cite{ThesisSchrittwieserBuckTypePFC_2017}.\\
-Das Netzwerk aus bidirektionalen Schaltern, auch als \gls{IVS} bezeichnet, ermöglicht das Schalten zwischen den einzelnen Phasen, in welche durch die Induktivität und Halbbrücke der gewünschte Sinusförmige Stromverlauf eingeprägt wird. Dazu schaltet die Halbbrücke hinter der Induktivität entweder zum positiven oder negativen Potential der \gls{Upn}. Der Diodengleichrichter bezieht immer nur aus zwei Phasen Strom, daher prägt die Schaltung, ohne Phasenverschiebung, nur in die jeweils dritte Phase Strom ein. Die Dioden und der \gls{IVS} schalten mit Netzfrequenz, um während der kommutierungsphase von 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF}
-	\caption[\gls{IAF} Gleichrichter Topologie]{\gls{IAF} Gleichrichter Topologie}
-	\label{fig:iaf}
-\end{figure}
+	Der \gls{IAF} Gleichrichter wurde erstmals vorgestellt in \cite{IAFfirst} im Jahr 1997, zur Verwendung in Photovoltaik Anwendungen. Dieser besteht für den Hauptleistungspfad aus einem Diodengleichrichter. Um sinusförmige Ströme in allen drei Phasen einzuprägen wird dieser durch ein Netzwerk aus bidirektional Sperrenden Leistungshalbleitern mit einer Induktivität und Halbbrücke ergänzt, dies wird als \gls{THI} Schaltung bezeichnet. Durch die Integration des Filters in den Leistungspfad, wird keine externe Blindleistungskompensation benötigt und die Filter können kleiner ausfallen. Aufgrund des ungesteuerten Diodengleichrichters wird jedoch eine anschließende Spannungsregelung durch einen Tiefsetzsteller benötigt \cite{ThesisSchrittwieserBuckTypePFC_2017}.\\
+	Das Netzwerk aus bidirektionalen Schaltern, auch als \gls{IVS} bezeichnet, ermöglicht das Schalten zwischen den einzelnen Phasen, in welche durch die Induktivität und Halbbrücke der gewünschte Sinusförmige Stromverlauf eingeprägt wird. Dazu schaltet die Halbbrücke hinter der Induktivität entweder zum positiven oder negativen Potential der \gls{Upn}. Der Diodengleichrichter bezieht immer nur aus zwei Phasen Strom, daher prägt die Schaltung, ohne Phasenverschiebung, nur in die jeweils dritte Phase Strom ein. Die Dioden und der \gls{IVS} schalten mit Netzfrequenz, um während der kommutierungsphase von 
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF}
+		\caption[\gls{IAF} Gleichrichter Topologie]{\gls{IAF} Gleichrichter Topologie}
+		\label{fig:iaf}
+	\end{figure}
 
 
 \section{1/3 PWM PFC Rectifier}
-\label{sec:GrundlagenB6}
-Bei dieser Topologie handelt es sich um eine verbreitete B6-Topologie, die aus drei Halbbrücken besteht die jeweils an einer Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren, unter Verwendung von Induktivitäten auf der Netzseite, wird eine Reduzierung der Schaltverluste und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.\\
-
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Buck}
-	\caption[1/3 PWM PFC Buck]{1/3 PWM PFC Buck}
-	\label{fig:b6buck}
-\end{figure}
-
-Das besondere an der Regelung ist es, dass die Phase die aktuell keinen Strom führt, da Sie die niedrigste Spannung hat, durch \gls{PWM} Ansteuerung der zugehörigen Halbbrücke einen passenden Stromfluss erreicht. Die beiden anderen Halbbrücken werden jeweils wie ein Diodengleichrichter geschaltet. Dieses verfahren ist vom Prinzip her das gleiche, wie beim \gls{IAF} und kann daher zum Verständnis gemeinsam betrachtet werden, siehe Abb. \ref{fig:b6iafsectors}.
-Im hervorgehobenen Abschnitt ist Phase b am niedrigsten und es ist zu sehen, in Bereich (f), dass nur eine Halbbrücke per \gls{PWM} angesteuert wird. In Bereich (e) wird der Tastgrad \gls{D} dargestellt, wobei der Wert 1 die dauerhafte Verbindung zum positiven und -1 die zum negativen Potential des Zwischenkreis \gls{Upn} darstellt \cite{13PWMPFC}.\\ 
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\linewidth]{content/Grafiken/B6+IAF_Sectors.png}
-	\caption[Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}]{}
-	\label{fig:b6iafsectors}
-\end{figure}
+	\label{sec:GrundlagenB6}
+	Bei dieser Topologie handelt es sich um eine verbreitete B6-Topologie, die aus drei Halbbrücken besteht die jeweils an einer Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren, unter Verwendung von Induktivitäten auf der Netzseite, wird eine Reduzierung der Schaltverluste und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.\\
+	
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Buck}
+		\caption[1/3 PWM PFC Buck]{1/3 PWM PFC Buck}
+		\label{fig:b6buck}
+	\end{figure}
+	
+	Das besondere an der Regelung ist es, dass die Phase die aktuell keinen Strom führt, da Sie die niedrigste Spannung hat, durch \gls{PWM} Ansteuerung der zugehörigen Halbbrücke einen passenden Stromfluss erreicht. Die beiden anderen Halbbrücken werden jeweils wie ein Diodengleichrichter geschaltet. Dieses verfahren ist vom Prinzip her das gleiche, wie beim \gls{IAF} und kann daher zum Verständnis gemeinsam betrachtet werden, siehe Abb. \ref{fig:b6iafsectors}.
+	Im hervorgehobenen Abschnitt ist Phase b am niedrigsten und es ist zu sehen, in Bereich (f), dass nur eine Halbbrücke per \gls{PWM} angesteuert wird. In Bereich (e) wird der Tastgrad \gls{D} dargestellt, wobei der Wert 1 die dauerhafte Verbindung zum positiven und -1 die zum negativen Potential des Zwischenkreis \gls{Upn} darstellt \cite{13PWMPFC}.\\ 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6+IAF_Sectors.png}
+		\caption[Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}]{}
+		\label{fig:b6iafsectors}
+	\end{figure}
 
 \section{Leistungshalbleiter}
-Halbleiter sind prinzipiell alle Komponenten mit mindestens einem PN-Übergang, wenn diese größere Leistungen Schalten können, werden sie als Leistungshalbleiter bezeichnet. Dazu sind für die verwendete Topologie, neben der klassischen Diode, \gls{MOSFET}  relevant. Diese lösen in der Leistungselektronik aktuell den verbreiteteren IGBT oftmals ab aufgrund der günstiger gewordenen Silicium Carbide Variante \cite{SiCTrend}. Die Vorteile dieser neuen Technologie liegen in der Ermöglichung höherer Schaltfrequenzen, dies wiederum ermöglicht die Reduzierung der Energie welche in den Induktiven Komponenten gespeichert werden muss und spart somit Kosten.\\
-Um die am besten geeigneten Halbleiter auszuwählen werden u.a. Simulationen der Schaltung verwendet, diese benötigen eine Nachbildung der Halbleiter. Um die Modelle der Leistungshalbleiter zu erstellen und ggf. vorhandene zu validieren, können Messungen mittels \gls{DPT} durchgeführt werden. Ein Beispiel der in \gls{PLECS} dargestellten Ausschaltverluste für einen Halbleiter können in Abb. \ref{fig:plecsff2thermalmodel} gefunden werden. Es ist zu sehen, dass die Punkte nur für den Betriebspunkt von 600 Volt zur Verfügung stehen, für andere Betriebsbereiche muss das Verhalten approximiert werden. Außerdem wird der \gls{RGV} nur für einen Begrenzten Bereich dargestellt und die \gls{VGSS} nur auf einen Wert beschränkt. Dies kann für die spätere Anwendung zu deutlichen Abweichungen führen.
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_FF2ThermalModel}
-	\caption[Darstellung der Ausschaltverluste \cite{IFAGFF2}]{Darstellung der Ausschaltverluste \cite{IFAGFF2}}
-	\label{fig:plecsff2thermalmodel}
-\end{figure}
+	Halbleiter sind prinzipiell alle Komponenten mit mindestens einem PN-Übergang, wenn diese größere Leistungen Schalten können, werden sie als Leistungshalbleiter bezeichnet. Dazu sind für die verwendete Topologie, neben der klassischen Diode, \gls{MOSFET}  relevant. Diese lösen in der Leistungselektronik aktuell den verbreiteteren IGBT oftmals ab aufgrund der günstiger gewordenen Silicium Carbide Variante \cite{SiCTrend}. Die Vorteile dieser neuen Technologie liegen in der Ermöglichung höherer Schaltfrequenzen, dies wiederum ermöglicht die Reduzierung der Energie welche in den Induktiven Komponenten gespeichert werden muss und spart somit Kosten.\\
+	Um die am besten geeigneten Halbleiter auszuwählen werden u.a. Simulationen der Schaltung verwendet, diese benötigen eine Nachbildung der Halbleiter. Um die Modelle der Leistungshalbleiter zu erstellen und ggf. vorhandene zu validieren, können Messungen mittels \gls{DPT} durchgeführt werden. Ein Beispiel der in \gls{PLECS} dargestellten Ausschaltverluste für einen Halbleiter können in Abb. \ref{fig:plecsff2thermalmodel} gefunden werden. Es ist zu sehen, dass die Punkte nur für den Betriebspunkt von 600 Volt zur Verfügung stehen, für andere Betriebsbereiche muss das Verhalten approximiert werden. Außerdem wird der \gls{RGV} nur für einen Begrenzten Bereich dargestellt und die \gls{VGSS} nur auf einen Wert beschränkt. Dies kann für die spätere Anwendung zu deutlichen Abweichungen führen.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_FF2ThermalModel}
+		\caption[Darstellung der Ausschaltverluste \cite{IFAGFF2}]{Darstellung der Ausschaltverluste \cite{IFAGFF2}}
+		\label{fig:plecsff2thermalmodel}
+	\end{figure}
 
 \section{Induktive Komponenten}
-Als Induktive Komponenten werden in der Regel Spulen und Transformatoren betrachtet, diese dienen dazu Energie zu Speichern und zu Übertragen. Transformatoren bieten zusätzlich die Möglichkeit der galvanischen Entkopplung von Stromkreisen.\\ 
-Zur Auslegung von Induktivitäten wird das Delta des Stroms in der Spule benötigt, der sogenannte Stromrippel. Dieser Strom wird meist auf 30 Prozent des Effektivstroms ausgelegt. Der Rippelstrom für Drehstromsysteme kann über Formel \ref{eq:DeltaI} bestimmt werden. Dabei ist die \gls{S} und \gls{Ull} die Spannung zwischen den Außenleitern.\\
-\begin{equation}
-	\label{eq:DeltaI}
-	 \Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
-\end{equation}
-Außerdem kann über die gespeicherte Energie in der Drossel eine Aussage darüber getroffen werden, wie groß und damit indirekt wie viel kosten und Platzbedarf diese benötigt.
-
-FORMELN MIT QUELLENNN!!!!!!
+	Als Induktive Komponenten werden in der Regel Spulen und Transformatoren betrachtet, diese dienen dazu Energie zu Speichern und zu Übertragen. Transformatoren bieten zusätzlich die Möglichkeit der galvanischen Entkopplung von Stromkreisen.\\ 
+	Zur Auslegung von Induktivitäten wird das Delta des Stroms in der Spule benötigt, der sogenannte Stromrippel. Dieser Strom wird meist auf 30 Prozent des Effektivstroms ausgelegt. Der Rippelstrom für Drehstromsysteme kann über Formel \ref{eq:DeltaI} bestimmt werden. Dabei ist die \gls{S} und \gls{Ull} die Spannung zwischen den Außenleitern.\\
+	\begin{equation}
+		\label{eq:DeltaI}
+		 \Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
+	\end{equation}
+	Außerdem kann über die gespeicherte Energie in der Drossel eine Aussage darüber getroffen werden, wie groß und damit indirekt wie viel kosten und Platzbedarf diese benötigt.
+	
+	FORMELN MIT QUELLENNN!!!!!!
 
 
 
 \section{Simulationssoftware}
-Zur Bewertung und Betrachtung der Umsetzbarkeit, der Topologien ist es nötig diese in einer Umfassenden Simulation zu betrachten. Dies ermöglicht es die Funktionalität und den Einfluss der Parameter im direkten Zusammenspiel zu untersuchen. Insbesondere das Verhalten für Systemdienstleistungen, wie Phasenverschiebung und die dadurch beeinflusste Verteilung der Verlustleistungen sollen als Entscheidungsgrundlage dienen. 
+	Zur Bewertung und Betrachtung der Umsetzbarkeit, der Topologien ist es nötig diese in einer Umfassenden Simulation zu betrachten. Dies ermöglicht es die Funktionalität und den Einfluss der Parameter im direkten Zusammenspiel zu untersuchen. Insbesondere das Verhalten für Systemdienstleistungen, wie Phasenverschiebung und die dadurch beeinflusste Verteilung der Verlustleistungen sollen als Entscheidungsgrundlage dienen. 
 
 	\subsection{PLECS}
 	Die Software \gls{PLECS} aus dem Haus PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  Diese ermöglicht die Modellierung von Schaltungen mit der Betrachtung des Thermischen Verhaltens durch elektrische Modelle der Verlustleistung. Dazu wird die Energie im Schaltvorgang sowie im durchgeschalteten Zustand in der Schaltung berücksichtigt. Dies ermöglicht es die Verlustleistung innerhalb der Halbleiter zur betrachten und damit den Aufwand für die Kühlung und eine Abschätzung der Schaltungseffizienz. Ein Beispiel der Funktionen kann in Abb. \ref{fig:plecsbuck} gesehen werden, die thermische Kette muss anhand von Datenblättern oder ähnlichem der Kühlkörper bekannt sein. Für die Halbleiter werden thermische Modelle benötigt, die ebenfalls aus Datenblättern erstellt oder vom Hersteller bereitgestellt werden können. Jedoch gibt es nicht für alle Halbleiter ausreichend Informationen und die reale Verlustleistung hängt von vielen Parametern ab. Daher wird es oftmals benötigt eigene Messungen durchzuführen, um die spätere Anwendung bestmöglich simulieren zu können.   \\

@@ -5,7 +5,7 @@ Um die möglichen Optionen einzugrenzen wird im folgenden eine Auflistung der To
 \section{Mögliche Topologien}
 
 Zur Eingrenzung des Lösungsraums wird zunächst eine Auflistung der möglichen Schaltungstopologien zum Anschluss an das dreiphasige Stromnetz erstellt, vgl. Tabelle \ref{tab:vorauswahl}. Die 15 aufgelisteten Topologien, begonnen mit dem in Abb. \ref{fig:B6DiodRect} dargestellten Diodengleichrichter, werden anhand der benötigten Induktivitäten, Dioden, Schalter und Stufen, sowie der Funktionsweise Hoch- bzw. Tiefstellend bewertet.\\
-Die Tabelle \ref{tab:vorauswahl} zeigt, dass sich für eine engere Betrachtung die vier in grün dargestellten Topologien eignen, da diese die im Vergleich wenigstens Induktivitäten und Halbleiter benötigen. Dioden sind aufgrund ihrer simpleren Funktionsweise günstiger als Leistungsschalter und fallen daher nicht so stark ins Gewicht.\\
+Tabelle \ref{tab:vorauswahl} zeigt, dass sich für eine engere Betrachtung die vier in grün hervorgehobenen Topologien eignen, da diese die im Vergleich wenigstens Induktivitäten und Halbleiter benötigen. Dioden sind aufgrund ihrer simpleren Funktionsweise günstiger als Leistungsschalter und fallen daher nicht so stark ins Gewicht. Die beiden anderen Topologien, 6-Switch Buck und Swiss Rectifier, werden nicht in dieser Arbeit betrachtet.\\
 Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in dieser Arbeit der \gls{IAF} und \gls{B6PFC} betrachtet und die Ergebnisse für eine finale Bewertung aufbereitet.
 
 \begin{table}
@@ -23,11 +23,11 @@ Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in d
 	\hline
 	\cellcolor{green!10}6-Switch Buck PFC Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}6 &\cellcolor{green!25} 6 & \cellcolor{green!25}Buck & \cellcolor{green!25}1 \\
 	\hline
-	\cellcolor{green!10}Integr. Active Filter (IAF) PFC Rectifier + Buck & \cellcolor{green!25} 2 &\cellcolor{red!25}6 & \cellcolor{yellow!25}10 & \cellcolor{green!25}Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10} \gls{IAF} & \cellcolor{green!25} 2 &\cellcolor{red!25}6 & \cellcolor{yellow!25}10 & \cellcolor{green!25}Buck & \cellcolor{red!25}2 \\
 	\hline
 	\cellcolor{green!10}Swiss Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}8 &\cellcolor{green!25} 8 & \cellcolor{green!25} Buck & \cellcolor{red!25}2 \\
 	\hline
-	\cellcolor{green!10}1/3 PWM Boost \& Buck PFC Rectifier &\cellcolor{yellow!25}4 & \cellcolor{green!25} 0 &\cellcolor{green!25} 8 &\cellcolor{green!25} Boost/Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10} \gls{B6PFC} &\cellcolor{yellow!25}4 & \cellcolor{green!25} 0 &\cellcolor{green!25} 8 &\cellcolor{green!25} Boost/Buck & \cellcolor{red!25}2 \\
 	\hline
 	2/3 PWM Buck \& Boost Current Source Rectifier & \cellcolor{green!25} 1 & \cellcolor{green!25}0 & \cellcolor{yellow!25}14 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
