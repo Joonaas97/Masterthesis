@@ -1,12 +1,12 @@
 \chapter{Simulation}
-Die Simulationen werden vom Grundaufbau wie folgt umgesetzt, sie bestehen aus einem Konfigurationsskript, welches die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsdurchläufe umsetzt. Das Modell wird in Simulink über PLECS Blockset aufgebaut und durch einen Output als gebündelte Schnittstelle werden die Daten an Matlab zurückgeführt. Die Rückführung der Daten wird für die Simulationen einheitlich in festgelegter Reihenfolge zusammengeführt, siehe Abb. \ref{fig:plecsout}. Die Schaltung und zugehörige Regelung befindet sich in eigenen PLECS Block, außerdem wird für das Netz und den Elektrolyseur ein eigenes Subsystem vorgesehen, siehe Abb. \ref{fig:plecssimulationsaufbau}.
+Die Simulationen werden vom Grundaufbau wie folgt umgesetzt, sie bestehen aus einem Konfigurationsskript, welches die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsdurchläufe umsetzt. Das Modell wird in Simulink über PLECS Blockset aufgebaut und durch einen Output als gebündelte Schnittstelle werden die Daten an Matlab zurückgeführt. Die Rückführung der Daten wird für die Simulationen einheitlich in festgelegter Reihenfolge zusammengeführt, siehe Abb. \ref{fig:plecsout}. Die Schaltung und zugehörige Regelung befindet sich in eigenen PLECS Block, außerdem wird für das Netz und den Elektrolyseur ein eigenes Subsystem vorgesehen, siehe Abb. \ref{fig:plecssimulationsaufbau}.  
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_Simulationsaufbau}
+\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_Simulationsaufbau}
 \caption[Übersicht der PLECS Simulation]{Übersicht der PLECS Simulation}
 \label{fig:plecssimulationsaufbau}
 \end{figure}
-
+Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späteren schritten durch Netzimpedanzen und Fehlerszenarien ergänzt werden. Der Elektrolyseur besteht zur Vereinfachung aus einem passenden Lastwiderstand, der die entsprechend dem Skript eingestellte Leistung im Betriebspunkt abruft. 
 \begin{figure}
 \centering
 \includegraphics[width=0.9\linewidth]{content/Grafiken/Plecs_Out}
@@ -32,44 +32,45 @@ Die Regelung benötigt eine Erkennung des aktuellen Phasenwinkelabschnitts, dies
 Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betrachtet, da dies für den Vergleich in festen Betriebspunkten ausreicht. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Oszillationen oder ähnliches Auftreten. 
 
 \section{Tiefsetzsteller}
-Der Tiefsetzsteller kann in den beiden Schaltungen entkoppelt betrachtet werden, für die Auslegung der Induktivität ist dies von Vorteil. Die Reglung kann ebenso entkoppelt erfolgen und ermöglicht somit eine getrennte Stabilitätsbetrachtung und Optimierung. 
-\subsection{Auslegung der Induktivität}
-Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V}$ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}.
-\begin{equation}
-\label{eq:BuckLwert}
-L_{T}=\dfrac{959,8\si{\V} - 482 \si{\V}}{20 \si{\kilo \hertz}\cdot 0,3 \cdot 295 \si{\ampere}}\cdot \dfrac{482 \si{\V}}{969,8 \si{\V}}= 134,16 \si{\micro \henry} 
-\end{equation}
+	Der Tiefsetzsteller kann in den beiden Schaltungen entkoppelt betrachtet werden, für die Auslegung der Induktivität ist dies von Vorteil. Die Reglung kann ebenso entkoppelt erfolgen und ermöglicht somit eine getrennte Stabilitätsbetrachtung und Optimierung. 
+	\subsection{Auslegung der Induktivität}
+	Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V}$ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}.
+	\begin{equation}
+	\label{eq:BuckLwert}
+	L_{T}=\dfrac{959,8\si{\V} - 482 \si{\V}}{20 \si{\kilo \hertz}\cdot 0,3 \cdot 295 \si{\ampere}}\cdot \dfrac{482 \si{\V}}{969,8 \si{\V}}= 134,16 \si{\micro \henry} 
+	\end{equation}
+	\subsection{Regelung}
+	Die Regelung lässt sich anhand der in Abschnitt \ref{sec:Buck} beschrieben Zusammenhänge der Eingangsspannung auslegen, der Dutycycle \gls{D} ist das Verhältnis aus Eingangs- und Ausgangsspannung. Aufgrund der sechspulsigen Zwischenkreisspannung schwankt der Dutycycle \gls{D} leicht aber da eine feste Ausgangsspannung gewünscht ist, lässt sich die Regelung durch einen PI-Regler implementieren. 
+
 
 \section{IAF}
+	Der Hauptteil der Simulation liegt in den Leistungshalbleitern, deren Anordnung kann in Abb. \ref{fig:iafplecsmain} und \ref{fig:iafplecsivs} gefunden werden.  
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_main}
+		\caption{Simulationsaufbau der Halbleiter des IAF}
+		\label{fig:iafplecsmain}
+	\end{figure}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_Plecs_IVS}
+		\caption{Simulationsaufbau der Halbleiters des IVS vom IAF}
+		\label{fig:iafplecsivs}
+	\end{figure}
+	
+	\cite{IAF99}
+	
+	\subsection{Auslegung der Induktivität}
+	Der maximale Stromrippel ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}.
+	
+	\begin{equation}
+	\label{eq:DeltaIIVS}
+	I_{\Delta max IVS}= \dfrac{0,3\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}}{2 \cdot \sqrt{3} \cdot 617 \si{V} \cdot 0,9 = 44,1 \si{\A}}
+	\end{equation}
+	
+	\subsection{Regelung}
+	
 
-\cite{IAF99}
-
-\subsection{Auslegung der Induktivität}
-Der maximale Stromrippel ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}.
-
-\begin{equation}
-\label{eq:DeltaIIVS}
-I_{\Delta max IVS}= \dfrac{0,3\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}}{2 \cdot \sqrt{3} \cdot 617 \si{V} \cdot 0,9 = 44,1 \si{\A}}
-\end{equation}
-
-\subsection{Regelung}
-
-\subsection{Ergebnisse}
-Die Simulationsergebnisse zeigen den für die Induktivität erwarteten Strom- und Spannungsverlauf mit dreieckiger Form, siehe Abb. \ref{fig:iafacl}. Außerdem ist dem Eingangsstrom ein hochfrequenter Anteil überlagert, welcher sich durch die Schaltfrequenz des Tiefsetzstellers erklären lässt. Außerdem sieht man im Umschaltvorgang des \gls{IVS} starke Sprünge im Stromverlauf, da der Strom in der Induktivität zwischen den Phasen Kommutieren muss.\\
-In Abb. \ref{fig:iafacl30grad} zeigt sich dieses Problem aufgrund der starken Spannungsunterschiede zwischen den Phasen bei Phasenverschiebung deutlich stärker. Außerdem muss der \gls{IVS} mehr Strom führen und erzeugt daher stärkere Verlustleistung.
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_AC+L}
-\caption[Simulationsergebnisse des IAF ohne Phasenverschiebung]{}
-\label{fig:iafacl}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_AC+L_30Grad}
-\caption{Simulationsergebnisse des IAF bei 30 Grad Phasenverschiebung}
-\label{fig:iafacl30grad}
-\end{figure}
 
 
 

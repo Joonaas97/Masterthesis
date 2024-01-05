@@ -34,7 +34,7 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 		Für Elektrolyseanlagen mit mehreren Megawatt Leistung müssen Zwangsweise Leistungshalbleiter parallelisiert werden, da bei Spannungen bis 1000 V die Ströme für einzelne Halbleiter zu hoch sind. Außerdem bietet die Parallelisierung durch Interleaving und Phasenverschiebung deutliche Vorteile für die Verzerrung und damit Filterung. Durch Thyristor basierte Schaltungen können große Leistungen effizient umgesetzt werden, jedoch führen diese zu deutlichen Verzerrungen des Stromverlaufs und schlechterem Leistungsfaktor. Daher benötigen diese passive oder aktive Filter, welche die Systemkosten erhöhen \cite{HydrogenElectronicTopologies}.
 		Als Alternative dazu werden \gls{AFE} Gleichrichter eingesetzt diese bieten deutlich geringere Verzerrungen und völlige Freiheit bei der Regelung des Eingangsstroms. Daher können die Filter und Blindleistungskompensation in diesem Fall eingespart werden \cite{HydrogenElectronicTopologies}.
 		
-		\subsection{DC-DC Wandler}
+		\subsection{DC-DC Wandler} \label{sec:Buck}
 		Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesentlichen aus zwei Halbleitern und einer Induktivität. In Abb. \ref{fig:buck} ist die Schaltung für einen Tiefsetzsteller zu sehen. Über das \gls{D} des Schalters kann die \gls{Ua} eingestellt werden, dabei sind die Parameter \gls{Ue}, Lastimpedanz sowie Wert der Induktivität relevant. Die Ausgangsspannung lässt sich im nicht lückendem Betrieb über den Zusammenhang $U_{out}=D\cdot U_{in} $ berechnen \cite{schmidtwalter}.\\
 		\begin{figure}
 			\centering
@@ -99,7 +99,7 @@ Um die am besten geeigneten Halbleiter auszuwählen werden u.a. Simulationen der
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_FF2ThermalModel}
-	\caption[Darstellung der Ausschaltverluste]{Darstellung der Ausschaltverluste}
+	\caption[Darstellung der Ausschaltverluste \cite{IFAGFF2}]{Darstellung der Ausschaltverluste \cite{IFAGFF2}}
 	\label{fig:plecsff2thermalmodel}
 \end{figure}
 
@@ -124,7 +124,7 @@ Zur Bewertung und Betrachtung der Umsetzbarkeit, der Topologien ist es nötig di
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_Buck}
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_Buck}
 		\caption[Tiefsetzsteller mit Effizienzbestimmung]{Tiefsetzsteller mit Effizienzbestimmung}
 		\label{fig:plecsbuck}
 	\end{figure}
