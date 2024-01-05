@@ -1490,13 +1490,13 @@ INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\german.lbx
 INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\german.lbx
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bcf
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bcf
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.bbl
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.pdf
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.pdf
 INPUT .\content\Titelseite.tex
@@ -1564,6 +1564,12 @@ INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.lot
 INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.lot
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.lot
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.lot
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.gls
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.gls
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.gls
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.gls
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.gls
+INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.gls
 INPUT .\content\Kapitel_1.tex
 INPUT .\content\Kapitel_1.tex
 INPUT .\content\Kapitel_1.tex
@@ -1615,12 +1621,19 @@ INPUT .\content\Grafiken\B6_Buck.pdf
 INPUT .\content\Grafiken\B6_Buck.pdf
 INPUT .\content\Grafiken\B6_Buck.pdf
 INPUT .\content\Grafiken\B6_Buck.pdf
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
+INPUT .\content\Grafiken\B6+IAF_Sectors.png
 INPUT .\content\Grafiken\PLECS_FF2ThermalModel.png
 INPUT .\content\Grafiken\PLECS_Buck.png
 INPUT .\content\Grafiken\PLECS_Buck.png
@@ -1671,15 +1684,35 @@ INPUT .\content\Kapitel_5.tex
 INPUT .\content\Kapitel_5.tex
 INPUT .\content\Kapitel_5.tex
 INPUT .\content\Kapitel_5.tex
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT .\content\Grafiken\Plecs_Out.png
+INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman8-regular.luc
 INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman5-regular.luc
+INPUT .\content\Grafiken\IAF_AC+L.png
+INPUT .\content\Grafiken\IAF_AC+L.png
+INPUT .\content\Grafiken\IAF_AC+L.png
+INPUT .\content\Grafiken\IAF_AC+L.png
+INPUT .\content\Grafiken\IAF_AC+L.png
+INPUT .\content\Grafiken\IAF_AC+L.png
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
+INPUT .\content\Grafiken\IAF_AC+L.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
@@ -1714,6 +1747,7 @@ INPUT .\content\Kapitel_6.tex
 INPUT .\content\Kapitel_6.tex
 INPUT .\content\Kapitel_6.tex
 INPUT .\content\Kapitel_6.tex
+INPUT .\content\Grafiken\IAF_AC+L_30Grad.png
 INPUT .\content\Grafiken\B6-Control-orig.png
 INPUT .\content\Kapitel_7.tex
 INPUT .\content\Kapitel_7.tex

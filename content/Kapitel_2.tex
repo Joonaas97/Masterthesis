@@ -35,14 +35,14 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 		Als Alternative dazu werden \gls{AFE} Gleichrichter eingesetzt diese bieten deutlich geringere Verzerrungen und völlige Freiheit bei der Regelung des Eingangsstroms. Daher können die Filter und Blindleistungskompensation in diesem Fall eingespart werden \cite{HydrogenElectronicTopologies}.
 		
 		\subsection{DC-DC Wandler}
-		Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesentlichen aus zwei Halbleitern und einer Induktivität. In Abb. \ref{fig:buck} ist die Schaltung für einen Tiefsetzsteller zu sehen. Über das Tastverhältnis des Schalters kann die \gls{Ua} eingestellt werden, dabei sind die Parameter \gls{Ue}, Lastimpedanz sowie Wert der Induktivität relevant. Die Ausgangsspannung lässt sich im nicht lückendem Betrieb über den Zusammenhang $U_{out}=D\cdot U_{in} $ berechnen.\\
+		Der Hoch- und Tiefsetzsteller sind essenzielle Topologien und bestehen im wesentlichen aus zwei Halbleitern und einer Induktivität. In Abb. \ref{fig:buck} ist die Schaltung für einen Tiefsetzsteller zu sehen. Über das \gls{D} des Schalters kann die \gls{Ua} eingestellt werden, dabei sind die Parameter \gls{Ue}, Lastimpedanz sowie Wert der Induktivität relevant. Die Ausgangsspannung lässt sich im nicht lückendem Betrieb über den Zusammenhang $U_{out}=D\cdot U_{in} $ berechnen \cite{schmidtwalter}.\\
 		\begin{figure}
 			\centering
 			\includegraphics[width=0.7\linewidth]{content/Grafiken/Buck}
 			\caption[Tiefsetzsteller]{Tiefsetzsteller}
 			\label{fig:buck}
 		\end{figure}
-		Die Speicherdrossel des Tiefsetzstellers kann über Formel \ref{eq:BuckL} ausgelegt werden, der gewünschte Stromrippel wird dazu auf maximal 30 Prozent des \gls{Ia} festgelegt \cite{schmidtwalter}.
+		Die Speicherdrossel des Tiefsetzstellers kann über Formel \ref{eq:BuckL} ausgelegt werden, der gewünschte Stromrippel wird dazu beispielhaft auf maximal 30 Prozent des \gls{Ia} festgelegt \cite{schmidtwalter}.
 		\begin{equation}
 			\label{eq:BuckL}
 			L=\dfrac{U_{emax}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{emax}}
@@ -61,7 +61,7 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 			
 \section{IAF Rectifier }
 Der \gls{IAF} Gleichrichter wurde erstmals vorgestellt in \cite{IAFfirst} im Jahr 1997, zur Verwendung in Photovoltaik Anwendungen. Dieser besteht für den Hauptleistungspfad aus einem Diodengleichrichter. Um sinusförmige Ströme in allen drei Phasen einzuprägen wird dieser durch ein Netzwerk aus bidirektional Sperrenden Leistungshalbleitern mit einer Induktivität und Halbbrücke ergänzt, dies wird als \gls{THI} Schaltung bezeichnet. Durch die Integration des Filters in den Leistungspfad, wird keine externe Blindleistungskompensation benötigt und die Filter können kleiner ausfallen. Aufgrund des ungesteuerten Diodengleichrichters wird jedoch eine anschließende Spannungsregelung durch einen Tiefsetzsteller benötigt \cite{ThesisSchrittwieserBuckTypePFC_2017}.\\
-Das Netzwerk aus bidirektionalen Schaltern, auch als \gls{IVS} bezeichnet, ermöglicht das Schalten zwischen den einzelnen Phasen, in welche durch die Induktivität und Halbbrücke der gewünschte Sinusförmige Stromverlauf eingeprägt wird. Der Diodengleichrichter bezieht immer nur aus zwei Phasen Strom, daher prägt die Schaltung, ohne Phasenverschiebung, nur in die jeweils dritte Phase Strom ein. Die Dioden und der \gls{IVS} schalten mit Netzfrequenz, um während der kommutierungsphase von 
+Das Netzwerk aus bidirektionalen Schaltern, auch als \gls{IVS} bezeichnet, ermöglicht das Schalten zwischen den einzelnen Phasen, in welche durch die Induktivität und Halbbrücke der gewünschte Sinusförmige Stromverlauf eingeprägt wird. Dazu schaltet die Halbbrücke hinter der Induktivität entweder zum positiven oder negativen Potential der \gls{Upn}. Der Diodengleichrichter bezieht immer nur aus zwei Phasen Strom, daher prägt die Schaltung, ohne Phasenverschiebung, nur in die jeweils dritte Phase Strom ein. Die Dioden und der \gls{IVS} schalten mit Netzfrequenz, um während der kommutierungsphase von 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF}
@@ -72,17 +72,26 @@ Das Netzwerk aus bidirektionalen Schaltern, auch als \gls{IVS} bezeichnet, ermö
 
 \section{1/3 PWM PFC Rectifier}
 \label{sec:GrundlagenB6}
-Bei dieser Topologie handelt es sich um eine gängige Schaltung, welche durch ein adaptives Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite eine Reduzierung der Schaltverluste bewirkt und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.
+Bei dieser Topologie handelt es sich um eine verbreitete B6-Topologie, die aus drei Halbbrücken besteht die jeweils an einer Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren, unter Verwendung von Induktivitäten auf der Netzseite, wird eine Reduzierung der Schaltverluste und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.\\
 
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Buck}
 	\caption[1/3 PWM PFC Buck]{1/3 PWM PFC Buck}
 	\label{fig:b6buck}
 \end{figure}
 
+Das besondere an der Regelung ist es, dass die Phase die aktuell keinen Strom führt, da Sie die niedrigste Spannung hat, durch \gls{PWM} Ansteuerung der zugehörigen Halbbrücke einen passenden Stromfluss erreicht. Die beiden anderen Halbbrücken werden jeweils wie ein Diodengleichrichter geschaltet. Dieses verfahren ist vom Prinzip her das gleiche, wie beim \gls{IAF} und kann daher zum Verständnis gemeinsam betrachtet werden, siehe Abb. \ref{fig:b6iafsectors}.
+Im hervorgehobenen Abschnitt ist Phase b am niedrigsten und es ist zu sehen, in Bereich (f), dass nur eine Halbbrücke per \gls{PWM} angesteuert wird. In Bereich (e) wird der Tastgrad \gls{D} dargestellt, wobei der Wert 1 die dauerhafte Verbindung zum positiven und -1 die zum negativen Potential des Zwischenkreis \gls{Upn} darstellt \cite{13PWMPFC}.\\ 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{content/Grafiken/B6+IAF_Sectors.png}
+	\caption[Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}]{}
+	\label{fig:b6iafsectors}
+\end{figure}
 
 \section{Leistungshalbleiter}
 Halbleiter sind prinzipiell alle Komponenten mit mindestens einem PN-Übergang, wenn diese größere Leistungen Schalten können, werden sie als Leistungshalbleiter bezeichnet. Dazu sind für die verwendete Topologie, neben der klassischen Diode, \gls{MOSFET}  relevant. Diese lösen in der Leistungselektronik aktuell den verbreiteteren IGBT oftmals ab aufgrund der günstiger gewordenen Silicium Carbide Variante \cite{SiCTrend}. Die Vorteile dieser neuen Technologie liegen in der Ermöglichung höherer Schaltfrequenzen, dies wiederum ermöglicht die Reduzierung der Energie welche in den Induktiven Komponenten gespeichert werden muss und spart somit Kosten.\\
@@ -101,7 +110,7 @@ Zur Auslegung von Induktivitäten wird das Delta des Stroms in der Spule benöti
 	\label{eq:DeltaI}
 	 \Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
 \end{equation}
-
+Außerdem kann über die gespeicherte Energie in der Drossel eine Aussage darüber getroffen werden, wie groß und damit indirekt wie viel kosten und Platzbedarf diese benötigt.
 
 FORMELN MIT QUELLENNN!!!!!!
 
