@@ -14,6 +14,7 @@ Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späte
 \label{fig:plecsout}
 \end{figure}
 
+
 \section{Randbedingungen}
 Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung für die Simulation durchführen zu können. 
 
@@ -77,6 +78,16 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 		\label{fig:iafbuckcontrol}
 	\end{figure}
 	
+	Die Regelung des \gls{IVS} Stroms wird anhand der Struktur von Soeiro et al. umgesetzt \cite{Soeiro.2013}. Die Umschaltung zwischen den Phasen wird über eine von \gls{PLECS} vorhandene \gls{PLL} zur Winkelbestimmung und anschließende Sektorbestimmung anhand des Winkels umgesetzt. Die Auswahl der entsprechenden Schalter wird über ein C-Skript implementiert. 
+	
+	
+	 \begin{figure}
+	 	\centering
+	 	\includegraphics[width=0.7\linewidth]{IAF_Paper_Control}
+	 	\caption{Struktur der Regelung des IAF \cite{Soeiro.2013}}
+	 	\label{fig:iafpapercontrol}
+	 \end{figure}
+	 
 
 
 
