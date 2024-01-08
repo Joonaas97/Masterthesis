@@ -20,14 +20,16 @@ Die \gls{HTEL} nutzt die Vorteile durch höhere Temperatur, welche auf der Seite
 
 \section{Stromrichter}
 \label{sec:Stromrichter}
-Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient als Stromrichter bezeichnen, dabei wird unterschieden zwischen Wechsel- und Gleichspannungsvarianten. Außerdem kann bei Netzanwendungen in gesteuerte, Netz-gesteuerte und ungesteuerte unterschieden werden, sowie die Umsetzung einer \gls{PFC} betrachtet werden. 
+Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient als Stromrichter bezeichnen, dabei wird unterschieden zwischen Wechsel- und Gleichspannungsvarianten. Außerdem kann bei Netzanwendungen in gesteuerte, Netz-gesteuerte und ungesteuerte unterschieden werden, sowie die Umsetzung einer \gls{PFC} betrachtet werden \cite{Schroder.2018}. 
 		\subsection{Gleichrichter}
 		Ein Gleichrichter wird verwendet, um aus einer Wechselspannung eine Gleichspannung zu erzeugen. Die einfachste Form ist der Diodengleichrichter, dieser kann für einphasige Wechselspannung durch eine einzelne Diode realisiert werden. Jedoch würde so nur die halbe Periode des Sinus am Ausgang zur Verfügung stehen, da die Diode nur während der positiven Halbwelle Leitet. Dies lässt sich durch die Ergänzung zum Brückengleichrichter mit vier und für dreiphasige Anwendungen mit sechs Dioden ausgestattet ist.\\
-		Anhand des Diodengleichrichters wird schnell klar, dass eine solche Schaltung nur bedingt für einen gewünschten Stromverlauf sorgt. In Abbildung \ref{fig:B6DiodRect} sind Netzspannung und Strom dargestellt, der Stromverlauf zeigt Starke Sprünge und der gewünschte Sinusförmige Verlauf ist nur schwer erkennbar. Außerdem lässt sich mit dieser Schaltung die Ausgangsspannung sowie der Strom nicht variieren.
+		Anhand des Diodengleichrichters wird schnell klar, dass eine solche Schaltung nur bedingt für einen gewünschten Stromverlauf sorgt. In Abbildung \ref{fig:B6DiodRect} ist der Diodengleichrichter mit Netzspannung und Strom dargestellt, der Stromverlauf zeigt Starke Sprünge und der gewünschte Sinusförmige Verlauf ist nur schwer erkennbar. Außerdem lässt sich mit dieser Schaltung die Ausgangsspannung sowie der Strom nicht variieren.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
-			\caption{Strom und Spannungsverlauf am B6 Diodengleichrichter}
+			\subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/Plecs_Diodengleichrichter}}
+			\qquad
+			\subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}}
+			\caption{Diodengleichrichter (a) mit Strom und Spannungsverlauf (b)}
 			\label{fig:B6DiodRect}
 		\end{figure}
 		
@@ -65,7 +67,7 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF}
-		\caption[\gls{IAF} Gleichrichter Topologie]{\gls{IAF} Gleichrichter Topologie}
+		\caption[\gls{IAF} Gleichrichter Topologie]{\gls{IAF} Gleichrichter Topologie mit Tiefsetzsteller}
 		\label{fig:iaf}
 	\end{figure}
 
@@ -74,12 +76,10 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 	\label{sec:GrundlagenB6}
 	Bei dieser Topologie handelt es sich um eine verbreitete B6-Topologie, die aus drei Halbbrücken besteht die jeweils an einer Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren, unter Verwendung von Induktivitäten auf der Netzseite, wird eine Reduzierung der Schaltverluste und \gls{SDL} ermöglicht. Das Verfahren wurde ausführlich von Menzi, Bortis und Kolar beschrieben \cite{13PWMPFC}. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller eingesetzt.\\
 	
-	
-	
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Buck}
-		\caption[1/3 PWM PFC Buck]{1/3 PWM PFC Buck}
+		\caption[1/3 PWM PFC Topologie mit Tiefsetzsteller]{1/3 PWM PFC Topologie mit Tiefsetzsteller}
 		\label{fig:b6buck}
 	\end{figure}
 	
@@ -89,7 +89,7 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6+IAF_Sectors.png}
-		\caption[Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}]{}
+		\caption{Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}}
 		\label{fig:b6iafsectors}
 	\end{figure}
 
@@ -105,14 +105,17 @@ Allgemein kann man jede Schaltung die zur Strom- und Spannungsversorgung dient a
 
 \section{Induktive Komponenten}
 	Als Induktive Komponenten werden in der Regel Spulen und Transformatoren betrachtet, diese dienen dazu Energie zu Speichern und zu Übertragen. Transformatoren bieten zusätzlich die Möglichkeit der galvanischen Entkopplung von Stromkreisen.\\ 
-	Zur Auslegung von Induktivitäten wird das Delta des Stroms in der Spule benötigt, der sogenannte Stromrippel. Dieser Strom wird meist auf 30 Prozent des Effektivstroms ausgelegt. Der Rippelstrom für Drehstromsysteme kann über Formel \ref{eq:DeltaI} bestimmt werden. Dabei ist die \gls{S} und \gls{Ull} die Spannung zwischen den Außenleitern.\\
+	Zur Auslegung von Induktivitäten wird das Delta des Stroms in der Spule benötigt, der sogenannte Stromrippel. Dieser Strom wird meist auf 30 Prozent des Effektivstroms ausgelegt. Der Rippelstrom für Drehstromsysteme kann über Formel \ref{eq:DeltaI} bestimmt werden. Dabei ist die \gls{S} und \gls{Ull} die Spannung zwischen den Außenleitern \cite{Boge.2007}.\\
 	\begin{equation}
 		\label{eq:DeltaI}
 		 \Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
 	\end{equation}
-	Außerdem kann über die gespeicherte Energie in der Drossel eine Aussage darüber getroffen werden, wie groß und damit indirekt wie viel kosten und Platzbedarf diese benötigt.
+	Außerdem kann über die \gls{WL} eine Aussage darüber getroffen werden, wie groß und damit indirekt wie viel kosten und Platzbedarf diese benötigt. Die Energie \gls{WL} kann über Formel \ref{eq:WL} berechnet werden \cite{Boge.2007}. Dafür wird der Wert der Induktivität sowie der Effektivwert des Stroms $I$ benötigt.
+	\begin{equation}
+		\label{eq:WL}
+		W_{L} =\dfrac{1}{2}\cdot L\cdot I^{2}
+	\end{equation}
 	
-	FORMELN MIT QUELLENNN!!!!!!
 
 
 

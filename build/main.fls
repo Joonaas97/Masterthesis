@@ -1598,6 +1598,14 @@ INPUT .\content\Grafiken\Ely-Efficiency.png
 INPUT .\content\Grafiken\Ely-Efficiency.png
 INPUT .\content\Grafiken\Ely-Efficiency.png
 INPUT .\content\Grafiken\Ely-Efficiency.png
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
+INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman9-regular.luc
+INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman9-bold.luc
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
@@ -1610,6 +1618,7 @@ INPUT .\content\Grafiken\Buck.pdf
 INPUT .\content\Grafiken\Buck.pdf
 INPUT .\content\Grafiken\Buck.pdf
 INPUT .\content\Grafiken\Buck.pdf
+INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\IAF.pdf
 INPUT .\content\Grafiken\IAF.pdf
@@ -1659,8 +1668,6 @@ INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
 INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
 INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
 INPUT .\content\Grafiken\VDE4120-quasistationarerbetrieb.png
-INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman9-regular.luc
-INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman9-bold.luc
 INPUT .\content\Grafiken\Grenzkurve.png
 INPUT .\content\Grafiken\Grenzkurve.png
 INPUT .\content\Grafiken\Grenzkurve.png
@@ -1720,12 +1727,12 @@ INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_Plecs_main.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
-INPUT .\IAF_Paper_Control.png
-INPUT .\IAF_Paper_Control.png
-INPUT .\IAF_Paper_Control.png
-INPUT .\IAF_Paper_Control.png
-INPUT .\IAF_Paper_Control.png
-INPUT .\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
@@ -1751,7 +1758,7 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
 INPUT .\content\Grafiken\B6-Control-orig.png
 INPUT .\content\Grafiken\B6-Control-orig.png
 INPUT .\content\Grafiken\B6-Control-orig.png
