@@ -1707,6 +1707,30 @@ INPUT .\content\Grafiken\PLECS_Simulationsaufbau.png
 INPUT .\content\Grafiken\Plecs_Out.png
 INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman8-regular.luc
 INPUT C:\Users\jheinemann\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman5-regular.luc
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT .\content\Grafiken\IAF_Plecs_main.png
 INPUT .\content\Grafiken\IAF_Plecs_main.png
 INPUT .\content\Grafiken\IAF_Plecs_main.png
@@ -1719,46 +1743,21 @@ INPUT .\content\Grafiken\IAF_Plecs_IVS.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_Plecs_main.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
-INPUT .\content\Grafiken\IAF_Paper_Control.png
-INPUT .\content\Grafiken\IAF_Paper_Control.png
-INPUT .\content\Grafiken\IAF_Paper_Control.png
-INPUT .\content\Grafiken\IAF_Paper_Control.png
-INPUT .\content\Grafiken\IAF_Paper_Control.png
-INPUT .\content\Grafiken\IAF_Paper_Control.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_Paper_Control.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\B6-Control-orig.png
 INPUT .\content\Grafiken\B6-Control-orig.png
 INPUT .\content\Grafiken\B6-Control-orig.png
@@ -1769,6 +1768,7 @@ INPUT .\content\Kapitel_6.tex
 INPUT .\content\Kapitel_6.tex
 INPUT .\content\Kapitel_6.tex
 INPUT .\content\Kapitel_6.tex
+INPUT .\content\Grafiken\IAF_Paper_Control.png
 INPUT .\content\Grafiken\B6-Control-orig.png
 INPUT .\content\Grafiken\IAF_Temp_0Grad.pdf
 INPUT .\content\Grafiken\IAF_Temp_0Grad.pdf

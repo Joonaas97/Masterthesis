@@ -26,7 +26,7 @@ Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung
 \item Netzfrequenz		50 Hz
 \item Filterblindleistung: 3 \%
 \item Schaltfrequenz: 20 kHz
-\item Netzspannungsschwankung: 10%
+\item Netzspannungsschwankung: 10 \%
 \end{itemize}
 
 Die Regelung benötigt eine Erkennung des aktuellen Phasenwinkelabschnitts, diese ist implementiert nach \cite{InstituteofElectricalandElectronicsEngineers}.
@@ -35,17 +35,20 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 \section{Tiefsetzsteller}
 	Der Tiefsetzsteller kann in den beiden Schaltungen entkoppelt betrachtet werden, für die Auslegung der Induktivität ist dies von Vorteil. Die Reglung kann ebenso entkoppelt erfolgen und ermöglicht somit eine getrennte Stabilitätsbetrachtung und Optimierung. 
 	\subsection{Auslegung der Induktivität}
-	Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V}$ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}.
+	Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V}$ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die Energie beträgt 7,78 Joule, bei einem Ausgangsstrom von 294 A. 
 	\begin{equation}
 	\label{eq:BuckLwert}
 	L_{T}=\dfrac{959,8\si{\V} - 482 \si{\V}}{20 \si{\kilo \hertz}\cdot 0,3 \cdot 295 \si{\ampere}}\cdot \dfrac{482 \si{\V}}{969,8 \si{\V}}= 134,16 \si{\micro \henry} 
+	\end{equation}
+	\begin{equation}
+		E=0,5 \cdot L_{T} \cdot I^{2} = 7,78 J
 	\end{equation}
 	\subsection{Regelung}
 	Die Regelung lässt sich anhand der in Abschnitt \ref{sec:Buck} beschrieben Zusammenhänge der Eingangsspannung auslegen, der Dutycycle \gls{D} ist das Verhältnis aus Eingangs- und Ausgangsspannung. Aufgrund der sechspulsigen Zwischenkreisspannung schwankt der Dutycycle \gls{D} leicht aber da eine feste Ausgangsspannung gewünscht ist, lässt sich die Regelung durch einen PI-Regler implementieren. 
 
 
 \section{IAF}
-	Der Hauptteil der Simulation liegt in den Leistungshalbleitern, deren Anordnung kann in Abb. \ref{fig:iafplecsmain} und \ref{fig:iafplecsivs} gefunden werden.  
+	Der Hauptteil der Simulation liegt in den Leistungshalbleitern, deren Anordnung kann in Abb. \ref{fig:iafplecsmain} und \ref{fig:iafplecsivs} gefunden werden. Für die Verlustleistungsbestimmung werden Modelle von Infineon verwendet, für die Dioden und den \gls{IVS} wird ein gemeinsames Modul vorgesehen mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET}. Die Halbbrücke an der Induktivität wird aus einem Modul mit einem Nominalstrom von 45 A umgesetzt. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
 	\begin{figure}
 		\centering
 		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_main}
@@ -55,7 +58,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_Plecs_IVS}
-		\caption{Simulationsaufbau der Halbleiters des IVS vom IAF}
+		\caption{Simulationsaufbau der Halbleiter des IVS vom IAF}
 		\label{fig:iafplecsivs}
 	\end{figure}
 	
@@ -66,8 +69,17 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	
 	\begin{equation}
 	\label{eq:DeltaIIVS}
-	I_{\Delta max IVS}= \dfrac{0,3\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}}{2 \cdot \sqrt{3} \cdot 617 \si{V} \cdot 0,9 = 44,1 \si{\A}}
+	I_{\Delta max IVS}= \dfrac{0,3\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}}{2 \cdot \sqrt{3} \cdot 617 \si{V} \cdot 0,9} = 44,1 \si{\A}
 	\end{equation}
+	
+	\begin{equation}
+		L_{IVS}= \dfrac{U_{LLmaxPeak}}{4\cdot f \cdot I_{\Delta max IVS}} = 272 uH
+	\end{equation}
+	
+	\begin{equation}
+		E=0,5 \cdot L \cdot I^{2} = 2,38 J
+	\end{equation}
+	Bei der Betrachtung der Energie muss berücksichtigt werden, dass der Strom in der Drossel bei Blindleistung steigt und somit die Energie im quadratischen Verhältnis steigt.
 	
 	\subsection{Regelung}
 	Der Tiefsetzsteller wird durch einen PI Regler für die Fehlerkorrektur angesteuert, der ideale Tastgrad wird anhand der gewünschten Ausgangsspannung, welche über den Sollstrom und bekannten Lastwiderstand generiert wird, und der Zwischenkreisspannung \gls{Upn} bestimmt. Der Tastgrad wird dann in einen PWM-Generator gegeben, welcher das Signal mit der gewünschten Schaltfrequenz von 20 kHz generiert. Um die Schaltverluste und insbesondere Leitverluste beim kommutieren in den Dioden zu berücksichtigen wird eine Totzeit von 500 \si{\nano \second} eingestellt, vgl. Abb. \ref{fig:iafbuckcontrol}.
