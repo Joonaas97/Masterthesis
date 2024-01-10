@@ -1,6 +1,6 @@
 \chapter{Simulation}
-Die Simulationen werden vom Grundaufbau wie folgt umgesetzt, sie bestehen aus einem Konfigurationsskript, welches die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsdurchläufe umsetzt. Das Modell wird in Simulink über PLECS Blockset aufgebaut und durch einen Output als gebündelte Schnittstelle werden die Daten an Matlab zurückgeführt. Die Rückführung der Daten wird für die Simulationen einheitlich in festgelegter Reihenfolge zusammengeführt, siehe Abb. \ref{fig:plecsout}. Die Schaltung und zugehörige Regelung befindet sich in eigenen PLECS Block, außerdem wird für das Netz und den Elektrolyseur ein eigenes Subsystem vorgesehen, siehe Abb. \ref{fig:plecssimulationsaufbau}.  
-\begin{figure}
+Die Simulationen werden vom Grundaufbau wie folgt umgesetzt, sie bestehen aus einem Konfigurationsskript, welches die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsdurchläufe umsetzt. Das Modell wird in Simulink über PLECS Blockset aufgebaut und durch einen Output als gebündelte Schnittstelle werden die Daten an Matlab zurückgeführt. Die Rückführung der Daten wird für die Simulationen einheitlich in festgelegter Reihenfolge zusammengeführt, siehe Abb. \ref{fig:plecsout}. Dies ermöglicht eine einheitliche Auswertung der Daten und sie können einheitlich abgespeichert werden, um die Datenmenge zu begrenzen wird die Anzahl der Messpunkte auf die letzte Sinusperiode begrenzt. Die Schaltung und zugehörige Regelung befindet sich in jeweils eigenen PLECS-Systemen, außerdem wird für das Netz und den Elektrolyseur ein eigenes Subsystem vorgesehen, siehe Abb. \ref{fig:plecssimulationsaufbau}.  
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_Simulationsaufbau}
 \caption[Übersicht der PLECS Simulation]{Übersicht der PLECS Simulation}
@@ -16,7 +16,7 @@ Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späte
 
 
 \section{Randbedingungen}
-Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung für die Simulation durchführen zu können. 
+Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung für die Simulation durchführen zu können. Die Spannungsschwankung am Eingang wird auf 10 \% begrenzt, dies kann durch Varistoren oder ähnliches in der späteren Anwendung sichergestellt werden.
 
 \begin{itemize}
 \item Ausgangsleistung: 200 kW
@@ -65,7 +65,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	\cite{IAF99}
 	
 	\subsection{Auslegung der Induktivität}
-	Der maximale Stromrippel ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}.
+	Der maximale Stromrippel ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}. Der Rippelstrom wird wieder auf 30\% des Nominalstroms ausgelegt. Somit muss die Induktivität einen Wert von 272\si{\micro \henry} besitzen, siehe Formel \ref{eq:ELivs}. Die Energie in der Drossel und damit relevante Größe für die Bewertung beträgt 2,38 Joule. 
 	
 	\begin{equation}
 	\label{eq:DeltaIIVS}
@@ -73,6 +73,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	\end{equation}
 	
 	\begin{equation}
+		\label{eq:ELivs}
 		L_{IVS}= \dfrac{U_{LLmaxPeak}}{4\cdot f \cdot I_{\Delta max IVS}} = 272 uH
 	\end{equation}
 	
@@ -83,26 +84,50 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	
 	\subsection{Regelung}
 	Der Tiefsetzsteller wird durch einen PI Regler für die Fehlerkorrektur angesteuert, der ideale Tastgrad wird anhand der gewünschten Ausgangsspannung, welche über den Sollstrom und bekannten Lastwiderstand generiert wird, und der Zwischenkreisspannung \gls{Upn} bestimmt. Der Tastgrad wird dann in einen PWM-Generator gegeben, welcher das Signal mit der gewünschten Schaltfrequenz von 20 kHz generiert. Um die Schaltverluste und insbesondere Leitverluste beim kommutieren in den Dioden zu berücksichtigen wird eine Totzeit von 500 \si{\nano \second} eingestellt, vgl. Abb. \ref{fig:iafbuckcontrol}.
-	\begin{figure}
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_BuckControl}
 		\caption{Regelung des Tiefsetzstellers des IAF}
 		\label{fig:iafbuckcontrol}
 	\end{figure}
 	
-	Die Regelung des \gls{IVS} Stroms wird anhand der Struktur von Soeiro et al. umgesetzt \cite{Soeiro.2013}. Die Umschaltung zwischen den Phasen wird über eine von \gls{PLECS} vorhandene \gls{PLL} zur Winkelbestimmung und anschließende Sektorbestimmung anhand des Winkels umgesetzt. Die Auswahl der entsprechenden Schalter wird über ein C-Skript implementiert. 
+	Die Regelung des \gls{IVS} Stroms wird anhand der Struktur von Soeiro et al. umgesetzt, siehe Abb. \ref{fig:iafpapercontrol} \cite{Soeiro.2013}. 
+	 \begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{content/Grafiken/IAF_Paper_Control}
+		\caption{Struktur der Regelung des IAF \cite{Soeiro.2013}}
+		\label{fig:iafpapercontrol}
+	\end{figure}
+	Die Umschaltung zwischen den Phasen wird über eine von \gls{PLECS} vorhandene \gls{PLL} zur Winkelbestimmung und anschließende Sektorbestimmung anhand des Winkels umgesetzt. Die Auswahl der entsprechenden Schalter wird über ein C-Skript implementiert, siehe Abb. \ref{fig:plecsiafivscontrol}. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFivscontrol}
+		\caption{PLECS Aufbau der \gls{IVS} Ansteuerung}
+		\label{fig:plecsiafivscontrol}
+	\end{figure}
+	Über die Spannungen und Ausgangsleistung kann der soll Strom, welcher durch den\gls{IVS} eingeprägt werden soll bestimmt werden, siehe Abb. \ref{fig:plecsiafivsi}.
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFivsI}
+		\caption{Bestimmung des soll Stroms im IVS Pfad}
+		\label{fig:plecsiafivsi}
+		
+	\end{figure}
+	Der ideale Tastgrad K1 wird über das Verhältnis der Spannungen durch den formelmäßigen Zusammenhang in Gleichung \ref{eq:K1} bestimmt. Die Regelung des Stroms wird über einen diskreten PI Regler Block aus der PLECS Bibliothek implementiert. Die Signale zur Gateansteuerung werden über einen PWM Generator erzeugt und anschließend zur Totzeit Implementierung durch eine Einschaltverzögerung verzögert. Dieser Aufbau kann in Abb. \ref{fig:plecsiafivsk1}.
+	
+	\begin{equation}
+		\label{eq:K1}
+		K1 = \dfrac{U_{mid}- U_{low}}{U_{high} -U_{low}} 
+	\end{equation}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/PlecsIAFivsK1}
+		\caption{Regelung des Stroms in der mittleren Phase}
+		\label{fig:plecsiafivsk1}
+	\end{figure}
 	
 	
-	 \begin{figure}
-	 	\centering
-	 	\includegraphics[width=0.7\linewidth]{content/Grafiken/IAF_Paper_Control}
-	 	\caption{Struktur der Regelung des IAF \cite{Soeiro.2013}}
-	 	\label{fig:iafpapercontrol}
-	 \end{figure}
-	 
-
-
-
 
 \section{B6 1/3 PFC Buck}
 Die in Kapitel \ref{sec:GrundlagenB6} dargestellte Schaltung wird durch Halbbrücken Module des Typs FF2MR12W3M1H\_B11 von Infineon implementiert. Dabei handelt es sich um verbreitete 1200 \si{\volt} Module, sie besitzen einen nominellen Einschaltwiderstand von etwa 2 \si{\milli \ohm} und können Spitzenströme von bis zu 800 \si{\ampere} schalten \cite{IFAGFF2}. Um die Ausgangsleistung auch bei geringerer Spannung bereitstellen zu können und ein späteres Interleaving zu ermöglichen werden für den Tiefsetzsteller zwei Halbbrücken vorgesehen.
