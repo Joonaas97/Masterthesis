@@ -1,7 +1,7 @@
 \chapter{Anforderungen}
 \label{chap:Anforderungen}
 Dieses Kapitel beschreibt die Anforderungen der beiden Seiten an den Elektrolyseur. Auf der einen fordert der Versorgungsnetzbetreiber u.a. die Einhaltung der \gls{VDE} Richtlinien für den Anschluss an das Stromnetz. Die andere Seite wird vom Hersteller der Elektrolyseur Stacks definiert, wozu es nach heutigem Stand keine Standards gibt.
-\section {Stromnetz}
+\section {Stromnetz} \label{sec:AnfStromnetz}
 In Deutschland sind die Vorgaben für den Anschluss von Anlagen an das Stromnetz durch den \gls{VDE} definiert. Je nach Anschlussleistung, Standort und Betriebsverhalten, wird eine unterschiedliche Netzspannungsklasse gewählt, welche geringfügig abweichende Anschlussrichtlinien besitzt. Aufgrund der Skalierbarkeit zu höheren Leistungsklassen und der erwartbar steigenden Anforderungen, wird sich für die Anforderungen der Hochspannung entschieden. Diese hat die Bezeichnung VDE-AR-N 4120 "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)" \cite{VDEARN4120}.
 Hierzu zählt unter anderem die Anforderung an die Phasenverschiebung, bei Wirkleistungsbezug darf eine maximale Verschiebung von $cos(\phi)=0,95$ was einem Winkel von etwa 18 Grad entspricht auftreten vgl. Abb. \ref{fig:tar4120pq}. Jedoch kann der Netzbetreiber mit dem Anlagenbetreiber gesonderte Vereinbarungen treffen, dies ermöglicht es Netzdienstleistungen anzubieten. Dies führt zur Anforderung an die Topologie eine Phasenverschiebung von mindestens 18 Grad zu ermöglichen.\\
 \begin{figure}[H]
@@ -29,7 +29,8 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig 
 
 
 	\subsection{Systemdienstleistungen (SDL)}
-	Die Systemdienstleistungen werden nach VDE-ARN 4141-1 in vier Kategorien unterteilt, diese sind Frequenz- und Spannungshaltung, Netzwiederaufbau und die Betriebsführung. Durch \gls{TAR} werden diese definiert und Anforderungen für Nachweise und Ausschreibungen von \gls{SDL} gestellt. Eine Übersicht über die technischen Mindestanforderungen an Erzeugungsanlagen in den verschiedenen Spannungsklassen ist in Abb. \ref{fig:vde-fnn-tar} dargestellt.
+	Generell ist die Bundesnetzagentur für die Regulierung und Kontrolle von jeglichen Dienstleistungen und Aktivitäten im deutschen Netz zuständig. Dazu gehört auch die Bereitstellung und Gewährleistung von Blindleistung, neben der Wirkleistung, diese soll effizient, transparent und Diskriminierungsfrei am Markt beschafft werden \cite{Bundesnetzagentur}. Dazu bieten sich zukünftig große Verbrauchsanlage wie Elektrolyseure neben Erzeugungsanlagen an und diese Dienstleistungen können die Wasserstofferzeugung wirtschaftlicher machen.\\
+	 Die Systemdienstleistungen werden nach VDE-ARN 4141-1 in vier Kategorien unterteilt, diese sind Frequenz- und Spannungshaltung, Netzwiederaufbau und die Betriebsführung. Durch \gls{TAR} werden diese definiert und Anforderungen für Nachweise und Ausschreibungen von \gls{SDL} gestellt. Eine Übersicht über die technischen Mindestanforderungen an Erzeugungsanlagen in den verschiedenen Spannungsklassen ist in Abb. \ref{fig:vde-fnn-tar} dargestellt. Für Stromrichter basierte Elektrolyseanlagen stellen Frequenzschwankungen kaum eine Herausforderung, diese können über Regelungsvorgänge kompensiert und Netzstützung ,wie bei \gls{RoCoF} benötigt, bereitgestellt werden. Bei \gls{RoCoF} handelt es sich um schnelle Frequenzänderungen, wie bei einer Netzauftrennung oder Wiederverknüpfung. Primärregelleistung, statische Spannungshaltung und Dynamische Netzstützung können ebenfalls durch Regelungsverhalten implementiert werden, jedoch begrenzt durch die Dynamik und den Leistungsbezug des Elektrolyseurs. Netzrückwirkungen müssen ebenfalls betrachtet und können durch entsprechende Filter kompensiert werden. Die Schwarzstartfähigkeit gestaltet sich in dem Falle schwierig und kann nur durch Leistungsbegrenzung während des Wiederaufbaus unterstützt werden.
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/VDE-FNN-TAR}
@@ -41,7 +42,7 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss, muss die Anlage kurzzeitig 
 	
 	
 	\subsection{Fault-Ride-Through (FRT))}
-	Aufgrund von Netzfehlern oder Blitzscheinschlag, kann es zu kurzfristiger Erhöhung der Netzspannung kommen, dies wird als Überspannung bezeichnet. Aufgrund dieser Spannungserhöhung kann es zur Fehlfunktion bis hin zur Zerstörung von Anlagenteilen kommen. Um die Anlage innerhalb der Norm betreiben zu können, müssen Schutzmaßnahmen getroffen werden, um einen Ausfall der Anlage und Schutz der dahinter liegenden Komponenten zu Gewährleisten.  \\
+	Aufgrund von Netzfehlern oder Blitzeinschlag, kann es zu kurzfristiger Erhöhung der Netzspannung kommen, dies wird als Überspannung bezeichnet. Aufgrund dieser Spannungserhöhung kann es zur Fehlfunktion bis hin zur Zerstörung von Anlagenteilen kommen. Um die Anlage innerhalb der Norm betreiben zu können, müssen Schutzmaßnahmen getroffen werden, um einen Ausfall der Anlage und Schutz der dahinter liegenden Komponenten zu Gewährleisten.  \\
 	
 	Wichtig hierbei ist es insbesondere bei Spannungseinbrüchen, dass der Wirkleistungsbezug nach dem Fehler wieder möglichst schnell auf das Niveau vor dem Fehler zurückkehrt, falls dieser Reduziert wurde. Dies wird von den vier in Deutschland zuständigen Übertragungsnetzbetreibern gefordert \cite{4UNB}.
 
@@ -63,8 +64,6 @@ Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammen
 	Leistungsfaktor stationär & >0.95 & >0.99 \\
 	\hline
 	Leistungsfaktor als Systemdienstleistung & keine Angabe & +/- 30° \\
-	\hline
-	$THD_{i}$ & <5 \% & <3\% \\
 	\hline
 	Ausgangsstromrippel & <5 \% & <2 \% \\
 	\hline
