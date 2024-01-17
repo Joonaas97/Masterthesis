@@ -1,14 +1,13 @@
 \chapter{Auswertung}
 Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. Diese beinhaltet die Hardware, welche zum Großteil durch die Induktivitäten beeinflusst wird, sowie die Kapazitäten, Halbleiter und Treiber. Außerdem werden die Ergebnisse der Simulation durch die Verlustleistung der Halbleiter bewertet. Für die Simulation werden die in Tabelle \ref{tab:Betriebspara} aufgelisteten Betriebsparameter festgelegt. Die beiden Topologien werden für den Betriebspunkt mit 0° und 30° Phasenverschiebung verglichen, um den Einfluss der Systemdienstleistungen zu betrachten. Um einen Vergleich der Kategorien und eine Gesamtbewertung durchzuführen, werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor die Summe über alle Kategorien gebildet. Aufgrund des großen Einflusses der Drosseln, werden diese mit 50 Prozent gewichtet. Die Kapazitäten stellen nur einen sehr geringen Einfluss auf das Gesamtsystem dar und werden daher nur mit fünf Prozent bewertet. Die restlichen 45 Prozent fallen auf die Halbleiter in Form der Chipfläche (über den \gls{RDSON}), Treiberanzahl und Verlustleistung ab. Je geringer die Punktzahl, desto besser ist die Bewertung. \\
 
-	
 \begin{table}
 	\centering
 \begin{tabular}{|c|c|}
 	\hline
 	Netzspannung \gls{Ull} & 617 \si{\volt} \\
 	\hline
-	Leistung & 200 kW bei $\phi$ 0° \\
+	Leistung & 200 kW bei $\varphi$ 0° \\
 	\hline
 	Phasenverschiebung & 0 / 30 Grad \\
 	\hline
@@ -101,14 +100,14 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
+		\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
 		\caption{Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}
 		\label{fig:b6acdc0grad}
 	\end{figure}
 	Mit Phasenverschiebung von 30 Grad sieht das verhalten ähnlich aus, siehe Abb. \ref{fig:b6acdc30grad}. Der Stromverlauf zeigt eine geringfügig schlechtere THD von 7,1 \%, dies kann durch geeignete Filter ausgeglichen werden. 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
+	\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
 	\caption{Eingangs- und Ausgangsgrößen mit Phasenverschiebung}
 	\label{fig:b6acdc30grad}
 \end{figure}
@@ -126,7 +125,7 @@ Für die Auswertung werden die Simulationen für eine Dauer von 0,4 Sekunden lau
 
 
 Die Simulationsergebnisse zeigen den für die Induktivität erwarteten Strom- und Spannungsverlauf mit dreieckiger Form, siehe Abb. \ref{fig:iafacl}. Außerdem ist dem Eingangsstrom ein hochfrequenter Anteil überlagert, welcher sich durch die Schaltfrequenz des Tiefsetzstellers erklären lässt. Außerdem sieht man im Umschaltvorgang des \gls{IVS} starke Sprünge im Stromverlauf, da der Strom in der Induktivität zwischen den Phasen Kommutieren muss.\\
-In Abb. \ref{fig:iafacl30grad} zeigt sich dieses Problem aufgrund der starken Spannungsunterschiede zwischen den Phasen bei Phasenverschiebung deutlich stärker. Außerdem muss der \gls{IVS} mehr Strom führen und erzeugt daher stärkere Verlustleistung. Dies ist ebenfalls an der Temperatur des in Abb. \ref{fig:iaftemp} Verlaufs zu erkennen. In (a) ist die Temperatur des IVS in grün dargestellt bei unter 110 °C und in (b) aufgrund des durch die Phasenverschiebung höheren Stroms deutlich gestiegen, bleibt aber unterhalb der zulässigen 175° für die Sperrschichttemperatur..
+In Abb. \ref{fig:iafacl30grad} zeigt sich dieses Problem aufgrund der starken Spannungsunterschiede zwischen den Phasen bei Phasenverschiebung deutlich stärker. Außerdem muss der \gls{IVS} mehr Strom führen und erzeugt daher stärkere Verlustleistung. Dies ist ebenfalls an der Temperatur des in Abb. \ref{fig:iaftemp} Verlaufs zu erkennen. In (a) ist die Temperatur des IVS in grün dargestellt bei unter 110 °C und in (b) aufgrund des durch die Phasenverschiebung höheren Stroms deutlich gestiegen, bleibt aber unterhalb der zulässigen 175° für die Sperrschichttemperatur.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{content/Grafiken/IAF_AC+L}
@@ -140,4 +139,4 @@ In Abb. \ref{fig:iafacl30grad} zeigt sich dieses Problem aufgrund der starken Sp
 	\caption{Simulationsergebnisse des IAF bei 30 Grad Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }
 	\label{fig:iafacl30grad}
 \end{figure}
-Aufgrund der Anforderung an Blindleistungsbereitstellung hat die Topologie durch den \gls{IVS} einen Nachteil, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die \gls{THD} des Stroms deutlich verschlechtert wird. Somit kann der \gls{IAF} den Anforderungen nur sehr schwer gerecht werden, da weitere Filterstufen benötigt würden.
+Aufgrund der Anforderung an Blindleistungsbereitstellung hat die Topologie durch den \gls{IVS} einen Nachteil, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die \gls{THD} des Stroms deutlich verschlechtert wird. Die \gls{THD} liegt bereits ohne Phasenverschiebung bei etwa 15 \% und mit verdoppelt sich diese auf etwa 32 Prozent.  Somit kann der \gls{IAF} den Anforderungen nur sehr schwer gerecht werden, da weitere Filterstufen benötigt würden. Dies lässt sich auch gut anhand der Arbeit von Schrittwieser et Al. sehen, bei deren Prototyp der Filter knapp ein viertel des Volumens ausmacht \cite{IAF99}.

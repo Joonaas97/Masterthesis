@@ -61,8 +61,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 		\label{fig:iafplecsivs}
 	\end{figure}
 	
-	\cite{IAF99}
-	
+
 	\subsection{Auslegung der Induktivitäten}
 		Der maximale Stromrippel ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}. Der Rippelstrom wird wieder auf 30\% des Nominalstroms ausgelegt. Somit muss die Induktivität einen Wert von 272\si{\micro \henry} besitzen, siehe Formel \ref{eq:Livs}.  
 		
@@ -114,21 +113,30 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 			\caption{PLECS Aufbau der \gls{IVS} Ansteuerung}
 			\label{fig:plecsiafivscontrol}
 		\end{figure}
-		Über die Spannungen und Ausgangsleistung kann der soll Strom, welcher durch den\gls{IVS} eingeprägt werden soll bestimmt werden, siehe Abb. \ref{fig:plecsiafivsi}.
-		\begin{figure}
-			\centering
-			\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFivsI}
-			\caption{Bestimmung des soll Stroms im IVS Pfad}
-			\label{fig:plecsiafivsi}
-			
-		\end{figure}
-		Der ideale Tastgrad K1 wird über das Verhältnis der Spannungen durch den formelmäßigen Zusammenhang in Gleichung \ref{eq:K1} bestimmt. Die Regelung des Stroms wird über einen diskreten PI Regler Block aus der PLECS Bibliothek implementiert. Die Signale zur Gateansteuerung werden über einen PWM Generator erzeugt und anschließend zur Totzeit Implementierung durch eine Einschaltverzögerung verzögert. Dieser Aufbau kann in Abb. \ref{fig:plecsiafivsk1}.
+		Der ideale Tastgrad K1 für den Strom in der Drossel, wird über das Verhältnis der Spannungen durch den formelmäßigen Zusammenhang in Gleichung \ref{eq:K1} bestimmt. 
+		
+
 		
 		\begin{equation}
 			\label{eq:K1}
 			K1 = \dfrac{U_{mid}- U_{low}}{U_{high} -U_{low}} 
 		\end{equation}
 		
+		Der gewünschte Strom in der Drossel wird über den aktuellen Phasenwinkel der Spannung, welcher in der Ansteuerung des \gls{IVS} durch die \gls{PLL} erfasst wird und mit einer einstellbaren Phasenverschiebung verändert werden kann erzeugt. Dazu wird die Stromamplitude über die Netzspannung und gewünschte Ausgangsleistung bestimmt, siehe Formel \ref{eq:Idach}. Der Strom wird über die Amplitude und den entsprechenden Winkel erzeugt und über die Sektorenzuweisung wird die mittlere Phase ausgewählt, siehe Abb. \ref{fig:plecsiafiy} 
+		
+		\begin{equation}
+			\label{eq:Idach}
+			 \hat{I} = \dfrac{sqrt{2} P   }{ \sqrt{3} cos(\varphi)   U_{LLrms} }
+		\end{equation}
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/PlecsIAFiy}
+			\caption{Bestimmung des Sollstroms der mittleren Phase}
+			\label{fig:plecsiafiy}
+		\end{figure}
+		
+		Die Regelung des Stroms wird über einen diskreten PI Regler Block aus der PLECS Bibliothek implementiert. Die Signale zur Gateansteuerung werden über einen PWM Generator erzeugt und anschließend zur Totzeit Implementierung durch eine Einschaltverzögerung verzögert. Dieser Aufbau kann in Abb. \ref{fig:plecsiafivsk1}.
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFivsK1}
