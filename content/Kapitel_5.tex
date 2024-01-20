@@ -1,12 +1,12 @@
 \chapter{Simulation}
-Die Simulationen werden vom Grundaufbau wie folgt umgesetzt, sie bestehen aus einem Konfigurationsskript, welches die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsdurchläufe umsetzt. Das Modell wird in Simulink über PLECS Blockset aufgebaut und durch einen Output als gebündelte Schnittstelle werden die Daten an Matlab zurückgeführt. Die Rückführung der Daten wird für die Simulationen einheitlich in festgelegter Reihenfolge zusammengeführt, siehe Abb. \ref{fig:plecsout}. Dies ermöglicht eine einheitliche Auswertung der Daten und sie können einheitlich abgespeichert werden, um die Datenmenge zu begrenzen wird die Anzahl der Messpunkte auf die letzte Sinusperiode begrenzt. Die Schaltung und zugehörige Regelung befindet sich in jeweils eigenen PLECS-Systemen, außerdem wird für das Netz und den Elektrolyseur ein eigenes Subsystem vorgesehen, siehe Abb. \ref{fig:plecssimulationsaufbau}.  
+Die Simulationen sind vom Grundaufbau her wie folgt implementiert: Sie bestehen aus einem Konfigurationsskript, das die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsläufe implementiert. Das Modell wird in Simulink über das PLECS Blockset aufgebaut und die Daten werden über eine Ausgabe als gebündelte Schnittstelle an Matlab zurückgegeben. Die Rückführung der Daten erfolgt einheitlich für die Simulationen in einer festgelegten Reihenfolge, siehe Abb. \ref{fig:plecsout}. Dies ermöglicht eine einheitliche Auswertung und Speicherung der Daten, zur Begrenzung der Datenmenge wird die Anzahl der Messpunkte auf die letzte Sinusperiode begrenzt. Die Schaltung und die zugehörige Steuerung befinden sich in jeweils eigenen PLECS-Systemen, für das Netz und den Elektrolyseur ist ein eigenes Subsystem vorgesehen, siehe Abbildung \ref{fig:plecssimulationsaufbau}.  
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_Simulationsaufbau}
 \caption[Übersicht der PLECS Simulation]{Übersicht der PLECS Simulation}
 \label{fig:plecssimulationsaufbau}
 \end{figure}
-Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späteren schritten durch Netzimpedanzen und Fehlerszenarien ergänzt werden. Der Elektrolyseur besteht zur Vereinfachung aus einem passenden Lastwiderstand, der die entsprechend dem Skript eingestellte Leistung im Betriebspunkt abruft. Außerdem werden einige Widerstände eingesetzt, um \gls{PLECS} die Berechnung zu ermöglichen, da sonst im Einschaltvorgang durch Kapazitäten unendlich hohe Ströme entstehen würden und im realen Aufbau immer parasitäre Widerstände vorhanden sind.
+Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späteren Schritten durch Netzimpedanzen und Fehlerszenarien ergänzt werden. Der Elektrolyseur besteht der Einfachheit halber aus einem geeigneten Lastwiderstand, der im Betriebspunkt die gemäß Skript eingestellte Leistung aufnimmt. Zusätzlich werden einige Widerstände verwendet, um die Schaltung in \gls{PLECS} berechenbar zu machen, da sonst beim Einschaltvorgang durch Kapazitäten unendlich hohe Ströme entstehen würden und in der realen Anlage immer parasitäre Widerstände vorhanden sind.
 \begin{figure}
 \centering
 \includegraphics[width=0.9\linewidth]{content/Grafiken/Plecs_Out}
@@ -16,7 +16,7 @@ Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späte
 
 
 \section{Randbedingungen}
-Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung für die Simulation durchführen zu können. Die Spannungsschwankung am Eingang wird auf 10 \% begrenzt, dies kann durch Varistoren oder ähnliches in der späteren Anwendung sichergestellt werden.
+Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegung für die Simulation durchführen zu können. Die Spannungsschwankung am Eingang wird auf 10 \% begrenzt, was in der späteren Anwendung durch Varistoren oder ähnliches sichergestellt werden kann.
 
 \begin{itemize}
 \item Ausgangsleistung: 200 kW
@@ -29,12 +29,12 @@ Für den Gleichrichter werden Grundlegende Parameter festgelegt um die Auslegung
 \item Netzspannungsschwankung: 10 \%
 \end{itemize}
 
-Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betrachtet, da dies für den Vergleich in festen Betriebspunkten ausreicht. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Oszillationen oder ähnliches Auftreten. Außerdem wird für die Bewertung die letzte Periode der Simulation verwendet, dieser Abschnitt wird zur späteren Betrachtung gespeichert.
+Die Regler werden in den Simulationen nur im eingeschwungenen Zustand betrachtet, da dies für den Vergleich in festen Betriebspunkten ausreichend ist. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Schwingungen oder ähnliches auftreten. Außerdem wird für die Auswertung die letzte Periode der Simulation verwendet, dieser Abschnitt wird für eine spätere Betrachtung gespeichert.
 
 \section{Tiefsetzsteller}
-	Der Tiefsetzsteller kann in den beiden Schaltungen entkoppelt betrachtet werden, für die Auslegung der Induktivität ist dies von Vorteil. Die Reglung kann ebenso entkoppelt erfolgen und ermöglicht somit eine getrennte Stabilitätsbetrachtung und Optimierung. 
+Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was für die Auslegung der Induktivität von Vorteil ist. Die Regelung kann ebenfalls entkoppelt erfolgen, so dass eine getrennte Stabilitätsbetrachtung und Optimierung möglich ist. 
 	\subsection{Auslegung der Induktivität}
-	Die Speicherdrossel wird anhand von Formel \ref{eq:BuckL} ausgelegt, dabei liegt die Netzspannung bei maximal $U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V}$ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller umsetzen muss. Es ergibt sich somit eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die Energie beträgt 7,78 Joule, bei einem Ausgangsstrom von 294 A. 
+	Die Speicherdrossel wird nach der Formel \ref{eq:BuckL} ausgelegt, wobei die Netzspannung maximal $U_{LLmaxPeak}=1,1 \cdot 617 \si{\V} \cdot \sqrt{2}=959,8 \si{\V}$ und die Ausgangsspannung bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller realisieren muss. Es ergibt sich eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die Energie beträgt 7,78 Joule bei einem Ausgangsstrom von 294 A. 
 	\begin{equation}
 	\label{eq:BuckLwert}
 	L_{T}=\dfrac{959,8\si{\V} - 482 \si{\V}}{20 \si{\kilo \hertz}\cdot 0,3 \cdot 295 \si{\ampere}}\cdot \dfrac{482 \si{\V}}{969,8 \si{\V}}= 134,16 \si{\micro \henry} 
@@ -43,11 +43,11 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 		E=0,5 \cdot L_{T} \cdot I^{2} = 7,78 J
 	\end{equation}
 	\subsection{Regelung}
-	Die Regelung lässt sich anhand der in Abschnitt \ref{sec:Buck} beschrieben Zusammenhänge der Eingangsspannung auslegen, der Dutycycle \gls{D} ist das Verhältnis aus Eingangs- und Ausgangsspannung. Aufgrund der sechspulsigen Zwischenkreisspannung schwankt der Dutycycle \gls{D} leicht aber da eine feste Ausgangsspannung gewünscht ist, lässt sich die Regelung durch einen PI-Regler implementieren. 
+	Die Regelung kann mit den im Abschnitt \ref{sec:Buck} beschriebenen Eingangsspannungsverhältnissen ausgelegt werden, der Duty Cycle \gls{D} ist das Verhältnis von Eingangsspannung zu Ausgangsspannung. Aufgrund der sechspulsigen Zwischenkreisspannung schwankt der Duty Cycle \gls{D} geringfügig, da aber eine feste Ausgangsspannung gewünscht ist, kann die Regelung mit einem PI-Regler realisiert werden. 
 
 
 \section{IAF}
-	Der Hauptteil der Simulation liegt in den Leistungshalbleitern, deren Anordnung kann in Abb. \ref{fig:iafplecsmain} und \ref{fig:iafplecsivs} gefunden werden. Für die Verlustleistungsbestimmung werden Modelle von Infineon verwendet, für die Dioden und den \gls{IVS} wird ein gemeinsames Modul vorgesehen mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET}. Die Halbbrücke an der Induktivität wird aus einem Modul mit einem Nominalstrom von 45 A umgesetzt. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
+	Der Schwerpunkt der Simulation liegt auf den Leistungshalbleitern, deren Anordnung in Abbildung \ref{fig:iafplecsmain} und \ref{fig:iafplecsivs} zu entnehmen ist. Zur Bestimmung der Verlustleistung werden Modelle von Infineon verwendet, wobei für die Dioden und den \gls{IVS} ein gemeinsames Modul mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET}. Die Halbbrücke an der Induktivität wird aus einem Modul mit einem Nennstrom von 45 A aufgebaut. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
 	\begin{figure}
 		\centering
 		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_main}
@@ -63,7 +63,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	
 
 	\subsection{Auslegung der Induktivitäten}
-		Der maximale Stromrippel ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}. Der Rippelstrom wird wieder auf 30\% des Nominalstroms ausgelegt. Somit muss die Induktivität einen Wert von 272\si{\micro \henry} besitzen, siehe Formel \ref{eq:Livs}.  
+	Der maximale Rippelstrom ergibt sich aus der Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}. Der Rippelstrom ist wiederum auf 30 \% des Nennstroms ausgelegt. Daher muss die Induktivität einen Wert von 272 \si{\micro \henry} haben, siehe Formel \ref{eq:Livs}. 
 		
 		\begin{equation}
 		\label{eq:DeltaIIVS}
@@ -74,24 +74,24 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 			\label{eq:Livs}
 			L_{IVS}= \dfrac{U_{LLmaxPeak}}{4\cdot f \cdot I_{\Delta max IVS}} = 272 uH
 		\end{equation}
-		Bei der Betrachtung der Energie muss berücksichtigt werden, dass der Strom in der Drossel bei Blindleistung steigt und somit die Energie im quadratischen Verhältnis steigt. Der Strom bei einer Phasenverschiebung von 30 Grad wird über den Faktor $sin(30)=0,5$ berechnet und ergibt sich somit zu 132,33 A, siehe Formel \ref{eq:IAF_I30}.
+		Bei der Betrachtung der Energie ist zu beachten, dass der Strom in der Drossel bei Blindleistung ansteigt und somit die Energie im quadratischen Verhältnis zunimmt. Der Strom bei einer Phasenverschiebung von 30 Grad wird über den Faktor $sin(30)=0,5$ berechnet und ergibt sich somit zu 132,33 A (siehe Formel \ref{eq:IAF_I30}).
 		\begin{equation}
 			\label{eq:IAF_I30}
 			I_{IAF30°}=\dfrac{0,5\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}} { \sqrt{3} \cdot 617 \si{V}} = 132,33 \si{\A}
 		\end{equation}
-		 Die Energie in der Drossel und damit relevante Größe für die Bewertung beträgt 2,38 Joule, siehe Formel \ref{eq:EL_IVS}.
+		Die in der Drossel gespeicherte Energie, welche eine relevante Größe für die Bewertung darstellt, beträgt 2,38 Joule (siehe Formel \ref{eq:EL_IVS}).
 		\begin{equation}
 			\label{eq:EL_IVS}
 			E_{IVS}=0,5 \cdot L_{IVS} \cdot I_{\Delta max IVS}^{2} = 2,38 J
 		\end{equation}
-		Außerdem wird eingangsseitig eine Filterinduktivität mit dem Wert 1 \si{\micro \henry} eingesetzt, diese hat eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der Dreiphasigen Anwendung, wird der Wert direkt mit dem Faktor drei multipliziert.
+		Zusätzlich wird eingangsseitig eine Filterinduktivität mit dem Wert 1 \si{\micro \henry} eingesetzt, diese hat eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
 			\begin{equation}
 			\label{eq:E_IAF_ACL}
 			E_{L_IAF_AC}=3\cdot 0,5 \cdot 1 \si{\micro \henry} \cdot (260 \si{\ampere})^{2} = 0,1 J
 		\end{equation}
 	
 	\subsection{Regelung}
-		Der Tiefsetzsteller wird durch einen PI Regler für die Fehlerkorrektur angesteuert, der ideale Tastgrad wird anhand der gewünschten Ausgangsspannung, welche über den Sollstrom und bekannten Lastwiderstand generiert wird, und der Zwischenkreisspannung \gls{Upn} bestimmt. Der Tastgrad wird dann in einen PWM-Generator gegeben, welcher das Signal mit der gewünschten Schaltfrequenz von 20 kHz generiert. Um die Schaltverluste und insbesondere Leitverluste beim kommutieren in den Dioden zu berücksichtigen wird eine Totzeit von 500 \si{\nano \second} eingestellt, vgl. Abb. \ref{fig:iafbuckcontrol}.
+		Der Tiefsetzsteller wird durch einen PI-Regler zur Fehlerkorrektur angesteuert, wobei der ideale Tastgrad aus der gewünschten Ausgangsspannung, die durch den Sollstrom und den bekannten Lastwiderstand erzeugt wird, und der Zwischenkreisspannung \gls{Upn} bestimmt wird. Das Tastverhältnis wird dann einem PWM-Generator zugeführt, der das Signal mit der gewünschten Schaltfrequenz von 20 kHz erzeugt. Um die Schaltverluste und insbesondere die Leitungsverluste beim Kommutieren in den Dioden zu berücksichtigen, wird eine Totzeit von 500 \si{\nano \second} eingestellt, siehe Abbildung. \ref{fig:iafbuckcontrol}.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_BuckControl}
@@ -99,21 +99,21 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 			\label{fig:iafbuckcontrol}
 		\end{figure}
 		
-		Die Regelung des \gls{IVS} Stroms wird anhand der Struktur von Soeiro et al. umgesetzt, siehe Abb. \ref{fig:iafpapercontrol} \cite{Soeiro.2013}. 
+		Die Regelung des Stroms des IVS wird anhand der Struktur von Soeiro et al. umgesetzt (vgl. Abb. ef{fig:iafpapercontrol}) \cite{Soeiro.2013}. 
 		 \begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\linewidth]{content/Grafiken/IAF_Paper_Control}
 			\caption{Struktur der Regelung des IAF \cite{Soeiro.2013}}
 			\label{fig:iafpapercontrol}
 		\end{figure}
-		Die Umschaltung zwischen den Phasen wird über eine von \gls{PLECS} vorhandene \gls{PLL} zur Winkelbestimmung und anschließende Sektorbestimmung anhand des Winkels umgesetzt. Die Auswahl der entsprechenden Schalter wird über ein C-Skript implementiert, siehe Abb. \ref{fig:plecsiafivscontrol}. 
+		Die Umschaltung zwischen den Phasen erfolgt mithilfe einer vorhandenen PLL in PLECS zur Winkelbestimmung und anschließenden Sektorbestimmung anhand des Winkels. Die Auswahl der entsprechenden Schalter wird über ein C-Skript implementiert (siehe Abbildung \ref{fig:plecsiafivscontrol}). 
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFivscontrol}
 			\caption{PLECS Aufbau der \gls{IVS} Ansteuerung}
 			\label{fig:plecsiafivscontrol}
 		\end{figure}
-		Der ideale Tastgrad K1 für den Strom in der Drossel, wird über das Verhältnis der Spannungen durch den formelmäßigen Zusammenhang in Gleichung \ref{eq:K1} bestimmt. 
+		Der optimale Tastgrad K1 für den Strom in der Drossel wird über das Verhältnis der Spannungen durch den formelmäßigen Zusammenhang in Gleichung \ref{eq:K1} bestimmt. 
 		
 
 		
@@ -122,7 +122,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 			K1 = \dfrac{U_{mid}- U_{low}}{U_{high} -U_{low}} 
 		\end{equation}
 		
-		Der gewünschte Strom in der Drossel wird über den aktuellen Phasenwinkel der Spannung, welcher in der Ansteuerung des \gls{IVS} durch die \gls{PLL} erfasst wird und mit einer einstellbaren Phasenverschiebung verändert werden kann erzeugt. Dazu wird die Stromamplitude über die Netzspannung und gewünschte Ausgangsleistung bestimmt, siehe Formel \ref{eq:Idach}. Der Strom wird über die Amplitude und den entsprechenden Winkel erzeugt und über die Sektorenzuweisung wird die mittlere Phase ausgewählt, siehe Abb. \ref{fig:plecsiafiy} 
+			Der Strom in der Drossel wird durch den aktuellen Phasenwinkel der Spannung erzeugt, welcher in der Ansteuerung des IVS durch die PLL erfasst wird und mit einer einstellbaren Phasenverschiebung verändert werden kann. Die Stromamplitude wird dabei über die Netzspannung und die gewünschte Ausgangsleistung bestimmt (siehe Formel \ref{eq:Idach}). Der sinusförmige Strom wird durch die Amplitude und den entsprechenden Winkel erzeugt. Die mittlere Phase wird über die Sektorenzuweisung ausgewählt. Siehe Abbildung \ref{fig:plecsiafiy}. 
 		
 		\begin{equation}
 			\label{eq:Idach}
@@ -136,7 +136,7 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 			\label{fig:plecsiafiy}
 		\end{figure}
 		
-		Die Regelung des Stroms wird über einen diskreten PI Regler Block aus der PLECS Bibliothek implementiert. Die Signale zur Gateansteuerung werden über einen PWM Generator erzeugt und anschließend zur Totzeit Implementierung durch eine Einschaltverzögerung verzögert. Dieser Aufbau kann in Abb. \ref{fig:plecsiafivsk1}.
+Die Stromregelung erfolgt mithilfe eines diskreten PI-Reglerblocks aus der PLECS-Bibliothek. Die Signale zur Gate-Ansteuerung werden durch einen PWM-Generator erzeugt und anschließend durch eine Einschaltverzögerung zur Totzeit-Implementierung verzögert. Dieser Aufbau ist in Abbildung \ref{fig:plecsiafivsk1} dargestellt. 
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFivsK1}
@@ -147,14 +147,14 @@ Die Regelungen werden in den Simulationen nur im ein geschwungenen Zustand betra
 	
 
 \section{B6 1/3 PFC Buck}
-Die in Kapitel \ref{sec:GrundlagenB6} dargestellte Schaltung wird durch Halbbrücken Module des Typs FF2MR12W3M1H\_B11 von Infineon implementiert, siehe Abb. \ref{fig:plecsb6}. Dabei handelt es sich um verbreitete 1200 \si{\volt} Module, sie besitzen einen nominellen Einschaltwiderstand von 2 \si{\milli \ohm} und können Spitzenströme von bis zu 800 \si{\ampere} schalten \cite{IFAGFF2}.
+Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit Halbbrückenmodulen vom Typ FF2MR12W3M1H\_B11 der Firma Infineon realisiert, siehe Abb. \ref{fig:plecsb6}. Es handelt sich dabei um weit verbreitete 1200 \si{\volt} Module, die einen nominellen Einschaltwiderstand von 2 \si{\milli \ohm} haben und Spitzenströme bis zu 800 \si{\ampere} schalten können \cite{IFAGFF2}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6}
 	\caption{PLECS Aufbau der B6 Leistungshalbleiter}
 	\label{fig:plecsb6}
 \end{figure}
- Um die Ausgangsleistung auch bei geringerer Spannung bereitstellen zu können und ein späteres Interleaving zu ermöglichen werden für den Tiefsetzsteller zwei Halbbrücken vorgesehen. Die Schaltung kann in Abb. \ref{fig:plecsb6buck} gefunden werden, es ist direkt zu erkennen, dass der Tiefsetzsteller durch die Kondensatoren am Eingang entkoppelt von der B6 Struktur ist.
+ Um die Ausgangsleistung auch bei geringerer Spannung bereitzustellen und ein späteres Interleaving zu ermöglichen, sind für den Tiefsetzsteller zwei Halbbrücken vorgesehen. Die Schaltung ist in Abbildung ef{fig:plecsb6buck} zu finden. Es ist direkt erkennbar, dass der Tiefsetzsteller durch die Kondensatoren am Eingang von der B6-Struktur entkoppelt ist.
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6Buck}
@@ -164,18 +164,18 @@ Die in Kapitel \ref{sec:GrundlagenB6} dargestellte Schaltung wird durch Halbbrü
  
 
 		\subsection{Auslegung der Netzinduktivität}
-			Aufgrund der Limitierung des Eingangsstroms zur effizienten Auslegung der Drossel, wird die Ausgangsleistung bei Blindleistungsbereitstellung reduziert. Dies ist wie bereits in \ref{sec:AnfStromnetz} erläutert durch den Netzbetreiber gestattet. Der Rippelstrom in der Drossel wird wie gehabt auf 30 \% des Effektivstroms ausgelegt, welcher bei Spannungseinbruch auf 90 \% am höchsten ist. Der Rippelstrom beträgt somit 88,2 Ampere, siehe Formel \ref{eq:DeltaI_B6}.\\
+			Aufgrund der Begrenzung des Eingangsstroms muss die Drossel effizient ausgelegt werden, was zu einer Reduzierung der Ausgangsleistung bei Blindleistungsbereitstellung führt. Wie bereits in Abschnitt ef{sec:AnfStromnetz} erläutert, ist dies vom Netzbetreiber gestattet. Der Rippelstrom in der Drossel wird wie zuvor auf 30 \% des Effektivstroms ausgelegt. Dieser erreicht bei einem Spannungseinbruch sein Maximum. Der Rippelstrom beträgt somit 88,2 Ampere, siehe Formel \ref{eq:DeltaI_B6}.\\
 			
 			\begin{equation}
 				\label{eq:DeltaI_B6}
 				I_{\Delta max B6}= \dfrac{0,3\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}}{\sqrt{3} \cdot 617 \si{V} \cdot 0,9} = 88,2 \si{\A}
 			\end{equation}
-			Die Induktivität kann durch den gleichen Zusammenhang wie beim \gls{IAF} \gls{IVS} ausgelegt werden und beträgt 136 \si{\micro \henry}, siehe Formel \ref{eq:L_B6}.
+			Die Induktivität kann nach der gleichen Beziehung wie für den \gls{IAF}-\gls{IVS} berechnet werden und beträgt 136 \si{\micro \henry}, siehe Formel \ref{eq:L_B6}.
 			\begin{equation}
 				\label{eq:L_B6}
 				L_{B6}= \dfrac{U_{LLmaxPeak}}{4\cdot f \cdot I_{\Delta max B6}} = 136 uH
 			\end{equation}
-			Die gespeicherte Energie in der Induktivität wird ebenfalls über den Zusammenhang der Netzspannung und Ausgangsleistung definiert, erhöht sich jedoch nicht durch Blindleistungsbereitstellung. Die gespeicherte Energie pro Phase ergibt 4,76 Joule nach Formel \ref{eq:EL_B6} und muss aufgrund der Dreiphasigen Ausführung wieder dreifach gewertet werden. Somit ergibt sich eine Gesamtenergie für die Hauptinduktivität der Topologie von 14,28 Joule.
+			Die in der Induktivität gespeicherte Energie wird ebenfalls durch den Zusammenhang zwischen Netzspannung und Ausgangsleistung definiert, erhöht sich jedoch nicht durch die Bereitstellung von Blindleistung. Die gespeicherte Energie pro Phase beträgt 4,76 Joule nach Formel \ref{eq:EL_B6} und muss aufgrund der dreiphasigen Ausführung mit dem Faktor drei multipliziert werden. Somit ergibt sich eine Gesamtenergie von 14,28 Joule für die Hauptinduktivität der Topologie.
 			
 			\begin{equation}
 			\label{eq:EL_B6}
@@ -186,32 +186,32 @@ Die in Kapitel \ref{sec:GrundlagenB6} dargestellte Schaltung wird durch Halbbrü
 
 		
 		\subsection{Regelung}
-			Die Regelung besteht aus einer Kaskadierten Struktur mit vier Stufen, siehe Abb. \ref{fig:b6-control-orig}. Die erste ist die Ausgangsspannungsregelung, welche durch die Sollleistung und Netzspannung die gewünschte äquivalente Phasenimpedanz als Eingangsgröße für die Phasenstromregelung bildet.\\
-			In der dritten Stufe wird die Phase mit der mittleren Spannung ausgewählt und die Zwischenkreisspannung \gls{Upn} anhand der Phasenlage bestimmt. Die Zwischenkreisspannung resultiert als sechspulsige Gleichspannung und dient als Eingangsspannung für den Tiefsetzsteller. Die mittlere Phasenspannung wird als Referenz für den Tastgrad der entsprechenden Halbbrücke verwendet und prägt somit einen zur Spannung proportionalen Strom ein. Somit wird immer nur eine der drei Halbbrücken getaktet geschaltet, die anderen beiden sind wie bei einem Diodengleichrichter auf die jeweils positivste und negativste Spannung geschaltet.
-			Die vierte Stufe ist die des Tiefsetzstellers, mit Reglern für den Eingangsstrom sowie die Ausgangsspannung.
-			
+			Die Regelung besteht aus einer vierstufigen Kaskadenstruktur, siehe Abbildung \ref{fig:b6-control-orig}. Die erste Stufe ist die Ausgangsspannungsregelung, die aus Sollleistung und Netzspannung die gewünschte äquivalente Phasenimpedanz als Eingangsgröße für die Phasenstromregelung bildet.\\
+			In der dritten Stufe wird die Phase mit der mittleren Spannung ausgewählt und anhand der Phasenlage die Zwischenkreisspannung \gls{Upn} bestimmt. Die Zwischenkreisspannung ergibt sich als Sechspulsige-Gleichspannung und dient als Eingangsspannung für den Tiefsetzsteller. Die mittlere Phasenspannung wird als Referenz für den Tastgrad der entsprechenden Halbbrücke verwendet und prägt somit einen spannungsproportionalen Strom ein. Somit ist immer nur eine der drei Halbbrücken getaktet geschaltet, die anderen beiden sind wie bei einem Diodengleichrichter auf die jeweils positivste und negativste Spannung geschaltet.
+			Die vierte Stufe ist der Tiefsetzsteller mit Reglern für den Eingangsstrom und die Ausgangsspannung.
+				
 			\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/B6-Control-orig}
 			\caption[Regelung des \gls{B6PFC}]{Regelung des \gls{B6PFC} \cite{13PWMPFC}}
 			\label{fig:b6-control-orig}
 			\end{figure}
-			Der Aufbau in \gls{PLECS} besteht für die Ausgangsleistungsregelung aus einem PI-Regler, siehe Abb. \ref{fig:plecsb6controlpout}. Diese wird mit der nominalen Netzspannung zur äquivalenten Netzimpedanz und anschließend durch die aktuelle Netzspannung zu den soll Phasenströmen umgeformt. Um die Phasenverschiebung zu implementieren, wird der Sollstrom entsprechend des Phasenwinkels verzögert an die Regelung der B6 Ansteuerung weitergegeben.\\
+		Die Ausgangsleistungsregelung in PLECS besteht aus einem PI-Regler (siehe Abbildung \ref{fig:plecsb6controlpout}), der die nominale Netzspannung mit der äquivalenten Netzimpedanz multipliziert und dann durch die aktuelle Netzspannung in die Soll-Phasenströme umgewandelt wird. Um die Phasenverschiebung zu implementieren, wird der Sollstrom entsprechend des Phasenwinkels verzögert an die Regelung der B6-Ansteuerung weitergegeben.\\
 				\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlPout}
 				\caption{PLECS Regelung der Ausgangsleistung als Sollgröße}
 				\label{fig:plecsb6controlpout}
 			\end{figure}
-			Im nächsten Schritt wird die Regelung des Netzstroms durch einen weiteren PI-Regler implementiert und mittels PLL und C-Skript die Erkennung der Phasenabschnitte umgesetzt, siehe Abb. \ref{fig:plecsb6controlrigrid}. 
+			Im nächsten Schritt wird die Regelung des Netzstroms durch einen weiteren PI-Regler implementiert. Die Erkennung der Phasenabschnitte wird mittels PLL und C-Skript umgesetzt. Siehe Abbildung \ref{fig:plecsb6controlrigrid}.  
 				\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlRiGrid}
 				\caption{PLECS Regelung der Netzimpedanz und Phasenabschnittserkennung}
 				\label{fig:plecsb6controlrigrid}
 			\end{figure}
-			Der Ausgang dieses Blocks dient zum einen mit \gls{Upn} als Eingang für den Tiefsetzsteller und zum anderen wird die mittlere Spannung als Eingang für die PWM Erzeugung des B6 verwendet. Die Ansteuerung des Tiefsetzstellers besteht, wie in Abb. \ref{fig:b6-control-orig} dargestellt aus zwei PI-Reglern, die in einen PWM-Generator geführt werden. Anschließend wird das Signal zur Totzeit Implementierung durch eine Einschaltverzögerung ergänzt.\\
-			Zum anderen dient die Spannung der mittleren Phase  als Eingangsgröße für die Erzeugung des PWM Signals für \gls{MOSFET} an der mittleren Phase. Dieses wird wieder durch einen PWM-Generator erzeugt und mit Hilfe eines C-Codes werden die Signale den im Sektor passenden Phasen zugeordnet. Der Turn-on Delay dient erneut der Totzeit Implementierung, siehe Abb. \ref{fig:plecsb6controlpwmmid}.
+			Der Ausgang dieses Blocks dient einerseits mit \gls{Upn} als Eingang für den Tiefsetzsteller und andererseits wird die mittlere Spannung als Eingang für die PWM-Erzeugung von B6 verwendet. Die Ansteuerung des Tiefsetzstellers erfolgt wie in Abbildung \ref{fig:b6-control-orig} dargestellt, aus zwei PI-Reglern, die auf einen PWM-Generator geführt werden. Die Totzeit wird durch eine Einschaltverzögerung ergänzt.\\
+			Zum anderen dient die Spannung der Mittenphase als Eingangsgröße zur Erzeugung des PWM-Signals für den \gls{MOSFET} an der Mittenphase. Dieses wird wiederum von einem PWM-Generator erzeugt und mit Hilfe eines C-Codes werden die Signale den entsprechenden Phasen im Sektor zugeordnet. Die Einschaltverzögerung dient wiederum der Totzeit-Implementierung, siehe Bild. \ref{fig:plecsb6controlpwmmid}.
 			
 		\begin{figure}
 			\centering

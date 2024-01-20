@@ -1,11 +1,10 @@
 \chapter{Vorauswahl}
-Um die möglichen Optionen einzugrenzen wird im folgenden eine Auflistung der Topologien erstellt und anhand einfacher Kriterien die Auswahl eingegrenzt. Einen guten Überblick über Schaltungen für Dreiphasige Gleichrichter mit Leistungsfaktorkorrektur geben die  Präsentationen von Dominik Bortis et al. \cite{Advanced3PhPFC} und Johann W. Kolar \cite{Essenceof3pKolar}. Diese bezieht sich auf Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund gewünschter Systemdienstleistungen, wie Blindleistungsbereitstellung sind Systeme mit Hybrider Kompensation nicht ausreichend.
-
+Um die möglichen Optionen einzugrenzen, werden im Folgenden die Topologien aufgelistet und die Auswahl anhand einfacher Kriterien eingegrenzt. Einen guten Überblick über Schaltungen für dreiphasige Gleichrichter mit Blindleistungskompensation geben die Präsentationen von Dominik Bortis et al. \cite{Advanced3PhPFC} und Johann W. Kolar \cite{Essenceof3pKolar}. Dabei handelt es sich um Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund der gewünschten Systemdienstleistungen, wie z.B. Blindleistungsbereitstellung, sind Systeme mit hybrider Kompensation nicht ausreichend.
 
 \section{Mögliche Topologien}
-Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der dreiphasige Diodengleichrichter, welcher bereits in Abschnitt \ref{sec:Rec} dargestellt wurde. Die weiteren Topologien werden im folgenden aufgelistet.
+Die Basistopologie, die der Vollständigkeit halber aufgeführt wird, ist der bereits im Abschnitt \ref{sec:Rec} vorgestellte dreiphasige Diodengleichrichter. Die anderen Topologien sind nachfolgend aufgeführt.
 	\subsection{6-Switch Boost PFC Rectifier}
-			Bei der ersten Topologie wurde prinzipiell beim Diodengleichrichter, die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost} Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Hochstellendes verhalten und Modulation der Eingangsströme über verschiedene \gls{PWM} Verfahren zum gewünschten Sinusförmigen Eingangsstrom.
+				Bei der ersten Topologie wurden im Prinzip beim Diodengleichrichter die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost} Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Boost-Verhalten und die Modulation der Eingangsströme über verschiedene \gls{PWM}-Verfahren zum gewünschten sinusförmigen Eingangsstrom.
 			\begin{figure} [H]
 				\centering
 				\includegraphics[width=0.9\linewidth]{content/Grafiken/SixSwitchBoost}
@@ -14,7 +13,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 			\end{figure}
 			
 	\subsection{Vienna Rectifier}
-		Hierbei handelt es sich ebenfalls um eine Hochstellende Topologie. Diese besteht aus einem Diodengleichrichter mit Eingangsinduktivitäten und wird ergänzt durch einen \gls{IVS} an welchen Kapazitäten zur Ausgangsspannung geschaltet werden können. Siehe Abbildung \ref{fig:vienna}. Durch diese 3-Level Struktur, kann eine bessere Form des Eingangsstroms erreicht werden, als bei der 2-Level 6-Switch Boost PFC Topologie. Außerdem kann aus selbem Grund die Induktivität kleiner ausfallen.
+		Hierbei handelt es sich ebenfalls um eine Hochsetzstellentopologie. Sie besteht aus einem Diodengleichrichter mit Eingangsinduktivitäten und wird durch einen \gls{IVS} ergänzt, an dem Kapazitäten zur Erzeugung der Ausgangsspannung zugeschaltet werden können. Siehe Abbildung \ref{fig:vienna}. Durch diese 3-Level Struktur kann eine bessere Form des Eingangsstroms erreicht werden als bei der 2-Level 6-Switch Boost PFC Topologie. Außerdem kann aus dem gleichen Grund die Induktivität kleiner sein.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/Vienna}
@@ -23,7 +22,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 		
 	\subsection{6-Switch Buck PFC Rectifier}
-		Durch verschieben der Drossel auf die Ausgangsseite entsteht aus dem 6-Switch Boost eine Tiefstellende Topologie. Jedoch wird sperrendes Verhalten in beide Richtungen benötigt, um die Ausgangsspannung und den Eingangsstrom in die gewünschte Form zu bringen. Daher werden die Schalter durch Dioden ergänzt, wie in Abbildung \ref{fig:sixswitchbuck} dargestellt. 
+		Durch das Verschieben der Drossel auf die Ausgangsseite entsteht aus dem 6-Switch Boost eine Tiefstellende Topologie. Allerdings wird ein sperrendes Verhalten in beide Richtungen benötigt, um die Ausgangsspannung und den Eingangsstrom in die gewünschte Form zu bringen. Aus diesem Grund werden die Schalter durch Dioden ergänzt, wie in Abbildung \ref{fig:sixswitchbuck} dargestellt.  
 		
 		\begin{figure}[H]
 			\centering
@@ -33,7 +32,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 	
 	\subsection{Swiss Rectifier}
-		Bei dieser Topologie handelt es sich um die Integration des Tiefsetzstellers in die Schaltung des \gls{IAF}. Dazu wird die Induktivität im \gls{IVS} Pfad mit der des Tiefsetzstellers kombiniert und der Schalter des Tiefsetzstellers kann durch eine Diode ersetzt werden. Die Schaltung kann in Abbildung \ref{fig:swiss} gefunden werden und der \gls{IAF} wurde in Abbildung \ref{fig:iaf} bereits dargestellt. Durch die Einsparung des Schalters kann die Effizienz gesteigert werden. 
+		Diese Topologie integriert den Tiefsetzsteller in die Schaltung des \gls{IAF}. Dazu wird die Induktivität im IVS-Pfad mit der des Tiefsetzstellers kombiniert und der Schalter des Tiefsetzstellers durch eine Diode ersetzt. Die Schaltung ist in Abbildung \ref{fig:swiss} zu finden, während der IAF bereits in Abbildung \ref{fig:iaf} dargestellt wurde. Durch die Einsparung des Schalters kann die Effizienz gesteigert werden.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/Swiss}
@@ -42,7 +41,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 		
 	\subsection{2/3 PWM Buck \& Boost Current Source Rectifier}	
-		Um einen breiteren Ausgangsspannungsbereich erzielen zu können wird der 6-Switch Buck durch einen Hochsetzsteller am Ausgang ergänzt. Dies ist in Abbildung \ref{fig:23pwmbuckboost} dargestellt. 
+		Um einen größeren Bereich an Ausgangsspannungen abdecken zu können, wird der 6-Switch Buck durch einen Hochsetzsteller am Ausgang erweitert. Dies zeigt die Abbildung \ref{fig:23pwmbuckboost}. 
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/23PWMBuckBoost}
@@ -50,7 +49,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 			\label{fig:23pwmbuckboost}
 		\end{figure}
 	\subsection{Trident Rectifier}
-		Diese Topologie stammt vom 6-Switch Boost Rectifier ab, wobei an jeder Phasenhalbbrücke ein eigener Tiefsetzsteller angeschlossen wird. Somit besitzt jede Phase einen unabhängigen identischen Parallelen Aufbau zwischen AC und DC Pfad, siehe Abbildung \ref{fig:trident}. 
+		Diese Topologie basiert auf dem 6-Switch Boost Rectifier. An jeder Phasenhalbbrücke ist ein eigener Tiefsetzsteller angeschlossen. Dadurch besitzt jede Phase einen unabhängigen, identischen parallelen Aufbau zwischen AC- und DC-Pfad (siehe Abbildung \ref{fig:trident}). 
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/Trident}
@@ -59,7 +58,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 		
 	\subsection{Y-Rectifier}
-		Anstelle der Hoch- und Tiefstellenden Topologie wird hier umgekehrt Tief- und Hochgesetzt, dazu werden zwölf Halbleiterschalter genutzt. Es wird nur eine dreiphasige Drossel benötigt, welche zwischen den beiden Stellgliedern sitzt. Die Schaltung ist in Abbildung \ref{fig:y-rectifier} dargestellt.
+		Anstelle der Topologie mit Hoch- und Tiefsetzsteller wird hier die umgekehrte Variante mit Tief- und Hochsetzsteller verwendet. Es wird lediglich eine dreiphasige Drossel benötigt, welche zwischen den beiden Stellgliedern platziert wird. Die Schaltung ist in Abbildung \ref{fig:y-rectifier} gezeigt.
 		
 	
 		\begin{figure}[H]
@@ -70,7 +69,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 	
 	\subsection{3-Level Neutral Point Clamped}
-		Die 3L-NPC Schaltung ist eine langjährig entwickelte Topologie, welche durch verschiedene Ansteuerungsverfahren unterschiedliche Eigenschaften erzeugt. Unter anderem kann die Reduzierung der harmonischen im Netzstrom und der Rechenaufwand durch alternative Ansteuerungen optimiert werden \cite{NPC}. Die Schaltung benötigt in Summe 12 Schalter und 6 Dioden, sowie eine dreiphasige Drossel. Der Aufbau der Schaltung ist in Abbildung \ref{fig:3l-npc} dargestellt.
+		Die 3L-NPC-Schaltung ist eine langjährig entwickelte Topologie, die durch verschiedene Ansteuerverfahren unterschiedliche Eigenschaften erzeugt. Unter anderem kann die Reduzierung der Oberschwingungen im Netzstrom und der Rechenaufwand durch alternative Ansteuerungen optimiert werden \cite{NPC}. Die Schaltung benötigt insgesamt 12 Schalter und 6 Dioden sowie eine dreiphasige Drossel. Der Aufbau der Schaltung ist in Abbildung \ref{fig:3l-npc} dargestellt.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/3L-NPC}
@@ -79,7 +78,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 
 	\subsection{3-Level Active Neutral Point Clamped}
-		Bei der ANPC Schaltung werden die Dioden der NPC Schaltung durch Schalter ersetzt um somit den Sternpunkt kontrollieren zu können, siehe Abbildung \ref{fig:anpc}. Dabei gibt es erneut verschiedene \gls{PWM} Strategien die unterschiedliche Schwerpunkte setzen, außerdem ist die Aufteilung der Verlustleistung in den Halbleitern nicht trivial \cite{ANPC}.
+		Bei der ANPC-Schaltung werden die Dioden der NPC-Schaltung durch Schalter ersetzt, um den Sternpunkt kontrollieren zu können, siehe Abbildung \ref{fig:anpc}. Auch hier gibt es verschiedene \gls{PWM}-Strategien, die unterschiedliche Schwerpunkte setzen, außerdem ist die Verteilung der Verlustleistung in den Halbleitern nicht trivial \cite{ANPC}.
 	
 		\begin{figure}[H]
 			\centering
@@ -90,7 +89,7 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 	
 	
 	\subsection{Three-Level Flying Capacitor (FC) Boost-Type Rectifier System}
-		Diese Topologie benötigt Kondensatoren für jede Phase, welche ein größeres Volumen besitzen, benötigt dafür aber weniger Schalter für die drei Level. Die Schaltung ist in Abbildung \ref{fig:3l-fc-boost} dargestellt und besitzt ein Hochstellendes Verhalten.
+		Diese Topologie benötigt Kondensatoren für jede Phase, die ein größeres Volumen besitzen, benötigt jedoch weniger Schalter für die drei Level. Die Schaltung ist in Abbildung \ref{fig:3l-fc-boost} dargestellt und besitzt ein Hochstellendes Verhalten.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/3L-FC-Boost}
@@ -99,8 +98,8 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 	
 	
-	\subsection{Three-Level Flying Capacitor (FC + Tiefsetzsteller}
-		Um den gewünschten niedrigen Ausgagnsspannungsbereich generieren zu können, wird die zuvor beschriebene FC Topologie durch einen Tiefsetzsteller ergänzt. Damit erhöht sich die Anzahl der benötigten Schalter von 12 auf 14.
+	\subsection{Three-Level Flying Capacitor (FC + Tiefsetzsteller)}
+		Um den gewünschten niedrigen Ausgangsspannungsbereich generieren zu können, wird die zuvor beschriebene FC-Topologie durch einen Tiefsetzsteller ergänzt. Dadurch erhöht sich die Anzahl der benötigten Schalter von 12 auf 14.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/3L-FC-Boost+Buck}
@@ -109,9 +108,9 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		\end{figure}
 
 \section{Auswahl der Topologien}
-Zur Eingrenzung des Lösungsraums wird zunächst eine Auflistung der möglichen Schaltungstopologien zum Anschluss an das dreiphasige Stromnetz erstellt, vgl. Tabelle \ref{tab:vorauswahl}. Die 15 aufgelisteten Topologien, begonnen mit dem in Abb. \ref{fig:B6DiodRect} dargestellten Diodengleichrichter, werden anhand der benötigten Induktivitäten, Dioden, Schalter und Stufen, sowie der Funktionsweise Hoch- bzw. Tiefstellend bewertet.\\
-Tabelle \ref{tab:vorauswahl} zeigt, dass sich für eine engere Betrachtung die vier in grün hervorgehobenen Topologien eignen, da diese die im Vergleich wenigstens Induktivitäten und Halbleiter benötigen. Dioden sind aufgrund ihres simpleren Aufbaus günstiger als Leistungsschalter und fallen daher nicht so stark ins Gewicht. Die beiden anderen Topologien, 6-Switch Buck und Swiss Rectifier, werden in einer anderen Arbeit betrachtet.\\
-Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in dieser Arbeit der \gls{IAF} und \gls{B6PFC} betrachtet und die Ergebnisse für eine finale Bewertung aufbereitet.
+Zur Eingrenzung des Lösungsraums wird zunächst eine Auflistung der möglichen Schaltungstopologien zum Anschluss an das dreiphasige Stromnetz erstellt, vergleiche Tabelle \ref{tab:vorauswahl}. Die 15 aufgelisteten Topologien, beginnend mit dem in Abbildung \ref{fig:B6DiodRect} dargestellten Diodengleichrichter, werden anhand der benötigten Induktivitäten, Dioden, Schalter und Stufen, sowie der Funktionen Hoch- bzw. Tiefstellend bewertet.\\
+Die Tabelle \ref{tab:vorauswahl} zeigt, dass sich die vier Topologien, die grün hervorgehoben sind, für eine engere Betrachtung eignen, da sie im Vergleich zu anderen Topologien weniger Induktivitäten und Halbleiter benötigen. Aufgrund ihres simpleren Aufbaus sind Dioden günstiger als Leistungsschalter und fallen daher nicht so stark ins Gewicht. Die beiden anderen Topologien, 6-Switch Buck und Swiss Rectifier, werden in einer anderen Arbeit betrachtet.\\
+Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in dieser Arbeit das IAF und das B6PFC betrachtet und die Ergebnisse für eine finale Bewertung aufbereitet.
 
 \begin{table}
 	\caption{Topologievergleich zur Vorauswahl}

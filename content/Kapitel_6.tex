@@ -1,5 +1,5 @@
 \chapter{Auswertung}
-Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. Diese beinhaltet die Hardware, welche zum Großteil durch die Induktivitäten beeinflusst wird, sowie die Kapazitäten, Halbleiter und Treiber. Außerdem werden die Ergebnisse der Simulation durch die Verlustleistung der Halbleiter bewertet. Für die Simulation werden die in Tabelle \ref{tab:Betriebspara} aufgelisteten Betriebsparameter festgelegt. Die beiden Topologien werden für den Betriebspunkt mit 0° und 30° Phasenverschiebung verglichen, um den Einfluss der Systemdienstleistungen zu betrachten. Um einen Vergleich der Kategorien und eine Gesamtbewertung durchzuführen, werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor die Summe über alle Kategorien gebildet. Aufgrund des großen Einflusses der Drosseln, werden diese mit 50 Prozent gewichtet. Die Kapazitäten stellen nur einen sehr geringen Einfluss auf das Gesamtsystem dar und werden daher nur mit fünf Prozent bewertet. Die restlichen 45 Prozent fallen auf die Halbleiter in Form der Chipfläche (über den \gls{RDSON}), Treiberanzahl und Verlustleistung ab. Je geringer die Punktzahl, desto besser ist die Bewertung. \\
+Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgeführt. Diese Tabelle enthält Informationen über die Hardware, die hauptsächlich durch die Induktivitäten beeinflusst wird, sowie über die Kapazitäten, Halbleiter und Treiber. Zusätzlich werden die Ergebnisse der Simulation anhand der Verlustleistung der Halbleiter bewertet. Für die Simulation werden die in Tabelle \ref{tab:Betriebspara} aufgeführten Betriebsparameter verwendet. Die beiden Topologien werden verglichen, um den Einfluss der Systemdienstleistungen bei einem Phasenversatz von 0° und 30° zu betrachten. Zur Durchführung eines Vergleichs der Kategorien und einer Gesamtbewertung werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor summiert. Da die Drosseln einen großen Einfluss haben, werden sie mit 50 Prozent gewichtet. Die Kapazitäten haben nur einen sehr geringen Einfluss auf das Gesamtsystem und werden daher nur mit fünf Prozent bewertet. Die restlichen 45 Prozent entfallen auf die Halbleiter in Form der Chipfläche (über den RDSON), die Anzahl der Treiber und die Verlustleistung. Eine niedrigere Punktzahl führt zu einer besseren Bewertung. \\
 
 \begin{table}
 	\centering
@@ -88,15 +88,15 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 \end{table}
 
 \section{B6PFC}
-	Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und somit den Hardwarekosten mit sich bringt. Die benötigte dreiphasige Drossel führt dazu, dass in dieser Kategorie der IAF um über 50\% besser abschneidet.
-	Anders sieht es bei den übrigen Kategorien aus, es werden weniger Kondensatoren benötigt. Die benötigte B6-Schaltung beinhaltet mehr \gls{MOSFET} aber dafür keine Dioden. Bei der Verlustleistung zeigt sich der eindeutige Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da es fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies kann anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, aufgrund der Reduzierung der Ausgangsleistung fällt die Temperatur im Tiefsetzsteller etwas geringer aus, in pink dargestellt. Bei den Halbleiter der B6 Brücke kann praktisch kein Unterschied festgestellt werden.
+	Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und damit bei den Hardwarekosten hat. Die erforderliche dreiphasige Drossel führt dazu, dass der IAF in dieser Kategorie um mehr als 50\% besser abschneidet.
+	Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, durch die Reduzierung der Ausgangsleistung ist die Temperatur im Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen.
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
 		\caption{Temperaturverhalten der Halbleiter des B6 mit (voll dargestellt) und ohne (schwach dargestellt) Phasenverschiebung}
 		\label{fig:b6temp030grad}
 	\end{figure}
-	Die Eingangsströme sind nur leicht durch die Schaltimpulse verrauscht und der Sinusverlauf folgt wie gewünscht der Eingangsspannung, siehe Abb. \ref{fig:b6acdc0grad}. Es zeigt sich das der Stromverlauf eine \gls{THD} von nur etwa 5,8 \% besitzt. 
+	Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf. 
 	
 	\begin{figure}[H]
 		\centering
@@ -104,7 +104,7 @@ Die Ergebnisse zur Gesamtbewertung finden sich in Tabelle \ref{tab:Auswertung}. 
 		\caption{Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}
 		\label{fig:b6acdc0grad}
 	\end{figure}
-	Mit Phasenverschiebung von 30 Grad sieht das verhalten ähnlich aus, siehe Abb. \ref{fig:b6acdc30grad}. Der Stromverlauf zeigt eine geringfügig schlechtere THD von 7,1 \%, dies kann durch geeignete Filter ausgeglichen werden. 
+	Mit einer Phasenverschiebung von 30 Grad sieht das Verhalten ähnlich aus, siehe Abbildung \ref{fig:b6acdc30grad}.  Der Stromverlauf weist eine etwas höhere THD von 7,1 \% auf, die jedoch durch geeignete Filter ausgeglichen werden kann.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
