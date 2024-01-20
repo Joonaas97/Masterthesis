@@ -1,23 +1,23 @@
 \chapter{Vorauswahl}
-Um die möglichen Optionen einzugrenzen wird im folgenden eine Auflistung der Topologien erstellt und anhand einfacher Kriterien die Auswahl eingegrenzt. Einen guten Überblick über Schaltungen für Dreiphasige Gleichrichter mit Leistungsfaktorkorrektur gibt die Präsentation von Dominik Bortis et al. \cite{Advanced3PhPFC}. Diese bezieht sich auf Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund gewünschter Systemdienstleistungen, wie Blindleistungsbereitstellung sind Systeme mit Hybrider Kompensation nicht ausreichend.
+Um die möglichen Optionen einzugrenzen wird im folgenden eine Auflistung der Topologien erstellt und anhand einfacher Kriterien die Auswahl eingegrenzt. Einen guten Überblick über Schaltungen für Dreiphasige Gleichrichter mit Leistungsfaktorkorrektur geben die  Präsentationen von Dominik Bortis et al. \cite{Advanced3PhPFC} und Johann W. Kolar \cite{Essenceof3pKolar}. Diese bezieht sich auf Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund gewünschter Systemdienstleistungen, wie Blindleistungsbereitstellung sind Systeme mit Hybrider Kompensation nicht ausreichend.
 
 
 \section{Mögliche Topologien}
 Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der dreiphasige Diodengleichrichter, welcher bereits in Abschnitt \ref{sec:Rec} dargestellt wurde. Die weiteren Topologien werden im folgenden aufgelistet.
 	\subsection{6-Switch Boost PFC Rectifier}
 			Bei der ersten Topologie wurde prinzipiell beim Diodengleichrichter, die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost} Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Hochstellendes verhalten und Modulation der Eingangsströme über verschiedene \gls{PWM} Verfahren zum gewünschten Sinusförmigen Eingangsstrom.
-			\begin{figure}
+			\begin{figure} [H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{content/Grafiken/SixSwitchBoost}
+				\includegraphics[width=0.9\linewidth]{content/Grafiken/SixSwitchBoost}
 				\caption{Six Switch Boost PFC Rectifier}
 				\label{fig:sixswitchboost}
 			\end{figure}
 			
 	\subsection{Vienna Rectifier}
 		Hierbei handelt es sich ebenfalls um eine Hochstellende Topologie. Diese besteht aus einem Diodengleichrichter mit Eingangsinduktivitäten und wird ergänzt durch einen \gls{IVS} an welchen Kapazitäten zur Ausgangsspannung geschaltet werden können. Siehe Abbildung \ref{fig:vienna}. Durch diese 3-Level Struktur, kann eine bessere Form des Eingangsstroms erreicht werden, als bei der 2-Level 6-Switch Boost PFC Topologie. Außerdem kann aus selbem Grund die Induktivität kleiner ausfallen.
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/Vienna}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/Vienna}
 			\caption{Vienna Rectifier}
 			\label{fig:vienna}
 		\end{figure}
@@ -25,35 +25,35 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 	\subsection{6-Switch Buck PFC Rectifier}
 		Durch verschieben der Drossel auf die Ausgangsseite entsteht aus dem 6-Switch Boost eine Tiefstellende Topologie. Jedoch wird sperrendes Verhalten in beide Richtungen benötigt, um die Ausgangsspannung und den Eingangsstrom in die gewünschte Form zu bringen. Daher werden die Schalter durch Dioden ergänzt, wie in Abbildung \ref{fig:sixswitchbuck} dargestellt. 
 		
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/SixSwitchBuck}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/SixSwitchBuck}
 			\caption{Six Switch Buck PFC Rectifier}
 			\label{fig:sixswitchbuck}
 		\end{figure}
 	
 	\subsection{Swiss Rectifier}
 		Bei dieser Topologie handelt es sich um die Integration des Tiefsetzstellers in die Schaltung des \gls{IAF}. Dazu wird die Induktivität im \gls{IVS} Pfad mit der des Tiefsetzstellers kombiniert und der Schalter des Tiefsetzstellers kann durch eine Diode ersetzt werden. Die Schaltung kann in Abbildung \ref{fig:swiss} gefunden werden und der \gls{IAF} wurde in Abbildung \ref{fig:iaf} bereits dargestellt. Durch die Einsparung des Schalters kann die Effizienz gesteigert werden. 
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/Swiss}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/Swiss}
 			\caption{Swiss Rectifier}
 			\label{fig:swiss}
 		\end{figure}
 		
 	\subsection{2/3 PWM Buck \& Boost Current Source Rectifier}	
 		Um einen breiteren Ausgangsspannungsbereich erzielen zu können wird der 6-Switch Buck durch einen Hochsetzsteller am Ausgang ergänzt. Dies ist in Abbildung \ref{fig:23pwmbuckboost} dargestellt. 
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/23PWMBuckBoost}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/23PWMBuckBoost}
 			\caption{2/3 PWM Buck \& Boost Current Source Rectifier}
 			\label{fig:23pwmbuckboost}
 		\end{figure}
 	\subsection{Trident Rectifier}
 		Diese Topologie stammt vom 6-Switch Boost Rectifier ab, wobei an jeder Phasenhalbbrücke ein eigener Tiefsetzsteller angeschlossen wird. Somit besitzt jede Phase einen unabhängigen identischen Parallelen Aufbau zwischen AC und DC Pfad, siehe Abbildung \ref{fig:trident}. 
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/Trident}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/Trident}
 			\caption{Trident Rectifier}
 			\label{fig:trident}
 		\end{figure}
@@ -62,11 +62,50 @@ Die Grundlegende Topologie welche zur Vollständigkeit aufgelistet wird, ist der
 		Anstelle der Hoch- und Tiefstellenden Topologie wird hier umgekehrt Tief- und Hochgesetzt, dazu werden zwölf Halbleiterschalter genutzt. Es wird nur eine dreiphasige Drossel benötigt, welche zwischen den beiden Stellgliedern sitzt. Die Schaltung ist in Abbildung \ref{fig:y-rectifier} dargestellt.
 		
 	
-		\begin{figure}
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/Y-Rectifier}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/Y-Rectifier}
 			\caption{Y Rectifier}
 			\label{fig:y-rectifier}
+		\end{figure}
+	
+	\subsection{3-Level Neutral Point Clamped}
+		Die 3L-NPC Schaltung ist eine langjährig entwickelte Topologie, welche durch verschiedene Ansteuerungsverfahren unterschiedliche Eigenschaften erzeugt. Unter anderem kann die Reduzierung der harmonischen im Netzstrom und der Rechenaufwand durch alternative Ansteuerungen optimiert werden \cite{NPC}. Die Schaltung benötigt in Summe 12 Schalter und 6 Dioden, sowie eine dreiphasige Drossel. Der Aufbau der Schaltung ist in Abbildung \ref{fig:3l-npc} dargestellt.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/3L-NPC}
+			\caption{3-Level Neutral Point Clamped}
+			\label{fig:3l-npc}
+		\end{figure}
+
+	\subsection{3-Level Active Neutral Point Clamped}
+		Bei der ANPC Schaltung werden die Dioden der NPC Schaltung durch Schalter ersetzt um somit den Sternpunkt kontrollieren zu können, siehe Abbildung \ref{fig:anpc}. Dabei gibt es erneut verschiedene \gls{PWM} Strategien die unterschiedliche Schwerpunkte setzen, außerdem ist die Aufteilung der Verlustleistung in den Halbleitern nicht trivial \cite{ANPC}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/ANPC}
+			\caption{3-Level ANPC}
+			\label{fig:anpc}
+		\end{figure}
+	
+	
+	\subsection{Three-Level Flying Capacitor (FC) Boost-Type Rectifier System}
+		Diese Topologie benötigt Kondensatoren für jede Phase, welche ein größeres Volumen besitzen, benötigt dafür aber weniger Schalter für die drei Level. Die Schaltung ist in Abbildung \ref{fig:3l-fc-boost} dargestellt und besitzt ein Hochstellendes Verhalten.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/3L-FC-Boost}
+			\caption{Three Level Flying Capacitor Boost-Type}
+			\label{fig:3l-fc-boost}
+		\end{figure}
+	
+	
+	\subsection{Three-Level Flying Capacitor (FC + Tiefsetzsteller}
+		Um den gewünschten niedrigen Ausgagnsspannungsbereich generieren zu können, wird die zuvor beschriebene FC Topologie durch einen Tiefsetzsteller ergänzt. Damit erhöht sich die Anzahl der benötigten Schalter von 12 auf 14.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/3L-FC-Boost+Buck}
+			\caption{3L FC + Tiefsetzsteller}
+			\label{fig:3l-fc-boostbuck}
 		\end{figure}
 
 \section{Auswahl der Topologien}
@@ -109,7 +148,7 @@ Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in d
 	\hline
 	Three-Level Flying Capacitor (FC) Boost-Type Rectifier System & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	Three-Level Flying Capacitor (FC + Tiefsetzsteller & \cellcolor{yellow!25}4 &\cellcolor{green!25}0 & \cellcolor{yellow!25}14 &\cellcolor{green!25} Boost/Buck &\cellcolor{red!25} 2 \\
+	Three-Level Flying Capacitor (FC + Tiefsetzsteller) & \cellcolor{yellow!25}4 &\cellcolor{green!25}0 & \cellcolor{yellow!25}14 &\cellcolor{green!25} Boost/Buck &\cellcolor{red!25} 2 \\
 	\hline
 \end{tabular}
 \end{table}

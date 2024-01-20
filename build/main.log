@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  20 JAN 2024 10:29
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  20 JAN 2024 12:48
  system commands enabled.
 **main.tex
 (./main.tex
@@ -590,12 +590,12 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex on input line 16
+(polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
 Package polyglossia Info: Option: German, spelling=new.
@@ -2357,12 +2357,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex on input line 580
+(polyglossia)            synonyms	
+(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 580
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 580
 )
@@ -2531,12 +2531,12 @@ Overfull \hbox (13.32202pt too wide) in paragraph at lines 2--94
 
 ]) [8] (./content/Kapitel_1.tex
 chapter 1.
-<content/Grafiken/ElyCost.png, id=324, 683.55376pt x 569.9866pt>
+<content/Grafiken/ElyCost.png, id=340, 683.55376pt x 569.9866pt>
 File: content/Grafiken/ElyCost.png Graphic file (type png)
 <use content/Grafiken/ElyCost.png>
 Package luatex.def Info: content/Grafiken/ElyCost.png  used on input line 11.
 (luatex.def)             Requested size: 298.75269pt x 249.1163pt.
-<content/Grafiken/Ely_Capacity.png, id=330, 383.71928pt x 421.14482pt>
+<content/Grafiken/Ely_Capacity.png, id=346, 383.71928pt x 421.14482pt>
 File: content/Grafiken/Ely_Capacity.png Graphic file (type png)
 <use content/Grafiken/Ely_Capacity.png>
 Package luatex.def Info: content/Grafiken/Ely_Capacity.png  used on input line 
@@ -2559,7 +2559,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
-<content/Grafiken/Ely-Efficiency.png, id=363, 628.92107pt x 301.125pt>
+<content/Grafiken/Ely-Efficiency.png, id=379, 628.92107pt x 301.125pt>
 File: content/Grafiken/Ely-Efficiency.png Graphic file (type png)
 <use content/Grafiken/Ely-Efficiency.png>
 Package luatex.def Info: content/Grafiken/Ely-Efficiency.png  used on input lin
@@ -2569,14 +2569,14 @@ e 13.
 
 
 ]
-<content/Grafiken/Plecs_Diodengleichrichter.png, id=375, 912.40875pt x 203.9046
+<content/Grafiken/Plecs_Diodengleichrichter.png, id=391, 912.40875pt x 203.9046
 5pt>
 File: content/Grafiken/Plecs_Diodengleichrichter.png Graphic file (type png)
 <use content/Grafiken/Plecs_Diodengleichrichter.png>
 Package luatex.def Info: content/Grafiken/Plecs_Diodengleichrichter.png  used o
 n input line 28.
 (luatex.def)             Requested size: 298.75269pt x 66.76292pt.
-<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=376, 361.35pt 
+<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=392, 361.35pt 
 x 361.35pt>
 File: content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png Graphic file 
 (type png)
@@ -2590,7 +2590,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5<./content/Grafiken/Ely-Efficiency.png>]
 warning  (file content/Grafiken/Buck.pdf) (pdf inclusion): PDF inclusion: found 
 PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Buck.pdf, id=392, 283.0575pt x 147.55125pt>
+<content/Grafiken/Buck.pdf, id=408, 283.0575pt x 147.55125pt>
 File: content/Grafiken/Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/Buck.pdf>
 Package luatex.def Info: content/Grafiken/Buck.pdf  used on input line 42.
@@ -2599,7 +2599,7 @@ Package luatex.def Info: content/Grafiken/Buck.pdf  used on input line 42.
 ngleichrichter-Eingangsverlauf.png>] [7<./content/Grafiken/Buck.pdf>]
 warning  (file content/Grafiken/IAF.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/IAF.pdf, id=433, 403.0257pt x 149.71935pt>
+<content/Grafiken/IAF.pdf, id=449, 403.0257pt x 149.71935pt>
 File: content/Grafiken/IAF.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF.pdf>
 Package luatex.def Info: content/Grafiken/IAF.pdf  used on input line 68.
@@ -2612,7 +2612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
 warning  (file content/Grafiken/B6_Buck.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/B6_Buck.pdf, id=450, 321.3606pt x 147.31035pt>
+<content/Grafiken/B6_Buck.pdf, id=466, 321.3606pt x 147.31035pt>
 File: content/Grafiken/B6_Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_Buck.pdf>
 Package luatex.def Info: content/Grafiken/B6_Buck.pdf  used on input line 80.
@@ -2622,14 +2622,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
-<content/Grafiken/B6+IAF_Sectors.png, id=458, 1603.49063pt x 976.39781pt>
+<content/Grafiken/B6+IAF_Sectors.png, id=474, 1603.49063pt x 976.39781pt>
 File: content/Grafiken/B6+IAF_Sectors.png Graphic file (type png)
 <use content/Grafiken/B6+IAF_Sectors.png>
 Package luatex.def Info: content/Grafiken/B6+IAF_Sectors.png  used on input lin
 e 90.
 (luatex.def)             Requested size: 384.10966pt x 233.8933pt.
 [9<./content/Grafiken/B6_Buck.pdf>]
-<content/Grafiken/PLECS_FF2ThermalModel.png, id=476, 414.04688pt x 310.15875pt>
+<content/Grafiken/PLECS_FF2ThermalModel.png, id=492, 414.04688pt x 310.15875pt>
 
 File: content/Grafiken/PLECS_FF2ThermalModel.png Graphic file (type png)
 <use content/Grafiken/PLECS_FF2ThermalModel.png>
@@ -2642,7 +2642,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
  []
 
 [11<./content/Grafiken/PLECS_FF2ThermalModel.png>]
-<content/Grafiken/PLECS_Buck.png, id=510, 824.32968pt x 687.31781pt>
+<content/Grafiken/PLECS_Buck.png, id=526, 824.32968pt x 687.31781pt>
 File: content/Grafiken/PLECS_Buck.png Graphic file (type png)
 <use content/Grafiken/PLECS_Buck.png>
 Package luatex.def Info: content/Grafiken/PLECS_Buck.png  used on input line 12
@@ -2651,7 +2651,7 @@ Package luatex.def Info: content/Grafiken/PLECS_Buck.png  used on input line 12
 ) (./content/Kapitel_3.tex
 [12<./content/Grafiken/PLECS_Buck.png>]
 chapter 3.
-<content/Grafiken/TAR4120_PQ.png, id=521, 437.92178pt x 389.74179pt>
+<content/Grafiken/TAR4120_PQ.png, id=537, 437.92178pt x 389.74179pt>
 File: content/Grafiken/TAR4120_PQ.png Graphic file (type png)
 <use content/Grafiken/TAR4120_PQ.png>
 Package luatex.def Info: content/Grafiken/TAR4120_PQ.png  used on input line 9.
@@ -2666,7 +2666,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--12
 
 
 <./content/Grafiken/TAR4120_PQ.png>]
-<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=535, 770.88pt x 537.0
+<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=551, 770.88pt x 537.0
 0626pt>
 File: content/Grafiken/VDE4120-quasistationarerbetrieb.png Graphic file (type p
 ng)
@@ -2674,13 +2674,13 @@ ng)
 Package luatex.def Info: content/Grafiken/VDE4120-quasistationarerbetrieb.png  
 used on input line 18.
 (luatex.def)             Requested size: 298.75269pt x 208.11235pt.
-<content/Grafiken/Grenzkurve.png, id=536, 357.04822pt x 171.21107pt>
+<content/Grafiken/Grenzkurve.png, id=552, 357.04822pt x 171.21107pt>
 File: content/Grafiken/Grenzkurve.png Graphic file (type png)
 <use content/Grafiken/Grenzkurve.png>
 Package luatex.def Info: content/Grafiken/Grenzkurve.png  used on input line 22
 .
 (luatex.def)             Requested size: 298.75269pt x 143.26247pt.
-<content/Grafiken/VDE-FNN-TAR.png, id=544, 1317.42188pt x 695.59875pt>
+<content/Grafiken/VDE-FNN-TAR.png, id=560, 1317.42188pt x 695.59875pt>
 File: content/Grafiken/VDE-FNN-TAR.png Graphic file (type png)
 <use content/Grafiken/VDE-FNN-TAR.png>
 Package luatex.def Info: content/Grafiken/VDE-FNN-TAR.png  used on input line 3
@@ -2697,101 +2697,147 @@ chapter 4.
 
 warning  (file content/Grafiken/SixSwitchBoost.pdf) (pdf inclusion): PDF inclusi
 on: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/SixSwitchBoost.pdf, id=579, 271.4943pt x 149.71935pt>
+<content/Grafiken/SixSwitchBoost.pdf, id=596, 271.4943pt x 149.71935pt>
 File: content/Grafiken/SixSwitchBoost.pdf Graphic file (type pdf)
 <use content/Grafiken/SixSwitchBoost.pdf>
 Package luatex.def Info: content/Grafiken/SixSwitchBoost.pdf  used on input lin
 e 11.
-(luatex.def)             Requested size: 298.75269pt x 164.76488pt.
+(luatex.def)             Requested size: 384.10966pt x 211.8399pt.
 
 warning  (file content/Grafiken/Vienna.pdf) (pdf inclusion): PDF inclusion: foun
 d PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Vienna.pdf, id=582, 368.21565pt x 168.63pt>
+<content/Grafiken/Vienna.pdf, id=599, 368.21565pt x 168.63pt>
 File: content/Grafiken/Vienna.pdf Graphic file (type pdf)
 <use content/Grafiken/Vienna.pdf>
 Package luatex.def Info: content/Grafiken/Vienna.pdf  used on input line 20.
-(luatex.def)             Requested size: 298.75269pt x 136.82626pt.
-[17
+(luatex.def)             Requested size: 384.10966pt x 175.92169pt.
+
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+ [17
 
 
 <./content/Grafiken/SixSwitchBoost.pdf>]
 warning  (file content/Grafiken/SixSwitchBuck.pdf) (pdf inclusion): PDF inclusio
 n: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/SixSwitchBuck.pdf, id=593, 265.4718pt x 168.1482pt>
+<content/Grafiken/SixSwitchBuck.pdf, id=611, 265.4718pt x 168.1482pt>
 File: content/Grafiken/SixSwitchBuck.pdf Graphic file (type pdf)
 <use content/Grafiken/SixSwitchBuck.pdf>
 Package luatex.def Info: content/Grafiken/SixSwitchBuck.pdf  used on input line
  30.
-(luatex.def)             Requested size: 298.75269pt x 189.22781pt.
+(luatex.def)             Requested size: 384.10966pt x 243.2929pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18<./content/Grafiken/Vienna.pdf>]
 warning  (file content/Grafiken/Swiss.pdf) (pdf inclusion): PDF inclusion: found
  PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Swiss.pdf, id=599, 345.57104pt x 158.994pt>
+<content/Grafiken/Swiss.pdf, id=625, 345.57104pt x 158.994pt>
 File: content/Grafiken/Swiss.pdf Graphic file (type pdf)
 <use content/Grafiken/Swiss.pdf>
 Package luatex.def Info: content/Grafiken/Swiss.pdf  used on input line 39.
-(luatex.def)             Requested size: 298.75269pt x 137.45512pt.
+(luatex.def)             Requested size: 384.10966pt x 176.72803pt.
 
 warning  (file content/Grafiken/23PWMBuckBoost.pdf) (pdf inclusion): PDF inclusi
 on: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/23PWMBuckBoost.pdf, id=601, 278.2395pt x 138.63795pt>
+<content/Grafiken/23PWMBuckBoost.pdf, id=627, 278.2395pt x 138.63795pt>
 File: content/Grafiken/23PWMBuckBoost.pdf Graphic file (type pdf)
 <use content/Grafiken/23PWMBuckBoost.pdf>
 Package luatex.def Info: content/Grafiken/23PWMBuckBoost.pdf  used on input lin
 e 48.
-(luatex.def)             Requested size: 298.75269pt x 148.86787pt.
-[18<./content/Grafiken/Vienna.pdf><./content/Grafiken/SixSwitchBuck.pdf>]
+(luatex.def)             Requested size: 384.10966pt x 191.40306pt.
+[19<./content/Grafiken/SixSwitchBuck.pdf><./content/Grafiken/Swiss.pdf>]
 warning  (file content/Grafiken/Trident.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Trident.pdf, id=614, 433.8609pt x 139.2402pt>
+<content/Grafiken/Trident.pdf, id=639, 433.8609pt x 139.2402pt>
 File: content/Grafiken/Trident.pdf Graphic file (type pdf)
 <use content/Grafiken/Trident.pdf>
 Package luatex.def Info: content/Grafiken/Trident.pdf  used on input line 56.
-(luatex.def)             Requested size: 298.75269pt x 95.88249pt.
-[19<./content/Grafiken/Swiss.pdf><./content/Grafiken/23PWMBuckBoost.pdf><./conte
-nt/Grafiken/Trident.pdf>]
+(luatex.def)             Requested size: 384.10966pt x 123.27748pt.
+
 warning  (file content/Grafiken/Y-Rectifier.pdf) (pdf inclusion): PDF inclusion:
  found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Y-Rectifier.pdf, id=627, 348.46185pt x 139.2402pt>
+<content/Grafiken/Y-Rectifier.pdf, id=641, 348.46185pt x 139.2402pt>
 File: content/Grafiken/Y-Rectifier.pdf Graphic file (type pdf)
 <use content/Grafiken/Y-Rectifier.pdf>
 Package luatex.def Info: content/Grafiken/Y-Rectifier.pdf  used on input line 6
 7.
-(luatex.def)             Requested size: 298.75269pt x 119.38516pt.
-) (./content/Kapitel_5.tex [20<./content/Grafiken/Y-Rectifier.pdf>] [21]
+(luatex.def)             Requested size: 384.10966pt x 153.494pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20<./content/Grafiken/23PWMBuckBoost.pdf><./content/Grafiken/Trident.pdf>]
+warning  (file content/Grafiken/3L-NPC.pdf) (pdf inclusion): PDF inclusion: foun
+d PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/3L-NPC.pdf, id=653, 270.16936pt x 189.1065pt>
+File: content/Grafiken/3L-NPC.pdf Graphic file (type pdf)
+<use content/Grafiken/3L-NPC.pdf>
+Package luatex.def Info: content/Grafiken/3L-NPC.pdf  used on input line 76.
+(luatex.def)             Requested size: 384.10966pt x 268.87071pt.
+[21<./content/Grafiken/Y-Rectifier.pdf><./content/Grafiken/3L-NPC.pdf>]
+warning  (file content/Grafiken/ANPC.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/ANPC.pdf, id=668, 271.61475pt x 190.43146pt>
+File: content/Grafiken/ANPC.pdf Graphic file (type pdf)
+<use content/Grafiken/ANPC.pdf>
+Package luatex.def Info: content/Grafiken/ANPC.pdf  used on input line 86.
+(luatex.def)             Requested size: 384.10966pt x 269.32199pt.
+
+warning  (file content/Grafiken/3L-FC-Boost.pdf) (pdf inclusion): PDF inclusion:
+ found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/3L-FC-Boost.pdf, id=670, 297.15015pt x 190.43146pt>
+File: content/Grafiken/3L-FC-Boost.pdf Graphic file (type pdf)
+<use content/Grafiken/3L-FC-Boost.pdf>
+Package luatex.def Info: content/Grafiken/3L-FC-Boost.pdf  used on input line 9
+6.
+(luatex.def)             Requested size: 384.10966pt x 246.17772pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22<./content/Grafiken/ANPC.pdf>]
+warning  (file content/Grafiken/3L-FC-Boost+Buck.pdf) (pdf inclusion): PDF inclu
+sion: found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/3L-FC-Boost+Buck.pdf, id=679, 376.88805pt x 190.43146pt>
+File: content/Grafiken/3L-FC-Boost+Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/3L-FC-Boost+Buck.pdf>
+Package luatex.def Info: content/Grafiken/3L-FC-Boost+Buck.pdf  used on input l
+ine 106.
+(luatex.def)             Requested size: 384.10966pt x 194.08641pt.
+[23<./content/Grafiken/3L-FC-Boost.pdf><./content/Grafiken/3L-FC-Boost+Buck.pdf>
+]) (./content/Kapitel_5.tex [24]
 chapter 5.
-<content/Grafiken/PLECS_Simulationsaufbau.png, id=650, 832.39554pt x 301.55518p
+<content/Grafiken/PLECS_Simulationsaufbau.png, id=703, 832.39554pt x 301.55518p
 t>
 File: content/Grafiken/PLECS_Simulationsaufbau.png Graphic file (type png)
 <use content/Grafiken/PLECS_Simulationsaufbau.png>
 Package luatex.def Info: content/Grafiken/PLECS_Simulationsaufbau.png  used on 
 input line 5.
 (luatex.def)             Requested size: 384.10966pt x 139.15419pt.
-<content/Grafiken/Plecs_Out.png, id=652, 970.3753pt x 841.64438pt>
+<content/Grafiken/Plecs_Out.png, id=705, 970.3753pt x 841.64438pt>
 File: content/Grafiken/Plecs_Out.png Graphic file (type png)
 <use content/Grafiken/Plecs_Out.png>
 Package luatex.def Info: content/Grafiken/Plecs_Out.png  used on input line 12.
 
 (luatex.def)             Requested size: 384.10966pt x 333.15865pt.
-[22
+[25
 
 
-<./content/Grafiken/PLECS_Simulationsaufbau.png>] [23<./content/Grafiken/Plecs_O
-ut.png>] [24]
-<content/Grafiken/IAF_Plecs_main.png, id=682, 541.59482pt x 192.72pt>
+<./content/Grafiken/PLECS_Simulationsaufbau.png>] [26<./content/Grafiken/Plecs_O
+ut.png>] [27]
+<content/Grafiken/IAF_Plecs_main.png, id=735, 541.59482pt x 192.72pt>
 File: content/Grafiken/IAF_Plecs_main.png Graphic file (type png)
 <use content/Grafiken/IAF_Plecs_main.png>
 Package luatex.def Info: content/Grafiken/IAF_Plecs_main.png  used on input lin
 e 53.
 (luatex.def)             Requested size: 426.79141pt x 151.87659pt.
-<content/Grafiken/IAF_Plecs_IVS.png, id=683, 979.5166pt x 554.93036pt>
+<content/Grafiken/IAF_Plecs_IVS.png, id=736, 979.5166pt x 554.93036pt>
 File: content/Grafiken/IAF_Plecs_IVS.png Graphic file (type png)
 <use content/Grafiken/IAF_Plecs_IVS.png>
 Package luatex.def Info: content/Grafiken/IAF_Plecs_IVS.png  used on input line
  59.
 (luatex.def)             Requested size: 384.10966pt x 217.60742pt.
- [25<./content/Grafiken/IAF_Plecs_main.png>]
-<content/Grafiken/IAF_BuckControl.png, id=700, 963.6pt x 347.04657pt>
+ [28<./content/Grafiken/IAF_Plecs_main.png>]
+<content/Grafiken/IAF_BuckControl.png, id=753, 963.6pt x 347.04657pt>
 File: content/Grafiken/IAF_BuckControl.png Graphic file (type png)
 <use content/Grafiken/IAF_BuckControl.png>
 Package luatex.def Info: content/Grafiken/IAF_BuckControl.png  used on input li
@@ -2800,14 +2846,14 @@ ne 97.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26<./content/Grafiken/IAF_Plecs_IVS.png>]
-<content/Grafiken/IAF_Paper_Control.png, id=714, 697.10437pt x 521.69907pt>
+ [29<./content/Grafiken/IAF_Plecs_IVS.png>]
+<content/Grafiken/IAF_Paper_Control.png, id=767, 697.10437pt x 521.69907pt>
 File: content/Grafiken/IAF_Paper_Control.png Graphic file (type png)
 <use content/Grafiken/IAF_Paper_Control.png>
 Package luatex.def Info: content/Grafiken/IAF_Paper_Control.png  used on input 
 line 105.
 (luatex.def)             Requested size: 298.75269pt x 223.57793pt.
-<content/Grafiken/PlecsIAFivscontrol.png, id=720, 1916.66063pt x 520.19344pt>
+<content/Grafiken/PlecsIAFivscontrol.png, id=773, 1916.66063pt x 520.19344pt>
 File: content/Grafiken/PlecsIAFivscontrol.png Graphic file (type png)
 <use content/Grafiken/PlecsIAFivscontrol.png>
 Package luatex.def Info: content/Grafiken/PlecsIAFivscontrol.png  used on input
@@ -2816,30 +2862,30 @@ Package luatex.def Info: content/Grafiken/PlecsIAFivscontrol.png  used on input
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27<./content/Grafiken/IAF_BuckControl.png><./content/Grafiken/IAF_Paper_Contro
+ [30<./content/Grafiken/IAF_BuckControl.png><./content/Grafiken/IAF_Paper_Contro
 l.png>]
-<content/Grafiken/PlecsIAFiy.png, id=737, 1091.57813pt x 296.60812pt>
+<content/Grafiken/PlecsIAFiy.png, id=790, 1091.57813pt x 296.60812pt>
 File: content/Grafiken/PlecsIAFiy.png Graphic file (type png)
 <use content/Grafiken/PlecsIAFiy.png>
 Package luatex.def Info: content/Grafiken/PlecsIAFiy.png  used on input line 13
 4.
 (luatex.def)             Requested size: 384.10966pt x 104.37108pt.
-<content/Grafiken/PlecsIAFivsK1.png, id=739, 1206.00563pt x 482.55281pt>
+<content/Grafiken/PlecsIAFivsK1.png, id=792, 1206.00563pt x 482.55281pt>
 File: content/Grafiken/PlecsIAFivsK1.png Graphic file (type png)
 <use content/Grafiken/PlecsIAFivsK1.png>
 Package luatex.def Info: content/Grafiken/PlecsIAFivsK1.png  used on input line
  142.
 (luatex.def)             Requested size: 426.79141pt x 170.76625pt.
 
-[28<./content/Grafiken/PlecsIAFivscontrol.png><./content/Grafiken/PlecsIAFiy.png
+[31<./content/Grafiken/PlecsIAFivscontrol.png><./content/Grafiken/PlecsIAFiy.png
 >]
-<content/Grafiken/PLECS_B6.png, id=752, 801.74532pt x 344.78813pt>
+<content/Grafiken/PLECS_B6.png, id=806, 801.74532pt x 344.78813pt>
 File: content/Grafiken/PLECS_B6.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6.png  used on input line 153.
 
 (luatex.def)             Requested size: 384.10966pt x 165.186pt.
-<content/Grafiken/PLECS_B6Buck.png, id=754, 1089.31969pt x 444.15938pt>
+<content/Grafiken/PLECS_B6Buck.png, id=808, 1089.31969pt x 444.15938pt>
 File: content/Grafiken/PLECS_B6Buck.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6Buck.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6Buck.png  used on input line 
@@ -2848,19 +2894,19 @@ Package luatex.def Info: content/Grafiken/PLECS_B6Buck.png  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29<./content/Grafiken/PlecsIAFivsK1.png><./content/Grafiken/PLECS_B6.png>]
+ [32<./content/Grafiken/PlecsIAFivsK1.png><./content/Grafiken/PLECS_B6.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-[30<./content/Grafiken/PLECS_B6Buck.png>]
-<content/Grafiken/B6-Control-orig.png, id=779, 1768.35657pt x 892.83563pt>
+[33<./content/Grafiken/PLECS_B6Buck.png>]
+<content/Grafiken/B6-Control-orig.png, id=833, 1768.35657pt x 892.83563pt>
 File: content/Grafiken/B6-Control-orig.png Graphic file (type png)
 <use content/Grafiken/B6-Control-orig.png>
 Package luatex.def Info: content/Grafiken/B6-Control-orig.png  used on input li
 ne 195.
 (luatex.def)             Requested size: 384.10966pt x 193.93134pt.
-<content/Grafiken/PLECS_B6_ControlPout.png, id=786, 1343.77031pt x 543.53062pt>
+<content/Grafiken/PLECS_B6_ControlPout.png, id=840, 1343.77031pt x 543.53062pt>
 
 File: content/Grafiken/PLECS_B6_ControlPout.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6_ControlPout.png>
@@ -2872,23 +2918,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--205
 
  []
 
-<content/Grafiken/PLECS_B6_ControlRiGrid.png, id=788, 1003.17642pt x 364.79143p
+<content/Grafiken/PLECS_B6_ControlRiGrid.png, id=842, 1003.17642pt x 364.79143p
 t>
 File: content/Grafiken/PLECS_B6_ControlRiGrid.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6_ControlRiGrid.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6_ControlRiGrid.png  used on i
 nput line 209.
 (luatex.def)             Requested size: 384.10966pt x 139.6742pt.
-[31<./content/Grafiken/B6-Control-orig.png><./content/Grafiken/PLECS_B6_ControlP
+[34<./content/Grafiken/B6-Control-orig.png><./content/Grafiken/PLECS_B6_ControlP
 out.png>]
-<content/Grafiken/PLECS_B6_ControlPWMmid.png, id=801, 1355.8153pt x 258.9675pt>
+<content/Grafiken/PLECS_B6_ControlPWMmid.png, id=854, 1355.8153pt x 258.9675pt>
 
 File: content/Grafiken/PLECS_B6_ControlPWMmid.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6_ControlPWMmid.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6_ControlPWMmid.png  used on i
 nput line 218.
 (luatex.def)             Requested size: 384.10966pt x 73.36787pt.
-) (./content/Kapitel_6.tex [32<./content/Grafiken/PLECS_B6_ControlRiGrid.png><./
+) (./content/Kapitel_6.tex [35<./content/Grafiken/PLECS_B6_ControlRiGrid.png><./
 content/Grafiken/PLECS_B6_ControlPWMmid.png>]
 chapter 6.
 
@@ -2901,17 +2947,17 @@ Overfull \hbox (27.55289pt too wide) in paragraph at lines 25--86
 [][] 
  []
 
-[33
+[36
 
 
-] [34]
-<content/Grafiken/B6_Temp_0&30Grad.pdf, id=826, 426.59375pt x 284.06125pt>
+] [37]
+<content/Grafiken/B6_Temp_0&30Grad.pdf, id=879, 426.59375pt x 284.06125pt>
 File: content/Grafiken/B6_Temp_0&30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_Temp_0&30Grad.pdf>
 Package luatex.def Info: content/Grafiken/B6_Temp_0&30Grad.pdf  used on input l
 ine 95.
 (luatex.def)             Requested size: 384.10966pt x 255.78711pt.
-<content/Grafiken/B6_AC+DC_0Grad.pdf, id=829, 426.59375pt x 426.59375pt>
+<content/Grafiken/B6_AC+DC_0Grad.pdf, id=882, 426.59375pt x 426.59375pt>
 File: content/Grafiken/B6_AC+DC_0Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_AC+DC_0Grad.pdf>
 Package luatex.def Info: content/Grafiken/B6_AC+DC_0Grad.pdf  used on input lin
@@ -2920,85 +2966,75 @@ e 103.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35<./content/Grafiken/B6_Temp_0&30Grad.pdf>]
-<content/Grafiken/B6_AC+DC_30Grad.pdf, id=845, 426.59375pt x 426.59375pt>
+ [38<./content/Grafiken/B6_Temp_0&30Grad.pdf>]
+<content/Grafiken/B6_AC+DC_30Grad.pdf, id=898, 426.59375pt x 426.59375pt>
 File: content/Grafiken/B6_AC+DC_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_AC+DC_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/B6_AC+DC_30Grad.pdf  used on input li
 ne 110.
 (luatex.def)             Requested size: 426.79141pt x 426.82051pt.
- [36<./content/Grafiken/B6_AC+DC_0Grad.pdf>] [37<./content/Grafiken/B6_AC+DC_30G
+ [39<./content/Grafiken/B6_AC+DC_0Grad.pdf>] [40<./content/Grafiken/B6_AC+DC_30G
 rad.pdf>]
-<content/Grafiken/IAF_Temp_0Grad.pdf, id=874, 426.59375pt x 284.06125pt>
+<content/Grafiken/IAF_Temp_0Grad.pdf, id=927, 426.59375pt x 284.06125pt>
 File: content/Grafiken/IAF_Temp_0Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_Temp_0Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_Temp_0Grad.pdf  used on input lin
 e 119.
 (luatex.def)             Requested size: 426.79141pt x 284.21223pt.
-<content/Grafiken/IAF_Temp_30Grad.pdf, id=875, 426.59375pt x 284.06125pt>
+<content/Grafiken/IAF_Temp_30Grad.pdf, id=928, 426.59375pt x 284.06125pt>
 File: content/Grafiken/IAF_Temp_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_Temp_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_Temp_30Grad.pdf  used on input li
 ne 121.
 (luatex.def)             Requested size: 426.79141pt x 284.21223pt.
-<content/Grafiken/IAF_AC+L.pdf, id=881, 426.59375pt x 569.12625pt>
+<content/Grafiken/IAF_AC+L.pdf, id=934, 426.59375pt x 569.12625pt>
 File: content/Grafiken/IAF_AC+L.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_AC+L.pdf>
 Package luatex.def Info: content/Grafiken/IAF_AC+L.pdf  used on input line 131.
 
 (luatex.def)             Requested size: 426.79141pt x 569.4288pt.
-<content/Grafiken/IAF_AC+L_30Grad.pdf, id=882, 426.59375pt x 569.12625pt>
+<content/Grafiken/IAF_AC+L_30Grad.pdf, id=935, 426.59375pt x 569.12625pt>
 File: content/Grafiken/IAF_AC+L_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_AC+L_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_AC+L_30Grad.pdf  used on input li
 ne 138.
 (luatex.def)             Requested size: 426.79141pt x 569.4288pt.
 ) (./content/Kapitel_7.tex
-[38] [39<./content/Grafiken/IAF_Temp_0Grad.pdf><./content/Grafiken/IAF_Temp_30Gr
-ad.pdf>] [40<./content/Grafiken/IAF_AC+L.pdf>] [41<./content/Grafiken/IAF_AC+L_3
+[41] [42<./content/Grafiken/IAF_Temp_0Grad.pdf><./content/Grafiken/IAF_Temp_30Gr
+ad.pdf>] [43<./content/Grafiken/IAF_AC+L.pdf>] [44<./content/Grafiken/IAF_AC+L_3
 0Grad.pdf>]
 chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
 warning  (file content/Grafiken/DPT.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/DPT.pdf, id=947, 722.7pt x 285.9502pt>
+<content/Grafiken/DPT.pdf, id=1000, 722.7pt x 285.9502pt>
 File: content/Grafiken/DPT.pdf Graphic file (type pdf)
 <use content/Grafiken/DPT.pdf>
-Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 10.
-(luatex.def)             Requested size: 384.10966pt x 151.98047pt.
+Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 6.
+(luatex.def)             Requested size: 405.45053pt x 160.42336pt.
 
 warning  (file content/Grafiken/IAF_surge.pdf) (pdf inclusion): PDF inclusion: f
 ound PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/IAF_surge.pdf, id=951, 400.73715pt x 148.8762pt>
+<content/Grafiken/IAF_surge.pdf, id=1004, 400.73715pt x 148.8762pt>
 File: content/Grafiken/IAF_surge.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_surge.pdf>
-Package luatex.def Info: content/Grafiken/IAF_surge.pdf  used on input line 19.
+Package luatex.def Info: content/Grafiken/IAF_surge.pdf  used on input line 15.
 
-(luatex.def)             Requested size: 384.10966pt x 142.70372pt.
+(luatex.def)             Requested size: 405.45053pt x 150.63184pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--22
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
  []
 
-[42
+[45
 
 
 <./content/Grafiken/DPT.pdf>])
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
-[43<./content/Grafiken/IAF_surge.pdf>]
+[46<./content/Grafiken/IAF_surge.pdf>]
 chapter without number
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
@@ -3010,7 +3046,7 @@ Overfull \hbox (20.85544pt too wide) in paragraph at lines 26--26
 ? _ _ blob = publicationFile&v =
  []
 
-[44
+[47
 
 
 
@@ -3022,9 +3058,9 @@ lmr/m/n/10.95 . 2023. \TU/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n
 /10.95 http : / / schmidt - walter - schaltnetzteile .
  []
 
-[45] (./content/Anhang.tex
+[48] (./content/Anhang.tex
 chapter without number
-[46
+[49
 
 
 
@@ -3169,34 +3205,34 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {nswissgerman/target}  =>  {german}
 >  {nswissgerman/variant}  =>  {swiss}
 >  {nswissgerman/options}  =>  {variant=swiss,spelling=new}.
- [47
+ [50
 
 
 ]
 (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: A6E86A3A9C614F0BC2FC002029EC8E78;45004.
+(rerunfilecheck)             Checksum: EF44812538E338458BD6603F1BDE858D;49447.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 47B9A9F6E7DBD2A67E1323B6D9D9CFF1;4358.
+(rerunfilecheck)             Checksum: 343B9CEF4B59036449798971C992D0FE;4822.
 Package rerunfilecheck Info: File `main.lof' has not changed.
-(rerunfilecheck)             Checksum: CAC989FE362768BB0ABFC01F4A522577;6017.
+(rerunfilecheck)             Checksum: 7D1A07F4E803445B5C8EAE6EBE218E76;6466.
 Package rerunfilecheck Info: File `main.lot' has not changed.
-(rerunfilecheck)             Checksum: C9EEDE92ACD07C79CEDE015273767889;811.
+(rerunfilecheck)             Checksum: 0B9D92377182BF997B91281945089E57;811.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 90559 strings out of 478278
+ 90646 strings out of 478278
  100000,4101490 words of node,token memory allocated
- 1060 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 51
- attribute, 89 glue_spec, 51 attribute_list, 2 write, 27 pdf_action nodes
-   avail lists: 1:4,2:1665,3:580,4:394,5:656,6:178,7:7288,8:201,9:1428,10:30,11:
+ 1070 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 52
+ attribute, 89 glue_spec, 52 attribute_list, 2 write, 28 pdf_action nodes
+   avail lists: 1:4,2:1669,3:602,4:417,5:779,6:189,7:7484,8:201,9:1428,10:30,11:
 881,12:2
- 107749 multiletter control sequences out of 65536+600000
- 105 fonts using 38197815 bytes
+ 107798 multiletter control sequences out of 65536+600000
+ 105 fonts using 38198143 bytes
  113i,20n,118p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:PLL'
@@ -3218,9 +3254,9 @@ entype/public/lm/lmromanslant10-regular.otf><//?/c:/program files/miktex/fonts/o
 pentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opentype/
 public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/publi
 c/lm/lmroman10-regular.otf>
-Output written on main.pdf (57 pages, 18524342 bytes).
+Output written on main.pdf (60 pages, 18565493 bytes).
 
-PDF statistics: 1269 PDF objects out of 1440 (max. 8388607)
- 230 named destinations out of 1000 (max. 131072)
- 440 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1338 PDF objects out of 1440 (max. 8388607)
+ 244 named destinations out of 1000 (max. 131072)
+ 472 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -2398,13 +2398,16 @@
     <bcf:citekey order="38" intorder="1">HydrogenElectronicTopologies</bcf:citekey>
     <bcf:citekey order="39" intorder="1">HydrogenRectifier</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Advanced3PhPFC</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">Soeiro.2013</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">Soeiro.2013</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">Soeiro.2013</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">IFAGFF2</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">13PWMPFC</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">13PWMPFC</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">IAF99</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Essenceof3pKolar</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">NPC</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">ANPC</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Soeiro.2013</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Soeiro.2013</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">Soeiro.2013</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">IFAGFF2</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">13PWMPFC</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">13PWMPFC</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">IAF99</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
