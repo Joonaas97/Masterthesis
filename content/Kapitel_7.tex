@@ -1,15 +1,19 @@
 \chapter{Zusammenfassung \& Ausblick}
 Die Ergebnisse in Tabelle \ref{tab:Auswertung} geben eine gute Übersicht zum Vergleich mit weiteren Topologien, durch die Gewichtung und Normierung lassen sich weitere Angaben ergänzen. Der \gls{IAF} schneidet in der Gesamtbewertung um etwa 0,2 Punkte besser ab, dies liegt hauptsächlich an der optimierten Platzierung der Drossel. Jedoch liegt in dieser Zusammenfassung auch der Nachteil der Schaltung im Falle von Phasenverschiebung. Daher kann diese Topologie nach aktuellen Erkenntnissen nicht für diesen Anwendungsfall empfohlen werden. Da der Strom in der Drossel zwischen den einzelnen Phasen geschaltet werden muss, kommt es zu starken Sprüngen im Eingangsstrom was einen deutlich erhöhten Bedarf an Netzfiltern verursacht. \\ 
-
-
 Wie in Kapitel \ref{sec:Grundlagen} erwähnt, sind die Halbleiter Modelle ein essenzieller Teil, daher sollen diese optimiert und in die Simulation zurück geführt werden. Die für diese Schaltung ausgewählten Halbleiter können dazu beschafft und im Prüfstand vermessen werden. Der Messaufbau dazu ist in Abb. \ref{fig:dpt} dargestellt, er beinhaltet die Schaltzelle mit Mess- und Versorgungsgeräten sowie einer Sicherheitssteuerung. Die Messwerterfassung wird über ein Oszilloskop umgesetzt, welches die automatisierten Messpunkte erfasst und speichert.  Anhand dieser Messdaten kann das Modell validiert sowie ergänzt und die Simulationsergebnisse somit optimiert werden. \\
-
- 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\linewidth]{content/Grafiken/DPT}
+	\includegraphics[width=0.95\linewidth]{content/Grafiken/DPT}
 	\caption[Doppelpulstestprüfstand]{Doppelpulstestprüfstand}
 	\label{fig:dpt}
 \end{figure}
 
-Für den Aufbau eines Demonstrators der finalen Topologie, kann die Auslegung der Halbleiter und Drosseln verwendet werden. Die Regelungen können als Grundlage genutzt werden, müssen aber um Sicherheitsfunktionen ergänzt und insbesondere die Stabilität im Gesamtsystem muss sichergestellt werden. Außerdem erfordert die Implementierung auf Hardwarecontrollern weitere Optimierungen. Die Schaltungen können außerdem durch Parallelbetrieb mit Interleaving am Ausgang, oder bei entkoppelter Versorgung als Ausgangsseitige Reihenschaltung Betrieben werden, um eine höhere Ausgangsspannung zu erzielen.  
+Für den Aufbau eines Demonstrators der finalen Topologie, kann die Auslegung der Halbleiter und Drosseln verwendet werden. Die Regelungen können als Grundlage genutzt werden, müssen aber um Sicherheitsfunktionen ergänzt und insbesondere die Stabilität im Gesamtsystem muss sichergestellt werden. Außerdem erfordert die Implementierung auf Hardwarecontrollern weitere Optimierungen, um die Abtastraten und Reglerverhalten zu definieren. Für \gls{SDL} und bei Netzfehlern wie Frequenzschwankungen müssen entsprechende Verhalten zur Stabilisierung implementiert werden.\\
+Ein weiterer Punkt ist der direkte Blitzeinschlag im Stromnetz, welcher zu einer Spannungserhöhung führt. Entsprechende Funktionen und Spannungsgeneratoren können in der Simulation eingebaut werden, um die auftretenden Überspannungen an den Halbleitern zu ermitteln. Bei der Betrachtung fällt für die beiden Topologien aufgrund ihres Aufbaus auf, dass immer ein leitender Pfad über die Dioden sichergestellt ist. Die Energie kann somit im Zwischenkreis Kondensator aufgenommen werden, hierbei ist auf die Dimensionierung und auftretende Überspannung an den Halbleitern zu achten. Der Strompfad über die Dioden in den Kondensator ist in Abbildung \ref{fig:iafsurge} dargestellt und ist identisch zum \gls{B6PFC}. \\
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{content/Grafiken/IAF_surge}
+	\caption{Strompfad im Fall eines Blitzeinschlag beim IAF}
+	\label{fig:iafsurge}
+\end{figure}
+Die Schaltungen können außerdem durch Parallelbetrieb mit Interleaving am Ausgang, oder bei entkoppelter Versorgung als Ausgangsseitige Reihenschaltung Betrieben werden, um eine höhere Ausgangsspannung zu erzielen. Dabei werden weitere Regelungsparameter und Tests zur Betrachtung der Stabilität und das auftreten unerwünschter Ausgleichsströme nötig.\\

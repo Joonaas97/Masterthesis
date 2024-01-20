@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1705674939 "build/main.bcf" "build/main.bbl" "build/main" 1705697894 0
+["biber build/main"] 1705742962 "build/main.bcf" "build/main.bbl" "build/main" 1705742978 0
   "./bibliography.bib" 1705258594 8027 f03fc8208f759b216537ca4da7af73f1 ""
-  "build/main.bcf" 1705697892 110650 9a753afefd9ccf01b96421e885ca94fa "lualatex"
+  "build/main.bcf" 1705742976 110650 9a753afefd9ccf01b96421e885ca94fa "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["lualatex"] 1705697879 "main.tex" "build/main.pdf" "main" 1705697894 0
+["lualatex"] 1705742964 "main.tex" "build/main.pdf" "main" 1705742978 0
   "C:/Program Files/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf" 1409936340 733736 20d3eb5d31e6373942bca10f39f669ce ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -419,13 +419,13 @@
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1692865242 291861 5bd84244fd45e75edda3a40171566321 ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1703880500 9798 e49d2650656a636deb4ec608c6b5cc5d ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz" 1692865242 58233 928999858f115f20176f7e8008f62a5c ""
-  "build/main.aux" 1705697892 44729 4703fa3212a5684239ac0030df4b4be4 "lualatex"
-  "build/main.bbl" 1705674942 25598 03d67f9c78ce005e0e35a68699268122 "biber build/main"
+  "build/main.aux" 1705742976 45004 a6e86a3a9c614f0bc2fc002029ec8e78 "lualatex"
+  "build/main.bbl" 1705742964 25598 03d67f9c78ce005e0e35a68699268122 "biber build/main"
   "build/main.gls" 1704496197 4861 cf597879c2635f1deb770b7b99972cd6 ""
-  "build/main.lof" 1705697892 5888 c322025fd30f737725fd066ff4e685f0 "lualatex"
-  "build/main.lot" 1705697892 811 c9eede92acd07c79cede015273767889 "lualatex"
-  "build/main.run.xml" 1705697892 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
-  "build/main.toc" 1705697892 4358 86302dd4043c1e27f90532e6532bcdca "lualatex"
+  "build/main.lof" 1705742976 6017 cac989fe362768bb0abfc01f4a522577 "lualatex"
+  "build/main.lot" 1705742976 811 c9eede92acd07c79cede015273767889 "lualatex"
+  "build/main.run.xml" 1705742976 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
+  "build/main.toc" 1705742976 4358 47b9a9f6e7dbd2a67e1323b6d9d9cff1 "lualatex"
   "content/Abstract.tex" 1705660682 1732 fa42bf63c8b3791d34c70c878a4ba770 ""
   "content/Anhang.tex" 1704137022 344 521da8b059d52b843b0cacd02a9eb496 ""
   "content/Erklaerung.tex" 1693902991 983 d54fd34c456adc13caefc8a2bf55b26a ""
@@ -435,7 +435,7 @@
   "content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png" 1696841151 6762422 97caaa4d3a2989ad18f931d121d2036e ""
   "content/Grafiken/B6_AC+DC_0Grad.pdf" 1705085605 648417 1573f7a4a29bff94a426c0e0c61963e8 ""
   "content/Grafiken/B6_AC+DC_30Grad.pdf" 1705085459 649544 468ecf4687f7d4862fb412523fec1637 ""
-  "content/Grafiken/B6_Buck.pdf" 1700735266 10680 41cd364071a1fea7f67263c8cd6e4441 ""
+  "content/Grafiken/B6_Buck.pdf" 1705741639 9588 99a8ad4a839a9ed92c698603625b0926 ""
   "content/Grafiken/B6_Temp_0&30Grad.pdf" 1705084573 1990142 0954d17166f48d485236c93e1cac5484 ""
   "content/Grafiken/BRS.png" 1660136422 31356 4328497fbf3cc907300a6d73289809e5 ""
   "content/Grafiken/Buck.pdf" 1703778041 37356 680c312d7671c96a9f1a1ee8100aa11a ""
@@ -454,6 +454,7 @@
   "content/Grafiken/IAF_Plecs_main.png" 1704476166 85565 6dfccbd7ecc19d96d04a8bd905234fd8 ""
   "content/Grafiken/IAF_Temp_0Grad.pdf" 1705176382 1306455 b0268884b5de77da456d19f18eb2a5b9 ""
   "content/Grafiken/IAF_Temp_30Grad.pdf" 1705176172 1307268 e043e0edd54164e8c6507e6aed626a49 ""
+  "content/Grafiken/IAF_surge.pdf" 1705742607 11638 12d1e8b08b0b2c41faae0d6b72ee22c6 ""
   "content/Grafiken/PLECS_B6.png" 1705080941 47171 02da53b2f70bbae67bf8dcb3e523aa64 ""
   "content/Grafiken/PLECS_B6Buck.png" 1705081176 88481 622118459446ade4f9fd73877ea2099c ""
   "content/Grafiken/PLECS_B6_ControlPWMmid.png" 1705083189 105126 a7a2bcd6b358bcf2cdf13e6d2f565297 ""
@@ -482,7 +483,7 @@
   "content/Kapitel_4.tex" 1705697860 8899 07324253f274645fa4feddf861e392fa ""
   "content/Kapitel_5.tex" 1705509412 17464 e91b3b992dde3349a12d8bc3e383ec24 ""
   "content/Kapitel_6.tex" 1705509755 8980 c85d6185dd22874ab0aa5b1ba180eec2 ""
-  "content/Kapitel_7.tex" 1705173858 2271 0f71fcd4e355dcce2c19eace3c54f731 ""
+  "content/Kapitel_7.tex" 1705742932 3525 5f03f33de28d4b2bec75ddc328757632 ""
   "content/Titelseite.tex" 1695902111 1247 fee496454be1d7c6c56757dd2a6603c8 ""
   "glossary.tex" 1705257537 3544 03ebd6024d026d9fa3282781374d11f5 ""
   "header.tex" 1703696701 17026 626beab7de3b5d3b2c34074d68d412fc ""
