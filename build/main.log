@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  20 JAN 2024 18:37
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  22 JAN 2024 08:17
  system commands enabled.
 **main.tex
 (./main.tex
@@ -590,12 +590,12 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
-(polyglossia)            righthyphenmin	2 on input line 16
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	 on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
 Package polyglossia Info: Option: German, spelling=new.
@@ -2357,12 +2357,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	
-(polyglossia)            righthyphenmin	2 on input line 580
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	 on input line 580
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 580
 )
@@ -2977,29 +2977,29 @@ ne 110.
 (luatex.def)             Requested size: 426.79141pt x 426.82051pt.
  [39<./content/Grafiken/B6_AC+DC_0Grad.pdf>] [40<./content/Grafiken/B6_AC+DC_30G
 rad.pdf>]
-<content/Grafiken/IAF_Temp_0Grad.pdf, id=911, 426.59375pt x 284.06125pt>
+<content/Grafiken/IAF_Temp_0Grad.pdf, id=912, 426.59375pt x 284.06125pt>
 File: content/Grafiken/IAF_Temp_0Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_Temp_0Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_Temp_0Grad.pdf  used on input lin
 e 119.
 (luatex.def)             Requested size: 426.79141pt x 284.21223pt.
-<content/Grafiken/IAF_Temp_30Grad.pdf, id=912, 426.59375pt x 284.06125pt>
+<content/Grafiken/IAF_Temp_30Grad.pdf, id=913, 426.59375pt x 284.06125pt>
 File: content/Grafiken/IAF_Temp_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_Temp_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_Temp_30Grad.pdf  used on input li
 ne 121.
 (luatex.def)             Requested size: 426.79141pt x 284.21223pt.
-<content/Grafiken/IAF_AC+L.pdf, id=918, 426.59375pt x 569.12625pt>
+<content/Grafiken/IAF_AC+L.pdf, id=919, 426.59375pt x 569.12625pt>
 File: content/Grafiken/IAF_AC+L.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_AC+L.pdf>
-Package luatex.def Info: content/Grafiken/IAF_AC+L.pdf  used on input line 131.
+Package luatex.def Info: content/Grafiken/IAF_AC+L.pdf  used on input line 130.
 
 (luatex.def)             Requested size: 426.79141pt x 569.4288pt.
-<content/Grafiken/IAF_AC+L_30Grad.pdf, id=919, 426.59375pt x 569.12625pt>
+<content/Grafiken/IAF_AC+L_30Grad.pdf, id=920, 426.59375pt x 569.12625pt>
 File: content/Grafiken/IAF_AC+L_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_AC+L_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_AC+L_30Grad.pdf  used on input li
-ne 138.
+ne 137.
 (luatex.def)             Requested size: 426.79141pt x 569.4288pt.
 ) (./content/Kapitel_7.tex
 [41] [42<./content/Grafiken/IAF_Temp_0Grad.pdf><./content/Grafiken/IAF_Temp_30Gr
@@ -3009,7 +3009,7 @@ chapter 7.
 
 warning  (file content/Grafiken/DPT.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/DPT.pdf, id=984, 722.7pt x 285.9502pt>
+<content/Grafiken/DPT.pdf, id=982, 722.7pt x 285.9502pt>
 File: content/Grafiken/DPT.pdf Graphic file (type pdf)
 <use content/Grafiken/DPT.pdf>
 Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 6.
@@ -3017,7 +3017,7 @@ Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 6.
 
 warning  (file content/Grafiken/IAF_surge.pdf) (pdf inclusion): PDF inclusion: f
 ound PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/IAF_surge.pdf, id=988, 400.73715pt x 148.8762pt>
+<content/Grafiken/IAF_surge.pdf, id=986, 400.73715pt x 148.8762pt>
 File: content/Grafiken/IAF_surge.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_surge.pdf>
 Package luatex.def Info: content/Grafiken/IAF_surge.pdf  used on input line 15.
@@ -3234,7 +3234,7 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 1:4,2:1657,3:588,4:415,5:783,6:190,7:7484,8:201,9:1428,10:30,11:
 881,12:2
  107799 multiletter control sequences out of 65536+600000
- 105 fonts using 38198143 bytes
+ 105 fonts using 38197815 bytes
  113i,20n,118p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:SiC'
@@ -3254,9 +3254,9 @@ entype/public/lm/lmromanslant10-regular.otf><//?/c:/program files/miktex/fonts/o
 pentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opentype/
 public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/publi
 c/lm/lmroman10-regular.otf>
-Output written on main.pdf (60 pages, 18563219 bytes).
+Output written on main.pdf (60 pages, 18563950 bytes).
 
-PDF statistics: 1325 PDF objects out of 1440 (max. 8388607)
+PDF statistics: 1323 PDF objects out of 1440 (max. 8388607)
  244 named destinations out of 1000 (max. 131072)
  480 words of extra memory for PDF output out of 10000 (max. 100000000)
 
