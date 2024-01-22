@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  22 JAN 2024 11:27
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  22 JAN 2024 19:44
  system commands enabled.
 **main.tex
 (./main.tex
@@ -76,12 +76,11 @@ Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 135.
-Class scrbook Info: File `scrsize11pt.clo' used instead of
-(scrbook)           file `scrsize11.clo' to setup font sizes on input line 2691
-.
+Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input li
+ne 2691.
 
-("C:/Program Files/MiKTeX/tex/latex/koma-script/scrsize11pt.clo"
-File: scrsize11pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (11pt
+("C:/Program Files/MiKTeX/tex/latex/koma-script/scrsize12pt.clo"
+File: scrsize12pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (12pt
 )
 luaotfload | db : Font names database loaded from C:/Users/jheinemann/AppData/Lo
 cal/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
@@ -94,21 +93,21 @@ Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
 \ta@temp=\skip52
 \footheight=\skip53
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 12
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 418.25555pt
+(typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 47.2316pt
-(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)              \evensidemargin = 27.31467pt
+(typearea)              \oddsidemargin  = -22.47766pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 595.80026pt
-(typearea)              \topmargin      = -25.16531pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
 (typearea)              on input line 1799.
 )
 \c@part=\count184
@@ -221,22 +220,22 @@ Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 1: chapter
 1: section
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 12
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 418.25555pt
+(typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 595.80026pt
-(typearea)              \topmargin      = -25.16531pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 13.
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 14.
 ("C:/Program Files/MiKTeX/tex/latex/chngcntr/chngcntr.sty"
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
@@ -290,7 +289,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 ("C:/Program Files/MiKTeX/tex/latex/setspace/setspace.sty"
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-Package scrhack Info: loading setspace hack on input line 41.
+Package scrhack Info: loading setspace hack on input line 42.
 
 ("C:/Program Files/MiKTeX/tex/latex/koma-script/setspace.hak"
 File: setspace.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package s
@@ -590,12 +589,12 @@ braces):
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 16
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 16
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 16
 Package polyglossia Info: Option: German, spelling=new.
@@ -666,9 +665,9 @@ Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 Package fontspec Info: Font family 'LatinModernMath(1)' created for font
 (fontspec)             'Latin Modern Math' with options
 (fontspec)             [Renderer=Harfbuzz,Renderer=Basic,BoldItalicFont={},Ital
-icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-
-9.3075,Font=Latin
-(fontspec)             Modern Math,Style=MathScript},{Size=-6.57,Font=Latin
+icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.
+2,Font=Latin
+(fontspec)             Modern Math,Style=MathScript},{Size=-7.2,Font=Latin
 (fontspec)             Modern
 (fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
 xetex}].
@@ -677,22 +676,22 @@ xetex}].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->"LatinModernMath:mode=base;script=math;language
-=dflt;mathfontdimen=xetex;"<6.57-9.3075>"LatinModernMath:mode=base;script=math;
-language=dflt;mathfontdimen=xetex;+ssty=0;"<-6.57>"LatinModernMath:mode=base;sc
-ript=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
+(fontspec)             <10.2->"LatinModernMath:mode=base;script=math;language=d
+flt;mathfontdimen=xetex;"<7.2-10.2>"LatinModernMath:mode=base;script=math;langu
+age=dflt;mathfontdimen=xetex;+ssty=0;"<-7.2>"LatinModernMath:mode=base;script=m
+ath;language=dflt;mathfontdimen=xetex;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 85.
+(Font)              `operators' in the math version `normal' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line
- 85.
+ 86.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 85.
+(Font)              `operators' in the math version `bold' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input lin
-e 85.
+e 86.
 
 Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 (fontspec)             doesn't exist).
@@ -701,9 +700,9 @@ Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 Package fontspec Info: Font family 'LatinModernMath(2)' created for font
 (fontspec)             'Latin Modern Math' with options
 (fontspec)             [Renderer=Harfbuzz,Renderer=Basic,BoldItalicFont={},Ital
-icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-
-9.3075,Font=Latin
-(fontspec)             Modern Math,Style=MathScript},{Size=-6.57,Font=Latin
+icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.
+2,Font=Latin
+(fontspec)             Modern Math,Style=MathScript},{Size=-7.2,Font=Latin
 (fontspec)             Modern
 (fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
 xetex},RawFeature={mathfontdimen=tex2}].
@@ -712,23 +711,23 @@ xetex},RawFeature={mathfontdimen=tex2}].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->"LatinModernMath:mode=base;script=math;language
-=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<6.57-9.3075>"LatinModernMath:mod
-e=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=0
-;"<-6.57>"LatinModernMath:mode=base;script=math;language=dflt;mathfontdimen=xet
-ex;mathfontdimen=tex2;+ssty=1;"
+(fontspec)             <10.2->"LatinModernMath:mode=base;script=math;language=d
+flt;mathfontdimen=xetex;mathfontdimen=tex2;"<7.2-10.2>"LatinModernMath:mode=bas
+e;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=0;"<-7
+.2>"LatinModernMath:mode=base;script=math;language=dflt;mathfontdimen=xetex;mat
+hfontdimen=tex2;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 85.
+(Font)              `symbols' in the math version `normal' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input lin
-e 85.
+e 86.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 85.
+(Font)              `symbols' in the math version `bold' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input lin
-e 85.
+e 86.
 
 Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 (fontspec)             doesn't exist).
@@ -737,9 +736,9 @@ Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 Package fontspec Info: Font family 'LatinModernMath(3)' created for font
 (fontspec)             'Latin Modern Math' with options
 (fontspec)             [Renderer=Harfbuzz,Renderer=Basic,BoldItalicFont={},Ital
-icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-
-9.3075,Font=Latin
-(fontspec)             Modern Math,Style=MathScript},{Size=-6.57,Font=Latin
+icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.
+2,Font=Latin
+(fontspec)             Modern Math,Style=MathScript},{Size=-7.2,Font=Latin
 (fontspec)             Modern
 (fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
 xetex},RawFeature={mathfontdimen=tex3}].
@@ -748,32 +747,32 @@ xetex},RawFeature={mathfontdimen=tex3}].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->"LatinModernMath:mode=base;script=math;language
-=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<6.57-9.3075>"LatinModernMath:mod
-e=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=0
-;"<-6.57>"LatinModernMath:mode=base;script=math;language=dflt;mathfontdimen=xet
-ex;mathfontdimen=tex3;+ssty=1;"
+(fontspec)             <10.2->"LatinModernMath:mode=base;script=math;language=d
+flt;mathfontdimen=xetex;mathfontdimen=tex3;"<7.2-10.2>"LatinModernMath:mode=bas
+e;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=0;"<-7
+.2>"LatinModernMath:mode=base;script=math;language=dflt;mathfontdimen=xetex;mat
+hfontdimen=tex3;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 8
-5.
+6.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input lin
-e 85.
+e 86.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 85.
+(Font)              `largesymbols' in the math version `bold' on input line 86.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input lin
-e 85.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+e 86.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
 
 
 ("C:/Program Files/MiKTeX/tex/latex/amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
 
 
 ("C:/Program Files/MiKTeX/tex/latex/amsfonts/umsb.fd"
@@ -783,9 +782,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package fontspec Info: Font family 'XITSMath(0)' created for font 'XITS Math'
 (fontspec)             with options
 (fontspec)             [Renderer=Harfbuzz,Renderer=Basic,BoldItalicFont={},Ital
-icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-
-9.3075,Font=XITS
-(fontspec)             Math,Style=MathScript},{Size=-6.57,Font=XITS
+icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.
+2,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-7.2,Font=XITS
 (fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
 xetex}].
 (fontspec)              
@@ -793,10 +792,10 @@ xetex}].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->"XITSMath:mode=base;script=math;language=dflt;m
-athfontdimen=xetex;"<6.57-9.3075>"XITSMath:mode=base;script=math;language=dflt;
-mathfontdimen=xetex;+ssty=0;"<-6.57>"XITSMath:mode=base;script=math;language=df
-lt;mathfontdimen=xetex;+ssty=1;"
+(fontspec)             <10.2->"XITSMath:mode=base;script=math;language=dflt;mat
+hfontdimen=xetex;"<7.2-10.2>"XITSMath:mode=base;script=math;language=dflt;mathf
+ontdimen=xetex;+ssty=0;"<-7.2>"XITSMath:mode=base;script=math;language=dflt;mat
+hfontdimen=xetex;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"XITSMath/B:mode=base;script=math;language=dflt;mathf
@@ -806,24 +805,24 @@ ontdimen=xetex;"
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line
- 87.
+ 88.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/b/n on input line
- 87.
+ 88.
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line
- 89.
+ 90.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/b/n on input line
- 89.
+ 90.
 
 Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
 (fontspec)             with options
 (fontspec)             [Renderer=Harfbuzz,Renderer=Basic,BoldItalicFont={},Ital
-icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-
-9.3075,Font=XITS
-(fontspec)             Math,Style=MathScript},{Size=-6.57,Font=XITS
+icFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.
+2,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-7.2,Font=XITS
 (fontspec)             Math,Style=MathScriptScript}},RawFeature={mathfontdimen=
 xetex},StylisticSet={1}].
 (fontspec)              
@@ -831,10 +830,10 @@ xetex},StylisticSet={1}].
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.3075->"XITSMath:mode=base;script=math;language=dflt;m
-athfontdimen=xetex;+ss01;"<6.57-9.3075>"XITSMath:mode=base;script=math;language
-=dflt;mathfontdimen=xetex;+ss01;+ssty=0;"<-6.57>"XITSMath:mode=base;script=math
-;language=dflt;mathfontdimen=xetex;+ss01;+ssty=1;"
+(fontspec)             <10.2->"XITSMath:mode=base;script=math;language=dflt;mat
+hfontdimen=xetex;+ss01;"<7.2-10.2>"XITSMath:mode=base;script=math;language=dflt
+;mathfontdimen=xetex;+ss01;+ssty=0;"<-7.2>"XITSMath:mode=base;script=math;langu
+age=dflt;mathfontdimen=xetex;+ss01;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"XITSMath/B:mode=base;script=math;language=dflt;mathf
@@ -844,10 +843,10 @@ ontdimen=xetex;+ss01;"
 \sym__um_fam3=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `__um_fam3' in version `normal'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line
- 90.
+ 91.
 LaTeX Font Info:    Overwriting symbol font `__um_fam3' in version `bold'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/b/n on input line
- 90.
+ 91.
 
 ("C:/Program Files/MiKTeX/tex/latex/siunitx/siunitx.sty"
 Package: siunitx 2023-08-03 v3.3.2 A comprehensive (SI) units package
@@ -976,7 +975,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks30
 \@floatcapt=\box70
 )
-Package scrhack Info: loading float hack on input line 116.
+Package scrhack Info: loading float hack on input line 117.
 
 ("C:/Program Files/MiKTeX/tex/latex/koma-script/float.hak"
 File: float.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package floa
@@ -1819,7 +1818,7 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 ("C:/Program Files/MiKTeX/tex/latex/listings/listings.cfg"
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 180.
+Package scrhack Info: loading listings hack on input line 181.
 
 ("C:/Program Files/MiKTeX/tex/latex/koma-script/listings.hak"
 File: listings.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package l
@@ -1844,7 +1843,7 @@ source code
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 293.
+(scrhack)             need that hack, on input line 294.
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/hyperref.sty"
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
@@ -2098,11 +2097,11 @@ Package: glossary-tree 2022/11/03 v4.52 (NLCT)
 \glo@main@file=\write6
 
 \openout6 = main.glo
-Package glossaries Info: Writing glossary file main.glo on input line 300.
+Package glossaries Info: Writing glossary file main.glo on input line 301.
 \glo@symbols@file=\write7
 
 \openout7 = main.sbl
-Package glossaries Info: Writing glossary file main.sbl on input line 300.
+Package glossaries Info: Writing glossary file main.sbl on input line 301.
  ("C:/Program Files/MiKTeX/tex/latex/bookmark/bookmark.sty"
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
@@ -2195,15 +2194,15 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \textheight=660.10403pt
 * \oddsidemargin=41.54103pt
 * \evensidemargin=41.54103pt
-* \topmargin=-10.08536pt
-* \headheight=17.0pt
-* \headsep=20.40001pt
-* \topskip=11.0pt
-* \footskip=47.6pt
-* \marginparwidth=59.7508pt
+* \topmargin=-12.56035pt
+* \headheight=18.125pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=49.79233pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -2357,12 +2356,12 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 580
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 580
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 580
 )
@@ -2389,6 +2388,13 @@ Package biblatex Info: ... file 'main.bbl' found.
 (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.bbl)
 Package biblatex Info: Reference section=0 on input line 2.
 Package biblatex Info: Reference segment=0 on input line 2.
+
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 2.
+
 \c@lstlisting=\count547
 Package scrhack Info: undefining \float@addtolists on input line 2.
 Package hyperref Info: Link coloring OFF on input line 2.
@@ -2411,15 +2417,15 @@ Module polyglossia Info: Language ngerman already loaded; id is 4 on input line
 * \textheight=731.23593pt
 * \oddsidemargin=27.31465pt
 * \evensidemargin=27.31465pt
-* \topmargin=-52.7645pt
-* \headheight=17.0pt
-* \headsep=20.40001pt
-* \topskip=11.0pt
-* \footskip=47.6pt
-* \marginparwidth=59.7508pt
+* \topmargin=-55.23949pt
+* \headheight=18.125pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=49.79233pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -2428,7 +2434,6 @@ Module polyglossia Info: Language ngerman already loaded; id is 4 on input line
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (./content/Titelseite.tex
 warning  (file content/Grafiken/H-BRS_Logo.jpg) (readjpg): Bad Exif resolution 0
@@ -2522,7 +2527,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 12
 
 
 ]
-Overfull \hbox (13.32202pt too wide) in paragraph at lines 2--94
+Overfull \hbox (18.75504pt too wide) in paragraph at lines 2--86
 [] 
  []
 
@@ -2533,7 +2538,7 @@ Overfull \hbox (13.32202pt too wide) in paragraph at lines 2--94
 
 ]) [8] (./content/Kapitel_1.tex
 chapter 1.
-<content/Grafiken/ElyCost.png, id=345, 683.55376pt x 569.9866pt>
+<content/Grafiken/ElyCost.png, id=347, 683.55376pt x 569.9866pt>
 File: content/Grafiken/ElyCost.png Graphic file (type png)
 <use content/Grafiken/ElyCost.png>
 Package luatex.def Info: content/Grafiken/ElyCost.png  used on input line 8.
@@ -2554,7 +2559,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 
 ]
-<content/Grafiken/Ely_Capacity.png, id=359, 383.71928pt x 421.14482pt>
+<content/Grafiken/Ely_Capacity.png, id=362, 383.71928pt x 421.14482pt>
 File: content/Grafiken/Ely_Capacity.png Graphic file (type png)
 <use content/Grafiken/Ely_Capacity.png>
 Package luatex.def Info: content/Grafiken/Ely_Capacity.png  used on input line 
@@ -2573,7 +2578,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2<./content/Grafiken/ElyCost.png>]
 warning  (file content/Grafiken/Thyristor.pdf) (pdf inclusion): PDF inclusion: f
 ound PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Thyristor.pdf, id=369, 357.4956pt x 161.8848pt>
+<content/Grafiken/Thyristor.pdf, id=373, 357.4956pt x 161.8848pt>
 File: content/Grafiken/Thyristor.pdf Graphic file (type pdf)
 <use content/Grafiken/Thyristor.pdf>
 Package luatex.def Info: content/Grafiken/Thyristor.pdf  used on input line 22.
@@ -2585,7 +2590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--48
  []
 
 [3<./content/Grafiken/Ely_Capacity.png><./content/Grafiken/Thyristor.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2635) has occurred while \output is active []
 
  [4])
 (./content/Kapitel_2.tex [5]
@@ -2595,7 +2600,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
  []
 
-<content/Grafiken/Ely-Efficiency.png, id=413, 628.92107pt x 301.125pt>
+<content/Grafiken/Ely-Efficiency.png, id=419, 628.92107pt x 301.125pt>
 File: content/Grafiken/Ely-Efficiency.png Graphic file (type png)
 <use content/Grafiken/Ely-Efficiency.png>
 Package luatex.def Info: content/Grafiken/Ely-Efficiency.png  used on input lin
@@ -2605,14 +2610,14 @@ e 13.
 
 
 ]
-<content/Grafiken/Plecs_Diodengleichrichter.png, id=425, 912.40875pt x 203.9046
+<content/Grafiken/Plecs_Diodengleichrichter.png, id=431, 912.40875pt x 203.9046
 5pt>
 File: content/Grafiken/Plecs_Diodengleichrichter.png Graphic file (type png)
 <use content/Grafiken/Plecs_Diodengleichrichter.png>
 Package luatex.def Info: content/Grafiken/Plecs_Diodengleichrichter.png  used o
 n input line 28.
 (luatex.def)             Requested size: 298.75269pt x 66.76292pt.
-<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=426, 361.35pt 
+<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png, id=432, 361.35pt 
 x 361.35pt>
 File: content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.png Graphic file 
 (type png)
@@ -2626,16 +2631,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [7<./content/Grafiken/Ely-Efficiency.png>]
 warning  (file content/Grafiken/Buck.pdf) (pdf inclusion): PDF inclusion: found 
 PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Buck.pdf, id=442, 283.0575pt x 147.55125pt>
+<content/Grafiken/Buck.pdf, id=449, 283.0575pt x 147.55125pt>
 File: content/Grafiken/Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/Buck.pdf>
 Package luatex.def Info: content/Grafiken/Buck.pdf  used on input line 42.
 (luatex.def)             Requested size: 298.75269pt x 155.74614pt.
-[8<./content/Grafiken/Plecs_Diodengleichrichter.png><./content/Grafiken/B6-Diode
-ngleichrichter-Eingangsverlauf.png>] [9<./content/Grafiken/Buck.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8<./content/Grafiken/Plecs_Diodengleichrichter.png><./content/Grafiken/B6-Diod
+engleichrichter-Eingangsverlauf.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9<./content/Grafiken/Buck.pdf>]
 warning  (file content/Grafiken/IAF.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/IAF.pdf, id=479, 403.0257pt x 149.71935pt>
+<content/Grafiken/IAF.pdf, id=483, 403.0257pt x 149.71935pt>
 File: content/Grafiken/IAF.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF.pdf>
 Package luatex.def Info: content/Grafiken/IAF.pdf  used on input line 68.
@@ -2648,7 +2659,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
 warning  (file content/Grafiken/B6_Buck.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/B6_Buck.pdf, id=492, 321.3606pt x 147.31035pt>
+<content/Grafiken/B6_Buck.pdf, id=495, 321.3606pt x 147.31035pt>
 File: content/Grafiken/B6_Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_Buck.pdf>
 Package luatex.def Info: content/Grafiken/B6_Buck.pdf  used on input line 80.
@@ -2658,36 +2669,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
-<content/Grafiken/B6+IAF_Sectors.png, id=500, 1603.49063pt x 976.39781pt>
+[11<./content/Grafiken/IAF.pdf><./content/Grafiken/B6_Buck.pdf>]
+<content/Grafiken/B6+IAF_Sectors.png, id=516, 1603.49063pt x 976.39781pt>
 File: content/Grafiken/B6+IAF_Sectors.png Graphic file (type png)
 <use content/Grafiken/B6+IAF_Sectors.png>
 Package luatex.def Info: content/Grafiken/B6+IAF_Sectors.png  used on input lin
 e 90.
 (luatex.def)             Requested size: 384.10966pt x 233.8933pt.
-[11<./content/Grafiken/IAF.pdf><./content/Grafiken/B6_Buck.pdf>]
-<content/Grafiken/PLECS_FF2ThermalModel.png, id=523, 414.04688pt x 310.15875pt>
+<content/Grafiken/PLECS_FF2ThermalModel.png, id=526, 414.04688pt x 310.15875pt>
 
 File: content/Grafiken/PLECS_FF2ThermalModel.png Graphic file (type png)
 <use content/Grafiken/PLECS_FF2ThermalModel.png>
 Package luatex.def Info: content/Grafiken/PLECS_FF2ThermalModel.png  used on in
 put line 100.
 (luatex.def)             Requested size: 298.75269pt x 223.79686pt.
- [12<./content/Grafiken/B6+IAF_Sectors.png>]
+ [12<./content/Grafiken/B6+IAF_Sectors.png>] [13<./content/Grafiken/PLECS_FF2The
+rmalModel.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-[13<./content/Grafiken/PLECS_FF2ThermalModel.png>]
-<content/Grafiken/PLECS_Buck.png, id=556, 824.32968pt x 687.31781pt>
+<content/Grafiken/PLECS_Buck.png, id=555, 824.32968pt x 687.31781pt>
 File: content/Grafiken/PLECS_Buck.png Graphic file (type png)
 <use content/Grafiken/PLECS_Buck.png>
 Package luatex.def Info: content/Grafiken/PLECS_Buck.png  used on input line 12
 9.
 (luatex.def)             Requested size: 384.10966pt x 320.27069pt.
-) (./content/Kapitel_3.tex
-[14<./content/Grafiken/PLECS_Buck.png>]
+) (./content/Kapitel_3.tex [14] [15<./content/Grafiken/PLECS_Buck.png>]
 chapter 3.
-<content/Grafiken/TAR4120_PQ.png, id=567, 437.92178pt x 389.74179pt>
+<content/Grafiken/TAR4120_PQ.png, id=572, 437.92178pt x 389.74179pt>
 File: content/Grafiken/TAR4120_PQ.png Graphic file (type png)
 <use content/Grafiken/TAR4120_PQ.png>
 Package luatex.def Info: content/Grafiken/TAR4120_PQ.png  used on input line 9.
@@ -2698,11 +2708,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--12
 
  []
 
-[15
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16
 
 
-<./content/Grafiken/TAR4120_PQ.png>]
-<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=581, 770.88pt x 537.0
+]
+<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=584, 770.88pt x 537.0
 0626pt>
 File: content/Grafiken/VDE4120-quasistationarerbetrieb.png Graphic file (type p
 ng)
@@ -2710,30 +2723,37 @@ ng)
 Package luatex.def Info: content/Grafiken/VDE4120-quasistationarerbetrieb.png  
 used on input line 18.
 (luatex.def)             Requested size: 298.75269pt x 208.11235pt.
-<content/Grafiken/Grenzkurve.png, id=582, 357.04822pt x 171.21107pt>
+<content/Grafiken/Grenzkurve.png, id=585, 357.04822pt x 171.21107pt>
 File: content/Grafiken/Grenzkurve.png Graphic file (type png)
 <use content/Grafiken/Grenzkurve.png>
 Package luatex.def Info: content/Grafiken/Grenzkurve.png  used on input line 22
 .
 (luatex.def)             Requested size: 298.75269pt x 143.26247pt.
-<content/Grafiken/VDE-FNN-TAR.png, id=590, 1317.42188pt x 695.59875pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17<./content/Grafiken/TAR4120_PQ.png>]
+<content/Grafiken/VDE-FNN-TAR.png, id=599, 1317.42188pt x 695.59875pt>
 File: content/Grafiken/VDE-FNN-TAR.png Graphic file (type png)
 <use content/Grafiken/VDE-FNN-TAR.png>
 Package luatex.def Info: content/Grafiken/VDE-FNN-TAR.png  used on input line 3
 6.
 (luatex.def)             Requested size: 384.10966pt x 202.8117pt.
- [16<./content/Grafiken/VDE4120-quasistationarerbetrieb.png><./content/Grafiken/
+ [18<./content/Grafiken/VDE4120-quasistationarerbetrieb.png><./content/Grafiken/
 Grenzkurve.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[17<./content/Grafiken/VDE-FNN-TAR.png>]) (./content/Kapitel_4.tex [18]
+
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
+ [19<./content/Grafiken/VDE-FNN-TAR.png>]) (./content/Kapitel_4.tex [20]
 chapter 4.
 
 warning  (file content/Grafiken/SixSwitchBoost.pdf) (pdf inclusion): PDF inclusi
 on: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/SixSwitchBoost.pdf, id=625, 271.4943pt x 149.71935pt>
+<content/Grafiken/SixSwitchBoost.pdf, id=633, 271.4943pt x 149.71935pt>
 File: content/Grafiken/SixSwitchBoost.pdf Graphic file (type pdf)
 <use content/Grafiken/SixSwitchBoost.pdf>
 Package luatex.def Info: content/Grafiken/SixSwitchBoost.pdf  used on input lin
@@ -2742,21 +2762,18 @@ e 10.
 
 warning  (file content/Grafiken/Vienna.pdf) (pdf inclusion): PDF inclusion: foun
 d PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Vienna.pdf, id=628, 368.21565pt x 168.63pt>
+<content/Grafiken/Vienna.pdf, id=636, 368.21565pt x 168.63pt>
 File: content/Grafiken/Vienna.pdf Graphic file (type pdf)
 <use content/Grafiken/Vienna.pdf>
 Package luatex.def Info: content/Grafiken/Vienna.pdf  used on input line 19.
 (luatex.def)             Requested size: 384.10966pt x 175.92169pt.
-
-Underfull \vbox (badness 1215) has occurred while \output is active []
-
- [19
+[21
 
 
 <./content/Grafiken/SixSwitchBoost.pdf>]
 warning  (file content/Grafiken/SixSwitchBuck.pdf) (pdf inclusion): PDF inclusio
 n: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/SixSwitchBuck.pdf, id=640, 265.4718pt x 168.1482pt>
+<content/Grafiken/SixSwitchBuck.pdf, id=649, 265.4718pt x 168.1482pt>
 File: content/Grafiken/SixSwitchBuck.pdf Graphic file (type pdf)
 <use content/Grafiken/SixSwitchBuck.pdf>
 Package luatex.def Info: content/Grafiken/SixSwitchBuck.pdf  used on input line
@@ -2765,10 +2782,10 @@ Package luatex.def Info: content/Grafiken/SixSwitchBuck.pdf  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20<./content/Grafiken/Vienna.pdf>]
+ [22<./content/Grafiken/Vienna.pdf>]
 warning  (file content/Grafiken/Swiss.pdf) (pdf inclusion): PDF inclusion: found
  PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Swiss.pdf, id=652, 345.57104pt x 158.994pt>
+<content/Grafiken/Swiss.pdf, id=661, 345.57104pt x 158.994pt>
 File: content/Grafiken/Swiss.pdf Graphic file (type pdf)
 <use content/Grafiken/Swiss.pdf>
 Package luatex.def Info: content/Grafiken/Swiss.pdf  used on input line 38.
@@ -2776,16 +2793,19 @@ Package luatex.def Info: content/Grafiken/Swiss.pdf  used on input line 38.
 
 warning  (file content/Grafiken/23PWMBuckBoost.pdf) (pdf inclusion): PDF inclusi
 on: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/23PWMBuckBoost.pdf, id=654, 278.2395pt x 138.63795pt>
+<content/Grafiken/23PWMBuckBoost.pdf, id=663, 314.3745pt x 174.77295pt>
 File: content/Grafiken/23PWMBuckBoost.pdf Graphic file (type pdf)
 <use content/Grafiken/23PWMBuckBoost.pdf>
 Package luatex.def Info: content/Grafiken/23PWMBuckBoost.pdf  used on input lin
 e 47.
-(luatex.def)             Requested size: 384.10966pt x 191.40306pt.
-[21<./content/Grafiken/SixSwitchBuck.pdf><./content/Grafiken/Swiss.pdf>]
+(luatex.def)             Requested size: 384.10966pt x 213.56136pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23<./content/Grafiken/SixSwitchBuck.pdf><./content/Grafiken/Swiss.pdf>]
 warning  (file content/Grafiken/Trident.pdf) (pdf inclusion): PDF inclusion: fou
 nd PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Trident.pdf, id=667, 433.8609pt x 139.2402pt>
+<content/Grafiken/Trident.pdf, id=675, 433.8609pt x 139.2402pt>
 File: content/Grafiken/Trident.pdf Graphic file (type pdf)
 <use content/Grafiken/Trident.pdf>
 Package luatex.def Info: content/Grafiken/Trident.pdf  used on input line 55.
@@ -2793,27 +2813,24 @@ Package luatex.def Info: content/Grafiken/Trident.pdf  used on input line 55.
 
 warning  (file content/Grafiken/Y-Rectifier.pdf) (pdf inclusion): PDF inclusion:
  found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/Y-Rectifier.pdf, id=669, 348.46185pt x 139.2402pt>
+<content/Grafiken/Y-Rectifier.pdf, id=677, 348.46185pt x 139.2402pt>
 File: content/Grafiken/Y-Rectifier.pdf Graphic file (type pdf)
 <use content/Grafiken/Y-Rectifier.pdf>
 Package luatex.def Info: content/Grafiken/Y-Rectifier.pdf  used on input line 6
 6.
 (luatex.def)             Requested size: 384.10966pt x 153.494pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22<./content/Grafiken/23PWMBuckBoost.pdf><./content/Grafiken/Trident.pdf>]
+[24<./content/Grafiken/23PWMBuckBoost.pdf><./content/Grafiken/Trident.pdf>]
 warning  (file content/Grafiken/3L-NPC.pdf) (pdf inclusion): PDF inclusion: foun
 d PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/3L-NPC.pdf, id=681, 270.16936pt x 189.1065pt>
+<content/Grafiken/3L-NPC.pdf, id=689, 270.16936pt x 189.1065pt>
 File: content/Grafiken/3L-NPC.pdf Graphic file (type pdf)
 <use content/Grafiken/3L-NPC.pdf>
 Package luatex.def Info: content/Grafiken/3L-NPC.pdf  used on input line 75.
 (luatex.def)             Requested size: 384.10966pt x 268.87071pt.
-[23<./content/Grafiken/Y-Rectifier.pdf><./content/Grafiken/3L-NPC.pdf>]
+[25<./content/Grafiken/Y-Rectifier.pdf><./content/Grafiken/3L-NPC.pdf>]
 warning  (file content/Grafiken/ANPC.pdf) (pdf inclusion): PDF inclusion: found 
 PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/ANPC.pdf, id=695, 271.61475pt x 190.43146pt>
+<content/Grafiken/ANPC.pdf, id=703, 271.61475pt x 190.43146pt>
 File: content/Grafiken/ANPC.pdf Graphic file (type pdf)
 <use content/Grafiken/ANPC.pdf>
 Package luatex.def Info: content/Grafiken/ANPC.pdf  used on input line 85.
@@ -2821,7 +2838,7 @@ Package luatex.def Info: content/Grafiken/ANPC.pdf  used on input line 85.
 
 warning  (file content/Grafiken/3L-FC-Boost.pdf) (pdf inclusion): PDF inclusion:
  found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/3L-FC-Boost.pdf, id=697, 297.15015pt x 190.43146pt>
+<content/Grafiken/3L-FC-Boost.pdf, id=705, 297.15015pt x 190.43146pt>
 File: content/Grafiken/3L-FC-Boost.pdf Graphic file (type pdf)
 <use content/Grafiken/3L-FC-Boost.pdf>
 Package luatex.def Info: content/Grafiken/3L-FC-Boost.pdf  used on input line 9
@@ -2830,66 +2847,67 @@ Package luatex.def Info: content/Grafiken/3L-FC-Boost.pdf  used on input line 9
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24<./content/Grafiken/ANPC.pdf>]
+ [26<./content/Grafiken/ANPC.pdf>]
 warning  (file content/Grafiken/3L-FC-Boost+Buck.pdf) (pdf inclusion): PDF inclu
 sion: found PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/3L-FC-Boost+Buck.pdf, id=706, 376.88805pt x 190.43146pt>
+<content/Grafiken/3L-FC-Boost+Buck.pdf, id=714, 376.88805pt x 190.43146pt>
 File: content/Grafiken/3L-FC-Boost+Buck.pdf Graphic file (type pdf)
 <use content/Grafiken/3L-FC-Boost+Buck.pdf>
 Package luatex.def Info: content/Grafiken/3L-FC-Boost+Buck.pdf  used on input l
 ine 105.
 (luatex.def)             Requested size: 384.10966pt x 194.08641pt.
-[25<./content/Grafiken/3L-FC-Boost.pdf><./content/Grafiken/3L-FC-Boost+Buck.pdf>
-]) (./content/Kapitel_5.tex [26]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27<./content/Grafiken/3L-FC-Boost.pdf><./content/Grafiken/3L-FC-Boost+Buck.pdf
+>])
+(./content/Kapitel_5.tex [28] [29]
 chapter 5.
-<content/Grafiken/PLECS_Simulationsaufbau.png, id=727, 832.39554pt x 301.55518p
+<content/Grafiken/PLECS_Simulationsaufbau.png, id=741, 832.39554pt x 301.55518p
 t>
 File: content/Grafiken/PLECS_Simulationsaufbau.png Graphic file (type png)
 <use content/Grafiken/PLECS_Simulationsaufbau.png>
 Package luatex.def Info: content/Grafiken/PLECS_Simulationsaufbau.png  used on 
 input line 5.
 (luatex.def)             Requested size: 384.10966pt x 139.15419pt.
-<content/Grafiken/Plecs_Out.png, id=729, 970.3753pt x 841.64438pt>
+<content/Grafiken/Plecs_Out.png, id=743, 970.3753pt x 841.64438pt>
 File: content/Grafiken/Plecs_Out.png Graphic file (type png)
 <use content/Grafiken/Plecs_Out.png>
 Package luatex.def Info: content/Grafiken/Plecs_Out.png  used on input line 12.
 
 (luatex.def)             Requested size: 384.10966pt x 333.15865pt.
-[27
+[30
 
 
-<./content/Grafiken/PLECS_Simulationsaufbau.png>] [28<./content/Grafiken/Plecs_O
-ut.png>] [29]
-<content/Grafiken/IAF_Plecs_main.png, id=759, 541.59482pt x 192.72pt>
+<./content/Grafiken/PLECS_Simulationsaufbau.png>] [31<./content/Grafiken/Plecs_O
+ut.png>] [32]
+<content/Grafiken/IAF_Plecs_main.png, id=774, 541.59482pt x 192.72pt>
 File: content/Grafiken/IAF_Plecs_main.png Graphic file (type png)
 <use content/Grafiken/IAF_Plecs_main.png>
 Package luatex.def Info: content/Grafiken/IAF_Plecs_main.png  used on input lin
 e 53.
 (luatex.def)             Requested size: 426.79141pt x 151.87659pt.
-<content/Grafiken/IAF_Plecs_IVS.png, id=760, 979.5166pt x 554.93036pt>
+<content/Grafiken/IAF_Plecs_IVS.png, id=775, 979.5166pt x 554.93036pt>
 File: content/Grafiken/IAF_Plecs_IVS.png Graphic file (type png)
 <use content/Grafiken/IAF_Plecs_IVS.png>
 Package luatex.def Info: content/Grafiken/IAF_Plecs_IVS.png  used on input line
  59.
 (luatex.def)             Requested size: 384.10966pt x 217.60742pt.
- [30<./content/Grafiken/IAF_Plecs_main.png>]
-<content/Grafiken/IAF_BuckControl.png, id=777, 963.6pt x 347.04657pt>
+ [33<./content/Grafiken/IAF_Plecs_main.png>]
+<content/Grafiken/IAF_BuckControl.png, id=792, 963.6pt x 347.04657pt>
 File: content/Grafiken/IAF_BuckControl.png Graphic file (type png)
 <use content/Grafiken/IAF_BuckControl.png>
 Package luatex.def Info: content/Grafiken/IAF_BuckControl.png  used on input li
 ne 97.
 (luatex.def)             Requested size: 384.10966pt x 138.33957pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31<./content/Grafiken/IAF_Plecs_IVS.png>]
-<content/Grafiken/IAF_Paper_Control.png, id=790, 697.10437pt x 521.69907pt>
+ [34<./content/Grafiken/IAF_Plecs_IVS.png>]
+<content/Grafiken/IAF_Paper_Control.png, id=804, 697.10437pt x 521.69907pt>
 File: content/Grafiken/IAF_Paper_Control.png Graphic file (type png)
 <use content/Grafiken/IAF_Paper_Control.png>
 Package luatex.def Info: content/Grafiken/IAF_Paper_Control.png  used on input 
 line 105.
 (luatex.def)             Requested size: 298.75269pt x 223.57793pt.
-<content/Grafiken/PlecsIAFivscontrol.png, id=794, 1916.66063pt x 520.19344pt>
+<content/Grafiken/PlecsIAFivscontrol.png, id=808, 1916.66063pt x 520.19344pt>
 File: content/Grafiken/PlecsIAFivscontrol.png Graphic file (type png)
 <use content/Grafiken/PlecsIAFivscontrol.png>
 Package luatex.def Info: content/Grafiken/PlecsIAFivscontrol.png  used on input
@@ -2898,30 +2916,30 @@ Package luatex.def Info: content/Grafiken/PlecsIAFivscontrol.png  used on input
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32<./content/Grafiken/IAF_BuckControl.png><./content/Grafiken/IAF_Paper_Contro
+ [35<./content/Grafiken/IAF_BuckControl.png><./content/Grafiken/IAF_Paper_Contro
 l.png>]
-<content/Grafiken/PlecsIAFiy.png, id=807, 1091.57813pt x 296.60812pt>
+<content/Grafiken/PlecsIAFiy.png, id=821, 1091.57813pt x 296.60812pt>
 File: content/Grafiken/PlecsIAFiy.png Graphic file (type png)
 <use content/Grafiken/PlecsIAFiy.png>
 Package luatex.def Info: content/Grafiken/PlecsIAFiy.png  used on input line 13
 4.
 (luatex.def)             Requested size: 384.10966pt x 104.37108pt.
-<content/Grafiken/PlecsIAFivsK1.png, id=809, 1206.00563pt x 482.55281pt>
+<content/Grafiken/PlecsIAFivsK1.png, id=823, 1206.00563pt x 482.55281pt>
 File: content/Grafiken/PlecsIAFivsK1.png Graphic file (type png)
 <use content/Grafiken/PlecsIAFivsK1.png>
 Package luatex.def Info: content/Grafiken/PlecsIAFivsK1.png  used on input line
  142.
 (luatex.def)             Requested size: 426.79141pt x 170.76625pt.
 
-[33<./content/Grafiken/PlecsIAFivscontrol.png><./content/Grafiken/PlecsIAFiy.png
+[36<./content/Grafiken/PlecsIAFivscontrol.png><./content/Grafiken/PlecsIAFiy.png
 >]
-<content/Grafiken/PLECS_B6.png, id=822, 801.74532pt x 344.78813pt>
+<content/Grafiken/PLECS_B6.png, id=836, 801.74532pt x 344.78813pt>
 File: content/Grafiken/PLECS_B6.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6.png  used on input line 153.
 
 (luatex.def)             Requested size: 384.10966pt x 165.186pt.
-<content/Grafiken/PLECS_B6Buck.png, id=823, 1089.31969pt x 444.15938pt>
+<content/Grafiken/PLECS_B6Buck.png, id=837, 1089.31969pt x 444.15938pt>
 File: content/Grafiken/PLECS_B6Buck.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6Buck.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6Buck.png  used on input line 
@@ -2930,19 +2948,22 @@ Package luatex.def Info: content/Grafiken/PLECS_B6Buck.png  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34<./content/Grafiken/PlecsIAFivsK1.png><./content/Grafiken/PLECS_B6.png>]
+ [37<./content/Grafiken/PlecsIAFivsK1.png><./content/Grafiken/PLECS_B6.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-[35<./content/Grafiken/PLECS_B6Buck.png>]
-<content/Grafiken/B6-Control-orig.png, id=847, 1768.35657pt x 892.83563pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38<./content/Grafiken/PLECS_B6Buck.png>]
+<content/Grafiken/B6-Control-orig.png, id=861, 1768.35657pt x 892.83563pt>
 File: content/Grafiken/B6-Control-orig.png Graphic file (type png)
 <use content/Grafiken/B6-Control-orig.png>
 Package luatex.def Info: content/Grafiken/B6-Control-orig.png  used on input li
 ne 195.
 (luatex.def)             Requested size: 384.10966pt x 193.93134pt.
-<content/Grafiken/PLECS_B6_ControlPout.png, id=853, 1343.77031pt x 543.53062pt>
+<content/Grafiken/PLECS_B6_ControlPout.png, id=867, 1343.77031pt x 543.53062pt>
 
 File: content/Grafiken/PLECS_B6_ControlPout.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6_ControlPout.png>
@@ -2954,24 +2975,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--205
 
  []
 
-<content/Grafiken/PLECS_B6_ControlRiGrid.png, id=855, 1003.17642pt x 364.79143p
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39<./content/Grafiken/B6-Control-orig.png>]
+<content/Grafiken/PLECS_B6_ControlRiGrid.png, id=875, 1003.17642pt x 364.79143p
 t>
 File: content/Grafiken/PLECS_B6_ControlRiGrid.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6_ControlRiGrid.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6_ControlRiGrid.png  used on i
 nput line 209.
 (luatex.def)             Requested size: 384.10966pt x 139.6742pt.
-[36<./content/Grafiken/B6-Control-orig.png><./content/Grafiken/PLECS_B6_ControlP
-out.png>]
-<content/Grafiken/PLECS_B6_ControlPWMmid.png, id=867, 1355.8153pt x 258.9675pt>
+<content/Grafiken/PLECS_B6_ControlPWMmid.png, id=880, 1355.8153pt x 258.9675pt>
 
 File: content/Grafiken/PLECS_B6_ControlPWMmid.png Graphic file (type png)
 <use content/Grafiken/PLECS_B6_ControlPWMmid.png>
 Package luatex.def Info: content/Grafiken/PLECS_B6_ControlPWMmid.png  used on i
 nput line 218.
 (luatex.def)             Requested size: 384.10966pt x 73.36787pt.
-) (./content/Kapitel_6.tex [37<./content/Grafiken/PLECS_B6_ControlRiGrid.png><./
-content/Grafiken/PLECS_B6_ControlPWMmid.png>]
+) (./content/Kapitel_6.tex [40<./content/Grafiken/PLECS_B6_ControlPout.png><./co
+ntent/Grafiken/PLECS_B6_ControlRiGrid.png>]
+[41<./content/Grafiken/PLECS_B6_ControlPWMmid.png>]
 chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -2979,21 +3003,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 
-Overfull \hbox (27.55289pt too wide) in paragraph at lines 25--86
+Overfull \hbox (58.3567pt too wide) in paragraph at lines 25--86
 [][] 
  []
 
-[38
+[42
 
 
-] [39]
-<content/Grafiken/B6_Temp_0&30Grad.pdf, id=891, 426.59375pt x 284.06125pt>
+] [43]
+<content/Grafiken/B6_Temp_0&30Grad.pdf, id=912, 426.59375pt x 284.06125pt>
 File: content/Grafiken/B6_Temp_0&30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_Temp_0&30Grad.pdf>
 Package luatex.def Info: content/Grafiken/B6_Temp_0&30Grad.pdf  used on input l
 ine 95.
 (luatex.def)             Requested size: 384.10966pt x 255.78711pt.
-<content/Grafiken/B6_AC+DC_0Grad.pdf, id=893, 426.59375pt x 426.59375pt>
+<content/Grafiken/B6_AC+DC_0Grad.pdf, id=914, 426.59375pt x 426.59375pt>
 File: content/Grafiken/B6_AC+DC_0Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_AC+DC_0Grad.pdf>
 Package luatex.def Info: content/Grafiken/B6_AC+DC_0Grad.pdf  used on input lin
@@ -3002,48 +3026,48 @@ e 103.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40<./content/Grafiken/B6_Temp_0&30Grad.pdf>]
-<content/Grafiken/B6_AC+DC_30Grad.pdf, id=909, 426.59375pt x 426.59375pt>
+ [44<./content/Grafiken/B6_Temp_0&30Grad.pdf>]
+<content/Grafiken/B6_AC+DC_30Grad.pdf, id=930, 426.59375pt x 426.59375pt>
 File: content/Grafiken/B6_AC+DC_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/B6_AC+DC_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/B6_AC+DC_30Grad.pdf  used on input li
 ne 110.
 (luatex.def)             Requested size: 426.79141pt x 426.82051pt.
- [41<./content/Grafiken/B6_AC+DC_0Grad.pdf>] [42<./content/Grafiken/B6_AC+DC_30G
+ [45<./content/Grafiken/B6_AC+DC_0Grad.pdf>] [46<./content/Grafiken/B6_AC+DC_30G
 rad.pdf>]
-<content/Grafiken/IAF_Temp_0Grad.pdf, id=940, 426.59375pt x 284.06125pt>
+<content/Grafiken/IAF_Temp_0Grad.pdf, id=960, 426.59375pt x 284.06125pt>
 File: content/Grafiken/IAF_Temp_0Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_Temp_0Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_Temp_0Grad.pdf  used on input lin
 e 119.
 (luatex.def)             Requested size: 426.79141pt x 284.21223pt.
-<content/Grafiken/IAF_Temp_30Grad.pdf, id=941, 426.59375pt x 284.06125pt>
+<content/Grafiken/IAF_Temp_30Grad.pdf, id=961, 426.59375pt x 284.06125pt>
 File: content/Grafiken/IAF_Temp_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_Temp_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_Temp_30Grad.pdf  used on input li
 ne 121.
 (luatex.def)             Requested size: 426.79141pt x 284.21223pt.
-<content/Grafiken/IAF_AC+L.pdf, id=947, 426.59375pt x 569.12625pt>
+<content/Grafiken/IAF_AC+L.pdf, id=967, 426.59375pt x 569.12625pt>
 File: content/Grafiken/IAF_AC+L.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_AC+L.pdf>
 Package luatex.def Info: content/Grafiken/IAF_AC+L.pdf  used on input line 130.
 
 (luatex.def)             Requested size: 426.79141pt x 569.4288pt.
-<content/Grafiken/IAF_AC+L_30Grad.pdf, id=948, 426.59375pt x 569.12625pt>
+<content/Grafiken/IAF_AC+L_30Grad.pdf, id=968, 426.59375pt x 569.12625pt>
 File: content/Grafiken/IAF_AC+L_30Grad.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_AC+L_30Grad.pdf>
 Package luatex.def Info: content/Grafiken/IAF_AC+L_30Grad.pdf  used on input li
 ne 137.
 (luatex.def)             Requested size: 426.79141pt x 569.4288pt.
 ) (./content/Kapitel_7.tex
-[43] [44<./content/Grafiken/IAF_Temp_0Grad.pdf><./content/Grafiken/IAF_Temp_30Gr
-ad.pdf>] [45<./content/Grafiken/IAF_AC+L.pdf>] [46<./content/Grafiken/IAF_AC+L_3
+[47] [48<./content/Grafiken/IAF_Temp_0Grad.pdf><./content/Grafiken/IAF_Temp_30Gr
+ad.pdf>] [49<./content/Grafiken/IAF_AC+L.pdf>] [50<./content/Grafiken/IAF_AC+L_3
 0Grad.pdf>]
 chapter 7.
 
 warning  (file content/Grafiken/DPT.pdf) (pdf inclusion): PDF inclusion: found P
 DF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/DPT.pdf, id=1009, 722.7pt x 285.9502pt>
+<content/Grafiken/DPT.pdf, id=1029, 722.7pt x 285.9502pt>
 File: content/Grafiken/DPT.pdf Graphic file (type pdf)
 <use content/Grafiken/DPT.pdf>
 Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 6.
@@ -3051,7 +3075,7 @@ Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 6.
 
 warning  (file content/Grafiken/IAF_surge.pdf) (pdf inclusion): PDF inclusion: f
 ound PDF version '1.7', but at most version '1.5' allowed
-<content/Grafiken/IAF_surge.pdf, id=1013, 400.73715pt x 148.8762pt>
+<content/Grafiken/IAF_surge.pdf, id=1033, 400.73715pt x 148.8762pt>
 File: content/Grafiken/IAF_surge.pdf Graphic file (type pdf)
 <use content/Grafiken/IAF_surge.pdf>
 Package luatex.def Info: content/Grafiken/IAF_surge.pdf  used on input line 15.
@@ -3062,7 +3086,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
  []
 
-[47
+[51
 
 
 <./content/Grafiken/DPT.pdf>])
@@ -3070,33 +3094,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
-[48<./content/Grafiken/IAF_surge.pdf>]
+[52<./content/Grafiken/IAF_surge.pdf>]
 chapter without number
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (20.85544pt too wide) in paragraph at lines 26--26
-\TU/lmtt/m/n/10.95 Downloads / de / 2023 / 230726 - fortschreibung - nws . pdf 
-? _ _ blob = publicationFile&v =
+Overfull \hbox (4.27214pt too wide) in paragraph at lines 26--26
+\TU/lmtt/m/n/12 workshop _ publications / _ _ ECPE _ Seminar _ Augsburg _ 3ph _ PFC _ rectifiers _
  []
 
-[49
+
+Overfull \hbox (17.24413pt too wide) in paragraph at lines 26--26
+\TU/lmtt/m/n/12 B11 - DataSheet - v01 _ 10 - DE . pdf ? fileId = 8ac78c8c80027ec
+d0180f12eb1075411$[]
+ []
+
+[53
 
 
 
 
 ]
-Overfull \hbox (32.03186pt too wide) in paragraph at lines 26--26
-[]\TU/lmr/m/n/10.95 Schmidt, Wal-ter. \TU/lmr/m/it/10.95 Ab-waerts-wand-ler\TU/
-lmr/m/n/10.95 . 2023. \TU/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n
-/10.95 http : / / schmidt - walter - schaltnetzteile .
+Overfull \hbox (2.11214pt too wide) in paragraph at lines 26--26
+\TU/lmtt/m/n/12 comprehensive _ power _ conversion _ solutions - ApplicationPres
+entation -
  []
 
-[50] [51] (./content/Anhang.tex
+
+Overfull \hbox (42.45464pt too wide) in paragraph at lines 26--26
+\TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : []$\TU/lmtt/m/n/12 https : / / www . pes - 
+publications . ee . ethz . ch / uploads / tx _ ethpublications /
+ []
+
+[54] [55] (./content/Anhang.tex
 chapter without number
-[52
+[56
 
 
 
@@ -3241,34 +3275,34 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {nswissgerman/target}  =>  {german}
 >  {nswissgerman/variant}  =>  {swiss}
 >  {nswissgerman/options}  =>  {variant=swiss,spelling=new}.
- [53
+ [57
 
 
 ]
 (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.aux)
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 13989FFEFE33E5CBFEC6DF07CA8892A6;50906.
+(rerunfilecheck)             Checksum: DBB20D73131C44E0E1562225BDF5A86F;50907.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: AA84DAFD0270942B7E422AA666FF6CA1;4892.
+(rerunfilecheck)             Checksum: 2BBC72C8186A9C6B97CD3107AE8AA1E5;4893.
 Package rerunfilecheck Info: File `main.lof' has not changed.
-(rerunfilecheck)             Checksum: 083D2A1F1B23DA9D987C1C7BC4DE5B3D;6609.
+(rerunfilecheck)             Checksum: 5602CEA0CF7E43E8A868EE4DA2928A79;6609.
 Package rerunfilecheck Info: File `main.lot' has not changed.
-(rerunfilecheck)             Checksum: 530771BB55192250A79EDB8962D0B4E1;971.
+(rerunfilecheck)             Checksum: F5C5EB4C6693FDFFBDC2B218CE5AEF90;971.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 90673 strings out of 478278
+ 90654 strings out of 478278
  100000,4101490 words of node,token memory allocated
  1050 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 50
  attribute, 89 glue_spec, 50 attribute_list, 2 write, 26 pdf_action nodes
-   avail lists: 1:4,2:1657,3:588,4:415,5:783,6:194,7:7836,8:208,9:1428,10:30,11:
-899,12:2
- 107813 multiletter control sequences out of 65536+600000
- 105 fonts using 38197979 bytes
+   avail lists: 1:6,2:1663,3:539,4:395,5:656,6:177,7:8531,8:208,9:1432,10:26,11:
+1073,12:2
+ 107792 multiletter control sequences out of 65536+600000
+ 96 fonts using 34134111 bytes
  113i,20n,118p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:SiC'
@@ -3276,21 +3310,22 @@ warning  (pdf backend): unreferenced destination with name 'glo:SiC'
 warning  (pdf backend): unreferenced destination with name 'glo:RoCoF'
 
 warning  (pdf backend): unreferenced destination with name 'glo:WL'
-<//?/c:/program files/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><//?/
+<//?/c:/program files/miktex/fonts/opentype/public/lm/lmmono12-regular.otf><//?/
 c:/program files/miktex/fonts/opentype/public/lm/lmromancaps10-regular.otf><//?/
-c:/program files/miktex/fonts/opentype/public/lm/lmroman10-italic.otf><C:/Progra
+c:/program files/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><C:/Progra
 m Files/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf><//?/c:/progra
-m files/miktex/fonts/opentype/public/lm/lmroman9-bold.otf><//?/c:/program files/
-miktex/fonts/opentype/public/lm/lmroman10-bold.otf><C:/Program Files/MiKTeX/font
-s/opentype/public/lm-math/latinmodern-math.otf><C:/Program Files/MiKTeX/fonts/op
-entype/public/lm-math/latinmodern-math.otf><//?/c:/program files/miktex/fonts/op
-entype/public/lm/lmromanslant10-regular.otf><//?/c:/program files/miktex/fonts/o
-pentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opentype/
-public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/publi
-c/lm/lmroman10-regular.otf>
-Output written on main.pdf (63 pages, 18598230 bytes).
+m files/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/program files
+/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><//?/c:/program files/mik
+tex/fonts/opentype/public/lm/lmroman10-bold.otf><C:/Program Files/MiKTeX/fonts/o
+pentype/public/lm-math/latinmodern-math.otf><C:/Program Files/MiKTeX/fonts/opent
+ype/public/lm-math/latinmodern-math.otf><//?/c:/program files/miktex/fonts/opent
+ype/public/lm/lmromanslant12-regular.otf><//?/c:/program files/miktex/fonts/open
+type/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opentype/pub
+lic/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/public/l
+m/lmroman12-regular.otf>
+Output written on main.pdf (67 pages, 18608684 bytes).
 
-PDF statistics: 1359 PDF objects out of 1440 (max. 8388607)
- 250 named destinations out of 1000 (max. 131072)
+PDF statistics: 1388 PDF objects out of 1440 (max. 8388607)
+ 254 named destinations out of 1000 (max. 131072)
  480 words of extra memory for PDF output out of 10000 (max. 100000000)
 
