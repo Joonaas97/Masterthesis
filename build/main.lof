@@ -41,7 +41,7 @@
 \contentsline {figure}{\numberline {5.3.2-5}{\ignorespaces Regelung des Stroms in der mittleren Phase}}{37}{figure.caption.46}%
 \contentsline {figure}{\numberline {5.4-1}{\ignorespaces PLECS Aufbau der B6 Leistungshalbleiter}}{37}{figure.caption.47}%
 \contentsline {figure}{\numberline {5.4-2}{\ignorespaces PLECS Aufbau des Tiefsetzstellers der B6 Topologie}}{38}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.4.2-1}{\ignorespaces Regelung des \gls {B6PFC}}}{39}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.4.2-1}{\ignorespaces Regelung des \gls {B6PFC} \blx@tocontentsinit {0}\cite {13PWMPFC}}}{39}{figure.caption.49}%
 \contentsline {figure}{\numberline {5.4.2-2}{\ignorespaces PLECS Regelung der Ausgangsleistung als Sollgröße}}{40}{figure.caption.50}%
 \contentsline {figure}{\numberline {5.4.2-3}{\ignorespaces PLECS Regelung der Netzimpedanz und Phasenabschnittserkennung}}{40}{figure.caption.51}%
 \contentsline {figure}{\numberline {5.4.2-4}{\ignorespaces PLECS PWM Erzeugung des B6 Gleichrichters}}{41}{figure.caption.52}%

@@ -24,75 +24,73 @@ Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgefü
 \begin{table}
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
-	& Topologie & B6 \& Buck & \gls{IAF} & Gewichtung: \\
+	& Topologie & B6-Buck & \gls{IAF} & Gewichtung: \\
 	\hline
-	Induktivitäten [uH] & L1 Netzinduktivität & 136 & 1 &  \\
+	Induktivitäten& L1 Netzinduktivität [uH]& 136 & 1 &  \\
 	\hline
-	 & Gespeicherte Energie [J] & 3x 4,8 & 0,1 & \\
+	 & Gespeicherte Energie [J]& 14,4 & 0,1 & \\
 	\hline
-	& L2 DC Induktivität & 136 & 136 &  \\
+	& L2 DC Induktivität [uH]& 136 & 136 &  \\
 	\hline
-	& Gespeicherte Energie [J] & 7,8 & 7,8 &  \\
+	& Gespeicherte Energie [J]& 7,8 & 7,8 &  \\
 	\hline
-	& L3 IAF IVS Induktivität & - & 302,2 &  \\
+	& L3 IVS Induktivität [uH]& - & 302,2 &  \\
 	\hline
 	& Gespeicherte Energie [J] & - & 2,6 & \\
 	\hline
-	& L3 IAF IVS Induktivität & - & 302,2 &  \\
+	& Induktivität normiert: &\cellcolor{red!25}  1 & \cellcolor{green!25} 0,43 & 50\% \\
 	\hline
-	& Induktivität normiert: & 1,00 & 0,43 & 50\% \\
+	Kapazitäten & C1 Netzkapazität [uF]& - & 50 &  \\
 	\hline
-	Kapazitäten [uF] & C1 Netzkapazität & - & 50 &  \\
+	& C2 DC Ausgang [mF]& 1 & 1 &  \\
 	\hline
-	& C2 Kondensator am Elektrolyseur & 1000 & 1000 &  \\
+	& C3 DC Zwischenkreis [uF]& 25 & 50 &  \\
 	\hline
-	& C3 DC Zwischenkreis & 25 & 50 &  \\
+	& Kapazität normiert: & \cellcolor{green!25} 0,26 & \cellcolor{red!25} 1 & 5\% \\
 	\hline
-	& Kapazität normiert: & 0,26 & 1 & 5\% \\
+	Halbleiter & SiC 4 \si{\milli \ohm} & 0 & 2 &  \\
 	\hline
-	Halbleiter & SiC 4 mOhm & 0 & 2 &  \\
+	& SiC 2 \si{\milli \ohm} & 10 & 4 &  \\
 	\hline
-	& SiC 2 mOhm & 10 & 4 &  \\
+	& SiC 5 \si{\milli \ohm} & 0 & 6 &  \\
 	\hline
-	& Vienna SiC 5 mOhm & 0 & 6 &  \\
+	& MOSFET normiert: & \cellcolor{red!25} 1 & \cellcolor{yellow!25} 0,64 & 15\% \\
 	\hline
-	& SiC normiert: & 1 & 0,64 & 15\% \\
+	& Dioden & 0 & 6 &  \\
 	\hline
-	& Vienna Diode & 0 & 6 &  \\
-	\hline
-	& Dioden normiert & 0 & 1 & 5\% \\
+	& Dioden normiert &\cellcolor{green!25} 0 & \cellcolor{red!25} 1 & 5\% \\
 	\hline
 	Treiber & Treiberanzahl & 8 & 7 &  \\
 	\hline
-	& Treiber normiert: & 1 & 0,88 & 5\% \\
+	& Treiber normiert: & \cellcolor{red!25}1 & \cellcolor{yellow!25} 0,88 & 5\% \\
 	\hline
 	Verluste [W] & Schaltverluste 30 Grad & 567 & 503 &  \\
 	\hline
 	& Leitverluste 30 Grad & 254 & 1311 &  \\
 	\hline
-	& 30 Grad normiert: & 75\% & 75\% &  \\
+	& 30 Grad Gewichtung: & 75\% & 75\% &  \\
 	\hline
 	& Schaltverluste 0 Grad & 554 & 511 &  \\
 	\hline
 	& Leitverluste 0 Grad & 326 & 748 &  \\
 	\hline
-	& 0 Grad normiert: & 25\% & 25\% &  \\
+	& 0 Grad Gewichtung: & 25\% & 25\% &  \\
 	\hline
-	& Verluste normiert: & 0,5 & 1 & 20\% \\
+	& Verluste normiert: &\cellcolor{yellow!25} 0,5 & \cellcolor{red!25} 1 & 20\% \\
 	\hline
-	Gesamt &  &  0,81 & 0,65 & \\
+	Gesamt &  & \cellcolor{red!25} 0,81 & \cellcolor{yellow!25} 0,65 & \\
 	\hline
 \end{tabular}
 \caption{Auflistung der Simulationsergebnisse und Bewertung}
 \label{tab:Auswertung}
 \end{table}
 
-\section{B6PFC}
+\section{1/3-PWM-PFC}
 	Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und damit bei den Hardwarekosten hat. Die erforderliche dreiphasige Drossel führt dazu, dass der IAF in dieser Kategorie um mehr als 50\% besser abschneidet.
 	Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, durch die Reduzierung der Ausgangsleistung ist die Temperatur im Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen.
-	\begin{figure}
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
+		\includegraphics[width=1\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
 		\caption{Temperaturverhalten der Halbleiter des B6 mit (voll dargestellt) und ohne (schwach dargestellt) Phasenverschiebung}
 		\label{fig:b6temp030grad}
 	\end{figure}
@@ -128,7 +126,7 @@ In Abb. \ref{fig:iafacl30grad} wird dieses Problem durch die starken Spannungsun
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{content/Grafiken/IAF_AC+L}
-	\caption[Simulationsergebnisse des IAF ohne Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität ]{}
+	\caption{Simulationsergebnisse des IAF ohne Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }
 	\label{fig:iafacl}
 \end{figure}
 
