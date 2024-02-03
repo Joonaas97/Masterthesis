@@ -16,14 +16,14 @@ Die Abb. \ref{fig:elycapacity} zeigt zudem, dass der Ausbau der Elektrolyse in d
 		\caption[Elektrolyse Kapazität bis 2030]{Elektrolysekapazität Stand 2020 mit Ausblick bis 2030 \cite{IRENA2020}}
 		\label{fig:elycapacity}
 	\end{figure}
-Ein grundlegendes Unterscheidungsmerkmal für Gleichrichterschaltungen ist die Umsetzung als Dioden/Thyristor oder aktiver Gleichrichter. In Abbildung \ref{fig:thyristor} ist ein Beispiel für einen Thyristor-Gleichrichter zu sehen . 
+Ein grundlegendes Unterscheidungsmerkmal für Gleichrichterschaltungen ist die Umsetzung als Dioden/Thyristor oder aktiver Gleichrichter. In Abbildung \ref{fig:thyristor} ist ein Beispiel für einen 6-pulsigen Thyristor-Gleichrichter zu sehen . 
 	\begin{figure} [H]
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/Thyristor}
 		\caption{Aufbau eines Thyristor-Gleichrichters}
 		\label{fig:thyristor}
 	\end{figure}
-Thyristorgleichrichter haben aufgrund ihrer kompakten Bauform eine höhere Leistungsdichte und können in großen Stückzahlen kostengünstig produziert werden. Zudem gibt es bereits zahlreiche Lösungen für unterschiedliche Anwendungen. Eine Übersicht mit Bewertung geeigneter Gleichrichter für den Einsatz in Elektrolyseanlagen wurde von Mengxing Chen et al. erstellt \cite{HydrogenElectronicTopologies}. Aktive Gleichrichter zeichnen sich durch ihre Netzqualität aus. Aufgrund seiner Blindleistung benötigt er zusätzliche STATCOM-Anlagen zur Kompensation am Netzanschlusspunkt. Um eine bessere Performance zu ermöglichen, können zusätzlich Zerhacker (Chopper) erforderlich sein. Durch die 12-pulsige Anordnung und die höhere Ausgangsspannung ist der Aufbau des Netztransformators komplexer \cite{HydrogenRectInf}. Aktive Gleichrichter können einen konstanten Leistungsfaktor erreichen und benötigen daher keine Kompensationsanlagen. Außerdem kann die Verzerrung \gls{THD} unter 5 \% liegen, so dass der Filteraufwand geringer ist. Durch Multi-Level-Topologien können Halbleiter besser ausgenutzt und der Wirkungsgrad erhöht werden. Innovative Konzepte erfordern jedoch einen höheren Entwicklungsaufwand und die Zuverlässigkeit ist schwieriger zu gewährleisten. Einen Überblick über die Eigenschaften gibt die Tabelle \ref{tab:thyVSafe}.\\
+Thyristorgleichrichter haben aufgrund ihrer kompakten Bauform eine höhere Leistungsdichte und können in großen Stückzahlen kostengünstig produziert werden. Zudem gibt es bereits zahlreiche Lösungen für unterschiedliche Anwendungen. Eine Übersicht mit Bewertung geeigneter Gleichrichter für den Einsatz in Elektrolyseanlagen wurde von Mengxing Chen et al. erstellt \cite{HydrogenElectronicTopologies}. Aufgrund der Blindleistung von Thyristorschaltungen benötigen sie zusätzliche STATCOM-Anlagen zur Kompensation am Netzanschlusspunkt. Um eine bessere Performance zu ermöglichen, können zusätzlich Zerhacker (Chopper) erforderlich sein. Durch die 12-pulsige Anordnung und die höhere Ausgangsspannung ist der Aufbau des Netztransformators außerdem komplexer \cite{HydrogenRectInf}. Aktive Gleichrichter zeichnen sich durch ihre Netzqualität, Sie können einen konstanten Leistungsfaktor erreichen und benötigen daher keine Kompensationsanlagen. Außerdem kann die Verzerrung \gls{THD} unter 5 \% liegen, so dass der Filteraufwand geringer ist. Durch Multi-Level-Topologien können Halbleiter besser ausgenutzt und der Wirkungsgrad erhöht werden. Innovative Konzepte erfordern jedoch einen höheren Entwicklungsaufwand und die Zuverlässigkeit ist schwieriger zu gewährleisten. Einen Überblick über die Eigenschaften gibt die Tabelle \ref{tab:thyVSafe}.\\
 	\begin{table} [H]
 		\centering
 		\caption{Vergleich Thyristor-Gleichrichter und aktiver Gleichrichter}
@@ -36,9 +36,9 @@ Thyristorgleichrichter haben aufgrund ihrer kompakten Bauform eine höhere Leist
 			\hline
 			Geringe Halbleiterkosten & <5 \% \gls{THD} \\
 			\hline
-			Vorgefertigte Lösungen &  \gls{SDL} möglich \\
+			Vorgefertigte Lösungen & Mehr Level Topologien  \\
 			\hline
-			Benötigt STATCOM & Mehr Level Topologien  \\
+			Benötigt STATCOM &  \gls{SDL} möglich \\
 			\hline
 			Zusätzlicher Zerhacker (Chopper) ggf  nötig & Innovative Lösungen \\
 			\hline
@@ -50,4 +50,4 @@ Für Gleichrichter im Megawattbereich sind Thyristorschaltungen die am häufigst
 Aktuelle Forschungsergebnisse zu Hochleistungsgleichrichtern für die Elektrolyse sind in \cite{HydrogenRectifier} dargestellt. Hier zeigt sich, dass insbesondere bei höheren Ausgangsspannungen neue Konzepte mit integrierter Blindleistungskompensation wie der Vienna-Gleichrichter gut geeignet sind \cite{HydrogenRectifier}.
 \pagebreak
 \section{Ziel der Arbeit}
-Ziel ist es, die beiden ausgewählten Stromrichtertopologien (\gls{IAF} und \gls{B6PFC}) anhand detaillierter Simulationen unter vorgegebenen Randbedingungen zu vergleichen, um eine eindeutige Bewertung vornehmen zu können. Dazu werden zunächst die Randbedingungen der Schnittstellen Elektrolyseur und Stromnetz definiert, um diese in einer Simulation mit Matlab und der Erweiterung PLECS abzubilden. Durch die Modellierung der Halbleiter kann die Verlustleistung und damit der Wirkungsgrad und indirekt der Kühlaufwand abgeschätzt werden. Zusätzlich kann durch die in den magnetischen Komponenten gespeicherte Energie deren Größe und Kosten abgeschätzt werden, da diese den größten Anteil an den Gesamtkosten eines Umrichters ausmachen. Weitere Komponenten wie Treiberschaltungen und benötigte Kapazitäten spielen bei der Bewertung eine untergeordnete Rolle. Um die Bereitstellung von Systemdienstleistungen zu berücksichtigen, wird die Verlustleistung bei einer Phasenverschiebung von 30 Grad und 0 Grad betrachtet. Anschließend erfolgt eine Gesamtbewertung durch Gewichtungsfaktoren der einzelnen Kategorien.
+Ziel ist es, die beiden ausgewählten Stromrichtertopologien (\gls{IAF} und \gls{B6PFC}) anhand detaillierter Simulationen unter vorgegebenen Randbedingungen zu vergleichen, um eine eindeutige Bewertung vornehmen zu können. Dazu werden zunächst die Randbedingungen der Schnittstellen Elektrolyseur und Stromnetz definiert, um diese in einer Simulation mit Matlab und der Erweiterung PLECS abzubilden. Durch die Modellierung der Halbleiter kann die Verlustleistung und damit der Wirkungsgrad und indirekt der Kühlaufwand abgeschätzt werden. Zusätzlich kann durch die in den magnetischen Komponenten gespeicherte Energie deren Größe und Kosten abgeschätzt werden, da diese den größten Anteil an den Gesamtkosten eines Umrichters ausmachen. Weitere Komponenten wie Treiberschaltungen und benötigte Kapazitäten spielen bei der Bewertung eine untergeordnete Rolle. Um die Bereitstellung von Systemdienstleistungen zu berücksichtigen, wird die Verlustleistung ohne und mit einer Phasenverschiebung von 30 Grad betrachtet. Anschließend erfolgt eine Gesamtbewertung durch Gewichtungsfaktoren der einzelnen Kategorien.

@@ -16,7 +16,7 @@ Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späte
 
 
 \section{Randbedingungen}
-Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegung für die Simulation durchführen zu können. Die Spannungsschwankung am Eingang wird auf 10 \% begrenzt, was in der späteren Anwendung durch Varistoren oder ähnliches sichergestellt werden kann.
+Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegung für die Simulation durchführen zu können. Die Spannungsschwankung am Eingang wird auf 10 \% begrenzt, was in der späteren Anwendung durch Varistoren oder ähnliches sichergestellt werden kann. Die Leistung wird als Grundlage festgelegt, da aufgrund der Halbleiter Module und thermischen Belastung höhere Ströme in einem Gerät Probleme bei der Umsetzung bereiten würden. Die Ausgangsspannung von maximal 680 V ergibt sich aufgrund der Spannungsfestigkeit der Halbleitermodule, welche 1200 V beträgt. Es wird sich für diese Spannungsklasse entschieden, da diese bereits etabliert und in breiter Masse verfügbar ist. Die Netzfrequenz sowie Spannungsschwankung wird anhand der Anforderungen für Stationären Betrieb im deutschen Stromnetz definiert. Die Spannungsschwankung wird auf 10 \% reduziert da kurzfristige Änderungen und entsprechende Kompensationen später betrachtet werden.  \\
 
 \begin{itemize}
 \item Ausgangsleistung: 200 kW
@@ -154,7 +154,7 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit Halbbrück
 	\caption{PLECS Aufbau der B6 Leistungshalbleiter}
 	\label{fig:plecsb6}
 \end{figure}
- Um die Ausgangsleistung auch bei geringerer Spannung bereitzustellen und ein späteres Interleaving zu ermöglichen, sind für den Tiefsetzsteller zwei Halbbrücken vorgesehen. Die Schaltung ist in Abbildung ef{fig:plecsb6buck} zu finden. Es ist direkt erkennbar, dass der Tiefsetzsteller durch die Kondensatoren am Eingang von der B6-Struktur entkoppelt ist.
+ Um die Ausgangsleistung auch bei geringerer Spannung bereitzustellen und ein späteres Interleaving zu ermöglichen, sind für den Tiefsetzsteller zwei Halbbrücken vorgesehen. Die Schaltung ist in Abbildung \ref{fig:plecsb6buck} zu finden. Es ist direkt erkennbar, dass der Tiefsetzsteller durch die Kondensatoren am Eingang von der B6-Struktur entkoppelt ist.
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6Buck}

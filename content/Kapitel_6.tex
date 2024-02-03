@@ -22,6 +22,7 @@ Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgefü
 
 
 \begin{table}
+	\centering
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
 	& Topologie & B6-Buck & \gls{IAF} & Gewichtung: \\
@@ -87,16 +88,16 @@ Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgefü
 
 \section{1/3-PWM-PFC}
 	Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und damit bei den Hardwarekosten hat. Die erforderliche dreiphasige Drossel führt dazu, dass der IAF in dieser Kategorie um mehr als 50\% besser abschneidet.
-	Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, durch die Reduzierung der Ausgangsleistung ist die Temperatur im Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen.
-	\begin{figure}[H]
+	Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, durch die Reduzierung der Ausgangsleistung ist die Temperatur im  \gls{MOSFET} FET7 des Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen.
+	\begin{figure}
 		\centering
 		\includegraphics[width=1\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
-		\caption{Temperaturverhalten der Halbleiter des B6 mit (voll dargestellt) und ohne (schwach dargestellt) Phasenverschiebung}
+		\caption{Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}
 		\label{fig:b6temp030grad}
 	\end{figure}
 	Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf. 
 	
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
 		\caption{Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}
@@ -122,7 +123,7 @@ Für die Auswertung werden die Simulationen für eine Dauer von 0,4 Sekunden dur
 \end{figure}
 
 Die Simulationsergebnisse zeigen den erwarteten Strom- und Spannungsverlauf für die Induktivität mit einer Dreiecksform, siehe Abbildung. \ref{fig:iafacl}. Zusätzlich ist dem Eingangsstrom ein hochfrequenter Anteil überlagert, der durch die Schaltfrequenz des Tiefsetzstellers erklärt werden kann. Außerdem treten beim Schaltvorgang des \gls{IVS} starke Sprünge im Stromverlauf auf, da der Strom in der Induktivität zwischen den Phasen schalten muss.\\
-In Abb. \ref{fig:iafacl30grad} wird dieses Problem durch die starken Spannungsunterschiede zwischen den Phasen bei Phasenverschiebung noch verstärkt. Außerdem muss der \gls{IVS} mehr Strom führen und erzeugt dadurch mehr Verlustleistung. Dies ist auch an der Temperatur des in Abb. \ref{fig:iaftemp} dargestellten Kurven erkennbar. In (a) ist die Temperatur des IVS in grün unter 110 °C und in (b) durch den höheren Strom aufgrund der Phasenverschiebung deutlich angestiegen, bleibt aber unter den zulässigen 175 °C für die Sperrschichttemperatur.
+In Abb. \ref{fig:iafacl30grad} wird dieses Problem durch die starken Spannungsunterschiede zwischen den Phasen bei Phasenverschiebung noch verstärkt. Außerdem muss der \gls{IVS} mehr Strom führen und erzeugt dadurch mehr Verlustleistung. Dies ist auch an der Temperatur des in Abb. \ref{fig:iaftemp} dargestellten Kurven erkennbar. In (a) ist die Temperatur des IVS in grün unter 110 °C und in (b) durch den höheren Strom aufgrund der Phasenverschiebung deutlich angestiegen, bleibt aber unter den zulässigen 175 °C für die Sperrschichttemperatur. Um den Sinusverlauf im Mittel besser erkennen zu können, ist der Stromverlauf in Abbildung \ref{fig:iafacl30grad} zusätzlich nach einer Tiefpassfilterung dargestellt. Dadurch ist die Phasenverschiebung besser ersichtlich, siehe Verlauf A Filter. 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{content/Grafiken/IAF_AC+L}

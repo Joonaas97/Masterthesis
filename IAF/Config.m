@@ -5,7 +5,7 @@ clear;
 Netz.Frequenz = 50;             %Hz
 Netz.SpannungLL = 617;           %Volt
 Netz.SpannungPeak = Netz.SpannungLL /sqrt(3)*sqrt(2);
-Phaseshift = 30;
+Phaseshift = -30;
 
 Netz.R1 = 0;                    %Reihenwiderstand von Netz
 Netz.R2 = 50;                   %Reihenwiderstand zu den Filterkondensatoren

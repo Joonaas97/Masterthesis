@@ -122,6 +122,12 @@ INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\typearea.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\typearea.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\typearea.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\typearea.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
@@ -229,12 +235,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\setspace.hak
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\setspace.hak
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\setspace.hak
@@ -1615,13 +1615,13 @@ INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
 INPUT .\content\Grafiken\Ely-Efficiency.png
-INPUT .\content\Grafiken\Buck.pdf
-INPUT .\content\Grafiken\Buck.pdf
-INPUT .\content\Grafiken\Buck.pdf
-INPUT .\content\Grafiken\Buck.pdf
-INPUT .\content\Grafiken\Buck.pdf
 INPUT .\content\Grafiken\Plecs_Diodengleichrichter.png
 INPUT .\content\Grafiken\B6-Diodengleichrichter-Eingangsverlauf.png
+INPUT .\content\Grafiken\Buck.pdf
+INPUT .\content\Grafiken\Buck.pdf
+INPUT .\content\Grafiken\Buck.pdf
+INPUT .\content\Grafiken\Buck.pdf
+INPUT .\content\Grafiken\Buck.pdf
 INPUT .\content\Grafiken\IAF.pdf
 INPUT .\content\Grafiken\IAF.pdf
 INPUT .\content\Grafiken\IAF.pdf
@@ -1796,13 +1796,13 @@ INPUT .\content\Grafiken\IAF_Plecs_IVS.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
 INPUT .\content\Grafiken\IAF_Plecs_main.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
-INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_Plecs_IVS.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
+INPUT .\content\Grafiken\IAF_BuckControl.png
 INPUT .\content\Grafiken\IAF_Paper_Control.png
 INPUT .\content\Grafiken\IAF_Paper_Control.png
 INPUT .\content\Grafiken\IAF_Paper_Control.png
@@ -1865,18 +1865,18 @@ INPUT .\content\Grafiken\PLECS_B6_ControlRiGrid.png
 INPUT .\content\Grafiken\PLECS_B6_ControlRiGrid.png
 INPUT .\content\Grafiken\PLECS_B6_ControlRiGrid.png
 INPUT .\content\Grafiken\PLECS_B6_ControlRiGrid.png
-INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
-INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
-INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
-INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
-INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
-INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
-INPUT .\content\Kapitel_6.tex
-INPUT .\content\Kapitel_6.tex
-INPUT .\content\Kapitel_6.tex
-INPUT .\content\Kapitel_6.tex
 INPUT .\content\Grafiken\PLECS_B6_ControlPout.png
 INPUT .\content\Grafiken\PLECS_B6_ControlRiGrid.png
+INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
+INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
+INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
+INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
+INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
+INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
+INPUT .\content\Kapitel_6.tex
+INPUT .\content\Kapitel_6.tex
+INPUT .\content\Kapitel_6.tex
+INPUT .\content\Kapitel_6.tex
 INPUT .\content\Grafiken\PLECS_B6_ControlPWMmid.png
 INPUT .\content\Grafiken\B6_Temp_0&30Grad.pdf
 INPUT .\content\Grafiken\B6_Temp_0&30Grad.pdf

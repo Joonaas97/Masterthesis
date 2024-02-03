@@ -13,7 +13,7 @@
     Netz.SpannungLL = 617*1.1;                                                    % Gridvoltage Line-to-Line in V
     Netz.SpannungPeak = Netz.SpannungLL /sqrt(3)*sqrt(2);
     Netz.Frequenz = 50;                                                         % Gridfrequency in Hz
-    Phaseshift=30;                                                              % in Degree (no negative possible!)
+    Phaseshift=0;                                                              % in Degree (no negative possible!)
 
 %% RC Values
     B6_Boost.C3 = 25e-6;                                                        % Intermediate Capacitor

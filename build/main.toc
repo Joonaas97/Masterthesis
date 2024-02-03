@@ -6,57 +6,57 @@
 \contentsline {chapter}{Abkürzungsverzeichnis}{VII}{section*.8}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Stand der Technik}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{5}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Grundlagen}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Wasserstoff-Elektrolyse}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Stromrichter}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Gleichrichter}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}DC-DC Wandler}{9}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Power Factor Correction (PFC)}{10}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Integrated Active Filter Gleichrichter}{10}{section.2.3}%
-\contentsline {section}{\numberline {2.4}1/3 PWM PFC Rectifier Gleichrichter}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Leistungshalbleiter}{12}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Induktive Komponenten}{13}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Simulationssoftware}{14}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}PLECS}{14}{subsection.2.7.1}%
-\contentsline {chapter}{\numberline {3}Anforderungen}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Stromnetz}{16}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Systemdienstleistungen (SDL)}{18}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Fault-Ride-Through (FRT))}{19}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Elektrolyseur}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Zusammenfassung}{20}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Bewertungskriterien}{20}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Vorauswahl}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Mögliche Topologien}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}6-Switch Boost PFC Rectifier}{21}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Vienna Rectifier}{22}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}6-Switch Buck PFC Rectifier}{22}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Swiss Rectifier}{23}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}2/3 PWM Buck \& Boost Current Source Rectifier}{24}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Trident Rectifier}{24}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Y-Rectifier}{24}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}3-Level Neutral Point Clamped}{25}{subsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.1.9}3-Level Active Neutral Point Clamped}{26}{subsection.4.1.9}%
-\contentsline {subsection}{\numberline {4.1.10}Three-Level Flying Capacitor (FC) Boost-Type Rectifier System}{26}{subsection.4.1.10}%
-\contentsline {subsection}{\numberline {4.1.11}Three-Level Flying Capacitor (FC + Tiefsetzsteller)}{27}{subsection.4.1.11}%
-\contentsline {section}{\numberline {4.2}Auswahl der Topologien}{28}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Simulation}{30}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Randbedingungen}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tiefsetzsteller}{32}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Auslegung der Induktivität}{32}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Regelung}{33}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}IAF}{33}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Auslegung der Induktivitäten}{33}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Regelung}{34}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}B6 1/3 PFC Buck}{37}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Auslegung der Netzinduktivität}{38}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Regelung}{39}{subsection.5.4.2}%
-\contentsline {chapter}{\numberline {6}Auswertung}{42}{chapter.6}%
-\contentsline {section}{\numberline {6.1}1/3-PWM-PFC}{44}{section.6.1}%
-\contentsline {section}{\numberline {6.2}IAF}{47}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{51}{chapter.7}%
-\contentsline {chapter}{\nonumberline Literatur}{53}{chapter*.63}%
-\contentsline {chapter}{\nonumberline Inhalt der CD}{56}{chapter*.64}%
-\contentsline {chapter}{\nonumberline Anhang}{57}{chapter*.65}%
+\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Grundlagen}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Wasserstoff-Elektrolyse}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Stromrichter}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Gleichrichter}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}DC-DC Wandler}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Power Factor Correction (PFC)}{12}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Integrated Active Filter Gleichrichter}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}1/3 PWM PFC Rectifier Gleichrichter}{13}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Leistungshalbleiter}{15}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Induktive Komponenten}{16}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Simulationssoftware}{17}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}PLECS}{17}{subsection.2.7.1}%
+\contentsline {chapter}{\numberline {3}Anforderungen}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Stromnetz}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Systemdienstleistungen}{21}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Fault-Ride-Through (FRT))}{22}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Elektrolyseur}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Zusammenfassung}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Bewertungskriterien}{23}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Vorauswahl}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Mögliche Topologien}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}6-Switch Boost PFC Rectifier}{25}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Vienna Rectifier}{26}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}6-Switch Buck PFC Rectifier}{27}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Swiss Rectifier}{27}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}2/3 PWM Buck \& Boost Current Source Rectifier}{28}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Trident Rectifier}{28}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Y-Rectifier}{29}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}3-Level Neutral Point Clamped (NPC)}{29}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}3-Level Active Neutral Point Clamped (ANPC)}{30}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}Three-Level Flying Capacitor (FC) Boost-Type Rectifier System}{31}{subsection.4.1.10}%
+\contentsline {subsection}{\numberline {4.1.11}Three-Level Flying Capacitor (FC + Tiefsetzsteller)}{32}{subsection.4.1.11}%
+\contentsline {section}{\numberline {4.2}Auswahl der Topologien}{33}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Simulation}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Randbedingungen}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tiefsetzsteller}{38}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Auslegung der Induktivität}{38}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Regelung}{38}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}IAF}{38}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Auslegung der Induktivitäten}{40}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Regelung}{40}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}B6 1/3 PFC Buck}{43}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Auslegung der Netzinduktivität}{44}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Regelung}{45}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}Auswertung}{48}{chapter.6}%
+\contentsline {section}{\numberline {6.1}1/3-PWM-PFC}{50}{section.6.1}%
+\contentsline {section}{\numberline {6.2}IAF}{54}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{58}{chapter.7}%
+\contentsline {chapter}{\nonumberline Literatur}{61}{chapter*.63}%
+\contentsline {chapter}{\nonumberline Inhalt der CD}{64}{chapter*.64}%
+\contentsline {chapter}{\nonumberline Anhang}{65}{chapter*.65}%
 \xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

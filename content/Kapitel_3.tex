@@ -1,6 +1,6 @@
 \chapter{Anforderungen}
 \label{chap:Anforderungen}
-In diesem Kapitel werden die Anforderungen an den Elektrolyseur von beiden Seiten beschrieben. Auf der einen Seite fordert der Netzbetreiber u.a. die Einhaltung der \gls{VDE} Richtlinien für den Netzanschluss. Die andere Seite wird durch den Hersteller des Elektrolyseur-Stacks definiert, für den es nach heutigem Stand keine Normen gibt.
+In diesem Kapitel werden die Anforderungen an den Elektrolyseur von beiden Seiten beschrieben. Auf der einen Seite fordert der Netzbetreiber die Einhaltung der Richtlinien für den Netzanschluss, welche vom \gls{VDE} definiert werden. Die andere Seite wird durch den Hersteller des Elektrolyseur-Stacks definiert, für den es nach heutigem Stand keine Normen gibt. 
 \section {Stromnetz} \label{sec:AnfStromnetz}
 In Deutschland sind die Anforderungen an den Netzanschluss von Anlagen durch die \gls{VDE} festgelegt. Je nach Anschlussleistung, Standort und Betriebsverhalten wird eine unterschiedliche Netzspannungsklasse gewählt, die leicht abweichende Anschlussrichtlinien besitzt. Aufgrund der Skalierbarkeit zu höheren Leistungsklassen und den zu erwartenden steigenden Anforderungen wird die Hochspannungsklasse gewählt. Dies ist die VDE-AR-N 4120 "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)" \cite{VDEARN4120}.
 Dies beinhaltet u.a. die Anforderung an die Phasenverschiebung, bei Wirkleistungsbezug darf eine maximale Verschiebung von $cos(\phi)=0,95$ auftreten, was einem Winkel von ca. 18 Grad entspricht, vgl. Abbildung \ref{fig:tar4120pq}. Der Netzbetreiber kann jedoch mit dem Anlagenbetreiber gesonderte Vereinbarungen treffen, die es ermöglichen, Netzdienstleistungen anzubieten. Daraus ergibt sich die Anforderung an die Topologie, eine Phasenverschiebung von mindestens 18 Grad zu ermöglichen.\\
@@ -28,8 +28,8 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss muss die Anlage kurzzeitig d
 
 
 
-	\subsection{Systemdienstleistungen (SDL)}
-	Generell ist die Bundesnetzagentur für die Regulierung und Überwachung aller Dienstleistungen und Aktivitäten im deutschen Netz zuständig. Dazu gehört auch die Bereitstellung und Sicherstellung von Blindleistung neben der Wirkleistung, die effizient, transparent und diskriminierungsfrei am Markt zu beschaffen ist. Hierfür bieten sich zukünftig große Verbrauchseinrichtungen wie Elektrolyseure neben Erzeugungsanlagen an und diese Dienstleistungen können die Wasserstofferzeugung wirtschaftlicher machen.\\
+	\subsection{Systemdienstleistungen}
+	Generell ist die Bundesnetzagentur für die Regulierung und Überwachung aller Dienstleistungen und Aktivitäten im deutschen Netz zuständig. Dazu gehört auch die Bereitstellung und Sicherstellung von Blindleistung, die effizient, transparent und diskriminierungsfrei am Markt zu beschaffen ist. Hierfür bieten sich zukünftig große Verbrauchseinrichtungen wie Elektrolyseure neben Erzeugungsanlagen an und diese Dienstleistungen können die Wasserstofferzeugung wirtschaftlicher machen.\\
 	Die Systemdienstleistungen werden nach VDE-ARN 4141-1 in vier Kategorien unterteilt: Frequenz- und Spannungshaltung, Netzwiederaufbau und Betriebsführung. Die \gls{TAR} definiert diese und stellt Anforderungen an den Nachweis und die Ausschreibung von \gls{SDL}. Eine Übersicht über die technischen Mindestanforderungen an Erzeugungsanlagen in den verschiedenen Spannungsklassen zeigt Abb. \ref{fig:vde-fnn-tar}. Frequenzschwankungen stellen für stromrichterbasierte Elektrolyseanlagen kaum eine Herausforderung dar, diese können durch Regelvorgänge kompensiert und Netzstützung, wie bei \gls{RoCoF} erforderlich, bereitgestellt werden. Bei \gls{RoCoF} handelt es sich um schnelle Frequenzänderungen, wie sie bei einer Netztrennung oder -wiederverbindung auftreten. Primärregelleistung, statische Spannungshaltung und dynamische Netzstützung können ebenfalls durch Regelverhalten realisiert werden, jedoch begrenzt durch die Dynamik und den Leistungsbezug des Elektrolyseurs. Netzrückwirkungen sind ebenfalls zu berücksichtigen und können durch entsprechende Filter kompensiert werden. Die Schwarzstartfähigkeit ist in diesem Fall schwierig und kann nur durch eine Leistungsbegrenzung während des Wiederaufbaus unterstützt werden.
 	\begin{figure}
 		\centering
@@ -53,8 +53,9 @@ Um den Wirkungsgrad und die Lebensdauer des Elektrolyseurs nicht zu verringern, 
 
 
 \section{Zusammenfassung}
-Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammengefasst, für die Umsetzung sind die Zukünftigen Anforderungen relevant.\\
+Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammengefasst, für die Umsetzung sind die Zukünftigen Anforderungen relevant. \\
 \begin{table}
+	\centering
 \caption{Anforderungen an den Gleichrichter Aktuell und in Zukunft}
 \label{tab:AnfZsm}
 \begin{tabular}{c|c|c}
@@ -62,11 +63,13 @@ Die Anforderungen an den Gleichrichter sind in Tabelle \ref{tab:AnfZsm} zusammen
 	\hline
 	Leistungsfaktor stationär & >0.95 & >0.99 \\
 	\hline
+	Netzspannungsschwankung & 15 \% & 15 \% \\
+	\hline
 	Leistungsfaktor als Systemdienstleistung & keine Angabe & +/- 30° \\
 	\hline
 	Ausgangsstromrippel & <5 \% & <5 \% \\
 	\hline
-	Ausgangsspannung & < 1000 V & < 1500 V \\
+	Ausgangsspannung & 0..1000 V & 0..1500 V \\
 
 \end{tabular}
 \end{table}
