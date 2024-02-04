@@ -10,7 +10,7 @@ Die \gls{HTEL} nutzt die Vorteile höherer Temperaturen von oft über 500 °C, d
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{content/Grafiken/Ely-Efficiency}
+	\includegraphics[width=0.9\linewidth]{content/Grafiken/Ely-Efficiency}
 	\caption{Elektrolyseur Spannungseffizienz \cite{NOWH2}}
 	\label{fig:ely-efficiency}
 \end{figure}
@@ -23,7 +23,7 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		\label{sec:Rec}
 		Ein Gleichrichter wird genutzt, um aus einer Wechselspannung eine Gleichspannung zu erzeugen. Die einfachste Form ist der Diodengleichrichter. Dieser kann für einphasige Wechselspannung durch eine einzelne Diode realisiert werden. Allerdings würde so nur die halbe Periode des Sinus am Ausgang zur Verfügung stehen, da die Diode nur während der positiven Halbwelle leitet. Dies kann durch die Ergänzung eines Brückengleichrichters mit vier Dioden für einphasige Anwendungen und sechs Dioden für dreiphasige Anwendungen erreicht werden.
 		Der Diodengleichrichter ist jedoch nur bedingt für einen gewünschten Stromverlauf geeignet. In Abbildung \ref{fig:B6DiodRect} ist der Diodengleichrichter mit Netzspannung und Strom dargestellt. Der Stromverlauf zeigt starke Sprünge und der gewünschte sinusförmige Verlauf ist nur schwer erkennbar. Außerdem ist es mit dieser Schaltung nicht möglich, die Ausgangsspannung oder den Strom zu variieren.
-		\begin{figure}[H]
+		\begin{figure}
 			\centering
 			\subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/Plecs_Diodengleichrichter}}
 			\qquad
@@ -36,10 +36,10 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		Als Alternative werden \gls{AFE} Gleichrichter eingesetzt, die wesentlich geringere Verzerrungen und völlige Freiheit bei der Regelung des Eingangsstroms bieten. Auf Filter und Blindleistungskompensation kann in diesem Fall verzichtet werden \cite{HydrogenElectronicTopologies}.
 		
 		\subsection{DC-DC Wandler} \label{sec:Buck}
-		Der Hochsetzsteller und der Tiefsetzsteller sind grundlegende Topologien, die im Wesentlichen aus zwei Halbleitern und einer Induktivität bestehen. In Abb. \ref{fig:buck} ist die Schaltung eines Tiefsetzstellers dargestellt. Über die \gls{D} des Schalters kann die \gls{Ua} eingestellt werden, wobei die Parameter \gls{Ue}, Lastimpedanz sowie der Wert der Induktivität relevant sind. Die Ausgangsspannung kann für den Betrieb ohne Unterbrechung über die Beziehung $U_{out}=D\cdot U_{in} $ berechnet werden \cite{schmidtwalter}.\\
+		Der Hochsetzsteller und der Tiefsetzsteller sind grundlegende Topologien, die im Wesentlichen aus zwei Halbleitern und einer Induktivität bestehen. In Abb. \ref{fig:buck} ist die Schaltung eines Tiefsetzstellers dargestellt. Über die \gls{D} des Schalters kann die \gls{Ua} eingestellt werden, wobei die Parameter \gls{Ue}, Lastimpedanz sowie der Wert der Induktivität relevant sind. Die Ausgangsspannung kann für den Betrieb ohne Unterbrechung über die Beziehung $U_{out}=D\cdot U_{in} $ berechnet werden \cite{schmidtwalter}.\\ \\
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/Buck}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/Buck}
 			\caption[Tiefsetzsteller]{Tiefsetzsteller}
 			\label{fig:buck}
 		\end{figure}
@@ -58,7 +58,30 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		
 		\subsection{Power Factor Correction (PFC)}
 		Die \gls{PFC} ist eine notwendige Maßnahme, um den Blindleistungsanteil im Netz zu reduzieren und ist daher in heutigen Geräten standardmäßig implementiert. Ein Beispiel aus der Industrie, bei dem eine einfache Blindleistungskompensation bereits realisiert wurde, sind Leuchten mit Halogenlampen. Diese waren mit einem Transformator zur Erzeugung der notwendigen Spannung ausgestattet, der jedoch Blindleistung verursachte, was durch einfaches Hinzufügen eines Kondensators optimiert werden konnte. \\
-		In herkömmlichen Gleichrichtersystemen werden getrennte Einheiten, bestehend aus einer dreiphasigen PFC-Gleichrichterschaltung und einem Gleichspannungswandler (DC/DC-Buck-Wandler), eingesetzt, um die Anforderungen zu erfüllen. Die Regelung der beiden Wandlerstufen erfolgt in der Regel entkoppelt, wobei der Gleichrichter sinusförmige Netzströme aufnimmt und der nachfolgende DC/DC-Wandler die Spannung an die erforderliche Ausgangsspannung anpasst. Das Streben nach kompakten und leichten Systemen erfordert hohe Schaltfrequenzen, die jedoch zu erhöhten Schaltverlusten und verringertem Wandlerwirkungsgrad führen können. Um dieses Problem zu lösen, können fortgeschrittene Modulationstechniken wie die Einfügung der dritten Harmonischen und Raumzeigermodulation eingesetzt werden. Alternativ kann die diskontinuierliche Pulsweitenmodulation (DPWM) als Methode zur Reduzierung der Schaltverluste in dreiphasigen PFC-Gleichrichtern eingesetzt werden, um sinusförmige Eingangsströme und eine konstante Gleichspannung zu gewährleisten. Im Gegensatz dazu müssen einstufige Umrichtersysteme beide Anforderungen gleichzeitig erfüllen, während zweistufige Systeme eine konstante Ausgangsspannung trotz niederfrequenter Spannungsschwankungen im Gleichspannungszwischennetz gewährleisten können.					
+		In herkömmlichen Gleichrichtersystemen werden getrennte Einheiten, bestehend aus einer dreiphasigen PFC-Gleichrichterschaltung und einem Gleichspannungswandler (DC/DC-Buck-Wandler), eingesetzt, um die Anforderungen zu erfüllen. Die Regelung der beiden Wandlerstufen erfolgt in der Regel entkoppelt, wobei der Gleichrichter sinusförmige Netzströme aufnimmt und der nachfolgende DC/DC-Wandler die Spannung an die erforderliche Ausgangsspannung anpasst. Das Streben nach kompakten und leichten Systemen erfordert hohe Schaltfrequenzen, die jedoch zu erhöhten Schaltverlusten und verringertem Wandlerwirkungsgrad führen können. Um dieses Problem zu lösen, können fortgeschrittene Modulationstechniken wie die Einfügung der dritten Harmonischen und Raumzeigermodulation eingesetzt werden. Alternativ kann die diskontinuierliche Pulsweitenmodulation (DPWM) als Methode zur Reduzierung der Schaltverluste in dreiphasigen PFC-Gleichrichtern eingesetzt werden, um sinusförmige Eingangsströme und eine konstante Gleichspannung zu gewährleisten. Im Gegensatz dazu müssen einstufige Umrichtersysteme beide Anforderungen gleichzeitig erfüllen, während zweistufige Systeme eine konstante Ausgangsspannung trotz niederfrequenter Spannungsschwankungen im Gleichspannungszwischennetz gewährleisten können.			
+		\subsection{Leistungshalbleiter}
+		Halbleiter sind prinzipiell alle Bauelemente mit mindestens einem PN-Übergang; können sie größere Leistungen schalten, werden sie als Leistungshalbleiter bezeichnet. Dabei sind für die verwendete Topologie neben der klassischen Diode vor allem \gls{MOSFET} relevant. Diese verdrängen derzeit in der Leistungselektronik häufig den verbreiteten IGBT aufgrund der preiswerter gewordenen Variante aus Siliziumkarbid \cite{SiCTrend}. Die Vorteile dieser neuen Technologie liegen in der Ermöglichung höherer Schaltfrequenzen, wodurch wiederum die in den induktiven Bauelementen zu speichernde Energie reduziert und somit Kosten eingespart werden können.\\
+		Zur Auswahl der am besten geeigneten Halbleiter werden unter anderem Schaltungssimulationen eingesetzt, diese erfordern eine Nachbildung der Halbleiter. Um die Modelle der Leistungshalbleiter zu erstellen und ggf. vorhandene Modelle zu validieren, können Messungen im \gls{DPT} durchgeführt werden. Ein Beispiel für die in \gls{PLECS} implementierten Ausschaltverluste eines Halbleiters zeigt Abb. \ref{fig:plecsff2thermalmodel}. Es ist zu erkennen, dass die Punkte nur für den Betriebspunkt von 600 Volt zur Verfügung stehen, für andere Betriebsbereiche muss das Verhalten approximiert werden. Außerdem ist der \gls{RGV} nur für einen begrenzten Bereich dargestellt und die \gls{VGSS} nur auf einen Wert beschränkt. Dies kann in der späteren Anwendung zu deutlichen Abweichungen führen. 
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_FF2ThermalModel}
+			\caption{Darstellung der in PLECS implementierten Ausschaltverluste \cite{IFAGFF2}}
+			\label{fig:plecsff2thermalmodel}
+		\end{figure}
+		
+		\subsection{Induktive Komponenten}
+		Induktive Bauelemente sind in der Regel Spulen und Transformatoren, die zur Speicherung und Übertragung von Energie dienen. Transformatoren bieten zusätzlich die Möglichkeit der galvanischen Entkopplung von Stromkreisen. 
+		Für die Dimensionierung von Induktivitäten wird das Delta des Stromes in der Spule, der sogenannte Stromrippel, benötigt. Dieser Strom wird hier mit 30 Prozent des Effektivstroms ausgelegt. Für Drehstromsysteme kann der Rippelstrom nach der Formel \ref{eq:DeltaI} ermittelt werden. Dabei sind \gls{S} und \gls{Ull} die Spannungen zwischen den Außenleitern. \cite{Boge.2007}.\\
+		\begin{equation}
+			\label{eq:DeltaI}
+			\Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
+		\end{equation}
+		Außerdem kann über die \gls{WL} eine Aussage über die Größe und damit indirekt über die Kosten und den Platzbedarf getroffen werden. Die Energie \gls{WL} kann mit der Formel \ref{eq:WL} berechnet werden. Dazu wird der Wert der Induktivität und der Effektivwert des Stroms $I_{RMS}$ benötigt \cite{Boge.2007}.
+		\begin{equation}
+			\label{eq:WL}
+			W_{L} =\dfrac{1}{2}\cdot L\cdot I_{RMS}^{2}
+		\end{equation}
+				
 			
 \section{Integrated Active Filter Gleichrichter}
 	Der \gls{IAF} Gleichrichter wurde erstmals 1997 in \cite{IAFfirst} für den Einsatz in Photovoltaikanwendungen vorgestellt. Er besteht aus einem Diodengleichrichter für den Hauptleistungspfad. Um sinusförmige Ströme in allen drei Phasen einzuprägen, wird dieser durch ein Netzwerk aus bidirektional sperrenden Leistungshalbleitern mit einer Induktivität und einer Halbbrücke, der sogenannten THI-Schaltung, ergänzt. Durch die Integration des Filters in den Leistungspfad ist keine externe Blindleistungskompensation erforderlich und die Filter können kleiner dimensioniert werden. Aufgrund des ungesteuerten Diodengleichrichters ist jedoch eine nachträgliche Spannungsregelung durch einen Tiefsetzsteller erforderlich \cite{ThesisSchrittwieserBuckTypePFC_2017}.\\
@@ -87,34 +110,12 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6+IAF_Sectors.png}
+		\includegraphics[width=1\linewidth]{content/Grafiken/B6+IAF_Sectors.png}
 		\caption{Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}}
 		\label{fig:b6iafsectors}
 	\end{figure}
 
-\section{Leistungshalbleiter}
-	Halbleiter sind prinzipiell alle Bauelemente mit mindestens einem PN-Übergang; können sie größere Leistungen schalten, werden sie als Leistungshalbleiter bezeichnet. Dabei sind für die verwendete Topologie neben der klassischen Diode vor allem \gls{MOSFET} relevant. Diese verdrängen derzeit in der Leistungselektronik häufig den verbreiteten IGBT aufgrund der preiswerter gewordenen Variante aus Siliziumkarbid \cite{SiCTrend}. Die Vorteile dieser neuen Technologie liegen in der Ermöglichung höherer Schaltfrequenzen, wodurch wiederum die in den induktiven Bauelementen zu speichernde Energie reduziert und somit Kosten eingespart werden können.\\
-	Zur Auswahl der am besten geeigneten Halbleiter werden unter anderem Schaltungssimulationen eingesetzt, diese erfordern eine Nachbildung der Halbleiter. Um die Modelle der Leistungshalbleiter zu erstellen und ggf. vorhandene Modelle zu validieren, können Messungen im \gls{DPT} durchgeführt werden. Ein Beispiel für die in \gls{PLECS} implementierten Ausschaltverluste eines Halbleiters zeigt Abb. \ref{fig:plecsff2thermalmodel}. Es ist zu erkennen, dass die Punkte nur für den Betriebspunkt von 600 Volt zur Verfügung stehen, für andere Betriebsbereiche muss das Verhalten approximiert werden. Außerdem ist der \gls{RGV} nur für einen begrenzten Bereich dargestellt und die \gls{VGSS} nur auf einen Wert beschränkt. Dies kann in der späteren Anwendung zu deutlichen Abweichungen führen. 
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{content/Grafiken/PLECS_FF2ThermalModel}
-		\caption{Darstellung der in PLECS implementierten Ausschaltverluste \cite{IFAGFF2}}
-		\label{fig:plecsff2thermalmodel}
-	\end{figure}
 
-\section{Induktive Komponenten}
-	Induktive Bauelemente sind in der Regel Spulen und Transformatoren, die zur Speicherung und Übertragung von Energie dienen. Transformatoren bieten zusätzlich die Möglichkeit der galvanischen Entkopplung von Stromkreisen. 
-	Für die Dimensionierung von Induktivitäten wird das Delta des Stromes in der Spule, der sogenannte Stromrippel, benötigt. Dieser Strom wird hier mit 30 Prozent des Effektivstroms ausgelegt. Für Drehstromsysteme kann der Rippelstrom nach der Formel \ref{eq:DeltaI} ermittelt werden. Dabei sind \gls{S} und \gls{Ull} die Spannungen zwischen den Außenleitern. \cite{Boge.2007}.\\
-	\begin{equation}
-		\label{eq:DeltaI}
-		 \Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
-	\end{equation}
-	Außerdem kann über die \gls{WL} eine Aussage über die Größe und damit indirekt über die Kosten und den Platzbedarf getroffen werden. Die Energie \gls{WL} kann mit der Formel \ref{eq:WL} berechnet werden. Dazu wird der Wert der Induktivität und der Effektivwert des Stroms $I_{RMS}$ benötigt \cite{Boge.2007}.
-	\begin{equation}
-		\label{eq:WL}
-		W_{L} =\dfrac{1}{2}\cdot L\cdot I_{RMS}^{2}
-	\end{equation}
-	
 
 
 
@@ -123,11 +124,11 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 	Es wird die Version R2022a von Matlab mit Simulink Version 10.5 und Plecs Version 4.6.8 verwendet.  
 
 	\subsection{PLECS}
-	Die Software \gls{PLECS} der Firma PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  Sie ermöglicht die Modellierung von Schaltungen unter Berücksichtigung des thermischen Verhaltens durch elektrische Verlustleistungsmodelle. Dazu wird die Energie im Schaltvorgang sowie im durchgeschalteten Zustand in der Schaltung berücksichtigt. Dies ermöglicht die Betrachtung der Verlustleistung innerhalb des Halbleiters und damit den Aufwand für die Kühlung und eine Abschätzung des Wirkungsgrades der Schaltung. Ein Beispiel der Funktionen ist in Abb. \ref{fig:plecsbuck} zu sehen, die thermische Kette muss aus Datenblättern o.ä. der Kühlkörper bekannt sein. Für Halbleiter werden thermische Modelle benötigt, die ebenfalls aus Datenblättern erstellt oder vom Hersteller zur Verfügung gestellt werden können. Allerdings gibt es nicht für alle Halbleiter ausreichende Informationen und die tatsächliche Verlustleistung hängt von vielen Parametern ab. Daher ist es oft notwendig, eigene Messungen durchzuführen, um die spätere Anwendung bestmöglich simulieren zu können. In den verwendeten Modellen der Leistungshalbleiter wird die Thermische Kette bereits im Modell berücksichtigt und muss daher nicht als externer Block wie in Abbildung \ref{fig:plecsbuck} berücksichtigt werden.  \\
+	Die Software \gls{PLECS} der Firma PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  Sie ermöglicht die Modellierung von Schaltungen unter Berücksichtigung des thermischen Verhaltens durch elektrische Verlustleistungsmodelle. Dazu wird die Energie im Schaltvorgang sowie im durchgeschalteten Zustand in der Schaltung berücksichtigt. Dies ermöglicht die Betrachtung der Verlustleistung innerhalb des Halbleiters und damit den Aufwand für die Kühlung und eine Abschätzung des Wirkungsgrades der Schaltung. Ein Beispiel der Funktionen ist in Abb. \ref{fig:plecsbuck} zu sehen, die thermische Kette muss aus Datenblättern o.ä. der Kühlkörper bekannt sein. Für Halbleiter werden thermische Modelle benötigt, die ebenfalls aus Datenblättern erstellt oder vom Hersteller zur Verfügung gestellt werden können. Allerdings gibt es nicht für alle Halbleiter ausreichende Informationen und die tatsächliche Verlustleistung hängt von vielen Parametern ab. Daher ist es oft notwendig, eigene Messungen durchzuführen, um die spätere Anwendung bestmöglich simulieren zu können. In den verwendeten Modellen der Leistungshalbleiter wird die Thermische Kette bereits im Modell berücksichtigt und muss daher nicht als externer Block wie in Abbildung \ref{fig:plecsbuck} berücksichtigt werden. Außerdem werden die Zeitlichen Konstanten in den Modellen verringert, um schneller einen eingeschwungenen Zustand zu erreichen. \\
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_Buck}
+		\includegraphics[width=1\linewidth]{content/Grafiken/PLECS_Buck}
 		\caption[Tiefsetzsteller mit Effizienzbestimmung]{Tiefsetzsteller mit Effizienzbestimmung}
 		\label{fig:plecsbuck}
 	\end{figure}

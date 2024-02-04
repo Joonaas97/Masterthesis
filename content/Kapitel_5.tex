@@ -215,7 +215,7 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 				\label{fig:plecsb6controlrigrid}
 			\end{figure}
 			Der Ausgang dieses Blocks dient einerseits mit \gls{Upn} als Eingang für den Tiefsetzsteller und andererseits wird die mittlere Spannung als Eingang für die PWM-Erzeugung des \gls{B6PFC} Gleichrichters verwendet. Die Ansteuerung des Tiefsetzstellers erfolgt wie in Abbildung \ref{fig:b6-control-orig} dargestellt, aus zwei PI-Reglern, die auf einen PWM-Generator geführt werden. Die Totzeit wird durch eine Einschaltverzögerung ergänzt.\\
-			Zum anderen dient die Spannung der Mittenphase als Eingangsgröße zur Erzeugung des PWM-Signals für die \gls{MOSFET}s an der Mittenphase. Dieses wird wiederum von einem PWM-Generator erzeugt und mit Hilfe eines C-Codes werden die Signale den entsprechenden Phasen im Sektor zugeordnet. Die Einschaltverzögerung dient wiederum der Totzeit-Implementierung, siehe Bild. \ref{fig:plecsb6controlpwmmid}.
+			Zum anderen dient die Spannung der Mittenphase als Eingangsgröße zur Erzeugung des PWM-Signals für die \gls{MOSFET}s an der Mittenphase. Dieses wird wiederum von einem PWM-Generator erzeugt und mit Hilfe eines C-Codes werden die Signale den entsprechenden Phasen im Sektor zugeordnet. Die Einschaltverzögerung dient wiederum der Totzeit-Implementierung, siehe Bild \ref{fig:plecsb6controlpwmmid}.
 			
 		\begin{figure}
 			\centering

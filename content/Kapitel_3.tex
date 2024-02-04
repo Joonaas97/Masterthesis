@@ -4,7 +4,7 @@ In diesem Kapitel werden die Anforderungen an den Elektrolyseur von beiden Seite
 \section {Stromnetz} \label{sec:AnfStromnetz}
 In Deutschland sind die Anforderungen an den Netzanschluss von Anlagen durch die \gls{VDE} festgelegt. Je nach Anschlussleistung, Standort und Betriebsverhalten wird eine unterschiedliche Netzspannungsklasse gewählt, die leicht abweichende Anschlussrichtlinien besitzt. Aufgrund der Skalierbarkeit zu höheren Leistungsklassen und den zu erwartenden steigenden Anforderungen wird die Hochspannungsklasse gewählt. Dies ist die VDE-AR-N 4120 "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)" \cite{VDEARN4120}.
 Dies beinhaltet u.a. die Anforderung an die Phasenverschiebung, bei Wirkleistungsbezug darf eine maximale Verschiebung von $cos(\phi)=0,95$ auftreten, was einem Winkel von ca. 18 Grad entspricht, vgl. Abbildung \ref{fig:tar4120pq}. Der Netzbetreiber kann jedoch mit dem Anlagenbetreiber gesonderte Vereinbarungen treffen, die es ermöglichen, Netzdienstleistungen anzubieten. Daraus ergibt sich die Anforderung an die Topologie, eine Phasenverschiebung von mindestens 18 Grad zu ermöglichen.\\
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.6\linewidth]{content/Grafiken/TAR4120_PQ}
 	\caption[Zulässiger Bereich des Verschiebungsfaktors cos $\phi$ bei Wirkleistungsbezug]{VDE TAR4120: Zulässiger Bereich des Verschiebungsfaktors \cite{VDEARN4120}}
@@ -13,7 +13,7 @@ Dies beinhaltet u.a. die Anforderung an die Phasenverschiebung, bei Wirkleistung
 Als quasistationärer Betrieb werden auch zeitlich begrenzte Frequenz- und Spannungsänderungen definiert, die auftreten können. Die Netzspannung darf im Bereich von +/- 15 Prozent schwanken, die Frequenz von 50 Hertz zwischen 47,5 und 51,5 vgl. Abb. \ref{fig:vde4120-Anforderungen} (a). Innerhalb dieses Bandes muss die Anlage im Regelbetrieb bleiben. Dies setzt einen Gradienten von <5 \% im Spannungsband und <0,5 \% pro Minute im Frequenzband voraus. \\
 Im Fehlerfall durch Blitzeinschlag oder Kurzschluss muss die Anlage kurzzeitig deutlich größere Spannungsschwankungen ertragen. Diese Anforderung wird als \gls{FRT} bezeichnet und kann die Spannung für bis zu 100 Millisekunden um 25 Prozent erhöhen, siehe Abbildung \ref{fig:vde4120-Anforderungen} (b). Durch einen Kurzschluss kann die Spannung auf 15 Prozent der eigentlichen Netzspannung absinken. Dies stellt für Verbraucheranlagen eine große Herausforderung dar, da die zu betreibenden Systeme in der Regel eine Mindestspannung benötigen.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/VDE4120-quasistationarerbetrieb}}%
 %\caption[Mindestanforderungen an den quasistationären Betrieb von Erzeugungsanlagen \cite{VDEARN4120]{Quasistationärer Betrieb}}
