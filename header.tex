@@ -9,6 +9,7 @@
 \renewcommand{\arrayrulewidth}{1pt}
 
 \usepackage[onehalfspacing]{setspace} % Zeilenabstand 1,5
+
 \usepackage{array}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage[automark]{scrlayer-scrpage}
@@ -136,8 +137,10 @@
   width=0.9\textwidth, % maximale Breite einer Caption schmaler
   labelsep=colon,      % Doppelpunkt als Trenner
   format=plain,%Beschriftung wird als Absatz gesetzt
-  indention=0pt%Einzug der Beschriftung ist 0
+  indention=0pt,%Einzug der Beschriftung ist 0
 ]{caption}
+
+
 
 % subfigure, subtable, subref
 \usepackage{subcaption}
@@ -328,78 +331,51 @@
 	\cefoot*{\pagemark}
 }
 \renewcommand*{\chapterpagestyle}{kapitel}
+
 %Kopf/Fußzeile=====================
 
-%Anpassen der Abbildungs- und Tabellennummerierung========
+%%Anpassen der Abbildungs- und Tabellennummerierung========
+
 \counterwithin*{figure}{chapter}
-\counterwithin*{figure}{section}
-\counterwithin*{figure}{subsection}
-\counterwithin*{figure}{subsubsection}
 
 \renewcommand{\thefigure}{%
- \ifnum\value{section}=0
-  \thechapter-\arabic{figure}%
- \else
-  \ifnum\value{subsection}=0
-	\thesection-\arabic{figure}%
-  \else
-   \ifnum\value{subsubsection}=0
-	\thesubsection-\arabic{figure}%
-   \else
-	 \thesubsubsection-\arabic{figure}%
-   \fi
-  \fi
- \fi
+	\ifnum\value{chapter}=0
+	\arabic{figure}%
+	\else
+	\thechapter-\arabic{figure}%
+	\fi
 }
 
+
+
 \counterwithin*{table}{chapter}
-\counterwithin*{table}{section}
-\counterwithin*{table}{subsection}
-\counterwithin*{table}{subsubsection}
+
 
 \renewcommand{\thetable}{%
- \ifnum\value{section}=0
-  \thechapter-\arabic{table}%
+ \ifnum\value{chapter}=0
+  \arabic{table}%
  \else
-  \ifnum\value{subsection}=0
-   \thesection-\arabic{table}%
-  \else
-   \ifnum\value{subsubsection}=0
- \thesubsection-\arabic{table}%
-   \else
-	\thesubsubsection-\arabic{table}%
-   \fi
-  \fi
+   \thechapter-\arabic{table}%
 \fi
 }
 
 \counterwithin*{equation}{chapter}
-\counterwithin*{equation}{section}
-\counterwithin*{equation}{subsection}
-\counterwithin*{equation}{subsubsection}
+
+
 
 \renewcommand{\theequation}{%
- \ifnum\value{section}=0
-  \thechapter-\arabic{equation}%
+ \ifnum\value{chapter}=0
+  \arabic{equation}%
  \else
-  \ifnum\value{subsection}=0
-   \thesection-\arabic{equation}%
-  \else
-   \ifnum\value{subsubsection}=0
-	\thesubsection-\arabic{equation}%
-   \else
-    \thesubsubsection-\arabic{equation}%
-   \fi
-  \fi
+   \thechapter-\arabic{equation}%
  \fi
 }
 
-%Da die Bezeichnung nun länger ist, muss der Abstand in den Verzeichnissen angepasst werden
-\makeatletter
-\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4.2em}}% 3.2em statt 2.3em
-\let\l@table\l@figure
-\makeatother
-%Ende Anpassen der Abbildungs- und Tabellennummerierung========
+%%Da die Bezeichnung nun länger ist, muss der Abstand in den Verzeichnissen angepasst werden
+%\makeatletter
+%\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4.2em}}% 3.2em statt 2.3em
+%\let\l@table\l@figure %\makeatother
+%%Ende Anpassen der Abbildungs- und Tabellennummerierung========
 
 %Komplexe Zahlen
 \newcommand{\komp}[2]{\underline{#1}_\text{#2}}

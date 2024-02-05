@@ -2,14 +2,14 @@
 Die Simulationen sind vom Grundaufbau her wie folgt implementiert: Sie bestehen aus einem Konfigurationsskript, das die Parameter für das eigentliche Modell in den Matlab Workspace lädt und die Automatisierung der Simulationsläufe implementiert. Das Modell wird in Simulink über das PLECS Blockset aufgebaut und die Daten werden über eine Ausgabe als gebündelte Schnittstelle an Matlab zurückgegeben. Die Rückführung der Daten erfolgt einheitlich für die Simulationen in einer festgelegten Reihenfolge, siehe Abb. \ref{fig:plecsout}. Dies ermöglicht eine einheitliche Auswertung und Speicherung der Daten, zur Begrenzung der Datenmenge wird die Anzahl der Messpunkte auf die letzte Sinusperiode begrenzt. Die Schaltung und die zugehörige Steuerung befinden sich in jeweils eigenen PLECS-Systemen, für das Netz und den Elektrolyseur ist ein eigenes Subsystem vorgesehen, siehe Abbildung \ref{fig:plecssimulationsaufbau}.  
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_Simulationsaufbau}
+\includegraphics[width=1\linewidth]{content/Grafiken/PLECS_Simulationsaufbau}
 \caption{Übersicht der PLECS Simulation}
 \label{fig:plecssimulationsaufbau}
 \end{figure}
 Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späteren Schritten durch Netzimpedanzen und Fehlerszenarien ergänzt werden. Der Elektrolyseur besteht der Einfachheit halber aus einem geeigneten Lastwiderstand, der im Betriebspunkt die gemäß Skript eingestellte Leistung aufnimmt. Zusätzlich werden einige Widerstände verwendet, um die Schaltung in \gls{PLECS} berechenbar zu machen, da sonst beim Einschaltvorgang durch Kapazitäten unendlich hohe Ströme entstehen würden und in der realen Anlage immer parasitäre Widerstände vorhanden sind.
 \begin{figure}
 \centering
-\includegraphics[width=0.9\linewidth]{content/Grafiken/Plecs_Out}
+\includegraphics[width=1\linewidth]{content/Grafiken/Plecs_Out}
 \caption{Zusammenfassung der Simulationsoutputs}
 \label{fig:plecsout}
 \end{figure}
@@ -47,7 +47,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 	Der Tiefsetzsteller wird durch einen PI-Regler zur Fehlerkorrektur angesteuert, wobei der ideale Tastgrad aus der gewünschten Ausgangsspannung und der Zwischenkreisspannung \gls{Upn} bestimmt wird. Die gewünschte Ausgangsspannung \gls{Ua} wird durch den Sollstrom und den bekannten Lastwiderstand generiert. Das Tastverhältnis wird dann einem PWM-Generator zugeführt, der das Signal mit der gewünschten Schaltfrequenz von 20 kHz erzeugt. Um die Schaltverluste und insbesondere die Leitungsverluste beim Kommutieren in den Dioden zu berücksichtigen, wird eine Totzeit von 500 \si{\nano \second} eingestellt, siehe Abbildung. \ref{fig:iafbuckcontrol}.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_BuckControl}
+		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_BuckControl}
 		\caption{Regelung des Tiefsetzstellers des IAF}
 		\label{fig:iafbuckcontrol}
 	\end{figure}
@@ -63,7 +63,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 	\end{figure}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_Plecs_IVS}
+		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_IVS}
 		\caption{Simulationsaufbau der Halbleiter des IVS vom IAF}
 		\label{fig:iafplecsivs}
 	\end{figure}
@@ -106,7 +106,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 		Die Regelung des Stroms des IVS wird anhand der Struktur von Soeiro et al. umgesetzt (vgl. Abb. ef{fig:iafpapercontrol}) \cite{Soeiro.2013}. 
 		 \begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\linewidth]{content/Grafiken/IAF_Paper_Control}
+			\includegraphics[width=0.8\linewidth]{content/Grafiken/IAF_Paper_Control}
 			\caption{Struktur der Regelung des IAF \cite{Soeiro.2013}}
 			\label{fig:iafpapercontrol}
 		\end{figure}
@@ -135,7 +135,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 		
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.9\linewidth]{content/Grafiken/PlecsIAFiy}
+			\includegraphics[width=1\linewidth]{content/Grafiken/PlecsIAFiy}
 			\caption{Bestimmung des Sollstroms der mittleren Phase}
 			\label{fig:plecsiafiy}
 		\end{figure}
@@ -154,7 +154,7 @@ Die Stromregelung erfolgt mithilfe eines diskreten PI-Reglerblocks aus der PLECS
 Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt drei Halbbrückenmodulen der Firma Infineon realisiert, siehe Abb. \ref{fig:plecsb6}. Es handelt sich dabei um weit verbreitete 1200 \si{\volt} Module, die einen nominellen Einschaltwiderstand von 2 \si{\milli \ohm} haben und Spitzenströme bis zu 800 \si{\ampere} schalten können \cite{IFAGFF2}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6}
+	\includegraphics[width=1\linewidth]{content/Grafiken/PLECS_B6}
 	\caption{PLECS Aufbau der B6 Leistungshalbleiter}
 	\label{fig:plecsb6}
 \end{figure}
