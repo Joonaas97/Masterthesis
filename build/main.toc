@@ -6,7 +6,7 @@
 \contentsline {chapter}{Abkürzungsverzeichnis}{VII}{section*.8}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Stand der Technik}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{4}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Grundlagen}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Wasserstoff-Elektrolyse}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Stromrichter}{7}{section.2.2}%
@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.2.4}Leistungshalbleiter}{11}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Induktive Komponenten}{12}{subsection.2.2.5}%
 \contentsline {section}{\numberline {2.3}Integrated Active Filter Gleichrichter}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}1/3 PWM PFC Rectifier Gleichrichter}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.4}B6-1/3-PWM PFC Gleichrichter}{14}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Simulationssoftware}{15}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}PLECS}{16}{subsection.2.5.1}%
 \contentsline {chapter}{\numberline {3}Anforderungen}{18}{chapter.3}%
@@ -48,12 +48,12 @@
 \contentsline {section}{\numberline {5.3}IAF}{38}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Auslegung der Induktivitäten}{38}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Regelung}{40}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}B6 1/3 PFC Buck}{42}{section.5.4}%
+\contentsline {section}{\numberline {5.4}B6-1/3-PWM PFC Buck}{42}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Auslegung der Netzinduktivität}{43}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}Regelung}{44}{subsection.5.4.2}%
 \contentsline {chapter}{\numberline {6}Auswertung}{47}{chapter.6}%
-\contentsline {section}{\numberline {6.1}1/3-PWM-PFC}{47}{section.6.1}%
-\contentsline {section}{\numberline {6.2}IAF}{50}{section.6.2}%
+\contentsline {section}{\numberline {6.1}B6-1/3-PWM PFC}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}IAF}{51}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Bewertung}{55}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{57}{chapter.7}%
 \contentsline {chapter}{\nonumberline Literatur}{60}{chapter*.63}%

@@ -5,7 +5,7 @@ clear;
 Netz.Frequenz = 50;             %Hz
 Netz.SpannungLL = 617;           %Volt
 Netz.SpannungPeak = Netz.SpannungLL /sqrt(3)*sqrt(2);
-Phaseshift = 0;
+Phaseshift = -30;
 
 Netz.R1 = 0;                    %Reihenwiderstand von Netz
 Netz.R2 = 50;                   %Reihenwiderstand zu den Filterkondensatoren
@@ -14,13 +14,13 @@ Netz.C1 = 0;                    %Kondensator 1. Filter
 
 %% Electrolyseur
 Elektrolyseur.Spannung = 680;
-Elektrolyseur.Leistung = 200e3;
+Elektrolyseur.Leistung = 200e3*cos(Phaseshift*pi/180);
 Elektrolyseur.Strom = Elektrolyseur.Leistung/Elektrolyseur.Spannung;
 Elektrolyseur.R1 = Elektrolyseur.Spannung / Elektrolyseur.Strom;
 
 
 %% Thermal
-HeatSinkTemperatur = 100;
+HeatSinkTemperatur = 80;
 InitialTemperaturDelta = 0;
 
 %% Die schnellen Schalter
