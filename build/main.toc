@@ -3,7 +3,6 @@
 \contentsline {chapter}{\nonumberline Kurzfassung}{I}{chapter*.4}%
 \contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{IV}{chapter*.6}%
 \contentsline {chapter}{\nonumberline Tabellenverzeichnis}{VI}{chapter*.7}%
-\contentsline {chapter}{Abkürzungsverzeichnis}{VII}{section*.8}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Stand der Technik}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Ziel der Arbeit}{4}{section.1.2}%
@@ -11,7 +10,7 @@
 \contentsline {section}{\numberline {2.1}Wasserstoff-Elektrolyse}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Stromrichter}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Gleichrichter}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}DC-DC Wandler}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}DC-DC Wandler}{9}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Power Factor Correction (PFC)}{10}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Leistungshalbleiter}{11}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Induktive Komponenten}{12}{subsection.2.2.5}%
@@ -56,8 +55,8 @@
 \contentsline {section}{\numberline {6.2}IAF}{51}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Bewertung}{55}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Zusammenfassung \& Ausblick}{57}{chapter.7}%
-\contentsline {chapter}{\nonumberline Literatur}{60}{chapter*.63}%
-\contentsline {chapter}{\nonumberline Inhalt der CD}{63}{chapter*.64}%
-\contentsline {chapter}{\nonumberline Anhang}{64}{chapter*.65}%
+\contentsline {chapter}{\nonumberline Literatur}{60}{chapter*.62}%
+\contentsline {chapter}{\nonumberline Inhalt der CD}{63}{chapter*.63}%
+\contentsline {chapter}{\nonumberline Anhang}{64}{chapter*.64}%
 \xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
