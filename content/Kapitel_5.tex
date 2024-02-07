@@ -20,10 +20,10 @@ Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegun
 
 \begin{itemize}
 \item \gls{Pa}: 200 kW
-\item \gls{Ua}: 482-680 V
-\item \gls{Ia}: 	295 A
-\item \gls{Ull}:		617 V
-\item Netzfrequenz		50 Hz
+\item Ausgangsspannung \gls{Ua}: 482-680 V
+\item Ausgangsstrom\gls{Ia}: 	295 A
+\item Netzspannung \gls{Ull}:		617 V
+\item Netzfrequenz:		50 Hz
 \item Filterblindleistung: 3 \%
 \item \gls{fs}: 20 kHz
 \item Netzspannungsschwankung: 10 \%
@@ -216,14 +216,20 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 			\end{figure}
 			Der Ausgang dieses Blocks dient einerseits mit \gls{Upn} als Eingang für den Tiefsetzsteller und andererseits wird die mittlere Spannung als Eingang für die PWM-Erzeugung des \gls{B6PFC} Gleichrichters verwendet. Die Ansteuerung des Tiefsetzstellers erfolgt wie in Abbildung \ref{fig:b6-control-orig} dargestellt, aus zwei PI-Reglern, die auf einen PWM-Generator geführt werden. Die Totzeit wird durch eine Einschaltverzögerung ergänzt.\\
 			Zum anderen dient die Spannung der Mittenphase als Eingangsgröße zur Erzeugung des PWM-Signals für die \gls{MOSFET}s an der Mittenphase. Dieses wird wiederum von einem PWM-Generator erzeugt und mit Hilfe eines C-Codes werden die Signale den entsprechenden Phasen im Sektor zugeordnet. Die Einschaltverzögerung dient wiederum der Totzeit-Implementierung, siehe Bild \ref{fig:plecsb6controlpwmmid}.
-			
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlPWMmid}
-			\caption{PLECS PWM Erzeugung des B6 Gleichrichters}
-			\label{fig:plecsb6controlpwmmid}
-		\end{figure}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlPWMmid}
+				\caption{PLECS PWM Erzeugung des B6 Gleichrichters mit \gls{PFC}}
+				\label{fig:plecsb6controlpwmmid}
+			\end{figure}
+			Die Ansteuerung des Tiefsetzstellers, siehe Abb. \ref{fig:b6buckcontrol}, wird hier wie in der Vorlage durch zwei PI-Regler realisiert. Im Gegensatz zur Variante des \gls{IAF} wird hier die Zwischenkreisspannung \gls{Upn} berücksichtigt. Als zusätzlicher Schritt wird das PWM-Signal erzeugt und die Totzeit der Halbleiter durch Verzögerungsfunktionen umgesetzt.  
 		
 		
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{content/Grafiken/B6_Buck_Control}
+	\caption{Regelung des Tiefsetzstellers beim \gls{B6PFC}}
+	\label{fig:b6buckcontrol}
+\end{figure}
 			
 			

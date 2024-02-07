@@ -7,6 +7,8 @@ In diesem Kapitel werden die Simulationsergebnisse dargestellt und zur Bewertung
 	\hline
 	Netzspannung \gls{Ull} & 617 \si{\volt} \\
 	\hline
+	Ausgangsspannung \gls{Ua} & 680 V \\
+	\hline
 	Scheinleistung & 200 kW \\
 	\hline
 	Phasenverschiebung & 0 / 30 Grad \\
@@ -23,30 +25,7 @@ In diesem Kapitel werden die Simulationsergebnisse dargestellt und zur Bewertung
 
 
 
-\section{B6-1/3-PWM PFC}
-	Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und damit bei den Hardwarekosten hat. Die erforderliche dreiphasige Drossel führt dazu, dass der IAF in dieser Kategorie um mehr als 50\% besser abschneidet.
-	Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, durch die Reduzierung der Ausgangsleistung ist die Temperatur im  \gls{MOSFET} FET7 des Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen.
-	\begin{figure}
-		\centering
-		\includegraphics[width=1\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
-		\caption{Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}
-		\label{fig:b6temp030grad}
-	\end{figure}
-	Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf. 
-	
-	\begin{figure}
-		\centering
-		\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
-		\caption{Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}
-		\label{fig:b6acdc0grad}
-	\end{figure}
-	Mit einer Phasenverschiebung von 30 Grad sieht das Verhalten ähnlich aus, siehe Abbildung \ref{fig:b6acdc30grad}.  Der Stromverlauf weist eine etwas höhere THD von 7,1 \% auf, die jedoch durch geeignete Filter ausgeglichen werden kann.
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
-	\caption{Eingangs- und Ausgangsgrößen mit Phasenverschiebung}
-	\label{fig:b6acdc30grad}
-\end{figure}
+
 
 \section{IAF}
 Für die Auswertung werden die Simulationen für eine Dauer von einer Sekunde durchgeführt, da zu diesem Zeitpunkt ein eingeschwungener Zustand erreicht ist. Das Temperaturverhalten der Halbleiter ist in Abbildung \ref{fig:iaftemp} dargestellt. Wie in Abbildung \ref{fig:iaftemp} dargestellt, ist die Kühlplattentemperatur als Startpunkt auf 80 °C festgelegt. Die Dioden des Gleichrichters, welche den Hauptstrom führen, sind in grün dargestellt und ändern sich nur minimal aufgrund der Blindleistungsbereitstellung. Die Temperatur beträgt knapp über 120 °C und liegt somit unterhalb der erlaubten Maximaltemperatur von 175 °C \cite{IFAGFF2}. Die Temperatur der T+/- Halbbrücke wird in Pink dargestellt und steigt bei Blindleistungsbereitstellung auf knapp 160 °C und bietet damit 15 °C Abstand zur zulässigen Maximaltemperatur. Die Temperatur des Tiefsetzstellers wird in Rot dargestellt und sinkt aufgrund der Reduzierten Ausgangsleistung bei Blindleistungsbereitstellung.  
@@ -74,6 +53,31 @@ In Abb. \ref{fig:iafacl30grad} wird dieses Problem durch die starken Spannungsun
 	\label{fig:iafacl30grad}
 \end{figure}
 Die Topologie hat aufgrund der Anforderung an Blindleistungsbereitstellung einen Nachteil durch den IVS, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die THD des Stroms deutlich verschlechtert wird. Die THD liegt bereits ohne Phasenverschiebung bei etwa 15~\%, und mit Phasenverschiebung verdoppelt sich dieser Wert auf etwa 32 \%.  Somit kann der IAF den Anforderungen nur schwer gerecht werden, da weitere Filterstufen benötigt würden. Dies lässt sich auch gut anhand der Arbeit von Schrittwieser et al. sehen. Bei ihrem Prototyp macht der Filter knapp ein Viertel des Volumens aus \cite{IAF99}.
+
+\section{B6-1/3-PWM PFC}
+Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und damit bei den Hardwarekosten hat. Die erforderliche dreiphasige Drossel führt dazu, dass der IAF in dieser Kategorie um mehr als 50\% besser abschneidet.
+Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigt werden, durch die Reduzierung der Ausgangsleistung ist die Temperatur im  \gls{MOSFET} FET7 des Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
+	\caption{Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}
+	\label{fig:b6temp030grad}
+\end{figure}
+Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
+	\caption{Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}
+	\label{fig:b6acdc0grad}
+\end{figure}
+Mit einer Phasenverschiebung von 30 Grad sieht das Verhalten ähnlich aus, siehe Abbildung \ref{fig:b6acdc30grad}.  Der Stromverlauf weist eine etwas höhere THD von 7,1 \% auf, die jedoch durch geeignete Filter ausgeglichen werden kann.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
+	\caption{Eingangs- und Ausgangsgrößen mit Phasenverschiebung}
+	\label{fig:b6acdc30grad}
+\end{figure}
 
 \section{Bewertung}
 Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgeführt. Diese Tabelle enthält Informationen über die Hardware, insbesondere die Induktivitäten, sowie über die Kapazitäten, Halbleiter und Treiber. Zusätzlich werden die Ergebnisse der Simulation anhand der Verlustleistung der Halbleiter bewertet.  Zur Durchführung eines Vergleichs der Kategorien und einer Gesamtbewertung werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor summiert. Da die Drosseln einen großen Einfluss haben, werden sie mit 50 Prozent gewichtet. Die Kapazitäten haben nur einen vergleichsweise geringen Einfluss auf die Gesamtsystemkosten und werden daher nur mit fünf Prozent bewertet. Die restlichen 45 Prozent entfallen auf die Halbleiter in Form der Chipfläche (über den RDSON), die Anzahl der Treiber und die Verlustleistung. Die jeweiligen Punkte sind proportional zu erwartenden Systemkosten und Volumen. Daher stellt eine niedrigere Punktzahl eine bessere Bewertung dar. \\
