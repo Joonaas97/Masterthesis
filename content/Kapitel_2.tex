@@ -45,7 +45,7 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		Die Speicherdrossel des Tiefsetzstellers kann nach der Formel \ref{eq:BuckL} ausgelegt werden, wobei der gewünschte Stromrippel $\Delta I $ in der Drossel beispielhaft auf maximal 30 Prozent des \gls{Ia} festgelegt wird \cite{schmidtwalter}.
 		\begin{equation}
 			\label{eq:BuckL}
-			L=\dfrac{U_{emax}-U_{a}}{f\cdot \Delta I}\cdot \dfrac{U_{a}}{U_{emax}} = \dfrac{U_{emax}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{emax}}
+			L=\dfrac{U_{emax}-U_{a}}{f\cdot \Delta I}\cdot D = \dfrac{U_{emax}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{emax}}
 		\end{equation}
 		Wird die Eingangsspannung durch einen dreiphasigen Diodengleichrichter, wie in Abb. \ref{fig:B6DiodRect} dargestellt,  implementiert, so kann die Eingangsspannung mit $U_{LL} \cdot \sqrt{2}$ berechnet werden. Daraus ergibt sich die Formel \ref{eq:BuckLB6} bezogen auf die Phasenspannungen. \\
 		\begin{equation}
@@ -75,10 +75,10 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 			\label{eq:DeltaI}
 			\Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
 		\end{equation}
-		Außerdem kann über die \gls{WL} eine Aussage über die Größe und damit indirekt über die Kosten und den Platzbedarf getroffen werden. Die Energie \gls{WL} kann mit der Formel \ref{eq:WL} berechnet werden. Dazu wird der Wert der Induktivität und der Effektivwert des Stroms $I_{RMS}$ benötigt \cite{Boge.2007}.
+		Außerdem kann über die \gls{WL} eine Aussage über die Größe und damit indirekt über die Kosten und den Platzbedarf getroffen werden. Die Energie \gls{WL} kann mit der Formel \ref{eq:WL} berechnet werden. Dazu wird der Wert der Induktivität und der Strom benötigt \cite{Boge.2007}.
 		\begin{equation}
 			\label{eq:WL}
-			W_{L} =\dfrac{1}{2}\cdot L\cdot I_{RMS}^{2}
+			W_{L} =\dfrac{1}{2}\cdot L\cdot I^{2}
 		\end{equation}
 				
 			
@@ -123,7 +123,7 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 	Es wird die Version R2022a von Matlab mit Simulink Version 10.5 und Plecs Version 4.6.8 verwendet.  
 
 	\subsection{PLECS}
-	Die Software \gls{PLECS} der Firma PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  Sie ermöglicht die Modellierung von Schaltungen unter Berücksichtigung des thermischen Verhaltens durch elektrische Verlustleistungsmodelle. Dazu wird die Energie im Schaltvorgang sowie im durchgeschalteten Zustand in der Schaltung berücksichtigt. Dies ermöglicht die Betrachtung der Verlustleistung innerhalb des Halbleiters und damit den Aufwand für die Kühlung und eine Abschätzung des Wirkungsgrades der Schaltung. Ein Beispiel der Funktionen ist in Abb. \ref{fig:plecsbuck} zu sehen, die thermische Kette muss aus Datenblättern o.ä. der Kühlkörper bekannt sein. Für Halbleiter werden thermische Modelle benötigt, die ebenfalls aus Datenblättern erstellt oder vom Hersteller zur Verfügung gestellt werden können. Allerdings gibt es nicht für alle Halbleiter ausreichende Informationen und die tatsächliche Verlustleistung hängt von vielen Parametern ab. Daher ist es oft notwendig, eigene Messungen durchzuführen, um die spätere Anwendung bestmöglich simulieren zu können. In den verwendeten Modellen der Leistungshalbleiter wird die Thermische Kette bereits im Modell berücksichtigt und muss daher nicht als externer Block wie in Abbildung \ref{fig:plecsbuck} berücksichtigt werden. Außerdem werden die Zeitlichen Konstanten in den Modellen verringert, um schneller einen eingeschwungenen Zustand zu erreichen. \\
+	Die Software \gls{PLECS} der Firma PLEXIM wird als Integration in MATLAB mit Simulink verwendet.  Sie ermöglicht die Modellierung von Schaltungen unter Berücksichtigung des thermischen Verhaltens durch elektrische Verlustleistungsmodelle. Dazu wird die Energie im Schaltvorgang sowie im durchgeschalteten Zustand in der Schaltung berücksichtigt. Dies ermöglicht die Betrachtung der Verlustleistung innerhalb des Halbleiters und damit den Aufwand für die Kühlung und eine Abschätzung des Wirkungsgrades der Schaltung. Ein Beispiel der Funktionen ist in Abb. \ref{fig:plecsbuck} zu sehen, die thermische Kette muss aus Datenblättern o.~ä. der Kühlkörper bekannt sein. Für Halbleiter werden thermische Modelle benötigt, die ebenfalls aus Datenblättern erstellt oder vom Hersteller zur Verfügung gestellt werden können. Allerdings gibt es nicht für alle Halbleiter ausreichende Informationen und die tatsächliche Verlustleistung hängt von vielen Parametern ab. Daher ist es oft notwendig, eigene Messungen durchzuführen, um die spätere Anwendung bestmöglich simulieren zu können. In den verwendeten Modellen der Leistungshalbleiter wird die Thermische Kette bereits im Modell berücksichtigt und muss daher nicht als externer Block wie in Abbildung \ref{fig:plecsbuck} berücksichtigt werden. Außerdem werden die Zeitlichen Konstanten in den Modellen verringert, um schneller einen eingeschwungenen Zustand zu erreichen. \\
 	
 	\begin{figure}
 		\centering

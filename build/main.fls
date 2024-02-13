@@ -128,6 +128,22 @@ INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
@@ -601,22 +617,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\lscape.hak
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\lscape.hak
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\lscape.hak
 INPUT C:\Program Files\MiKTeX\tex\latex\koma-script\lscape.hak
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption-koma.sto
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
@@ -1445,6 +1445,12 @@ INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
 INPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
 OUTPUT C:\Users\jheinemann\BIBcloud\Master\Thesis\LaTex\MA_Latex\build\main.aux
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1455,22 +1461,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-LatinModernRoman.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-LatinModernRoman.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-LatinModernRoman.cfg
@@ -1818,6 +1812,12 @@ INPUT .\content\Grafiken\PlecsIAFivscontrol.png
 INPUT .\content\Grafiken\PlecsIAFivscontrol.png
 INPUT .\content\Grafiken\IAF_Paper_Control.png
 INPUT .\content\Grafiken\PlecsIAFivscontrol.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
 INPUT .\content\Grafiken\PlecsIAFiy.png
 INPUT .\content\Grafiken\PlecsIAFiy.png
 INPUT .\content\Grafiken\PlecsIAFiy.png
@@ -1830,6 +1830,7 @@ INPUT .\content\Grafiken\PlecsIAFivsK1.png
 INPUT .\content\Grafiken\PlecsIAFivsK1.png
 INPUT .\content\Grafiken\PlecsIAFivsK1.png
 INPUT .\content\Grafiken\PlecsIAFivsK1.png
+INPUT .\content\Grafiken\PLECS_IAF_idealePhasenströme.png
 INPUT .\content\Grafiken\PlecsIAFiy.png
 INPUT .\content\Grafiken\PLECS_B6.png
 INPUT .\content\Grafiken\PLECS_B6.png

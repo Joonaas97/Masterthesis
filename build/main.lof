@@ -16,7 +16,7 @@
 \contentsline {figure}{\numberline {2-9}{\ignorespaces Tiefsetzsteller mit Effizienzbestimmung}}{17}{figure.caption.22}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3-1}{\ignorespaces Zulässiger Bereich des Verschiebungsfaktors cos $\mitphi $ bei Wirkleistungsbezug}}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {3-2}{\ignorespaces quasistationären Betrieb (a) und \gls {FRT} (b)}}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces Mindestanforderungen an den quasistationären Betrieb (a) und \gls {FRT} (b) \blx@tocontentsinit {0}\cite {VDEARN4120}}}{20}{figure.caption.24}%
 \contentsline {figure}{\numberline {3-3}{\ignorespaces Technischen Mindestanforderungen an Erzeugungsanlagen Stand 2019}}{21}{figure.caption.25}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4-1}{\ignorespaces Six Switch Boost PFC Rectifier}}{25}{figure.caption.27}%
@@ -36,30 +36,31 @@
 \contentsline {figure}{\numberline {5-3}{\ignorespaces Regelung des Tiefsetzstellers des IAF}}{38}{figure.caption.41}%
 \contentsline {figure}{\numberline {5-4}{\ignorespaces Simulationsaufbau der Halbleiter des IAF}}{38}{figure.caption.42}%
 \contentsline {figure}{\numberline {5-5}{\ignorespaces Simulationsaufbau der Halbleiter des IVS vom IAF}}{39}{figure.caption.43}%
-\contentsline {figure}{\numberline {5-6}{\ignorespaces Struktur der Regelung des IAF \blx@tocontentsinit {0}\cite {Soeiro.2013}}}{40}{figure.caption.44}%
-\contentsline {figure}{\numberline {5-7}{\ignorespaces PLECS Aufbau der \gls {IVS} Ansteuerung}}{40}{figure.caption.45}%
-\contentsline {figure}{\numberline {5-8}{\ignorespaces Bestimmung des Sollstroms der mittleren Phase}}{41}{figure.caption.46}%
-\contentsline {figure}{\numberline {5-9}{\ignorespaces Regelung des Stroms in der mittleren Phase}}{42}{figure.caption.47}%
-\contentsline {figure}{\numberline {5-10}{\ignorespaces PLECS Aufbau der B6 Leistungshalbleiter}}{42}{figure.caption.48}%
-\contentsline {figure}{\numberline {5-11}{\ignorespaces PLECS Aufbau des Tiefsetzstellers der B6 Topologie}}{43}{figure.caption.49}%
-\contentsline {figure}{\numberline {5-12}{\ignorespaces Regelung des \gls {B6PFC} \blx@tocontentsinit {0}\cite {13PWMPFC}}}{44}{figure.caption.50}%
-\contentsline {figure}{\numberline {5-13}{\ignorespaces PLECS Regelung der Ausgangsleistung als Sollgröße}}{45}{figure.caption.51}%
-\contentsline {figure}{\numberline {5-14}{\ignorespaces PLECS Regelung der Netzimpedanz und Phasenabschnittserkennung}}{45}{figure.caption.52}%
-\contentsline {figure}{\numberline {5-15}{\ignorespaces PLECS PWM Erzeugung des B6 Gleichrichters mit \gls {PFC}}}{46}{figure.caption.53}%
-\contentsline {figure}{\numberline {5-16}{\ignorespaces Regelung des Tiefsetzstellers beim \gls {B6PFC}}}{46}{figure.caption.54}%
+\contentsline {figure}{\numberline {5-6}{\ignorespaces Struktur der Regelung des IAF \blx@tocontentsinit {0}\cite {Soeiro.2013}}}{41}{figure.caption.44}%
+\contentsline {figure}{\numberline {5-7}{\ignorespaces PLECS Aufbau der \gls {IVS} Ansteuerung}}{41}{figure.caption.45}%
+\contentsline {figure}{\numberline {5-8}{\ignorespaces Generierung der idealen Phasenströme}}{42}{figure.caption.46}%
+\contentsline {figure}{\numberline {5-9}{\ignorespaces Bestimmung des Sollstroms der mittleren Phase}}{42}{figure.caption.47}%
+\contentsline {figure}{\numberline {5-10}{\ignorespaces Regelung des Stroms in der mittleren Phase}}{43}{figure.caption.48}%
+\contentsline {figure}{\numberline {5-11}{\ignorespaces PLECS Aufbau der B6 Leistungshalbleiter}}{43}{figure.caption.49}%
+\contentsline {figure}{\numberline {5-12}{\ignorespaces PLECS Aufbau des Tiefsetzstellers der B6 Topologie}}{44}{figure.caption.50}%
+\contentsline {figure}{\numberline {5-13}{\ignorespaces Regelung des \gls {B6PFC} \blx@tocontentsinit {0}\cite {13PWMPFC}}}{45}{figure.caption.51}%
+\contentsline {figure}{\numberline {5-14}{\ignorespaces PLECS Regelung der Ausgangsleistung als Sollgröße}}{46}{figure.caption.52}%
+\contentsline {figure}{\numberline {5-15}{\ignorespaces PLECS Regelung der Netzimpedanz und Phasenabschnittserkennung}}{46}{figure.caption.53}%
+\contentsline {figure}{\numberline {5-16}{\ignorespaces PLECS PWM Erzeugung des B6 Gleichrichters mit \gls {PFC}}}{47}{figure.caption.54}%
+\contentsline {figure}{\numberline {5-17}{\ignorespaces Regelung des Tiefsetzstellers beim \gls {B6PFC}}}{47}{figure.caption.55}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6-1}{\ignorespaces Temperaturverhalten der Halbleiter des IAF ohne (a) und mit (b) Phasenverschiebung}}{49}{figure.caption.56}%
-\contentsline {figure}{\numberline {6-2}{\ignorespaces Simulationsergebnisse des IAF ohne Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }}{50}{figure.caption.57}%
-\contentsline {figure}{\numberline {6-3}{\ignorespaces Simulationsergebnisse des IAF bei 30 Grad Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }}{51}{figure.caption.58}%
-\contentsline {figure}{\numberline {6-4}{\ignorespaces Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}}{52}{figure.caption.59}%
-\contentsline {figure}{\numberline {6-5}{\ignorespaces Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}}{53}{figure.caption.60}%
-\contentsline {figure}{\numberline {6-6}{\ignorespaces Eingangs- und Ausgangsgrößen mit Phasenverschiebung}}{54}{figure.caption.61}%
+\contentsline {figure}{\numberline {6-1}{\ignorespaces Temperaturverhalten der Halbleiter des IAF ohne (a) und mit (b) Phasenverschiebung}}{50}{figure.caption.57}%
+\contentsline {figure}{\numberline {6-2}{\ignorespaces Simulationsergebnisse des IAF ohne Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }}{51}{figure.caption.58}%
+\contentsline {figure}{\numberline {6-3}{\ignorespaces Simulationsergebnisse des IAF bei 30 Grad Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {6-4}{\ignorespaces Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}}{53}{figure.caption.60}%
+\contentsline {figure}{\numberline {6-5}{\ignorespaces Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}}{54}{figure.caption.61}%
+\contentsline {figure}{\numberline {6-6}{\ignorespaces Eingangs- und Ausgangsgrößen mit Phasenverschiebung}}{55}{figure.caption.62}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7-1}{\ignorespaces Doppelpulstestprüfstand}}{57}{figure.caption.63}%
-\contentsline {figure}{\numberline {7-2}{\ignorespaces Strompfad im Fall eines Blitzeinschlag beim IAF}}{58}{figure.caption.64}%
+\contentsline {figure}{\numberline {7-1}{\ignorespaces Doppelpulstestprüfstand}}{58}{figure.caption.64}%
+\contentsline {figure}{\numberline {7-2}{\ignorespaces Strompfad im Fall eines Blitzeinschlags beim IAF}}{59}{figure.caption.65}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A1}{\ignorespaces Regelungsstruktur des \gls {B6PFC} nach Menzi et Al. \blx@tocontentsinit {0}\cite {13PWMPFC}}}{64}{figure.caption.68}%
+\contentsline {figure}{\numberline {A1}{\ignorespaces Regelungsstruktur des \gls {B6PFC} nach Menzi et Al. \blx@tocontentsinit {0}\cite {13PWMPFC}}}{65}{figure.caption.69}%
 \xpginauxfilefalse 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -3,6 +3,7 @@ In diesem Kapitel werden die Simulationsergebnisse dargestellt und zur Bewertung
 
 \begin{table}
 	\centering
+	\caption{Auflistung der Simulationsbetriebsparameter}
 \begin{tabular}{|c|c|}
 	\hline
 	Netzspannung \gls{Ull} & 617 \si{\volt} \\
@@ -18,13 +19,9 @@ In diesem Kapitel werden die Simulationsergebnisse dargestellt und zur Bewertung
 	Schaltfrequenz & 20 kHz \\
 	\hline
 \end{tabular}
-\caption{Auflistung der Simulationsbetriebsparameter}
+
 \label{tab:Betriebspara}
 \end{table}
-
-
-
-
 
 
 \section{IAF}
@@ -83,29 +80,30 @@ Mit einer Phasenverschiebung von 30 Grad sieht das Verhalten ähnlich aus, siehe
 Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgeführt. Diese Tabelle enthält Informationen über die Hardware, insbesondere die Induktivitäten, sowie über die Kapazitäten, Halbleiter und Treiber. Zusätzlich werden die Ergebnisse der Simulation anhand der Verlustleistung der Halbleiter bewertet.  Zur Durchführung eines Vergleichs der Kategorien und einer Gesamtbewertung werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor summiert. Da die Drosseln einen großen Einfluss haben, werden sie mit 50 Prozent gewichtet. Die Kapazitäten haben nur einen vergleichsweise geringen Einfluss auf die Gesamtsystemkosten und werden daher nur mit fünf Prozent bewertet. Die restlichen 45 Prozent entfallen auf die Halbleiter in Form der Chipfläche (über den RDSON), die Anzahl der Treiber und die Verlustleistung. Die jeweiligen Punkte sind proportional zu erwartenden Systemkosten und Volumen. Daher stellt eine niedrigere Punktzahl eine bessere Bewertung dar. \\
 \begin{table}
 	\centering
+	\caption{Auflistung der Simulationsergebnisse und Bewertung}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		& Topologie & B6-Buck & \gls{IAF} & Gewichtung: \\
 		\hline
-		Induktivitäten& L1 Netzinduktivität [uH]& 136 & 1 &  \\
+		Induktivitäten& L1 Netzinduktivität \si{\micro \henry}& 136 & 1 &  \\
 		\hline
-		& Gespeicherte Energie [J]& 14,4 & 0,1 & \\
+		& Gespeicherte Energie J& 17,6 & 0,1 & \\
 		\hline
-		& L2 DC Induktivität [uH]& 136 & 136 &  \\
+		& L2 DC Induktivität \si{\micro \henry}& 136 & 136 &  \\
 		\hline
-		& Gespeicherte Energie [J]& 7,8 & 7,8 &  \\
+		& Gespeicherte Energie J& 7,8 & 7,8 &  \\
 		\hline
-		& L3 IVS Induktivität [uH]& - & 302,2 &  \\
+		& L3 IVS Induktivität \si{\micro \henry}& - & 302,2 &  \\
 		\hline
-		& Gespeicherte Energie [J] & - & 2,6 & \\
+		& Gespeicherte Energie J & - & 8,82 & \\
 		\hline
-		& \textbf{Induktivität normiert:} & \textbf{1}   & \textbf{0,43} & 50\% \\
+		& \textbf{Induktivität normiert:} & \textbf{1}   & \textbf{0,66} & 50\% \\
 		\hline
-		Kapazitäten & C1 Netzkapazität [uF]& - & 50 &  \\
+		Kapazitäten & C1 Netzkapazität \si{\micro \farad}& - & 50 &  \\
 		\hline
-		& C2 DC Ausgang [mF]& 1 & 1 &  \\
+		& C2 DC Ausgang mF& 1 & 1 &  \\
 		\hline
-		& C3 DC Zwischenkreis [uF]& 25 & 50 &  \\
+		& C3 DC Zwischenkreis \si{\micro \farad}& 25 & 50 &  \\
 		\hline
 		& \textbf{Kapazität normiert:} & \textbf{0,26} &  \textbf{1} & 5\% \\
 		\hline
@@ -125,7 +123,7 @@ Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgefü
 		\hline
 		& \textbf{Treiber normiert:} & \textbf{1} & \textbf{0,88} & 5\% \\
 		\hline
-		Verluste [W] & Schaltverluste 30 Grad & 567 & 503 &  \\
+		Verluste W & Schaltverluste 30 Grad & 567 & 503 &  \\
 		\hline
 		& Leitverluste 30 Grad & 254 & 1311 &  \\
 		\hline
@@ -139,9 +137,8 @@ Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgefü
 		\hline
 		& \textbf{Verluste normiert:} &\textbf{0,5} & \textbf{1} & 20\% \\
 		\hline
-		\textbf{Gesamt} &  & \textbf{0,81} & \textbf{0,65} & \\
+		\textbf{Gesamt} &  & \textbf{0,77} & \textbf{0,74} & \\
 		\hline
 	\end{tabular}
-	\caption{Auflistung der Simulationsergebnisse und Bewertung}
 	\label{tab:Auswertung}
 \end{table}

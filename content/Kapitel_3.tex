@@ -3,7 +3,7 @@
 In diesem Kapitel werden die Anforderungen an den Elektrolyseur von beiden Seiten beschrieben. Auf der einen Seite fordert der Netzbetreiber die Einhaltung der Richtlinien für den Netzanschluss, welche vom \gls{VDE} definiert werden. Die andere Seite wird durch den Hersteller des Elektrolyseur-Stacks definiert, für den es nach heutigem Stand keine Normen gibt. 
 \section {Stromnetz} \label{sec:AnfStromnetz}
 In Deutschland sind die Anforderungen an den Netzanschluss von Anlagen durch die \gls{VDE} festgelegt. Je nach Anschlussleistung, Standort und Betriebsverhalten wird eine unterschiedliche Netzspannungsklasse gewählt, die leicht abweichende Anschlussrichtlinien besitzt. Aufgrund der Skalierbarkeit zu höheren Leistungsklassen und den zu erwartenden steigenden Anforderungen wird die Hochspannungsklasse gewählt. Dies ist die VDE-AR-N 4120 "Technische Regeln für den Anschluss von Kundenanlagen an das Hochspannungsnetz und deren Betrieb (TAR Hochspannung)" \cite{VDEARN4120}.
-Dies beinhaltet u.a. die Anforderung an die Phasenverschiebung, bei Wirkleistungsbezug darf eine maximale Verschiebung von $cos(\phi)=0,95$ auftreten, was einem Winkel von ca. 18 Grad entspricht, vgl. Abbildung \ref{fig:tar4120pq}. Der Netzbetreiber kann jedoch mit dem Anlagenbetreiber gesonderte Vereinbarungen treffen, die es ermöglichen, Netzdienstleistungen anzubieten. Daraus ergibt sich die Anforderung an die Topologie, eine Phasenverschiebung von mindestens 18 Grad zu ermöglichen.\\
+Dies beinhaltet u.~a. die Anforderung an die Phasenverschiebung, bei Wirkleistungsbezug darf eine maximale Verschiebung von $cos(\phi)=0,95$ auftreten, was einem Winkel von ca. 18 Grad entspricht, vgl. Abbildung \ref{fig:tar4120pq}. Der Netzbetreiber kann jedoch mit dem Anlagenbetreiber gesonderte Vereinbarungen treffen, die es ermöglichen, Netzdienstleistungen anzubieten. Daraus ergibt sich die Anforderung an die Topologie, eine Phasenverschiebung von mindestens 18 Grad zu ermöglichen.\\
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\linewidth]{content/Grafiken/TAR4120_PQ}
@@ -15,13 +15,11 @@ Im Fehlerfall durch Blitzeinschlag oder Kurzschluss muss die Anlage kurzzeitig d
 
 \begin{figure}
 \centering
-\subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/VDE4120-quasistationarerbetrieb}}%
+\subfloat[][]{\includegraphics[width=0.9\linewidth]{content/Grafiken/VDE4120-quasistationarerbetrieb}}%
 %\caption[Mindestanforderungen an den quasistationären Betrieb von Erzeugungsanlagen \cite{VDEARN4120]{Quasistationärer Betrieb}}
-
 \qquad
-\subfloat[][]{\includegraphics[width=0.7\linewidth]{content/Grafiken/Grenzkurve}}%
-
-\caption[quasistationären Betrieb (a) und \gls{FRT} (b)]{Mindestanforderungen an den quasistationären Betrieb (a) und \gls{FRT} (b)}
+\subfloat[][]{\includegraphics[width=0.9\linewidth]{content/Grafiken/Grenzkurve}}%
+\caption{Mindestanforderungen an den quasistationären Betrieb (a) und \gls{FRT} (b) \cite{VDEARN4120}}
 \label{fig:vde4120-Anforderungen}
 \end{figure}
 
