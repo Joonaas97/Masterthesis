@@ -19,7 +19,7 @@ Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späte
 Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegung für die Simulation durchführen zu können. Die Leistung von 200 kW wird als Grundlage festgelegt, da aufgrund der Halbleitermodule und thermischen Belastung höhere Ströme in einem Gerät Probleme bei der Umsetzung bereiten würden. Halbeitermodule die aktuell industriell für Platinen-basierte Stromrichter eingesetzt werden, können Ströme von maximal 200 A führen. Höhere Ströme würden die Stromtragfähigkeit gängiger Platinen übersteigen und damit die Kosten übermäßig steigern. Die Ausgangsspannung von maximal 680 V ergibt sich aufgrund der Spannungsfestigkeit der Halbleitermodule, welche 1200 V beträgt. Diese muss aufgrund von Spannungsspitzen bei Schaltvorgängen der Halbleiter weiter begrenzt werden. Aufgrund der Abschätzung der Kommutierungsinduktivität, die beim Schaltvorgang zu Überspannungen führt, welche die Lebensdauer der Halbleiter beeinträchtigen können, wird ein größerer Abstand zur Halbleiterspannung gewählt. Es wird sich für diese Spannungsklasse entschieden, da diese bereits etabliert und in breiter Masse verfügbar ist. Die Netzfrequenz sowie das Spannungsband wird anhand der Anforderungen für stationären Betrieb im deutschen Stromnetz definiert. Die Spannungsschwankung wird auf \pm 10 \% der Netznennspannung reduziert da kurzfristige Änderungen und entsprechende Kompensationen später betrachtet werden.  \\
 
 \begin{itemize}
-\item \gls{Pa}: 200 kW
+\item \gls{Pa}: 200 kW bei $\varphi = 0°$
 \item Ausgangsspannung \gls{Ua}: 482-680 V
 \item Ausgangsstrom \gls{Ia}: 	295 A
 \item Netzspannung \gls{Ull}:		617 V
@@ -54,7 +54,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 
 
 \section{IAF}
-	Der Schwerpunkt der Simulation liegt auf den Leistungshalbleitern, deren Anordnung in Abbildung \ref{fig:iafplecsmain} und \ref{fig:iafplecsivs} zu entnehmen ist. Zur Bestimmung der Verlustleistung werden Modelle von Infineon verwendet, wobei für die Dioden und den \gls{IVS} ein gemeinsames Modul mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET} ausgewählt wird. Die Halbbrücke an der Induktivität wird aus einem Modul mit 13 \si{\milli \ohm} aufgebaut. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
+	Der Schwerpunkt der Simulation liegt auf den Leistungshalbleitern, deren Anordnung in Abbildung \ref{fig:iafplecsmain}, \ref{fig:iafplecsbuck} und \ref{fig:iafplecsivs} zu entnehmen ist. Zur Bestimmung der Verlustleistung werden Modelle von Infineon verwendet, wobei für die Dioden und den \gls{IVS} ein gemeinsames Modul mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET} ausgewählt wird. Die Halbbrücke an der Induktivität wird aus einem Modul mit 13 \si{\milli \ohm} aufgebaut. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
 	\begin{figure}
 		\centering
 		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_main}
@@ -63,46 +63,67 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 	\end{figure}
 	\begin{figure}
 		\centering
-		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_IVS}
+		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_Buck}
+		\caption{Simulationsaufbau der Halbleiter des Tiefsetzstellers vom IAF}
+		\label{fig:iafplecsbuck}
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{content/Grafiken/IAF_Plecs_IVS}
 		\caption{Simulationsaufbau der Halbleiter des IVS vom IAF}
 		\label{fig:iafplecsivs}
 	\end{figure}
 	
 
 	\subsection{Auslegung der Induktivitäten}
-	Der maximale Rippelstrom ergibt sich aus der maximalen Leistung und der minimalen Netzspannung und beträgt 44,1 \si{\A}, siehe Formel \ref{eq:DeltaIIVS}. Der Rippelstrom ist wiederum auf 30 \% des Nennstroms ausgelegt. Daher muss die Induktivität einen Wert von 272 \si{\micro \henry} haben, siehe Formel \ref{eq:Livs}. 
+	Zur Auslegung der Induktivität wird vom Nennbetrieb ohne Phasenverschiebung ausgegangen. Dazu wird der $\hat{I}_{max}$ gebildet siehe Formel \ref{eq:Idachmax}, welcher durch Netzspannungsabfall um 10 Prozent maximal wird und somit 294,07 Ampere beträgt. Ohne Phasenverschiebung muss dieser bis 30 Grad der Sinuswelle in der Drossel bereitgestellt werden, siehe Formel \ref{eq:IAF_I0}. Somit ergibt sich ein Spitzennennstrom $I_{IAF0°}$ von 147,04 Ampere.
+	\begin{equation}
+		\label{eq:Idachmax}
+		\hat{I}_{max} = \dfrac{\sqrt{2} \cdot P   }{ \sqrt{3}  \cdot  U_{LLrms} \cdot 0,9} = \dfrac{\sqrt{2} \cdot 200\, \si{\kilo \watt}} { \sqrt{3} \cdot 617\, \si{V} \cdot 0,9} = 294,07\, \si{\A}
+	\end{equation}
+	
+	\begin{equation}
+		\label{eq:IAF_I0}
+		I_{IAF0°}= sin(30°)\cdot \hat{I}_{max}=sin(30°)\cdot 294,07 \,A = 147,04\, \si{\A}
+	\end{equation}
+	
+	Der Rippelstrom wird auf 30 \% des Nennstroms ausgelegt. Daher muss die Induktivität einen Wert von 272 \si{\micro \henry} haben, siehe Formel \ref{eq:Livs0}. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, diese berechnet sich nach Formel \ref{eq:EL_IVS0}
 		
 		\begin{equation}
-		\label{eq:DeltaIIVS}
-		I_{\Delta max IVS}=\dfrac{0,3\cdot \sqrt{2} \cdot P_{a}}{2 \cdot \sqrt{3} \cdot U_{LL} \cdot 0,9} = \dfrac{0,3\cdot \sqrt{2} \cdot 200 \si{\kilo \watt}}{2 \cdot \sqrt{3} \cdot 617 \si{V} \cdot 0,9} = 44,1 \si{\A}
+			\label{eq:Livs0}
+			L_{IVS0°}= \dfrac{U_{LLmaxPeak}}{4\cdot f_{sw} \cdot 0,3 \cdot I_{IAF0°}} = \dfrac{959,8\, V}{4 \cdot 20\, kHz \cdot 0,3 \cdot 147,04\, A}= 272\, \si{\micro \henry}
 		\end{equation}
 		
 		\begin{equation}
-			\label{eq:Livs}
-			L_{IVS}= \dfrac{U_{LLmaxPeak}}{4\cdot f_{sw} \cdot I_{\Delta max IVS}} = \dfrac{959,8\, V}{4 \cdot 20\, kHz \cdot 44,1\, A}= 272\, \si{\micro \henry}
+			\label{eq:EL_IVS0}
+			W_{L-IVS0°}=\dfrac{1}{2} \cdot L_{IVS} \cdot I_{IAF0°}^{2} = \dfrac{1}{2} \cdot 272\, \si{\micro \henry} \cdot (147,04\, \si{\A})^{2} =  2,94 \, \si{\joule}
 		\end{equation}
 		
-		Bei der Betrachtung der Energie ist zu beachten, dass der Strom in der Drossel bei Blindleistung ansteigt und somit die Energie im quadratischen Verhältnis zunimmt. Die Amplitude des Stroms ohne Phasenverschiebung wird über den Faktor $sin(30°)=0,5$ berechnet und ergibt sich somit zu 132,33 A (siehe Formel \ref{eq:IAF_I0}). Bei Phasenverschiebung von 30 Grad ändert sich die Amplitude auf $sin(60°)$ und damit der Strom auf etwa 255 Ampere.
-		\begin{equation}
-			\label{eq:IAF_I0}
-			I_{IAF0°}= \dfrac{sin(30°)\cdot \sqrt{2} \cdot P_{a}} { \sqrt{3} \cdot U_{LL} \cdot 0,9}=\dfrac{sin(30°)\cdot \sqrt{2} \cdot 200\, \si{\kilo \watt}} { \sqrt{3} \cdot 617\, \si{V} \cdot 0,9} = 147,04\, \si{\A}
-		\end{equation}
+		Bei der Betrachtung der Energie ist zu beachten, dass der Strom in der Drossel bei Blindleistung ansteigt und somit die Energie im quadratischen Verhältnis zunimmt. Bei Phasenverschiebung von 30 Grad ändert sich die Amplitude auf $sin(60°)$ und damit der Strom auf etwa 255 Ampere.
+			
+		
 		
 		\begin{equation}
 			\label{eq:IAF_I30}
-			I_{IAF30°}=\dfrac{sin(60°)\cdot \sqrt{2} \cdot P_{a}} { \sqrt{3} \cdot U_{LL} \cdot 0,9} =\dfrac{sin(60°) \cdot \sqrt{2} \cdot 200\, \si{\kilo \watt}} { \sqrt{3}\, \cdot 617 \si{V} \cdot 0,9} = 254,68\, \si{\A}
+			I_{IAF30°}= sin(60°)\cdot \hat{I}_{max}=sin(60°)\cdot 294,07 \,A =254,68\, \si{\A}
 		\end{equation}
-		Die in der Drossel gespeicherte Energie, welche eine relevante Größe für die Bewertung darstellt, beträgt 8,82 Joule (siehe Formel \ref{eq:EL_IVS}).
+		
+		
+		Die in der Drossel gespeicherte Energie, welche eine relevante Größe für die Bewertung darstellt, beträgt 8,82 Joule (siehe Formel \ref{eq:EL_IVS30}).
+		
 		\begin{equation}
-			\label{eq:EL_IVS}
-			E_{L-IVS}=\dfrac{1}{2} \cdot L_{IVS} \cdot I_{IAF30°}^{2} = 0,5 \cdot 272\, \si{\micro \henry} \cdot (254,68\, \si{\A})^{2} =  8,82 \, \si{\joule}
+			\label{eq:EL_IVS30}
+			W_{L-IVS30}=\dfrac{1}{2} \cdot L_{IVS} \cdot I_{IAF30°}^{2} = \dfrac{1}{2}\cdot 272\, \si{\micro \henry} \cdot (254,68\, \si{\A})^{2} =  8,82 \, \si{\joule}
 		\end{equation}
 		
 		
-		Zusätzlich wird eingangsseitig eine Filterinduktivität $L_{IAF-N}$ mit dem Wert 1~\si{\micro \henry} eingesetzt, diese hat eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
+		
+		Zusätzlich wird eingangsseitig eine Filterinduktivität $L_{IAF-N}$ mit dem Wert 1~\si{\micro \henry} eingesetzt. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, dazu wird der Scheitelwert des Stroms $\hat{I}_{max}$ benötigt, siehe Formel \ref{eq:Idachmax}. Die Netzdrossel hat somit eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
+			
 			\begin{equation}
 			\label{eq:E_IAF_ACL}
-			E_{L-IAF-N}= 3\cdot \dfrac{1}{2} \cdot L_{IAF-N} (\dfrac{  \sqrt{2} \cdot 200\, \si{\kilo \watt}} { \sqrt{3} \cdot 617\, \si{V} \cdot 0,9} )^2=\dfrac{3}{2} \cdot 1\, \si{\micro \henry} \cdot (294,07 \, \si{\ampere})^{2} = 0,13 \, \si{\joule}
+			W_{L-IAF-N}= 3\cdot \dfrac{1}{2} \cdot L_{IAF-N} \cdot (\hat{I}_{max})^2=\dfrac{3}{2} \cdot 1\, \si{\micro \henry} \cdot (294,07 \, \si{\ampere})^{2} = 0,13 \, \si{\joule}
 		\end{equation}
 	
 	\subsection{Regelung}
@@ -131,10 +152,10 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 			K1 = \dfrac{U_{mid}- U_{low}}{U_{high} -U_{low}} 
 		\end{equation}
 		
-			Der Strom in der Drossel wird durch den idealen Stromverlauf der mittleren Phase bestimmt. Der aktuelle Phasenwinkel der Spannung wird dazu durch die PLL erfasst und kann mit einer einstellbaren Phasenverschiebung verändert werden. Die Stromamplitude wird über die Netzspannung und die gewünschte Ausgangsleistung bestimmt (siehe Formel \ref{eq:Idach}). Der sinusförmige Strom wird durch die Amplitude und den entsprechenden Winkel mit jeweils 120° bzw. $\dfrac{2}{3}\pi$ Phasenversatz gebildet, siehe Abb. \ref{fig:plecsiafidealephasenstrome}. Die mittlere Phase wird über die Sektorenzuweisung ausgewählt. Siehe Abbildung \ref{fig:plecsiafiy}.
+			Der Strom in der Drossel wird durch den idealen Stromverlauf der mittleren Phase bestimmt. Der aktuelle Phasenwinkel der Spannung wird dazu durch die PLL erfasst und kann mit einer einstellbaren Phasenverschiebung verändert werden. Die Stromamplitude \gls{I^} wird über die Netzspannung und die gewünschte Ausgangsleistung bestimmt (siehe Formel \ref{eq:IdachTheory}). Der sinusförmige Strom wird durch die Amplitude und den entsprechenden Winkel mit jeweils 120° bzw. $\dfrac{2}{3}\pi$ Phasenversatz gebildet, siehe Abb. \ref{fig:plecsiafidealephasenstrome}. Die mittlere Phase wird über die Sektorenzuweisung ausgewählt. Siehe Abbildung \ref{fig:plecsiafiy}.
 			\begin{equation}
-				\label{eq:Idach}
-				\hat{I} = \dfrac{\sqrt{2} \cdot P   }{ \sqrt{3} \cdot cos(\varphi) \cdot  U_{LLrms} }
+				\label{eq:IdachTheory}
+				\hat{I} = \dfrac{\sqrt{2} \cdot P   }{ \sqrt{3} \cdot cos(\varphi) \cdot  U_{LLrms} } 
 			\end{equation}
 		\begin{figure}
 			\centering
@@ -179,22 +200,22 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
  
 
 		\subsection{Auslegung der Netzinduktivität}
-				Die Eingangsdrossel wird für den Normalbetrieb ausgelegt. Daher muss im Falle von Blindleistung die Wirkleistung reduziert werden. Wie bereits in Abschnitt \ref{sec:AnfStromnetz} erläutert, ist dies vom Netzbetreiber gestattet. Der Rippelstrom in der Drossel wird wie zuvor auf 30 \% der Grundschwingung bei Nennleistung ausgelegt. Dieser erreicht bei niedriger Eingangsspannung sein Maximum. Der Rippelstrom beträgt somit 88,2 Ampere, siehe Formel \ref{eq:DeltaI_B6}.\\
+				Die Eingangsdrossel wird für den Normalbetrieb ausgelegt. Daher muss im Falle von Blindleistung die Wirkleistung reduziert werden. Wie bereits in Abschnitt \ref{sec:AnfStromnetz} erläutert, ist dies vom Netzbetreiber gestattet. Der Rippelstrom in der Drossel wird wie zuvor auf 30 \% der Grundschwingung ausgelegt, siehe Formel \ref{eq:Idachmax}. Der Rippelstrom beträgt somit 88,2 Ampere, siehe Formel \ref{eq:DeltaI_B6}.\\
 			
 			\begin{equation}
 				\label{eq:DeltaI_B6}
-				I_{\Delta max B6}= \dfrac{0,3 \cdot \sqrt{2} \cdot P_{a}}{\sqrt{3}\cdot U_{LLmin}}= \dfrac{0,3\cdot \sqrt{2} \cdot 200\, \si{\kilo \watt}}{\sqrt{3} \cdot 617\, \si{V} \cdot 0,9} = 88,2\, \si{\A}
+				I_{\Delta max B6}= 0,3 \cdot \hat{I}_{max}= 0,3 \cdot 294,07\, \si{\A} = 88,2\, \si{\A}
 			\end{equation}
 			Die Induktivität kann nach der gleichen Beziehung wie für den \gls{IAF}-\gls{IVS} berechnet werden und beträgt 136 \si{\micro \henry}, siehe Formel \ref{eq:L_B6}.
 			\begin{equation}
 				\label{eq:L_B6}
 				L_{B6}= \dfrac{U_{LLmaxPeak}}{4\cdot f{sw} \cdot I_{\Delta max B6}} = \dfrac{959,8\, \si{\volt}}{4 \cdot 20\, \si{\kilo \hertz} \cdot 88,2\, \si{\ampere}} =136\, \si{\micro \henry}
 			\end{equation}
-			Die in der Induktivität gespeicherte Energie wird ebenfalls durch den Zusammenhang zwischen Netzspannung und Ausgangsleistung definiert, erhöht sich jedoch nicht durch die Bereitstellung von Blindleistung. Es wird von einer reduzierten Eingangsspannung um 10 Prozent ausgegangen, um den größeren Strom zu berücksichtigen. Die gespeicherte Energie pro Phase beträgt 5,88 Joule nach Formel \ref{eq:EL_B6} und muss aufgrund der dreiphasigen Ausführung mit dem Faktor drei multipliziert werden. Somit ergibt sich eine Gesamtenergie von 17,64 Joule für die Netzinduktivität der Topologie. 
+			Die in der Induktivität gespeicherte Energie wird ebenfalls durch den Zusammenhang zwischen Netzspannung und Ausgangsleistung definiert, erhöht sich jedoch nicht durch die Bereitstellung von Blindleistung. Die gespeicherte Energie pro Phase beträgt 5,88 Joule nach Formel \ref{eq:EL_B6} und muss aufgrund der dreiphasigen Ausführung mit dem Faktor drei multipliziert werden. Somit ergibt sich eine Gesamtenergie von 17,64 Joule für die Netzinduktivität der Topologie.
 			
 			\begin{equation}
 			\label{eq:EL_B6}
-			E_{LB6}= 3 \cdot \dfrac{1}{2} \cdot L_{B6} \cdot (\dfrac{\sqrt{2} \cdot P_{a}}{\sqrt{3}\cdot U_{LL}})^{2}= \dfrac{3}{2} \cdot 136 \,\si{\micro \henry} \cdot ({\dfrac{\sqrt{2} \cdot 200\, \si{\kilo \watt} }{\sqrt{3} \cdot 617\, \si{\volt} \cdot 0,9}})^{2} = 17,64 \, \si{\milli \joule}
+			W_{LB6}= 3 \cdot \dfrac{1}{2} \cdot L_{B6} \cdot (\hat{I}_{max})^{2}= \dfrac{3}{2} \cdot 136 \,\si{\micro \henry} \cdot (294,07\, \si{\A})^{2} = 17,64 \, \si{\milli \joule}
 			\end{equation}
 			
 			

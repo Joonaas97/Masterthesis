@@ -20,14 +20,14 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		Ein Gleichrichter wird genutzt, um aus einer Wechselspannung eine Gleichspannung zu erzeugen. Die einfachste Form ist der Diodengleichrichter. Dieser kann für einphasige Wechselspannung durch eine einzelne Diode realisiert werden. Allerdings würde so nur die halbe Periode des Sinus am Ausgang zur Verfügung stehen, da die Diode nur während der positiven Halbwelle leitet. Dies kann durch die Ergänzung eines Brückengleichrichters mit vier Dioden für einphasige Anwendungen und sechs Dioden für dreiphasige Anwendungen erreicht werden. Der Dreiphasige Diodengleichrichter findet sich in Abbildung \ref{fig:B6DiodRect}.\\
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.8\linewidth]{content/Grafiken/Plecs_Diodengleichrichter}
+			\includegraphics[width=0.8\linewidth]{content/Grafiken/Plecs_Diodengleichrichter.pdf}
 			\caption{Diodengleichrichter für Dreiphasige Anwendungen}
 			\label{fig:B6DiodRect}
 		\end{figure}
 		Der Diodengleichrichter ist jedoch nur bedingt für einen gewünschten Stromverlauf geeignet. In Abbildung \ref{fig:B6DiodRectI} ist der Netzspannungs und Stromverlauf des Diodengleichrichter dargestellt. Der Stromverlauf zeigt starke Sprünge und der gewünschte sinusförmige Verlauf ist nur schwer erkennbar, dies kann durch Ergänzung von Kondensatoren und Spulen zur Filterung teilweise korrigiert werden. Außerdem ist es mit dieser Schaltung nicht möglich, die Ausgangsspannung oder den Strom zu variieren.\\
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.65\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
+			\includegraphics[width=0.68\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
 			\caption{Strom und Spannungsverlauf des Dreiphasigen Diodengleichrichters }
 			\label{fig:B6DiodRectI}
 		\end{figure}
@@ -42,7 +42,7 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 			\caption[Tiefsetzsteller]{Tiefsetzsteller}
 			\label{fig:buck}
 		\end{figure}
-		Die Speicherdrossel des Tiefsetzstellers kann nach der Formel \ref{eq:BuckL} ausgelegt werden, wobei der gewünschte Stromrippel $\Delta I $ in der Drossel beispielhaft auf maximal 30 Prozent des \gls{Ia} festgelegt wird \cite{schmidtwalter}.
+		Die Speicherdrossel des Tiefsetzstellers kann nach der Formel \ref{eq:BuckL} ausgelegt werden, wobei der gewünschte Stromripple $\Delta I $ in der Drossel auf maximal 30 Prozent des \gls{Ia} festgelegt wird \cite{schmidtwalter}. Ein Stromripple von 30 \% erweist sich als guter Kompromiss zwischen dem Induktivitätswert und der Größe der Rippelamplitude. Durch steile Amplituden können Störungen durch elektromagnetische Felder verursacht werden und der Filterbedarf am Ein- und Ausgang steigt \cite{AnalogInductor} \cite{TIBuck}.
 		\begin{equation}
 			\label{eq:BuckL}
 			L=\dfrac{U_{emax}-U_{a}}{f\cdot \Delta I}\cdot D = \dfrac{U_{emax}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{emax}}
@@ -70,15 +70,15 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		
 		\subsection{Induktive Komponenten}
 		Induktive Bauelemente sind in der Regel Spulen und Transformatoren, die zur Speicherung und Übertragung von Energie dienen. Transformatoren bieten zusätzlich die Möglichkeit der galvanischen Entkopplung von Stromkreisen. 
-		Für die Dimensionierung von Induktivitäten wird das Delta des Stromes in der Spule, der sogenannte Stromrippel, benötigt. Dieser Strom wird hier mit 30 Prozent des Effektivstroms ausgelegt. Für Drehstromsysteme kann der Rippelstrom nach der Formel \ref{eq:DeltaI} ermittelt werden. Dabei sind \gls{S} und \gls{Ull} die Spannungen zwischen den Außenleitern. \cite{Boge.2007}.\\
+		Für die Dimensionierung von Induktivitäten wird das Delta des Stromes in der Spule, der sogenannte Stromrippel, benötigt. Dieser Strom wird hier mit 30 Prozent des \gls{I^} ausgelegt. Für Drehstromsysteme kann der Rippelstrom nach der Formel \ref{eq:DeltaI} ermittelt werden. Dabei sind \gls{S} und \gls{Ull} die Spannungen zwischen den Außenleitern. \cite{Boge.2007}.\\
 		\begin{equation}
 			\label{eq:DeltaI}
-			\Delta I = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{2 \cdot \sqrt{3} \cdot U_{LL}}
+			\hat{I} = 0,3 \cdot \dfrac{\sqrt{2} \cdot S}{\sqrt{3} \cdot U_{LL}}
 		\end{equation}
 		Außerdem kann über die \gls{WL} eine Aussage über die Größe und damit indirekt über die Kosten und den Platzbedarf getroffen werden. Die Energie \gls{WL} kann mit der Formel \ref{eq:WL} berechnet werden. Dazu wird der Wert der Induktivität und der Strom benötigt \cite{Boge.2007}.
 		\begin{equation}
 			\label{eq:WL}
-			W_{L} =\dfrac{1}{2}\cdot L\cdot I^{2}
+			W_{L} =\dfrac{1}{2}\cdot L\cdot \hat{I}^{2}
 		\end{equation}
 				
 			

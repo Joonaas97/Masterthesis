@@ -3,7 +3,7 @@
     Model.Name = "B6_Buck";
     Schaltfrequenz = 20e3;                                                      %Switchingfrequency in Hz
     Deadtime=500e-9;                                                            %Switch Deadtime in seconds
-   Phaseshift=0;                                                                % Phasenverschiebung in Degree (no negative possible!)
+   Phaseshift=30;                                                                % Phasenverschiebung in Degree (no negative possible!)
 
 %% Grid
     Netz.R1 = 1e-3;                                                             %Reihenwiderstand der Netzdrossel                                               
