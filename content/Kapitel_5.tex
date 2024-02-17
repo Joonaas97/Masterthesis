@@ -222,12 +222,12 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 
 		
 		\subsection{Regelung}
-			Die Regelung besteht aus einer vierstufigen Kaskadenstruktur, siehe Abbildung \ref{fig:b6-control-orig}. Die erste Stufe ist die Ausgangsspannungsregelung, die aus Sollleistung und Netzspannung die gewünschte äquivalente Phasenimpedanz als Eingangsgröße für die Phasenstromregelung bildet. Die drei Regler für die Phasenströme bilden die zweite Stufe.\\
+			Die Regelung besteht aus einer vierstufigen Kaskadenstruktur, siehe Abbildung \ref{fig:b6-control-orig} (groß im Anhang \ref{fig:b6regelung}). Die erste Stufe ist die Ausgangsspannungsregelung, die aus Sollleistung und Netzspannung die gewünschte äquivalente Phasenimpedanz als Eingangsgröße für die Phasenstromregelung bildet. Die drei Regler für die Phasenströme bilden die zweite Stufe.\\
 			In der dritten Stufe wird die Phase mit der mittleren Spannung ausgewählt und anhand der Phasenlage die Zwischenkreisspannung \gls{Upn} bestimmt. Die Zwischenkreisspannung ergibt sich als Sechspulsige-Gleichspannung und dient als Eingangsspannung für den Tiefsetzsteller. Die mittlere Phasenspannung wird als Referenz für den Tastgrad der entsprechenden Halbbrücke verwendet und prägt somit einen spannungsproportionalen Strom ein. Somit ist immer nur eine der drei Halbbrücken getaktet geschaltet, die anderen beiden sind wie bei einem Diodengleichrichter auf die jeweils positivste und negativste Spannung geschaltet. Die vierte Stufe ist der Tiefsetzsteller mit Reglern für den Eingangsstrom und die Ausgangsspannung.
 				
 			\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.9\linewidth]{content/Grafiken/B6-Control-orig}
+			\includegraphics[width=1\linewidth]{content/Grafiken/B6-Control-orig}
 			\caption{Regelung des \gls{B6PFC} \cite{13PWMPFC}}
 			\label{fig:b6-control-orig}
 			\end{figure}
