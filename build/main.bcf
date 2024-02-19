@@ -2416,9 +2416,10 @@
     <bcf:citekey order="61" intorder="1">13PWMPFC</bcf:citekey>
     <bcf:citekey order="62" intorder="1">13PWMPFC</bcf:citekey>
     <bcf:citekey order="63" intorder="1">IFAGFF2</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">IAF99</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">13PWMPFC</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">SicTemp</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">IAF99</bcf:citekey>
     <bcf:citekey order="66" intorder="1">13PWMPFC</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">13PWMPFC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
