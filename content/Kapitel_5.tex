@@ -16,7 +16,7 @@ Das Netz wird durch eine einfache Drehstromquelle dargestellt und kann in späte
 
 
 \section{Randbedingungen}
-Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegung für die Simulation durchführen zu können. Die Leistung von 200 kW wird als Grundlage festgelegt, da aufgrund der Halbleitermodule und thermischen Belastung höhere Ströme in einem Gerät Probleme bei der Umsetzung bereiten würden. Halbeitermodule die aktuell industriell für Platinen-basierte Stromrichter eingesetzt werden, können Ströme von maximal 200 A führen. Höhere Ströme würden die Stromtragfähigkeit gängiger Platinen übersteigen und damit die Kosten übermäßig steigern. Die Ausgangsspannung von maximal 680 V ergibt sich aufgrund der Spannungsfestigkeit der Halbleitermodule, welche 1200 V beträgt. Diese muss aufgrund von Spannungsspitzen bei Schaltvorgängen der Halbleiter weiter begrenzt werden. Aufgrund der Abschätzung der Kommutierungsinduktivität, die beim Schaltvorgang zu Überspannungen führt, welche die Lebensdauer der Halbleiter beeinträchtigen können, wird ein größerer Abstand zur Halbleiterspannung gewählt. Es wird sich für diese Spannungsklasse entschieden, da diese bereits etabliert und in breiter Masse verfügbar ist. Die Netzfrequenz sowie das Spannungsband wird anhand der Anforderungen für stationären Betrieb im deutschen Stromnetz definiert. Die Spannungsschwankung wird auf \pm 10 \% der Netznennspannung reduziert da kurzfristige Änderungen und entsprechende Kompensationen später betrachtet werden.  \\
+Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegung für die Simulation durchführen zu können. Die Leistung von 200 kW wird als Grundlage festgelegt, da höhere Ströme aufgrund der Halbleitermodule und thermischen Belastung in einem Gerät Probleme bei der Umsetzung verursachen würden. Halbeitermodule die aktuell industriell für Platinen-basierte Stromrichter eingesetzt werden, können Ströme von maximal 200 A führen. Höhere Ströme würden die Stromtragfähigkeit gängiger Platinen übersteigen und damit die Kosten übermäßig steigern. Die Ausgangsspannung von maximal 680 V ergibt sich aufgrund der Spannungsfestigkeit der Halbleitermodule, welche 1200 V beträgt. Diese muss aufgrund von Spannungsspitzen bei Schaltvorgängen der Halbleiter weiter begrenzt werden. Aufgrund der Abschätzung der Kommutierungsinduktivität, die beim Schaltvorgang zu Überspannungen führt, welche die Lebensdauer der Halbleiter beeinträchtigen können, wird ein größerer Abstand zur Halbleiterspannung gewählt. Es wird sich für diese Spannungsklasse entschieden, da diese bereits etabliert und in breiter Masse verfügbar ist. Die Netzfrequenz sowie das Spannungsband wird anhand der Anforderungen für stationären Betrieb im deutschen Stromnetz definiert. Die Spannungsschwankung wird auf \pm 10 \% der Netznennspannung reduziert da kurzfristige Änderungen und entsprechende Kompensationen später betrachtet werden.  \\
 
 \begin{itemize}
 \item \gls{Pa}: 200 kW bei $\varphi = 0°$
@@ -29,12 +29,12 @@ Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegun
 \item Netzspannungsschwankung: 10 \%
 \end{itemize}
 
-Für die Auswertung wird der eingeschwungene Zustand des Systems betrachtet. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Schwingungen auftreten. Außerdem wird für die Auswertung die letzte Periode der Simulation verwendet, da hier der thermische Vorgang eingeschwungen ist. Dieser Abschnitt wird für eine spätere Betrachtung gespeichert.
+Für die Auswertung wird der eingeschwungene Zustand des Systems betrachtet, dieser wird anhand des Temperaturverhaltens der Halbleiter kontrolliert. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Schwingungen auftreten. Außerdem wird für die Auswertung die letzte Periode der Simulation verwendet, da hier der thermische Vorgang eingeschwungen ist. Dieser Abschnitt wird für eine spätere Betrachtung gespeichert.
 
 \section{Tiefsetzsteller}
-Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was für die Auslegung der Induktivität von Vorteil ist. Die Regelung kann ebenfalls entkoppelt erfolgen, sodass eine getrennte Stabilitätsbetrachtung und Optimierung möglich ist. 
+Der Tiefsetzsteller kann entkoppelt vom Gleichrichter betrachtet werden, was für die Auslegung der Induktivität von Vorteil ist. Die Regelung kann ebenfalls entkoppelt erfolgen, sodass eine getrennte Stabilitätsbetrachtung und Optimierung möglich ist. 
 	\subsection{Auslegung der Induktivität}
-	Die Speicherdrossel wird nach der Formel \ref{eq:BuckL} ausgelegt, wobei die Netzspannung maximal $U_{LLmaxPeak}=1,1 \cdot 617\, \si{\V} \cdot \sqrt{2}=959,8\, \si{\V}$ und die Ausgangsspannung $U_{amin}$ bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller realisieren muss. Es ergibt sich eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die Energie beträgt 7,78 Joule bei einem Ausgangsstrom von 295 A. 
+	Die Speicherdrossel wird nach der Formel \ref{eq:BuckL} ausgelegt, wobei die Netzspannung maximal $U_{LLmaxPeak}=1,1 \cdot 617\, \si{\V} \cdot \sqrt{2}=959,8\, \si{\V}$ und die Ausgangsspannung $U_{a,min}$ liegt bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller realisieren muss. Es ergibt sich eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die gespeicherte Energie beträgt 7,78 Joule bei einem Ausgangsstrom von 295 A. 
 	\begin{equation}
 	\label{eq:BuckLwert}
 	L_{T}= \dfrac{U_{LLmaxPeak}-U_{amin}}{f_{sw} \cdot \Delta I} \cdot D = \dfrac{959,8\,\si{\V} - 482\, \si{\V}}{20\, \si{\kilo \hertz}\cdot 0,3 \cdot 295\, \si{\ampere}} \cdot \dfrac{482\, \si{\V}}{959,8\, \si{\V}}= 134,16 \,\si{\micro \henry} 
@@ -54,7 +54,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 
 
 \section{IAF}
-	Der Schwerpunkt der Simulation liegt auf den Leistungshalbleitern, deren Anordnung in Abbildung \ref{fig:iafplecsmain}, \ref{fig:iafplecsbuck} und \ref{fig:iafplecsivs} zu entnehmen ist. Zur Bestimmung der Verlustleistung werden Modelle von Infineon verwendet, wobei für die Dioden und den \gls{IVS} ein gemeinsames Modul mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET} ausgewählt wird. Die Halbbrücke an der Induktivität wird aus einem Modul mit 13 \si{\milli \ohm} aufgebaut. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
+	Der Schwerpunkt der Simulation liegt auf den Leistungshalbleitern, deren Anordnung in Abbildung \ref{fig:iafplecsmain}, \ref{fig:iafplecsbuck} und \ref{fig:iafplecsivs} zu entnehmen ist. Zur Bestimmung der Verlustleistung werden Modelle von Infineon verwendet, wobei die Dioden aus dem Modul FS100R12W2T7 \cite{FS100R12W2T7} verwendet werden und für den \gls{IVS} ein Modul mit 5 \si{\milli \ohm} \gls{SiC} \gls{MOSFET} ausgewählt wird. Die Halbbrücke an der Induktivität wird aus einem Modul mit 1,4 \si{\milli \ohm} aufgebaut \cite{FF4MR12W2M1H}. Alle Halbleiter haben eine Spannungsfestigkeit von 1200 V.
 	\begin{figure}
 		\centering
 		\includegraphics[width=1\linewidth]{content/Grafiken/IAF_Plecs_main}
@@ -77,7 +77,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 	
 
 	\subsection{Auslegung der Induktivitäten}
-	Zur Auslegung der Induktivität wird vom Nennbetrieb ohne Phasenverschiebung ausgegangen. Dazu wird der $\hat{I}_{max}$ gebildet siehe Formel \ref{eq:Idachmax}, welcher durch Netzspannungsabfall um 10 Prozent maximal wird und somit 294,07 Ampere beträgt. Ohne Phasenverschiebung muss dieser bis 30 Grad der Sinuswelle in der Drossel bereitgestellt werden, siehe Formel \ref{eq:IAF_I0}. Somit ergibt sich ein Spitzennennstrom $I_{IAF0°}$ von 147,04 Ampere.
+	Zur Auslegung der Induktivität wird vom Nennbetrieb ohne Phasenverschiebung ausgegangen. Dazu wird der $\hat{I}_{max}$ gebildet siehe Formel \ref{eq:Idachmax}, welcher durch Netzspannungsabfall um 10 Prozent maximal wird und somit 294,07 Ampere beträgt. Ohne Phasenverschiebung erreicht dieser bei 30 Grad der Sinuswelle sein Maximum, siehe Formel \ref{eq:IAF_I0}. Somit ergibt sich ein Spitzennennstrom $I_{IAF0°}$ von 147,04 Ampere.
 	\begin{equation}
 		\label{eq:Idachmax}
 		\hat{I}_{max} = \dfrac{\sqrt{2} \cdot P   }{ \sqrt{3}  \cdot  U_{LLrms} \cdot 0,9} = \dfrac{\sqrt{2} \cdot 200\, \si{\kilo \watt}} { \sqrt{3} \cdot 617\, \si{V} \cdot 0,9} = 294,07\, \si{\A}
@@ -119,7 +119,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 		
 		
 		
-		Zusätzlich wird eingangsseitig eine Filterinduktivität $L_{IAF-N}$ mit dem Wert 1~\si{\micro \henry} eingesetzt. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, dazu wird der Scheitelwert des Stroms $\hat{I}_{max}$ benötigt, siehe Formel \ref{eq:Idachmax}. Die Netzdrossel hat somit eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
+		Zusätzlich wird eingangsseitig eine Filterinduktivität $L_{IAF-N}$ mit dem Wert 1~\si{\micro \henry} eingesetzt, um das Verhalten des Netztrafos nachzubilden. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, dazu wird der Scheitelwert des Stroms $\hat{I}_{max}$ benötigt, siehe Formel \ref{eq:Idachmax}. Die Netzdrossel hat somit eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
 			
 			\begin{equation}
 			\label{eq:E_IAF_ACL}
@@ -127,9 +127,7 @@ Der Tiefsetzsteller kann in den beiden Kreisen entkoppelt betrachtet werden, was
 		\end{equation}
 	
 	\subsection{Regelung}
-		
-		
-		Die Regelung des Stroms des IVS wird anhand der Struktur von Soeiro et al. umgesetzt (vgl. Abb. \ref{fig:iafpapercontrol}) \cite{Soeiro.2013}. 
+		Die Regelung des Stroms des IVS wird anhand der Struktur von Soeiro et al. umgesetzt (vgl. Abb. \ref{fig:iafpapercontrol}) \cite{Soeiro.2013}. \linebreak
 		 \begin{figure}
 			\centering
 			\includegraphics[width=0.8\linewidth]{content/Grafiken/IAF_Paper_Control}

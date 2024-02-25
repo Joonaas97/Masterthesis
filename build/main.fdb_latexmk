@@ -1,13 +1,12 @@
 # Fdb version 4
-["biber build/main"] 1708804175 "build/main.bcf" "build/main.bbl" "build/main" 1708805240 0
-  "./bibliography.bib" 1708328222 10339 e3e55bf315c4fe45000b9f8913839b91 ""
-  "build/main.bcf" 1708805239 111676 deb0568134f0743ecb2bca95b2a3643b "lualatex"
+["biber build/main"] 1708882055 "build/main.bcf" "build/main.bbl" "build/main" 1708883457 0
+  "./bibliography.bib" 1708881213 10906 f7cb746bc9dd436ff1df991818261f07 ""
+  "build/main.bcf" 1708883456 110177 8c72f5a39a8f37f7fb8b4347f8cf758e "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["lualatex"] 1708805228 "main.tex" "build/main.pdf" "main" 1708805240 0
-  "C:/Program Files/MiKTeX/fonts/opentype/public/lm-math/latinmodern-math.otf" 1409936340 733736 20d3eb5d31e6373942bca10f39f669ce ""
+["lualatex"] 1708883445 "main.tex" "build/main.pdf" "main" 1708883457 2
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
@@ -417,16 +416,13 @@
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/xits-mathbold.luc" 1692865242 291861 5bd84244fd45e75edda3a40171566321 ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1703880500 9798 e49d2650656a636deb4ec608c6b5cc5d ""
   "C:/Users/jheinemann/AppData/Local/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz" 1692865242 58233 928999858f115f20176f7e8008f62a5c ""
-  "build/main.aux" 1708805239 54789 0d347e7af683c80970061314dbcb2694 "lualatex"
-  "build/main.bbl" 1708804177 36160 c6eec22f0400c288235306661a5141ec "biber build/main"
+  "build/main.aux" 1708883456 50994 64976f4649410119e1bb8c416bfc6a7a "lualatex"
+  "build/main.bbl" 1708882058 38822 995340223073f09dbd749c7b12ad431a "biber build/main"
   "build/main.gls" 1708092757 6394 0121daa358ade572d81780b0299545db ""
-  "build/main.lof" 1708805239 7667 0d96918c028a51eb4bb2edfaff748ef1 "lualatex"
-  "build/main.lot" 1708805239 1164 14071e03da27e3129230d82cc64374ba "lualatex"
-  "build/main.run.xml" 1708805239 2372 f69789b35c783e47f7ed7d072bc74333 "lualatex"
-  "build/main.toc" 1708805239 4895 24bdd43a79d684092dd334b6cd036393 "lualatex"
+  "build/main.lof" 1708883452 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "build/main.lot" 1708883452 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "build/main.toc" 1708883452 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   "content/Abstract.tex" 1705762910 1755 eb3b2d7513f58c9d5ab97d48dc66cd4f ""
-  "content/Anhang.tex" 1708804907 2880 080dbd8649bcac70402fd2a910ef992d ""
-  "content/Anhang/B6_Regelung.pdf" 1708162909 142057 a866ddb3c53cec2fbaf412a78aa025de ""
   "content/Erklaerung.tex" 1693902991 983 d54fd34c456adc13caefc8a2bf55b26a ""
   "content/Grafiken/23PWMBuckBoost.pdf" 1705948378 11424 93921b799fa70c4652fe3721697c3671 ""
   "content/Grafiken/3L-FC-Boost+Buck.pdf" 1705750467 11356 e200af1aa619b0cf86743fdb66892c3e ""
@@ -488,8 +484,8 @@
   "content/Kapitel_1.tex" 1708775539 8271 7ae6b3af0997f1c731940eaf39b75d5b ""
   "content/Kapitel_2.tex" 1708801886 21183 761bdadbb7dbd818599228a8fc4a4906 ""
   "content/Kapitel_3.tex" 1708800529 8584 ef2ce8f0e7fd94c3f73bbaf507ae0ee6 ""
-  "content/Kapitel_4.tex" 1708804335 12404 ebe17467c6b277433244aea1781ae8cc ""
-  "content/Kapitel_5.tex" 1708805227 21396 5c782ff98c02d32a5415e46951c69e72 ""
+  "content/Kapitel_4.tex" 1708883445 12395 c0e2a902f66150a7b278dd75fcf98ff0 ""
+  "content/Kapitel_5.tex" 1708882913 21589 1b65d599b150b82a581cc50c2721146d ""
   "content/Kapitel_6.tex" 1708338375 11213 6572f38fa223804c24272a5b36d62b04 ""
   "content/Kapitel_7.tex" 1708337010 5887 0d8faac585cc4b3a9c07a436fd1c0013 ""
   "content/Titelseite.tex" 1708070757 1193 569bbd78aaca592c1b1e27e5afa9900d ""
@@ -505,7 +501,6 @@
   "build/main.log"
   "build/main.lot"
   "build/main.pdf"
-  "build/main.run.xml"
   "build/main.sbl"
   "build/main.toc"
   (rewritten before read)
