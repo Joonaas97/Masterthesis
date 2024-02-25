@@ -2,8 +2,7 @@
 Um die Klimaschutzziele zu erreichen, sind verschiedene Maßnahmen erforderlich, die nur im Zusammenspiel zum Erfolg führen können. Ein großes Problem bei der Nutzung erneuerbarer Energien ist deren Volatilität. Daher sind deutlich größere Speichermöglichkeiten erforderlich. Wasserstoff bietet ein Medium für die langfristige Speicherung und den Transport von Energie. Er kann auf unterschiedliche Weise gewonnen werden und bietet vielfältige Einsatzmöglichkeiten. In der Industrie wird Wasserstoff bereits heute in großem Umfang eingesetzt. In den meisten Fällen wird er jedoch durch Dampfreformierung direkt am Einsatzort aus Erdgas gewonnen. Zukünftig kann er durch den Einsatz von Elektrolysezellen mit erneuerbaren Energien nachhaltig erzeugt werden \cite{Elektrolyse}. 
 \section{Stand der Technik}
 Die Entwicklung der Elektrolyse schreitet sehr schnell voran und in den nächsten Jahren sind Veränderungen zu erwarten, die auch die Stromversorgung betreffen. Insbesondere der Trend zu höheren Spannungsklassen ermöglicht eine Kostenreduktion auf Seiten der Leistungselektronik. Die optimale Auslegung der Elektrolyseanlage hängt jedoch von vielen anwendungsspezifischen Parametern wie z.~B. der Betriebsführung ab. Insbesondere die Entwicklung des Strompreises und die Netzstabilität in der Zukunft können die Amortisation stark beeinflussen. Durch Gleichrichter, die das Netz unterstützen, anstatt es z.~B. durch Blindleistungsbezug zu belasten, können Elektrolyseure ohne zusätzliche Kompensationsanlagen günstiger betrieben werden. Darüber hinaus kann durch Frequenzstabilisierung und andere \gls{SDL} zusätzliche Vergütung generiert werden. \\
-Die \gls{IRENA} hat in ihrem Bericht über die Kostenentwicklung der Elektrolyse im Jahr 2020 den Anteil der Kosten für die Stromversorgung für \gls{PEM}-Elektrolyseure mit 29 bis 38 Prozent angegeben. Wobei die Elektrolysezellen selbst weniger als die Hälfte der Kosten ausmachen. Darüber hinaus werden als mögliche Faktoren zur Senkung der Gleichrichterkosten Skaleneffekte, die Standardisierung von Komponenten sowie die Beteiligung von Unternehmen aus der Elektronikindustrie anstelle von Elektrolyseurherstellern genannt \cite{IRENA2020}.\\ 
-
+Die \gls{IRENA} hat in ihrem Bericht über die Kostenentwicklung der Elektrolyse im Jahr 2020 den Anteil der Kosten für die Stromversorgung für \gls{PEM}-Elektrolyseure mit 29 bis 38 Prozent angegeben. Wobei die Elektrolysezellen selbst weniger als die Hälfte der Kosten ausmachen. Darüber hinaus werden als mögliche Faktoren zur Senkung der Gleichrichterkosten Skaleneffekte, die Standardisierung von Komponenten sowie die Beteiligung von Unternehmen aus der Elektronikindustrie anstelle von Elektrolyseurherstellern genannt \cite{IRENA2020}. 
 \begin{figure}
 	\centering
 	\subfloat[][]{\includegraphics[width=0.75\linewidth]{content/Grafiken/ElyCost}}%
@@ -12,7 +11,6 @@ Die \gls{IRENA} hat in ihrem Bericht über die Kostenentwicklung der Elektrolyse
 	\caption{Systemkosten \gls{PEM} Elektrolyse links 10 MW pro Jahr, rechts 1 GW pro Jahr \cite{IRENA2020}}
 	\label{fig:elycost}
 \end{figure}
-
 Die Abb. \ref{fig:elycapacity} zeigt zudem, dass der Ausbau der Elektrolyse in den letzten Jahren enorm zugenommen hat und in Zukunft noch deutlich zunehmen wird. Die weltweite Leistung hat gerade den Gigawatt-Bereich erreicht und soll allein in Deutschland bis 2030 auf mindestens zehn Gigawatt ausgebaut werden.\\
 	\begin{figure}
 		\centering
@@ -21,36 +19,34 @@ Die Abb. \ref{fig:elycapacity} zeigt zudem, dass der Ausbau der Elektrolyse in d
 		\label{fig:elycapacity}
 	\end{figure}
 Ein grundlegendes Unterscheidungsmerkmal für Gleichrichterschaltungen ist die Umsetzung als Dioden/Thyristor oder aktiver Gleichrichter. In Abbildung \ref{fig:thyristor} ist ein Beispiel für einen 6-pulsigen Thyristor-Gleichrichter zu sehen . 
-	\begin{figure} 
-		\centering
-		\includegraphics[width=0.9\linewidth]{content/Grafiken/Thyristor}
-		\caption{Aufbau eines Thyristor-Gleichrichters}
-		\label{fig:thyristor}
-	\end{figure}
-Thyristorgleichrichter haben aufgrund ihrer kompakten Bauform eine höhere Leistungsdichte und können in großen Stückzahlen kostengünstig produziert werden. Zudem gibt es bereits zahlreiche Lösungen für unterschiedliche Anwendungen. Eine Übersicht mit Bewertung geeigneter Gleichrichter für den Einsatz in Elektrolyseanlagen wurde von Mengxing Chen et al. erstellt \cite{HydrogenElectronicTopologies}. Um eine bessere Performance zu ermöglichen, können zusätzlich Zerhacker (Chopper) erforderlich sein. Um die Netzanschlussbedingungen zu erfüllen wird oft eine 12-pulsige Anordnung verwendet, wodurch der Aufbau des Netztransformators sich komplexer gestaltet \cite{HydrogenRectInf}. Aufgrund der Blindleistung von Thyristorschaltungen benötigen sie meist zusätzliche STATCOM-Anlagen zur Kompensation am Netzanschlusspunkt. Aktive Gleichrichter zeichnen sich durch ihre Netzqualität aus, Sie können einen konstanten Leistungsfaktor erreichen und benötigen daher keine Kompensationsanlagen. Außerdem kann die Verzerrung \gls{THD} unter 5 \% liegen, so dass der Filteraufwand geringer ist. Durch Multi-Level-Topologien können Halbleiter besser ausgenutzt und der Wirkungsgrad erhöht werden. Innovative Konzepte erfordern jedoch einen höheren Entwicklungsaufwand und die Zuverlässigkeit ist schwieriger zu gewährleisten. Einen Überblick über die Eigenschaften gibt die Tabelle \ref{tab:thyVSafe}.\\
-	\begin{table}
-		\centering
-		\caption{Vergleich Thyristor-Gleichrichter und aktiver Gleichrichter}
-		\label{tab:thyVSafe}
-		\begin{tabular}{|c|c|} 
-			\hline
-			\textbf{Diode / Thyristor} & \textbf{Aktiver Gleichrichter} \\
-			\hline
-			Hohe Leistungsdichte & Einheitlicher Leistungsfaktor \\
-			\hline
-			Geringe Halbleiterkosten & <5 \% \gls{THD} \\
-			\hline
-			Vorgefertigte Lösungen & Mehr Level Topologien  \\
-			\hline
-			Benötigt STATCOM &  \gls{SDL} möglich \\
-			\hline
-			Zusätzlicher Zerhacker (Chopper) ggf  nötig & Innovative Lösungen \\
-			\hline
-			Komplexer Transformator & Aufwändigere Entwicklung \\
-			\hline
-		\end{tabular}
-	\end{table}
-Für Gleichrichter im Megawattbereich sind Thyristorschaltungen die am häufigsten verwendete Lösung, da diese Halbleiter aufgrund ihrer langjährigen Entwicklung sehr zuverlässig und robust sind. Zur Optimierung von Blindleistung und \gls{THD} werden meist 12-Puls-Schaltungen verwendet, dies wird durch Verschieben und Überlagern der einzelnen Schaltungen erreicht. Bei Reduzierung der Ausgangsleistung muss jedoch der Zündwinkel so weit vergrößert werden, dass eine externe Blindleistungskompensation erforderlich wird \cite{HydrogenElectronicTopologies}. Daher sind diese Schaltungen nur für Anlagen geeignet, die die meiste Zeit mit hoher Leistung betrieben werden. Ein weiterer Nachteil ist, dass die Elektrolyseure mit gleicher Leistung und Ausgangsspannung betrieben werden müssen. Dadurch ist zum einen eine Wartung an einzelnen Stacks sowie der Austausch einzelner Stacks nicht möglich. Dies stellt bei großen Anlagen ein Problem dar, da die Spannung der Stacks über die Laufzeit ansteigt und ein neuer Stack eine andere Spannung benötigt.\\
+\begin{figure} 
+	\centering
+	\includegraphics[width=0.9\linewidth]{content/Grafiken/Thyristor}
+	\caption{Aufbau eines Thyristor-Gleichrichters}
+	\label{fig:thyristor}
+\end{figure}
+Thyristorgleichrichter haben aufgrund ihrer kompakten Bauform eine höhere Leistungsdichte als aktive Gleichrichter und können in großen Stückzahlen kostengünstig produziert werden. Zudem gibt es bereits zahlreiche Lösungen für unterschiedliche Anwendungen. Eine Übersicht mit Bewertung geeigneter Gleichrichter für den Einsatz in Elektrolyseanlagen wurde von Mengxing Chen et al. erstellt \cite{HydrogenElectronicTopologies}. Um eine bessere Performance zu ermöglichen, können zusätzlich Zerhacker (Chopper) erforderlich sein. Um die Netzanschlussbedingungen zu erfüllen wird oft eine 12-pulsige Anordnung verwendet, wodurch der Aufbau des Netztransformators sich komplexer gestaltet \cite{HydrogenRectInf}. Aufgrund der Blindleistung von Thyristorschaltungen benötigen sie meist zusätzliche STATCOM-Anlagen zur Kompensation am Netzanschlusspunkt. Aktive Gleichrichter zeichnen sich durch ihre Netzqualität aus, Sie können einen konstanten Leistungsfaktor erreichen und benötigen daher keine Kompensationsanlagen. Außerdem kann die Verzerrung \gls{THD} unter 5 \% liegen, so dass der Filteraufwand geringer ist. Durch Multi-Level-Topologien können Halbleiter besser ausgenutzt und der Wirkungsgrad erhöht werden. Innovative Konzepte erfordern jedoch einen höheren Entwicklungsaufwand und die Zuverlässigkeit ist schwieriger zu gewährleisten. Einen Überblick über die Eigenschaften gibt die Tabelle \ref{tab:thyVSafe}. 
+\begin{table}[t]
+	\centering
+	\caption{Vergleich Thyristor-Gleichrichter und aktiver Gleichrichter}
+	\label{tab:thyVSafe}
+	\begin{tabular}{c|c} 
+		\textbf{Thyristor Gleichrichter} & \textbf{Aktiver Gleichrichter} \\
+		\hline
+		Hohe Leistungsdichte & Einheitlicher Leistungsfaktor \\
+		\hline
+		Geringe Halbleiterkosten & <5 \% \gls{THD} \\
+		\hline
+		Vorgefertigte Lösungen & Mehr Level Topologien  \\
+		\hline
+		Benötigt STATCOM &  \gls{SDL} möglich \\
+		\hline
+		Zusätzlicher Zerhacker (Chopper) ggf  nötig & Innovative Lösungen \\
+		\hline
+		Komplexer Transformator & Aufwändigere Entwicklung \\
+	\end{tabular}
+\end{table}
+Für Gleichrichter im Megawattbereich sind Thyristorschaltungen die am häufigsten verwendete Lösung, da diese Halbleiter aufgrund ihrer langjährigen Entwicklung sehr zuverlässig und robust sind. Zur Optimierung von Blindleistung und \gls{THD} werden meist 12-Puls-Schaltungen verwendet, dies wird durch Verschieben und Überlagern der einzelnen Schaltungen erreicht. Bei Reduzierung der Ausgangsleistung muss jedoch der Zündwinkel so weit vergrößert werden, dass eine externe Blindleistungskompensation erforderlich wird \cite{HydrogenElectronicTopologies}. Daher sind diese Schaltungen nur für Anlagen geeignet, die die meiste Zeit mit hoher Leistung betrieben werden. Ein weiterer Nachteil ist, dass die Elektrolyseure mit gleicher Leistung und Ausgangsspannung betrieben werden müssen. Dadurch ist eine Wartung an einzelnen Stacks sowie der Austausch einzelner Stacks nicht möglich. Dies stellt bei großen Anlagen ein Problem dar, da die Spannung der Stacks über die Laufzeit ansteigt und ein neuer Stack eine andere Spannung benötigt.\\
 Aktuelle Forschungsergebnisse zu Hochleistungsgleichrichtern für die Elektrolyse sind in \cite{HydrogenRectifier} dargestellt. Hier zeigt sich, dass insbesondere bei höheren Ausgangsspannungen neue Konzepte mit integrierter Blindleistungskompensation wie der Vienna-Gleichrichter gut geeignet sind \cite{HydrogenRectifier}.
 %\pagebreak
 \section{Ziel der Arbeit}

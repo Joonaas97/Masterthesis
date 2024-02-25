@@ -3,7 +3,7 @@ clear;
 Model.Name = "IAF_model";
 IAF.Schaltfrequenz = 20e3;
 IAF.Deadtime = 500e-9; %
-Phaseshift = 30;                   %Phasenverschiebung
+Phaseshift = -0;                   %Phasenverschiebung
 
 %% Grid
 Netz.Frequenz = 50;                 %Hz
