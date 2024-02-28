@@ -2,9 +2,40 @@
 Um die möglichen Optionen einzugrenzen, werden im Folgenden die Topologien aufgelistet und die Auswahl anhand einfacher Kriterien eingegrenzt. Einen guten Überblick über Schaltungen für dreiphasige Gleichrichter mit Blindleistungskompensation geben die Präsentationen von Dominik Bortis et al. \cite{Advanced3PhPFC} und Johann W. Kolar \cite{Essenceof3pKolar}. Dabei handelt es sich um Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund der gewünschten Systemdienstleistungen, wie z.~B. Blindleistungsbereitstellung, sind Systeme mit hybrider Kompensation nicht ausreichend.
 
 \section{Mögliche Topologien}
-Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec} vorgestellte dreiphasige Diodengleichrichter. Die anderen Topologien sind nachfolgend aufgeführt.
+Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec} vorgestellte dreiphasige Diodengleichrichter. Die anderen Topologien sind nachfolgend aufgeführt. Die beiden im Detail betracheteten Schaltungen werden als erste ausführlicher Dargestellt
+	\subsection{Integrated Active Filter Rectifier (IAF)} \label{sec:IAF}
+	Der \gls{IAF} Gleichrichter wurde erstmals 1997 in \cite{IAFfirst} für den Einsatz in Photovoltaikanwendungen vorgestellt. Er besteht aus einem Diodengleichrichter für den Hauptleistungspfad. Um sinusförmige Ströme in allen drei Phasen einzuprägen, wird dieser durch ein Netzwerk aus bidirektional sperrenden Leistungshalbleitern mit einer Induktivität und einer Halbbrücke, der sogenannten \gls{THI}-Schaltung, ergänzt. Durch die Integration des Filters in den Leistungspfad ist keine externe Blindleistungskompensation erforderlich und die Filter können kleiner dimensioniert werden. Aufgrund des ungesteuerten Diodengleichrichters ist jedoch eine nachträgliche Spannungsregelung durch einen Tiefsetzsteller erforderlich \cite{ThesisSchrittwieserBuckTypePFC_2017}.\\
+	Das Netzwerk aus bidirektionalen Schaltern, auch \glsentrylong{IVS} (\gls{IVS}) genannt, ermöglicht das Umschalten zwischen den einzelnen Phasen, in die durch die Induktivität und die Halbbrücke der gewünschte sinusförmige Stromverlauf eingeprägt wird. Dazu schaltet die Halbbrücke hinter der Induktivität entweder auf das positive oder auf das negative Potential der \gls{Upn}. Da der Diodengleichrichter immer nur aus zwei Phasen Strom bezieht, prägt die Schaltung ohne Phasenverschiebung nur in die jeweils dritte Phase Strom ein. Der \gls{IVS} schaltet mit Netzfrequenz und benötigt bidirektionale Schalter, um den Stromfluss während der gesamten Sinusperiode steuern zu können. Bei der Blindleistungsbereitstellung kommt es aufgrund der Phasenverschiebung zu einer Verschiebung zwischen Phasenstrom und Spannung. Dadurch ändert sich der Stromverlauf in der Drossel von einer Dreiecksfunktion ohne Blindleistung zu einer gekrümmten Funktion.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF}
+		\caption{\gls{IAF} Gleichrichter Topologie mit Tiefsetzsteller}
+		\label{fig:iaf}
+	\end{figure}
+	
+	
+	\subsection{B6-1/3-PWM PFC (+ Buck) Rectifier}
+	\label{sec:GrundlagenB6}
+	Diese Topologie ist eine weit verbreitete B6-Topologie, die aus drei Halbbrücken besteht, die jeweils an eine Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite werden die Schaltverluste und \glsentrylong{SDL} (\gls{SDL}) reduziert. Das Verfahren wurde von Menzi, Bortis und Kolar \cite{13PWMPFC} ausführlich beschrieben. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller verwendet.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Buck}
+		\caption[1/3 PWM PFC Topologie mit Tiefsetzsteller]{1/3 PWM PFC Topologie mit Tiefsetzsteller}
+		\label{fig:b6buck}
+	\end{figure}
+	Die Besonderheit der Regelung besteht darin, dass die Phase, die gerade keinen Strom führt, weil sie die niedrigste Spannung hat, durch \gls{PWM} der entsprechenden Halbbrücke einen entsprechenden Stromfluss erhält. Die beiden anderen Halbbrücken werden jeweils wie ein Diodengleichrichter geschaltet. Dieser Vorgang ist prinzipiell der gleiche wie beim \gls{IAF} und kann daher zum besseren Verständnis gemeinsam betrachtet werden, siehe Abb. \ref{fig:b6iafsectors}.
+	Im hervorgehobenen Abschnitt ist das Potential der Phase b am niedrigsten und man sieht im Bereich (f), dass nur eine Halbbrücke durch \gls{PWM} angesteuert wird. In Bereich (e) ist der Tastgrad \gls{D} dargestellt, wobei der Wert 1 die permanente Verbindung mit dem positiven Potential und -1 die Verbindung mit dem negativen Potential des Zwischenkreises \gls{Upn} darstellt \cite{13PWMPFC}.\\ 
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{content/Grafiken/B6+IAF_Sectors}
+		\caption{Sektorenaufteilung und Schaltverhalten von IAF und B6 1/3 \cite{13PWMPFC}}
+		\label{fig:b6iafsectors}
+	\end{figure}
+	
+	
+	
 	\subsection{6-Switch Boost PFC Rectifier}
-				Bei der ersten Topologie wurden im Prinzip beim Diodengleichrichter die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost} Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Boost-Verhalten und die Modulation der Eingangsströme über verschiedene \gls{PWM}-Verfahren zum gewünschten sinusförmigen Eingangsstrom.
+				Bei dieser Topologie wurden im Prinzip beim Diodengleichrichter die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost} Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Boost-Verhalten und die Modulation der Eingangsströme über verschiedene \gls{PWM}-Verfahren zum gewünschten sinusförmigen Eingangsstrom.
 			\begin{figure} 
 				\centering
 				\includegraphics[width=1\linewidth]{content/Grafiken/SixSwitchBoost}
@@ -91,7 +122,7 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 		\end{figure}
 	
 	
-	\subsection{Three-Level Flying Capacitor (FC) Boost-Type Rectifier System}
+	\subsection{3-Level Flying Capacitor (FC) Boost-Type Rectifier}
 		Diese Topologie benötigt Kondensatoren für jede Phase, die ein größeres Volumen besitzen, benötigt jedoch weniger Schalter für die drei Level. Die Schaltung ist in Abbildung \ref{fig:3l-fc-boost} dargestellt und besitzt ein hochstellendes Verhalten.
 		\begin{figure}
 			\centering
@@ -101,7 +132,7 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 		\end{figure}
 	
 	
-	\subsection{Three-Level Flying Capacitor (FC + Tiefsetzsteller)}
+	\subsection{3-Level Flying Capacitor (FC + Tiefsetzsteller)}
 		Um den gewünschten niedrigen Ausgangsspannungsbereich generieren zu können, wird die zuvor beschriebene FC-Topologie durch einen Tiefsetzsteller ergänzt. Dadurch erhöht sich die Anzahl der benötigten Schalter von 12 auf 14.
 		\begin{figure}
 			\centering
@@ -120,37 +151,37 @@ Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in d
 \begin{table}
 	\caption{Topologievergleich zur Vorauswahl}
 	\label{tab:vorauswahl}
-\begin{tabular}{|>{\centering\arraybackslash}p{3cm}|c|c|c|c|c|} %>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm} |>{\centering\arraybackslash}m{2cm}
-	& Induktivitäten & Dioden & Schalter & Buck/Boost & Stufen \\
+\begin{tabular}{c|c|c|c|c|c} %>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm} |>{\centering\arraybackslash}m{2cm}
+	& Spulen & Dioden & Schalter & Buck/Boost & Stufen \\
 	\hline
-	3-ΦDiode Bridge Rectifier & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 &\cellcolor{green!25} 0 & \cellcolor{red!25}- & \cellcolor{green!25}1 \\
+	3-Φ Diode-Rectifier &\cellcolor{yellow!25}3 &\cellcolor{red!25}6 &\cellcolor{green!25}0 & \cellcolor{red!25}- & \cellcolor{green!25}1 \\
 	\hline
-	6-Switch Boost PFC Rectifier & \cellcolor{yellow!25}3 &\cellcolor{green!25} 0 & \cellcolor{green!25}6 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
+	6-Switch Boost& \cellcolor{yellow!25}3 &\cellcolor{green!25}0 & \cellcolor{green!25}6 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	Vienna Rectifier & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 & \cellcolor{green!25}6 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
+	Vienna-Rectifier & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 & \cellcolor{green!25}6 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	\cellcolor{green!10}6-Switch Buck PFC Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}6 &\cellcolor{green!25} 6 & \cellcolor{green!25}Buck & \cellcolor{green!25}1 \\
+	\cellcolor{green!10}6-Switch Buck & \cellcolor{green!25}1 &\cellcolor{red!25}6 &\cellcolor{green!25}6 & \cellcolor{green!25}Buck & \cellcolor{green!25}1 \\
 	\hline
-	\cellcolor{green!10} \gls{IAF} & \cellcolor{green!25} 2 &\cellcolor{red!25}6 & \cellcolor{yellow!25}10 & \cellcolor{green!25}Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10} \gls{IAF}-Rectifier & \cellcolor{green!25}2 &\cellcolor{red!25}6 & \cellcolor{yellow!25}10 & \cellcolor{green!25}Buck & \cellcolor{red!25}2 \\
 	\hline
-	\cellcolor{green!10}Swiss Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}8 &\cellcolor{green!25} 8 & \cellcolor{green!25} Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10}Swiss-Rectifier & \cellcolor{green!25}1 &\cellcolor{red!25}8 &\cellcolor{green!25}8 & \cellcolor{green!25} Buck & \cellcolor{red!25}2 \\
 	\hline
-	\cellcolor{green!10} \gls{B6PFC} &\cellcolor{yellow!25}4 & \cellcolor{green!25} 0 &\cellcolor{green!25} 8 &\cellcolor{green!25} Boost/Buck & \cellcolor{red!25}2 \\
+	\cellcolor{green!10} \gls{B6PFC} &\cellcolor{yellow!25}4 & \cellcolor{green!25}0 &\cellcolor{green!25}8 &\cellcolor{green!25} Boost/Buck & \cellcolor{red!25}2 \\
 	\hline
-	2/3 PWM Buck \& Boost Current Source Rectifier & \cellcolor{green!25} 1 & \cellcolor{green!25}0 & \cellcolor{yellow!25}14 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
+	2/3 Buck \& Boost  & \cellcolor{green!25}1 & \cellcolor{green!25}0 & \cellcolor{yellow!25}14 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
-	Trident Rectifier & \cellcolor{red!25}6 &\cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
+	Trident-Rectifier  & \cellcolor{red!25}6 &\cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{green!25}Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
 	Y-Rectifier & \cellcolor{yellow!25}3 &\cellcolor{green!25}0 & \cellcolor{yellow!25}12 &\cellcolor{green!25} Buck/Boost & \cellcolor{red!25}2 \\
 	\hline
-	3-Level Neutral Point Clamped & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
+	3-Level NPC & \cellcolor{yellow!25}3 &\cellcolor{red!25}6 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	3-Level Active Neutral Point Clamped  & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{red!25}18 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
+	3-Level ANPC  & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{red!25}18 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	3-Level Active Neutral Point Clamped + Tiefsetzsteller & \cellcolor{yellow!25}4 &\cellcolor{green!25} 0 & \cellcolor{red!25}20 & \cellcolor{green!25}Boost/Buck & \cellcolor{red!25}2 \\
+	3-Level ANPC + Buck & \cellcolor{yellow!25}4 &\cellcolor{green!25}0 & \cellcolor{red!25}20 & \cellcolor{green!25}Boost/Buck & \cellcolor{red!25}2 \\
 	\hline
-	Three-Level Flying Capacitor (FC) Boost-Type Rectifier System & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
+	3-Level FC & \cellcolor{yellow!25}3 & \cellcolor{green!25}0 & \cellcolor{yellow!25}12 & \cellcolor{red!25}Boost & \cellcolor{green!25}1 \\
 	\hline
-	Three-Level Flying Capacitor (FC + Tiefsetzsteller) & \cellcolor{yellow!25}4 &\cellcolor{green!25}0 & \cellcolor{yellow!25}14 &\cellcolor{green!25} Boost/Buck &\cellcolor{red!25} 2 \\
+	3-Level FC + Buck & \cellcolor{yellow!25}4 &\cellcolor{green!25}0 & \cellcolor{yellow!25}14 &\cellcolor{green!25} Boost/Buck &\cellcolor{red!25}2 \\
 \end{tabular}
 \end{table}
