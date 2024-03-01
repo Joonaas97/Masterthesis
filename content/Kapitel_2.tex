@@ -51,7 +51,7 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 		Der Diodengleichrichter ist jedoch nur bedingt für einen gewünschten Stromverlauf geeignet. In Abbildung \ref{fig:B6DiodRectI} ist der Netzspannungs und Stromverlauf des Diodengleichrichter dargestellt. Der Stromverlauf zeigt starke Sprünge und der gewünschte sinusförmige Verlauf ist nur schwer erkennbar, dies kann durch Ergänzung von Kondensatoren und Spulen zur Filterung teilweise korrigiert werden. Dies wäre jedoch nur für einen festen Betriebspunkt möglich. Außerdem ist es mit dieser Schaltung nicht möglich, die Ausgangsspannung oder den Strom zu variieren.
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.68\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
+			\includegraphics[width=0.9\linewidth]{content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf}
 			\caption{Strom und Spannungsverlauf des Dreiphasigen Diodengleichrichters }
 			\label{fig:B6DiodRectI}
 		\end{figure}
@@ -66,7 +66,7 @@ Allgemein kann jede Schaltung zur Strom- und Spannungsversorgung als Stromrichte
 			\caption[Tiefsetzsteller]{Tiefsetzsteller}
 			\label{fig:buck}
 		\end{figure}
-		Die Speicherdrossel des Tiefsetzstellers kann nach der Formel \ref{eq:BuckL} ausgelegt werden, wobei der gewünschte Stromripple $\Delta I $ in der Drossel auf maximal 30 Prozent des \gls{Ia} festgelegt wird \cite{schmidtwalter}. Ein Stromripple von 30 \% erweist sich als guter Kompromiss zwischen dem Induktivitätswert und der Größe der Rippelamplitude. Durch steile Amplituden können Störungen durch elektromagnetische Felder verursacht werden und der Filterbedarf am Ein- und Ausgang steigt \cite{AnalogInductor} \cite{TIBuck}.
+		Die Speicherdrossel des Tiefsetzstellers kann nach der Formel \ref{eq:BuckL} ausgelegt werden, wobei der gewünschte Stromripple $\Delta I $ in der Drossel auf maximal 30~\% des \gls{Ia} festgelegt wird \cite{schmidtwalter}. Ein Stromripple von 30 \% erweist sich als guter Kompromiss zwischen dem Induktivitätswert und der Größe der Rippelamplitude. Durch steile Amplituden können Störungen durch elektromagnetische Felder verursacht werden und der Filterbedarf am Ein- und Ausgang steigt \cite{AnalogInductor} \cite{TIBuck}.
 		\begin{equation}
 			\label{eq:BuckL}
 			L=\dfrac{U_{e,max}-U_{a}}{f\cdot \Delta I}\cdot D = \dfrac{U_{e,max}-U_{a}}{f\cdot 0,3 \cdot I_{a}}\cdot \dfrac{U_{a}}{U_{e,max}}
