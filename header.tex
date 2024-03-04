@@ -9,6 +9,10 @@
 \renewcommand{\arrayrulewidth}{1pt}
 \usepackage[onehalfspacing]{setspace} % Zeilenabstand 1,5
 \usepackage[tableposition=top]{caption} % Tabellen überschrift oben
+%\usepackage[latin1]{inputenc}
+%\usepackage[ngerman]
+
+\usepackage[ngerman]{babel}
 
 \usepackage{array}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
@@ -24,8 +28,8 @@
 % Durch Aktivieren oder Kommentieren der folgenden Zeilen, kann dieses Verhalten beeinflusst werden.
 
 %%%%%Checken welches besser ist!!!
-\flushbottom  	%Der Text aller Seiten ist gleich lang
-%\raggedbottom 	%Der Text kann auch unterschiedlich lang sein.
+%\flushbottom  	%Der Text aller Seiten ist gleich lang
+\raggedbottom 	%Der Text kann auch unterschiedlich lang sein.
 
 %Abschnittsnummerierungen in Caption und Formelnummerierung
 \usepackage{chngcntr}
@@ -33,7 +37,7 @@
 %Definition der Seitenränder
 \usepackage[
   left=4cm,	%Linker Seitenrand (Bindung beachten!!!)
-  right=2cm,
+  right=2.5cm,
   top=3.5cm,
   bottom=3cm
 ]{geometry}

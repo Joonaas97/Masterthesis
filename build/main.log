@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  1 MAR 2024 10:29
+This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2023.8.24)  4 MAR 2024 16:48
  system commands enabled.
 **main.tex
 (./main.tex
@@ -196,11 +196,129 @@ See the caption package documentation for explanation.
 Package caption Info: KOMA-Script scrextend package detected.
 \caption@addmargin@hsize=\dimen148
 \caption@addmargin@linewidth=\dimen149
-) ("C:/Program Files/MiKTeX/tex/latex/tools/array.sty"
+) ("C:/Program Files/MiKTeX/tex/generic/babel/babel.sty"
+Package: babel 2023/03/28 3.87 The Babel package
+
+("C:/Program Files/MiKTeX/tex/generic/babel/luababel.def"
+\bbl@readstream=\read2
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@ancientgreek=\language3
+\l@armenian=\language4
+\l@assamese=\language5
+\l@basque=\language6
+\l@belarusian=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@churchslavonic=\language12
+\l@classiclatin=\language13
+\l@coptic=\language14
+\l@croatian=\language15
+\l@czech=\language16
+\l@danish=\language17
+\l@dutch=\language18
+\l@esperanto=\language19
+\l@estonian=\language20
+\l@ethiopic=\language21
+\l@finnish=\language22
+\l@french=\language23
+\l@friulan=\language24
+\l@galician=\language25
+\l@georgian=\language26
+\l@german=\language27
+\l@greek=\language28
+\l@gujarati=\language29
+\l@hindi=\language30
+\l@hungarian=\language31
+\l@icelandic=\language32
+\l@indonesian=\language33
+\l@interlingua=\language34
+\l@irish=\language35
+\l@italian=\language36
+\l@kannada=\language37
+\l@kurmanji=\language38
+\l@latin=\language39
+\l@latvian=\language40
+\l@lithuanian=\language41
+\l@liturgicallatin=\language42
+\l@macedonian=\language43
+\l@malayalam=\language44
+\l@marathi=\language45
+\l@mongolian=\language46
+\l@mongolianlmc=\language47
+\l@monogreek=\language48
+\l@ngerman=\language49
+\l@nynorsk=\language50
+\l@occitan=\language51
+\l@oriya=\language52
+\l@pali=\language53
+\l@panjabi=\language54
+\l@piedmontese=\language55
+\l@polish=\language56
+\l@portuguese=\language57
+\l@romanian=\language58
+\l@romansh=\language59
+\l@russian=\language60
+\l@sanskrit=\language61
+\l@serbian=\language62
+\l@serbianc=\language63
+\l@slovak=\language64
+\l@slovenian=\language65
+\l@spanish=\language66
+\l@swedish=\language67
+\l@swissgerman=\language68
+\l@tamil=\language69
+\l@telugu=\language70
+\l@thai=\language71
+\l@turkish=\language72
+\l@turkmen=\language73
+\l@ukenglish=\language74
+\l@ukrainian=\language75
+\l@uppersorbian=\language76
+\l@usenglishmax=\language77
+\l@welsh=\language78
+\babelcatcodetablenum=\catcodetable12
+\bbl@pattcodes=\catcodetable13
+)
+\babel@savecnt=\count195
+\U@D=\dimen150
+\l@unhyphenated=\language79
+
+("C:/Program Files/MiKTeX/tex/generic/babel/luababel.def"
+\bbl@attr@locale=\attribute4
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:/Program Files/MiKTeX/tex/latex/arabi/bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:/Program Files/MiKTeX/tex/latex/babel-german/ngerman.ldf"
+Language: ngerman 2024/01/19 v2.14 German support for babel (post-1996 orthogra
+phy)
+
+("C:/Program Files/MiKTeX/tex/latex/babel-german/ngermanb.ldf"
+Language: ngermanb 2024/01/19 v2.14 German support for babel (post-1996 orthogr
+aphy)
+Package babel Info: Making " an active character on input line 122.
+
+("C:/Program Files/MiKTeX/tex/generic/hyph-utf8/loadhyph/loadhyph-de-1996.tex"
+UTF-8 German hyphenation patterns (reformed orthography)
+("C:/Program Files/MiKTeX/tex/generic/hyph-utf8/patterns/tex/hyph-de-1996.tex"
+German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2021-02-26
+ (WL))))))
+("C:/Program Files/MiKTeX/tex/generic/babel/locale/de/babel-ngerman.tex"
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+)
+("C:/Program Files/MiKTeX/tex/latex/tools/array.sty"
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen150
+\col@sep=\dimen151
 \ar@mcellbox=\box53
-\extrarowheight=\dimen151
+\extrarowheight=\dimen152
 \NC@list=\toks17
 \extratabsurround=\skip65
 \backup@length=\skip66
@@ -221,7 +339,7 @@ File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks18
 \minrowclearance=\skip67
-\rownum=\count195
+\rownum=\count196
 )
 ("C:/Program Files/MiKTeX/tex/latex/graphics/mathcolor.ltx")
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
@@ -267,7 +385,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 12.0pt
 (typearea)              \footskip       = 62.9806pt
 (typearea)              \baselineskip   = 17.99446pt
-(typearea)              on input line 18.
+(typearea)              on input line 22.
 ("C:/Program Files/MiKTeX/tex/latex/chngcntr/chngcntr.sty"
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
@@ -282,17 +400,17 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ("C:/Program Files/MiKTeX/tex/generic/iftex/iftex.sty"
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count196
-\Gm@cntv=\count197
-\c@Gm@tempcnt=\count198
-\Gm@bindingoffset=\dimen152
-\Gm@wd@mp=\dimen153
-\Gm@odd@mp=\dimen154
-\Gm@even@mp=\dimen155
-\Gm@layoutwidth=\dimen156
-\Gm@layoutheight=\dimen157
-\Gm@layouthoffset=\dimen158
-\Gm@layoutvoffset=\dimen159
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks19
 
 ("C:/Program Files/MiKTeX/tex/latex/geometry/geometry.cfg"))
@@ -305,7 +423,7 @@ Package: expl3 2023-03-30 L3 programming layer (loader)
 
 ("C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-luatex.def"
 File: l3backend-luatex.def 2023-03-30 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count199
+\l__color_backend_stack_int=\count266
 Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box55
 ))
@@ -316,7 +434,7 @@ Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 ("C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty"
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count266
+\etb@tempcnta=\count267
 ))
 Package scrhack Info: loading setspace hack on input line 199.
 
@@ -373,23 +491,23 @@ Package: amstext 2021/08/26 v2.01 AMS text
 ("C:/Program Files/MiKTeX/tex/latex/amsmath/amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
-\ex@=\dimen160
+\ex@=\dimen161
 ))
 ("C:/Program Files/MiKTeX/tex/latex/amsmath/amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen161
+\pmbraise@=\dimen162
 )
 ("C:/Program Files/MiKTeX/tex/latex/amsmath/amsopn.sty"
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count267
+\inf@bad=\count268
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count268
-\leftroot@=\count269
+\uproot@=\count269
+\leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count270
-\DOTSCASE@=\count271
+\classnum@=\count271
+\DOTSCASE@=\count272
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -399,30 +517,30 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen162
+\big@size=\dimen163
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count272
+\macc@depth=\count273
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count273
+\c@MaxMatrixCols=\count274
 \dotsspace@=\muskip16
-\c@parentequation=\count274
-\dspbrk@lvl=\count275
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
 \tag@help=\toks22
-\row@=\count276
-\column@=\count277
-\maxfields@=\count278
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
 \andhelp@=\toks23
-\eqnshift@=\dimen163
-\alignsep@=\dimen164
-\tagshift@=\dimen165
-\tagwidth@=\dimen166
-\totwidth@=\dimen167
-\lineht@=\dimen168
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
 \@envbody=\toks24
 \multlinegap=\skip69
 \multlinetaggap=\skip70
@@ -446,31 +564,31 @@ Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
 ("C:/Program Files/MiKTeX/tex/latex/tools/calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count279
-\calc@Bcount=\count280
-\calc@Adimen=\dimen169
-\calc@Bdimen=\dimen170
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
 \calc@Askip=\skip71
 \calc@Bskip=\skip72
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count281
+\calc@Ccount=\count282
 \calc@Cskip=\skip73
 )
 ("C:/Program Files/MiKTeX/tex/latex/mathtools/mhsetup.sty"
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count282
-\l_MT_multwidth_dim=\dimen171
+\g_MT_multlinerow_int=\count283
+\l_MT_multwidth_dim=\dimen172
 \origjot=\skip74
-\l_MT_shortvdotswithinadjustabove_dim=\dimen172
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen173
-\l_MT_above_intertext_sep=\dimen174
-\l_MT_below_intertext_sep=\dimen175
-\l_MT_above_shortintertext_sep=\dimen176
-\l_MT_below_shortintertext_sep=\dimen177
+\l_MT_shortvdotswithinadjustabove_dim=\dimen173
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen174
+\l_MT_above_intertext_sep=\dimen175
+\l_MT_below_intertext_sep=\dimen176
+\l_MT_above_shortintertext_sep=\dimen177
+\l_MT_below_shortintertext_sep=\dimen178
 \xmathstrut@box=\box58
-\xmathstrut@dim=\dimen178
+\xmathstrut@dim=\dimen179
 )
 ("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec.sty"
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
@@ -478,20 +596,20 @@ Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
 ("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec-luatex.sty"
 Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count283
-\l__fontspec_language_int=\count284
-\l__fontspec_strnum_int=\count285
-\l__fontspec_tmp_int=\count286
-\l__fontspec_tmpa_int=\count287
-\l__fontspec_tmpb_int=\count288
-\l__fontspec_tmpc_int=\count289
-\l__fontspec_em_int=\count290
-\l__fontspec_emdef_int=\count291
-\l__fontspec_strong_int=\count292
-\l__fontspec_strongdef_int=\count293
-\l__fontspec_tmpa_dim=\dimen179
-\l__fontspec_tmpb_dim=\dimen180
-\l__fontspec_tmpc_dim=\dimen181
+\l__fontspec_script_int=\count284
+\l__fontspec_language_int=\count285
+\l__fontspec_strnum_int=\count286
+\l__fontspec_tmp_int=\count287
+\l__fontspec_tmpa_int=\count288
+\l__fontspec_tmpb_int=\count289
+\l__fontspec_tmpc_int=\count290
+\l__fontspec_em_int=\count291
+\l__fontspec_emdef_int=\count292
+\l__fontspec_strong_int=\count293
+\l__fontspec_strongdef_int=\count294
+\l__fontspec_tmpa_dim=\dimen180
+\l__fontspec_tmpb_dim=\dimen181
+\l__fontspec_tmpc_dim=\dimen182
 
 ("C:/Program Files/MiKTeX/tex/latex/base/fontenc.sty"
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -512,7 +630,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
 )
-\XKV@depth=\count294
+\XKV@depth=\count295
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:/Program Files/MiKTeX/tex/latex/l3packages/l3keys2e/l3keys2e.sty"
@@ -523,10 +641,10 @@ Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX
 
 ("C:/Program Files/MiKTeX/tex/luatex/ctablestack/ctablestack.sty"
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
-\@catcodetablestackcnt=\count295
+\@catcodetablestackcnt=\count296
 )
-\CatcodeTableOther=\catcodetable12
-\CatcodeTableExpl=\catcodetable13
+\CatcodeTableOther=\catcodetable14
+\CatcodeTableExpl=\catcodetable15
 )
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia
 ("C:/Program Files/MiKTeX/tex/latex/polyglossia/gloss-latex.lde"
@@ -617,27 +735,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
-Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	
-(polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 16
-Module polyglossia Info: Language german was not yet loaded; created with id 2 o
-n input line 16
 Package polyglossia Info: Option: German, spelling=new.
 Package polyglossia Info: Option: German, script=latin.
 Package polyglossia Info: Option: German, variant=german.
 Package polyglossia Info: Option: German, variant=german.
 Package polyglossia Info: Option: German, spelling=new.
 Package polyglossia Info: Option: German, script=latin.
-
-("C:/Program Files/MiKTeX/tex/latex/polyglossia/babelsh.def"
-File: babelsh.def 2022/06/21 Babel common definitions for shorthands
- Taken verbatim from babel files (2022/06/06 v3.76)
-)
-Package babel Info: Making " an active character on input line 194.
 )
 Package polyglossia Info: Default language is german.
 
@@ -660,9 +763,9 @@ Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
 h LuaLaTeX
 Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 h LuaLaTeX)
-\g__um_fam_int=\count296
-\g__um_fonts_used_int=\count297
-\l__um_primecount_int=\count298
+\g__um_fam_int=\count297
+\g__um_fonts_used_int=\count298
+\l__um_primecount_int=\count299
 \g__um_primekern_muskip=\muskip17
 
 ("C:/Program Files/MiKTeX/tex/latex/unicode-math/unicode-math-table.tex")))
@@ -712,15 +815,15 @@ ath;language=dflt;mathfontdimen=xetex;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 90.
+(Font)              `operators' in the math version `normal' on input line 94.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line
- 90.
+ 94.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 90.
+(Font)              `operators' in the math version `bold' on input line 94.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input lin
-e 90.
+e 94.
 
 Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 (fontspec)             doesn't exist).
@@ -748,15 +851,15 @@ hfontdimen=tex2;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 90.
+(Font)              `symbols' in the math version `normal' on input line 94.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input lin
-e 90.
+e 94.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 90.
+(Font)              `symbols' in the math version `bold' on input line 94.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input lin
-e 90.
+e 94.
 
 Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 (fontspec)             doesn't exist).
@@ -785,23 +888,23 @@ hfontdimen=tex3;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 9
-0.
+4.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input lin
-e 90.
+e 94.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 90.
+(Font)              `largesymbols' in the math version `bold' on input line 94.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input lin
-e 90.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
+e 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
 
 
 ("C:/Program Files/MiKTeX/tex/latex/amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
 
 
 ("C:/Program Files/MiKTeX/tex/latex/amsfonts/umsb.fd"
@@ -834,17 +937,17 @@ ontdimen=xetex;"
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line
- 92.
+ 96.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/b/n on input line
- 92.
+ 96.
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line
- 94.
+ 98.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/b/n on input line
- 94.
+ 98.
 
 Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
 (fontspec)             with options
@@ -872,45 +975,45 @@ ontdimen=xetex;+ss01;"
 \sym__um_fam3=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `__um_fam3' in version `normal'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line
- 95.
+ 99.
 LaTeX Font Info:    Overwriting symbol font `__um_fam3' in version `bold'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/b/n on input line
- 95.
+ 99.
 
 ("C:/Program Files/MiKTeX/tex/latex/siunitx/siunitx.sty"
 Package: siunitx 2023-08-03 v3.3.2 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count299
-\l__siunitx_number_exponent_fixed_int=\count300
-\l__siunitx_number_min_decimal_int=\count301
-\l__siunitx_number_min_integer_int=\count302
-\l__siunitx_number_round_precision_int=\count303
-\l__siunitx_number_lower_threshold_int=\count304
-\l__siunitx_number_upper_threshold_int=\count305
-\l__siunitx_number_group_first_int=\count306
-\l__siunitx_number_group_size_int=\count307
-\l__siunitx_number_group_minimum_int=\count308
-\l__siunitx_angle_tmp_dim=\dimen182
+\l__siunitx_number_uncert_offset_int=\count300
+\l__siunitx_number_exponent_fixed_int=\count301
+\l__siunitx_number_min_decimal_int=\count302
+\l__siunitx_number_min_integer_int=\count303
+\l__siunitx_number_round_precision_int=\count304
+\l__siunitx_number_lower_threshold_int=\count305
+\l__siunitx_number_upper_threshold_int=\count306
+\l__siunitx_number_group_first_int=\count307
+\l__siunitx_number_group_size_int=\count308
+\l__siunitx_number_group_minimum_int=\count309
+\l__siunitx_angle_tmp_dim=\dimen183
 \l__siunitx_angle_marker_box=\box59
 \l__siunitx_angle_unit_box=\box60
-\l__siunitx_compound_count_int=\count309
+\l__siunitx_compound_count_int=\count310
 
 ("C:/Program Files/MiKTeX/tex/latex/translations/translations.sty"
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
 \l__siunitx_table_tmp_box=\box61
-\l__siunitx_table_tmp_dim=\dimen183
-\l__siunitx_table_column_width_dim=\dimen184
+\l__siunitx_table_tmp_dim=\dimen184
+\l__siunitx_table_column_width_dim=\dimen185
 \l__siunitx_table_integer_box=\box62
 \l__siunitx_table_decimal_box=\box63
 \l__siunitx_table_uncert_box=\box64
 \l__siunitx_table_before_box=\box65
 \l__siunitx_table_after_box=\box66
-\l__siunitx_table_before_dim=\dimen185
-\l__siunitx_table_carry_dim=\dimen186
-\l__siunitx_unit_tmp_int=\count310
-\l__siunitx_unit_position_int=\count311
-\l__siunitx_unit_total_int=\count312
+\l__siunitx_table_before_dim=\dimen186
+\l__siunitx_table_carry_dim=\dimen187
+\l__siunitx_unit_tmp_int=\count311
+\l__siunitx_unit_position_int=\count312
+\l__siunitx_unit_total_int=\count313
 
 Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             this release.
@@ -934,12 +1037,12 @@ Package siunitx Info: Option "per-mode = symbol-or-fraction" has been
 )
 ("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.sty"
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count313
-\csq@gtype=\count314
-\csq@glevel=\count315
-\csq@qlevel=\count316
-\csq@maxlvl=\count317
-\csq@tshold=\count318
+\csq@reset=\count314
+\csq@gtype=\count315
+\csq@glevel=\count316
+\csq@qlevel=\count317
+\csq@maxlvl=\count318
+\csq@tshold=\count319
 \csq@ltx@everypar=\toks28
 
 ("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.def"
@@ -968,27 +1071,27 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 107.
 )
-\Gin@req@height=\dimen187
-\Gin@req@width=\dimen188
+\Gin@req@height=\dimen188
+\Gin@req@width=\dimen189
 )
 ("C:/Program Files/MiKTeX/tex/latex/base/textcomp.sty"
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 ("C:/Program Files/MiKTeX/tex/latex/l3packages/xtemplate/xtemplate.sty"
 Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen189
-\l__xtemplate_tmp_int=\count319
+\l__xtemplate_tmp_dim=\dimen190
+\l__xtemplate_tmp_int=\count320
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip75
 )
 Package: xfrac 2023-02-02 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box67
 \l__xfrac_tmp_box=\box68
-\l__xfrac_denominator_bot_sep_dim=\dimen190
-\l__xfrac_numerator_bot_sep_dim=\dimen191
-\l__xfrac_numerator_top_sep_dim=\dimen192
-\l__xfrac_slash_left_sep_dim=\dimen193
-\l__xfrac_slash_right_sep_dim=\dimen194
+\l__xfrac_denominator_bot_sep_dim=\dimen191
+\l__xfrac_numerator_bot_sep_dim=\dimen192
+\l__xfrac_numerator_top_sep_dim=\dimen193
+\l__xfrac_slash_left_sep_dim=\dimen194
+\l__xfrac_slash_right_sep_dim=\dimen195
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 
@@ -998,13 +1101,13 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 )
 ("C:/Program Files/MiKTeX/tex/latex/float/float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count320
+\c@float@type=\count321
 \float@exts=\toks29
 \float@box=\box69
 \@float@everytoks=\toks30
 \@floatcapt=\box70
 )
-Package scrhack Info: loading float hack on input line 121.
+Package scrhack Info: loading float hack on input line 125.
 
 ("C:/Program Files/MiKTeX/tex/latex/koma-script/float.hak"
 File: float.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package floa
@@ -1040,9 +1143,9 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ("C:/Program Files/MiKTeX/tex/latex/caption/subcaption.sty"
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count321
+\c@subfigure=\count322
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count322
+\c@subtable=\count323
 )
 ("C:/Program Files/MiKTeX/tex/latex/pgfplots/pgfplots.sty"
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.revision.tex")
@@ -1053,8 +1156,8 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 ("C:/Program Files/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty"
 ("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfutil-common.tex"
 \pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen195
-\pgfutil@tempdimb=\dimen196
+\pgfutil@tempdima=\dimen196
+\pgfutil@tempdimb=\dimen197
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfutil-latex.def"
 \pgfutil@abb=\box71
@@ -1078,26 +1181,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 .tex"
 \pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen197
-\pgf@y=\dimen198
-\pgf@xa=\dimen199
-\pgf@ya=\dimen256
-\pgf@xb=\dimen257
-\pgf@yb=\dimen258
-\pgf@xc=\dimen259
-\pgf@yc=\dimen260
-\pgf@xd=\dimen261
-\pgf@yd=\dimen262
+\pgf@x=\dimen198
+\pgf@y=\dimen199
+\pgf@xa=\dimen256
+\pgf@ya=\dimen257
+\pgf@xb=\dimen258
+\pgf@yb=\dimen259
+\pgf@xc=\dimen260
+\pgf@yc=\dimen261
+\pgf@xd=\dimen262
+\pgf@yd=\dimen263
 \w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count323
-\c@pgf@countb=\count324
-\c@pgf@countc=\count325
-\c@pgf@countd=\count326
+\r@pgf@reada=\read3
+\c@pgf@counta=\count324
+\c@pgf@countb=\count325
+\c@pgf@countc=\count326
+\c@pgf@countd=\count327
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count327
+\pgf@sys@id@count=\count328
  ("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgf.cfg"
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -1111,8 +1214,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) ("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count328
-\pgfsyssoftpath@bigbuffer@items=\count329
+\pgfsyssoftpath@smallbuffer@items=\count329
+\pgfsyssoftpath@bigbuffer@items=\count330
 ) ("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 "
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1122,8 +1225,8 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmath.code.tex"
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathutil.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen263
-\pgfmath@count=\count330
+\pgfmath@dimen=\dimen264
+\pgfmath@count=\count331
 \pgfmath@box=\box72
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
@@ -1143,54 +1246,54 @@ ode.tex")
 ics.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathcalc.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count331
+\c@pgfmathroundto@lastzeros=\count332
 ))
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfint.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen264
-\pgf@picmaxx=\dimen265
-\pgf@picminy=\dimen266
-\pgf@picmaxy=\dimen267
-\pgf@pathminx=\dimen268
-\pgf@pathmaxx=\dimen269
-\pgf@pathminy=\dimen270
-\pgf@pathmaxy=\dimen271
-\pgf@xx=\dimen272
-\pgf@xy=\dimen273
-\pgf@yx=\dimen274
-\pgf@yy=\dimen275
-\pgf@zx=\dimen276
-\pgf@zy=\dimen277
+\pgf@picminx=\dimen265
+\pgf@picmaxx=\dimen266
+\pgf@picminy=\dimen267
+\pgf@picmaxy=\dimen268
+\pgf@pathminx=\dimen269
+\pgf@pathmaxx=\dimen270
+\pgf@pathminy=\dimen271
+\pgf@pathmaxy=\dimen272
+\pgf@xx=\dimen273
+\pgf@xy=\dimen274
+\pgf@yx=\dimen275
+\pgf@yy=\dimen276
+\pgf@zx=\dimen277
+\pgf@zy=\dimen278
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.
 tex"
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen278
-\pgf@path@lasty=\dimen279
+\pgf@path@lastx=\dimen279
+\pgf@path@lasty=\dimen280
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen280
-\pgf@shorten@start@additional=\dimen281
+\pgf@shorten@end@additional=\dimen281
+\pgf@shorten@start@additional=\dimen282
 ) ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box73
 \pgf@hbox=\box74
 \pgf@layerbox@main=\box75
-\pgf@picture@serial@count=\count332
+\pgf@picture@serial@count=\count333
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.t
 ex"
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen282
+\pgflinewidth=\dimen283
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoretransformations.cod
 e.tex"
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen283
-\pgf@pt@y=\dimen284
-\pgf@pt@temp=\dimen285
+\pgf@pt@x=\dimen284
+\pgf@pt@y=\dimen285
+\pgf@pt@temp=\dimen286
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1204,13 +1307,13 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen286
+\pgfarrowsep=\dimen287
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen287
-\pgf@sys@shading@range@num=\count333
-\pgf@shadingcount=\count334
+\pgf@max=\dimen288
+\pgf@sys@shading@range@num=\count334
+\pgf@shadingcount=\count335
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -1239,8 +1342,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 ("C:/Program Files/MiKTeX/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen288
-\pgf@nodesepend=\dimen289
+\pgf@nodesepstart=\dimen289
+\pgf@nodesepend=\dimen290
 ) ("C:/Program Files/MiKTeX/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
 y"
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
@@ -1251,8 +1354,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmath.code.tex"))
 ("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgffor.code.tex"
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen290
-\pgffor@skip=\dimen291
+\pgffor@iter=\dimen291
+\pgffor@skip=\dimen292
 \pgffor@stack=\toks41
 \pgffor@toks=\toks42
 ))
@@ -1262,33 +1365,33 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 ("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryplothandlers.code
 .tex"
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count335
-\pgfplotmarksize=\dimen292
+\pgf@plot@mark@count=\count336
+\pgfplotmarksize=\dimen293
 )
-\tikz@lastx=\dimen293
-\tikz@lasty=\dimen294
-\tikz@lastxsaved=\dimen295
-\tikz@lastysaved=\dimen296
-\tikz@lastmovetox=\dimen297
-\tikz@lastmovetoy=\dimen298
-\tikzleveldistance=\dimen299
-\tikzsiblingdistance=\dimen300
+\tikz@lastx=\dimen294
+\tikz@lasty=\dimen295
+\tikz@lastxsaved=\dimen296
+\tikz@lastysaved=\dimen297
+\tikz@lastmovetox=\dimen298
+\tikz@lastmovetoy=\dimen299
+\tikzleveldistance=\dimen300
+\tikzsiblingdistance=\dimen301
 \tikz@figbox=\box78
 \tikz@figbox@bg=\box79
 \tikz@tempbox=\box80
 \tikz@tempbox@bg=\box81
-\tikztreelevel=\count336
-\tikznumberofchildren=\count337
-\tikznumberofcurrentchild=\count338
-\tikz@fig@count=\count339
+\tikztreelevel=\count337
+\tikznumberofchildren=\count338
+\tikznumberofcurrentchild=\count339
+\tikz@fig@count=\count340
 
 ("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count340
-\pgfmatrixcurrentcolumn=\count341
-\pgf@matrix@numberofcolumns=\count342
+\pgfmatrixcurrentrow=\count341
+\pgfmatrixcurrentcolumn=\count342
+\pgf@matrix@numberofcolumns=\count343
 )
-\tikz@expandcount=\count343
+\tikz@expandcount=\count344
 
 ("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
 arytopaths.code.tex"
@@ -1297,13 +1400,13 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.code.tex"
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotscore.code.tex"
 Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
-\pgfplots@luabackend@table=\catcodetable14
+\pgfplots@luabackend@table=\catcodetable16
 \t@pgfplots@toka=\toks43
 \t@pgfplots@tokb=\toks44
 \t@pgfplots@tokc=\toks45
-\pgfplots@tmpa=\dimen301
-\c@pgfplots@coordindex=\count344
-\c@pgfplots@scanlineindex=\count345
+\pgfplots@tmpa=\dimen302
+\c@pgfplots@coordindex=\count345
+\c@pgfplots@scanlineindex=\count346
 
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex"
 )) ("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex
@@ -1333,13 +1436,13 @@ ure.code.tex")
 ureext.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsarray.code
 .tex"
-\c@pgfplotsarray@tmp=\count346
+\c@pgfplotsarray@tmp=\count347
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsmatrix.cod
 e.tex")
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/numtable/pgfplotstableshared.cod
 e.tex"
-\c@pgfplotstable@counta=\count347
+\c@pgfplotstable@counta=\count348
 \t@pgfplotstable@a=\toks49
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsdeque.code
@@ -1351,7 +1454,7 @@ x"))
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshad
 ing.code.tex"
-\c@pgfplotslibrarysurf@no=\count348
+\c@pgfplotslibrarysurf@no=\count349
 
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshadi
 ng.pgfsys-luatex.def")))
@@ -1368,14 +1471,14 @@ ng.pgfsys-luatex.def")))
 arydecorations.code.tex"
 ("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 "
-\pgfdecoratedcompleteddistance=\dimen302
-\pgfdecoratedremainingdistance=\dimen303
-\pgfdecoratedinputsegmentcompleteddistance=\dimen304
-\pgfdecoratedinputsegmentremainingdistance=\dimen305
-\pgf@decorate@distancetomove=\dimen306
-\pgf@decorate@repeatstate=\count349
-\pgfdecorationsegmentamplitude=\dimen307
-\pgfdecorationsegmentlength=\dimen308
+\pgfdecoratedcompleteddistance=\dimen303
+\pgfdecoratedremainingdistance=\dimen304
+\pgfdecoratedinputsegmentcompleteddistance=\dimen305
+\pgfdecoratedinputsegmentremainingdistance=\dimen306
+\pgf@decorate@distancetomove=\dimen307
+\pgf@decorate@repeatstate=\count350
+\pgfdecorationsegmentamplitude=\dimen308
+\pgfdecorationsegmentlength=\dimen309
 )
 \tikz@lib@dec@box=\box82
 )
@@ -1389,13 +1492,13 @@ arydecorations.pathreplacing.code.tex"
 ations.pathreplacing.code.tex"))
 ("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contour
 lua.code.tex")
-\pgfplots@numplots=\count350
-\pgfplots@xmin@reg=\dimen309
-\pgfplots@xmax@reg=\dimen310
-\pgfplots@ymin@reg=\dimen311
-\pgfplots@ymax@reg=\dimen312
-\pgfplots@zmin@reg=\dimen313
-\pgfplots@zmax@reg=\dimen314
+\pgfplots@numplots=\count351
+\pgfplots@xmin@reg=\dimen310
+\pgfplots@xmax@reg=\dimen311
+\pgfplots@ymin@reg=\dimen312
+\pgfplots@ymax@reg=\dimen313
+\pgfplots@zmin@reg=\dimen314
+\pgfplots@zmax@reg=\dimen315
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
 aryplotmarks.code.tex"
@@ -1415,10 +1518,10 @@ Package: circuitikz 2023/06/23{} The CircuiTikz circuit drawing package version
 ("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.
 tex"
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen315
-\pgfarrowlength=\dimen316
-\pgfarrowwidth=\dimen317
-\pgfarrowlinewidth=\dimen318
+\pgfarrowinset=\dimen316
+\pgfarrowlength=\dimen317
+\pgfarrowwidth=\dimen318
+\pgfarrowlinewidth=\dimen319
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
 arybending.code.tex"
@@ -1430,36 +1533,36 @@ File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmodulenonlineartransformat
 ions.code.tex"
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen319
+\pgftransformnonlinearflatness=\dimen320
 )
 ("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.
 tex"
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen320
-\pgf@curvilinear@length@a=\dimen321
-\pgf@curvilinear@length@b=\dimen322
-\pgf@curvilinear@length@c=\dimen323
-\pgf@curvilinear@length@d=\dimen324
+\pgf@curvilinear@time@a=\dimen321
+\pgf@curvilinear@length@a=\dimen322
+\pgf@curvilinear@length@b=\dimen323
+\pgf@curvilinear@length@c=\dimen324
+\pgf@curvilinear@length@d=\dimen325
 )
-\pgf@arrows@the@rigidity=\dimen325
+\pgf@arrows@the@rigidity=\dimen326
 ))
 ("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
 aryfpu.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirc.defines.tex"
-\pgf@circ@count@a=\count351
-\pgf@circ@count@b=\count352
-\pgf@circ@count@c=\count353
-\pgf@circ@res@up=\dimen326
-\pgf@circ@res@down=\dimen327
-\pgf@circ@res@zero=\dimen328
-\pgf@circ@res@left=\dimen329
-\pgf@circ@res@right=\dimen330
-\pgf@circ@res@other=\dimen331
-\pgf@circ@res@step=\dimen332
-\pgf@circ@res@temp=\dimen333
-\pgf@circ@Rlen=\dimen334
-\pgf@circ@scaled@Rlen=\dimen335
-\pgfstartlinewidth=\dimen336
+\pgf@circ@count@a=\count352
+\pgf@circ@count@b=\count353
+\pgf@circ@count@c=\count354
+\pgf@circ@res@up=\dimen327
+\pgf@circ@res@down=\dimen328
+\pgf@circ@res@zero=\dimen329
+\pgf@circ@res@left=\dimen330
+\pgf@circ@res@right=\dimen331
+\pgf@circ@res@other=\dimen332
+\pgf@circ@res@step=\dimen333
+\pgf@circ@res@temp=\dimen334
+\pgf@circ@Rlen=\dimen335
+\pgf@circ@scaled@Rlen=\dimen336
+\pgfstartlinewidth=\dimen337
 )
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircutils.tex"
 \ctikz@scratchbox=\box83
@@ -1469,56 +1572,56 @@ aryfpu.code.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircmonopoles.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircbipoles.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirctripoles.tex"
-\pgf@circ@res@count=\count354
+\pgf@circ@res@count=\count355
 )
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircquadpoles.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircmultipoles.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirclabel.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircvoltage.tex"
-\pgfcirc@labelshift=\dimen337
+\pgfcirc@labelshift=\dimen338
 )
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirccurrent.tex")
 ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircflow.tex")
 ("C:/Program Files/MiKTeX/tex/latex/xstring/xstring.sty"
 ("C:/Program Files/MiKTeX/tex/generic/xstring/xstring.tex"
-\integerpart=\count355
-\decimalpart=\count356
+\integerpart=\count356
+\decimalpart=\count357
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 ))
 ("C:/Program Files/MiKTeX/tex/latex/booktabs/booktabs.sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen338
-\lightrulewidth=\dimen339
-\cmidrulewidth=\dimen340
-\belowrulesep=\dimen341
-\belowbottomsep=\dimen342
-\aboverulesep=\dimen343
-\abovetopsep=\dimen344
-\cmidrulesep=\dimen345
-\cmidrulekern=\dimen346
-\defaultaddspace=\dimen347
-\@cmidla=\count357
-\@cmidlb=\count358
-\@aboverulesep=\dimen348
-\@belowrulesep=\dimen349
-\@thisruleclass=\count359
-\@lastruleclass=\count360
-\@thisrulewidth=\dimen350
+\heavyrulewidth=\dimen339
+\lightrulewidth=\dimen340
+\cmidrulewidth=\dimen341
+\belowrulesep=\dimen342
+\belowbottomsep=\dimen343
+\aboverulesep=\dimen344
+\abovetopsep=\dimen345
+\cmidrulesep=\dimen346
+\cmidrulekern=\dimen347
+\defaultaddspace=\dimen348
+\@cmidla=\count358
+\@cmidlb=\count359
+\@aboverulesep=\dimen349
+\@belowrulesep=\dimen350
+\@thisruleclass=\count360
+\@lastruleclass=\count361
+\@thisrulewidth=\dimen351
 )
 ("C:/Program Files/MiKTeX/tex/latex/microtype/microtype.sty"
 Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 \MT@toks=\toks50
 \MT@tempbox=\box84
-\MT@count=\count361
+\MT@count=\count362
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
 LaTeX Info: Redefining \leftprotrusion on input line 1060.
 \MT@prot@toks=\toks51
 LaTeX Info: Redefining \rightprotrusion on input line 1078.
 LaTeX Info: Redefining \textls on input line 1368.
-\MT@outer@kern=\dimen351
+\MT@outer@kern=\dimen352
 LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count362
+\MT@listname@count=\count363
 
 ("C:/Program Files/MiKTeX/tex/latex/microtype/microtype-luatex.def"
 File: microtype-luatex.def 2023/03/13 v3.1a Definitions specific to luatex (RS)
@@ -1539,7 +1642,7 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 ("C:/Program Files/MiKTeX/tex/latex/logreq/logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count363
+\lrq@indent=\count364
 
 ("C:/Program Files/MiKTeX/tex/latex/logreq/logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1551,49 +1654,49 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count364
-\c@listtotal=\count365
-\c@listcount=\count366
-\c@liststart=\count367
-\c@liststop=\count368
-\c@citecount=\count369
-\c@citetotal=\count370
-\c@multicitecount=\count371
-\c@multicitetotal=\count372
-\c@instcount=\count373
-\c@maxnames=\count374
-\c@minnames=\count375
-\c@maxitems=\count376
-\c@minitems=\count377
-\c@citecounter=\count378
-\c@maxcitecounter=\count379
-\c@savedcitecounter=\count380
-\c@uniquelist=\count381
-\c@uniquename=\count382
-\c@refsection=\count383
-\c@refsegment=\count384
-\c@maxextratitle=\count385
-\c@maxextratitleyear=\count386
-\c@maxextraname=\count387
-\c@maxextradate=\count388
-\c@maxextraalpha=\count389
-\c@abbrvpenalty=\count390
-\c@highnamepenalty=\count391
-\c@lownamepenalty=\count392
-\c@maxparens=\count393
-\c@parenlevel=\count394
-\blx@tempcnta=\count395
-\blx@tempcntb=\count396
-\blx@tempcntc=\count397
-\c@blx@maxsection=\count398
-\blx@maxsegment@0=\count399
-\blx@notetype=\count400
-\blx@parenlevel@text=\count401
-\blx@parenlevel@foot=\count402
-\blx@sectionciteorder@0=\count403
-\blx@sectionciteorderinternal@0=\count404
-\blx@entrysetcounter=\count405
-\blx@biblioinstance=\count406
+\c@tabx@nest=\count365
+\c@listtotal=\count366
+\c@listcount=\count367
+\c@liststart=\count368
+\c@liststop=\count369
+\c@citecount=\count370
+\c@citetotal=\count371
+\c@multicitecount=\count372
+\c@multicitetotal=\count373
+\c@instcount=\count374
+\c@maxnames=\count375
+\c@minnames=\count376
+\c@maxitems=\count377
+\c@minitems=\count378
+\c@citecounter=\count379
+\c@maxcitecounter=\count380
+\c@savedcitecounter=\count381
+\c@uniquelist=\count382
+\c@uniquename=\count383
+\c@refsection=\count384
+\c@refsegment=\count385
+\c@maxextratitle=\count386
+\c@maxextratitleyear=\count387
+\c@maxextraname=\count388
+\c@maxextradate=\count389
+\c@maxextraalpha=\count390
+\c@abbrvpenalty=\count391
+\c@highnamepenalty=\count392
+\c@lownamepenalty=\count393
+\c@maxparens=\count394
+\c@parenlevel=\count395
+\blx@tempcnta=\count396
+\blx@tempcntb=\count397
+\blx@tempcntc=\count398
+\c@blx@maxsection=\count399
+\blx@maxsegment@0=\count400
+\blx@notetype=\count401
+\blx@parenlevel@text=\count402
+\blx@parenlevel@foot=\count403
+\blx@sectionciteorder@0=\count404
+\blx@sectionciteorderinternal@0=\count405
+\blx@entrysetcounter=\count406
+\blx@biblioinstance=\count407
 \labelnumberwidth=\skip78
 \labelalphawidth=\skip79
 \biblabelsep=\skip80
@@ -1602,12 +1705,12 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibinitsep=\skip83
 \bibparsep=\skip84
 \bibhang=\skip85
-\blx@bcfin=\read3
+\blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language3
-\c@mincomprange=\count407
-\c@maxcomprange=\count408
-\c@mincompwidth=\count409
+\blx@langwohyphens=\language80
+\c@mincomprange=\count408
+\c@maxcomprange=\count409
+\c@mincompwidth=\count410
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1618,74 +1721,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count410
-\c@savedafterword=\count411
-\c@annotator=\count412
-\c@savedannotator=\count413
-\c@author=\count414
-\c@savedauthor=\count415
-\c@bookauthor=\count416
-\c@savedbookauthor=\count417
-\c@commentator=\count418
-\c@savedcommentator=\count419
-\c@editor=\count420
-\c@savededitor=\count421
-\c@editora=\count422
-\c@savededitora=\count423
-\c@editorb=\count424
-\c@savededitorb=\count425
-\c@editorc=\count426
-\c@savededitorc=\count427
-\c@foreword=\count428
-\c@savedforeword=\count429
-\c@holder=\count430
-\c@savedholder=\count431
-\c@introduction=\count432
-\c@savedintroduction=\count433
-\c@namea=\count434
-\c@savednamea=\count435
-\c@nameb=\count436
-\c@savednameb=\count437
-\c@namec=\count438
-\c@savednamec=\count439
-\c@translator=\count440
-\c@savedtranslator=\count441
-\c@shortauthor=\count442
-\c@savedshortauthor=\count443
-\c@shorteditor=\count444
-\c@savedshorteditor=\count445
-\c@labelname=\count446
-\c@savedlabelname=\count447
-\c@institution=\count448
-\c@savedinstitution=\count449
-\c@lista=\count450
-\c@savedlista=\count451
-\c@listb=\count452
-\c@savedlistb=\count453
-\c@listc=\count454
-\c@savedlistc=\count455
-\c@listd=\count456
-\c@savedlistd=\count457
-\c@liste=\count458
-\c@savedliste=\count459
-\c@listf=\count460
-\c@savedlistf=\count461
-\c@location=\count462
-\c@savedlocation=\count463
-\c@organization=\count464
-\c@savedorganization=\count465
-\c@origlocation=\count466
-\c@savedoriglocation=\count467
-\c@origpublisher=\count468
-\c@savedorigpublisher=\count469
-\c@publisher=\count470
-\c@savedpublisher=\count471
-\c@language=\count472
-\c@savedlanguage=\count473
-\c@origlanguage=\count474
-\c@savedoriglanguage=\count475
-\c@pageref=\count476
-\c@savedpageref=\count477
+\c@afterword=\count411
+\c@savedafterword=\count412
+\c@annotator=\count413
+\c@savedannotator=\count414
+\c@author=\count415
+\c@savedauthor=\count416
+\c@bookauthor=\count417
+\c@savedbookauthor=\count418
+\c@commentator=\count419
+\c@savedcommentator=\count420
+\c@editor=\count421
+\c@savededitor=\count422
+\c@editora=\count423
+\c@savededitora=\count424
+\c@editorb=\count425
+\c@savededitorb=\count426
+\c@editorc=\count427
+\c@savededitorc=\count428
+\c@foreword=\count429
+\c@savedforeword=\count430
+\c@holder=\count431
+\c@savedholder=\count432
+\c@introduction=\count433
+\c@savedintroduction=\count434
+\c@namea=\count435
+\c@savednamea=\count436
+\c@nameb=\count437
+\c@savednameb=\count438
+\c@namec=\count439
+\c@savednamec=\count440
+\c@translator=\count441
+\c@savedtranslator=\count442
+\c@shortauthor=\count443
+\c@savedshortauthor=\count444
+\c@shorteditor=\count445
+\c@savedshorteditor=\count446
+\c@labelname=\count447
+\c@savedlabelname=\count448
+\c@institution=\count449
+\c@savedinstitution=\count450
+\c@lista=\count451
+\c@savedlista=\count452
+\c@listb=\count453
+\c@savedlistb=\count454
+\c@listc=\count455
+\c@savedlistc=\count456
+\c@listd=\count457
+\c@savedlistd=\count458
+\c@liste=\count459
+\c@savedliste=\count460
+\c@listf=\count461
+\c@savedlistf=\count462
+\c@location=\count463
+\c@savedlocation=\count464
+\c@organization=\count465
+\c@savedorganization=\count466
+\c@origlocation=\count467
+\c@savedoriglocation=\count468
+\c@origpublisher=\count469
+\c@savedorigpublisher=\count470
+\c@publisher=\count471
+\c@savedpublisher=\count472
+\c@language=\count473
+\c@savedlanguage=\count474
+\c@origlanguage=\count475
+\c@savedoriglanguage=\count476
+\c@pageref=\count477
+\c@savedpageref=\count478
 \shorthandwidth=\skip86
 \shortjournalwidth=\skip87
 \shortserieswidth=\skip88
@@ -1715,19 +1818,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/biblatex.def"
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count478
-\c@textcitetotal=\count479
-\c@textcitemaxnames=\count480
-\c@biburlbigbreakpenalty=\count481
-\c@biburlbreakpenalty=\count482
-\c@biburlnumpenalty=\count483
-\c@biburlucpenalty=\count484
-\c@biburllcpenalty=\count485
+\c@textcitecount=\count479
+\c@textcitetotal=\count480
+\c@textcitemaxnames=\count481
+\c@biburlbigbreakpenalty=\count482
+\c@biburlbreakpenalty=\count483
+\c@biburlnumpenalty=\count484
+\c@biburlucpenalty=\count485
+\c@biburllcpenalty=\count486
 \biburlbigskip=\muskip22
 \biburlnumskip=\muskip23
 \biburlucskip=\muskip24
 \biburllcskip=\muskip25
-\c@smartand=\count486
+\c@smartand=\count487
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1739,8 +1842,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/bbx/standard.bbx"
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count487
-\c@bbx:relatedtotal=\count488
+\c@bbx:relatedcount=\count488
+\c@bbx:relatedtotal=\count489
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1779,11 +1882,11 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ("C:/Program Files/MiKTeX/tex/latex/enumitem/enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip100
-\enit@outerparindent=\dimen352
+\enit@outerparindent=\dimen353
 \enit@toks=\toks52
 \enit@inbox=\box85
-\enit@count@id=\count489
-\enitdp@description=\count490
+\enit@count@id=\count490
+\enitdp@description=\count491
 )
 ("C:/Program Files/MiKTeX/tex/latex/import/import.sty"
 Package: import 2020/04/01  v 6.2
@@ -1796,38 +1899,37 @@ Package: todonotes 2023/01/31
 arypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@@todonotes@numberoftodonotes=\count491
+\c@@todonotes@numberoftodonotes=\count492
 )
 ("C:/Program Files/MiKTeX/tex/latex/listings/listings.sty"
-\lst@mode=\count492
+\lst@mode=\count493
 \lst@gtempboxa=\box86
 \lst@token=\toks53
-\lst@length=\count493
-\lst@currlwidth=\dimen353
-\lst@column=\count494
-\lst@pos=\count495
-\lst@lostspace=\dimen354
-\lst@width=\dimen355
-\lst@newlines=\count496
-\lst@lineno=\count497
-\lst@maxwidth=\dimen356
+\lst@length=\count494
+\lst@currlwidth=\dimen354
+\lst@column=\count495
+\lst@pos=\count496
+\lst@lostspace=\dimen355
+\lst@width=\dimen356
+\lst@newlines=\count497
+\lst@lineno=\count498
+\lst@maxwidth=\dimen357
 
 ("C:/Program Files/MiKTeX/tex/latex/listings/lstmisc.sty"
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count498
-\lst@skipnumbers=\count499
+\c@lstnumber=\count499
+\lst@skipnumbers=\count500
 \lst@framebox=\box87
 )
 ("C:/Program Files/MiKTeX/tex/latex/listings/listings.cfg"
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 187.
+Package scrhack Info: loading listings hack on input line 191.
 
 ("C:/Program Files/MiKTeX/tex/latex/koma-script/listings.hak"
 File: listings.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package l
 istings)
-Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 157.
+Package tocbasic Info: setting babel extension for `lol' on input line 157.
 Package scrhack Info: redefining \lstlistoflistings on input line 157.
 Package scrhack Info: patching \lst@MakeCaption on input line 157.
 )
@@ -1836,9 +1938,9 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 ("C:/Program Files/MiKTeX/tex/latex/matlab-prettifier/matlab-prettifier.sty"
 Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
 source code
-\netBracketCount@mlpr=\count500
-\blkLvl@mlpr=\count501
-\blkLvlAtClassdef@mlpr=\count502
+\netBracketCount@mlpr=\count501
+\blkLvl@mlpr=\count502
+\blkLvlAtClassdef@mlpr=\count503
 \emHeight@mlpr=\skip101
 \jayDepth@mlpr=\skip102
 \sectionRuleOffset@mlpr=\skip103
@@ -1846,7 +1948,7 @@ source code
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 300.
+(scrhack)             need that hack, on input line 304.
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/hyperref.sty"
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
@@ -1875,11 +1977,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ("C:/Program Files/MiKTeX/tex/generic/gettitlestring/gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count503
+\c@section@level=\count504
 )
-\@linkdim=\dimen357
-\Hy@linkcounter=\count504
-\Hy@pagecounter=\count505
+\@linkdim=\dimen358
+\Hy@linkcounter=\count505
+\Hy@pagecounter=\count506
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/pd1enc.def"
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
@@ -1890,7 +1992,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ("C:/Program Files/MiKTeX/tex/generic/etexcmds/etexcmds.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count506
+\Hy@SavedSpaceFactor=\count507
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/puenc.def"
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
@@ -1904,16 +2006,16 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count507
+\c@Hy@tempcnt=\count508
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen358
+\XeTeXLinkMargin=\dimen359
 
 ("C:/Program Files/MiKTeX/tex/generic/bitset/bitset.sty"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count508
-\Field@Width=\dimen359
-\Fld@charsize=\dimen360
+\Fld@menulength=\count509
+\Field@Width=\dimen360
+\Fld@charsize=\dimen361
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -1926,9 +2028,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count509
-\c@Item=\count510
-\c@Hfootnote=\count511
+\Hy@abspage=\count510
+\c@Item=\count511
+\c@Hfootnote=\count512
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 
@@ -1939,8 +2041,8 @@ File: hluatex.def 2023-02-07 v7.00v Hyperref driver for luaTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\Fld@listcount=\count512
-\c@bookmark@seq@number=\count513
+\Fld@listcount=\count513
+\c@bookmark@seq@number=\count514
 \Hy@SectionHShift=\skip104
 )
 ("C:/Program Files/MiKTeX/tex/latex/glossaries/base/glossaries.sty"
@@ -1959,7 +2061,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 ("C:/Program Files/MiKTeX/tex/latex/substr/substr.sty"
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count514
+\c@su@anzahl=\count515
 )
 ("C:/Program Files/MiKTeX/tex/latex/datatool/datatool-fp.sty"
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -1970,19 +2072,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 ("C:/Program Files/MiKTeX/tex/latex/fp/defpattern.sty"
 Package: defpattern 1994/10/12
-\actioncount=\count515
+\actioncount=\count516
 )
 ("C:/Program Files/MiKTeX/tex/latex/fp/fp-basic.sty"
 Package: fp-basic 1996/05/13
-\FP@xs=\count516
-\FP@xia=\count517
-\FP@xib=\count518
-\FP@xfa=\count519
-\FP@xfb=\count520
-\FP@rega=\count521
-\FP@regb=\count522
-\FP@regs=\count523
-\FP@times=\count524
+\FP@xs=\count517
+\FP@xia=\count518
+\FP@xib=\count519
+\FP@xfa=\count520
+\FP@xfb=\count521
+\FP@rega=\count522
+\FP@regb=\count523
+\FP@regs=\count524
+\FP@times=\count525
 )
 ("C:/Program Files/MiKTeX/tex/latex/fp/fp-addons.sty"
 Package: fp-addons 1995/03/15
@@ -2001,7 +2103,7 @@ Package: fp-pas 1994/08/29
 )
 ("C:/Program Files/MiKTeX/tex/latex/fp/fp-random.sty"
 Package: fp-random 1995/02/23
-\FPseed=\count525
+\FPseed=\count526
 )
 ("C:/Program Files/MiKTeX/tex/latex/fp/fp-eqn.sty"
 Package: fp-eqn 1995/04/03
@@ -2013,14 +2115,14 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks57
-\@dtl@tmpcount=\count526
+\@dtl@tmpcount=\count527
 \dtl@tmplength=\skip105
-\dtl@sortresult=\count527
-\@dtl@numgrpsepcount=\count528
-\@dtl@datatype=\count529
-\dtl@codeA=\count530
-\dtl@codeB=\count531
-\@dtl@foreach@level=\count532
+\dtl@sortresult=\count528
+\@dtl@numgrpsepcount=\count529
+\@dtl@datatype=\count530
+\dtl@codeA=\count531
+\dtl@codeB=\count532
+\@dtl@foreach@level=\count533
 )
 ("C:/Program Files/MiKTeX/tex/latex/tracklang/tracklang.sty"
 Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
@@ -2029,7 +2131,7 @@ Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
 ("C:/Program Files/MiKTeX/tex/latex/glossaries-german/glossaries-german.ldf"
 File: glossaries-german.ldf 2014/11/23 v1.0
 )
-\gls@level=\count533
+\gls@level=\count534
 \@gls@tmpb=\toks58
 \gls@tmplen=\skip106
 \glskeylisttok=\toks59
@@ -2053,17 +2155,17 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip109
 \LTpre=\skip110
 \LTpost=\skip111
-\LTchunksize=\count534
-\LTcapwidth=\dimen361
+\LTchunksize=\count535
+\LTcapwidth=\dimen362
 \LT@head=\box88
 \LT@firsthead=\box89
 \LT@foot=\box90
 \LT@lastfoot=\box91
 \LT@gbox=\box92
-\LT@cols=\count535
-\LT@rows=\count536
-\c@LT@tables=\count537
-\c@LT@chunks=\count538
+\LT@cols=\count536
+\LT@rows=\count537
+\c@LT@tables=\count538
+\c@LT@chunks=\count539
 \LT@p@ftn=\toks63
 )
 Class scrbook Info: longtable captions redefined on input line 47.
@@ -2075,20 +2177,20 @@ Package: glossary-super 2022/11/03 v4.52 (NLCT)
 
 ("C:/Program Files/MiKTeX/tex/latex/supertabular/supertabular.sty"
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count539
-\ST@wd=\dimen362
+\c@tracingst=\count540
+\ST@wd=\dimen363
 \ST@rightskip=\skip114
 \ST@leftskip=\skip115
 \ST@parfillskip=\skip116
-\ST@pageleft=\dimen363
-\ST@headht=\dimen364
-\ST@tailht=\dimen365
-\ST@pagesofar=\dimen366
-\ST@pboxht=\dimen367
-\ST@lineht=\dimen368
-\ST@prevht=\dimen369
-\ST@toadd=\dimen370
-\ST@dimen=\dimen371
+\ST@pageleft=\dimen364
+\ST@headht=\dimen365
+\ST@tailht=\dimen366
+\ST@pagesofar=\dimen367
+\ST@pboxht=\dimen368
+\ST@lineht=\dimen369
+\ST@prevht=\dimen370
+\ST@toadd=\dimen371
+\ST@dimen=\dimen372
 \ST@pbox=\box93
 ))
 ("C:/Program Files/MiKTeX/tex/latex/glossaries/styles/glossary-tree.sty"
@@ -2100,17 +2202,17 @@ Package: glossary-tree 2022/11/03 v4.52 (NLCT)
 \glo@main@file=\write6
 
 \openout6 = main.glo
-Package glossaries Info: Writing glossary file main.glo on input line 307.
+Package glossaries Info: Writing glossary file main.glo on input line 311.
 \glo@symbols@file=\write7
 
 \openout7 = main.sbl
-Package glossaries Info: Writing glossary file main.sbl on input line 307.
+Package glossaries Info: Writing glossary file main.sbl on input line 311.
  ("C:/Program Files/MiKTeX/tex/latex/bookmark/bookmark.sty"
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 ("C:/Program Files/MiKTeX/tex/latex/bookmark/bkm-pdftex.def"
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count540
+\BKM@id=\count541
 ))
 ("C:/Program Files/MiKTeX/tex/latex/ncctools/extdash.sty"
 Package: extdash 2018/06/24 v1.3 Extended Dash Package (NCC)
@@ -2141,16 +2243,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
-Package scrbase Info: activating german \partname on input line 2.
-Package scrbase Info: activating german \chaptername on input line 2.
-Package scrbase Info: activating german \appendixname on input line 2.
-Package scrbase Info: activating german \figurename on input line 2.
-Package scrbase Info: activating german \tablename on input line 2.
-Package scrbase Info: activating german \contentsname on input line 2.
-Package scrbase Info: activating german \listfigurename on input line 2.
-Package scrbase Info: activating german \listtablename on input line 2.
-Package scrbase Info: activating german \bibname on input line 2.
-Package scrbase Info: activating german \indexname on input line 2.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -2162,19 +2254,22 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \rmfamily on input line 2.
+LaTeX Info: Redefining \sffamily on input line 2.
+LaTeX Info: Redefining \ttfamily on input line 2.
 
 ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count541
-\scratchdimen=\dimen372
+\scratchcounter=\count542
+\scratchdimen=\dimen373
 \scratchbox=\box94
-\nofMPsegments=\count542
-\nofMParguments=\count543
+\nofMPsegments=\count543
+\nofMParguments=\count544
 \everyMPshowfont=\toks64
-\MPscratchCnt=\count544
-\MPscratchDim=\dimen373
-\MPnumerator=\count545
-\makeMPintoPDFobject=\count546
+\MPscratchCnt=\count545
+\MPscratchDim=\dimen374
+\MPnumerator=\count546
+\makeMPintoPDFobject=\count547
 \everyMPtoPDFconversion=\toks65
 ) ("C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2192,11 +2287,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(113.81102pt, 426.79141pt, 56.9055pt)
+* h-part:(L,W,R)=(113.81102pt, 412.56503pt, 71.13188pt)
 * v-part:(T,H,B)=(99.58464pt, 660.10403pt, 85.35826pt)
 * \paperwidth=597.50793pt
 * \paperheight=845.04694pt
-* \textwidth=426.79141pt
+* \textwidth=412.56503pt
 * \textheight=660.10403pt
 * \oddsidemargin=41.54103pt
 * \evensidemargin=41.54103pt
@@ -2318,6 +2413,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 2.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 2.
+
+("C:/Program Files/MiKTeX/tex/latex/translations/dicts/translations-basic-dicti
+onary-german.trsl"
+File: translations-basic-dictionary-german.trsl (german translation file `trans
+lations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `german'. on input line 2.
+
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.14).
 
@@ -2351,27 +2455,13 @@ Package biblatex Info: ... file 'german.lbx' found.
 
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
-Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	
-(polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 580
-Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
-on input line 580
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/german.lbx"
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
-Module polyglossia Info: Language ngerman already loaded; id is 4 on input line 
-580
-)
-Module polyglossia Info: Language ngerman already loaded; id is 4 on input line 
-19
-)
+))
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -2391,26 +2481,1108 @@ most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
 loading the todonotes package. on input line 2.
 
-\c@lstlisting=\count547
+\c@lstlisting=\count548
 Package scrhack Info: undefining \float@addtolists on input line 2.
 Package hyperref Info: Link coloring OFF on input line 2.
-! I can't write on file `main.pdf'.
-Please type another file name for output
-! Emergency stop.
-\PDF@SetupDoc ...tartview \@empty \else openaction
-                                                   goto page\@pdfstartpage {...
-l.2 \begin{document}
-                  
+LaTeX Info: Redefining \rmfamily on input line 2.
+LaTeX Info: Redefining \sffamily on input line 2.
+LaTeX Info: Redefining \ttfamily on input line 2.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 426.79141pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23593pt, 56.9055pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=426.79141pt
+* \textheight=731.23593pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-64.84924pt
+* \headheight=22.49307pt
+* \headsep=26.99168pt
+* \topskip=12.0pt
+* \footskip=62.9806pt
+* \marginparwidth=49.79233pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./content/Titelseite.tex
+<content/Grafiken/H-BRS_Logo.pdf, id=6, 1586.92876pt x 342.30386pt>
+File: content/Grafiken/H-BRS_Logo.pdf Graphic file (type pdf)
+<use content/Grafiken/H-BRS_Logo.pdf>
+Package luatex.def Info: content/Grafiken/H-BRS_Logo.pdf  used on input line 4.
+
+(luatex.def)             Requested size: 184.66017pt x 39.83368pt.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LatinModernMath' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+("C:/Program Files/MiKTeX/tex/latex/microtype/mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+("C:/Program Files/MiKTeX/tex/latex/microtype/mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `XITSMath' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
+
+
+\openout5 = main.ist
+
+
+
+{C:/Users/jheinemann/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}<./content
+/Grafiken/H-BRS_Logo.pdf>]) (./content/Erklaerung.tex) [2
+
+] (./content/Abstract.tex
+chapter without number
+) [1
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 10
+.
+ (C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+[2
+
+
+])
+\tf@toc=\write8
+
+\openout8 = main.toc
+LaTeX Info: Redefining \rmfamily on input line 11.
+LaTeX Info: Redefining \sffamily on input line 11.
+LaTeX Info: Redefining \ttfamily on input line 11.
+ [3]
+Package tocbasic Info: character protrusion at lof deactivated on input line 11
+.
+
+(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.lof
+[4
+
+
+])
+\tf@lof=\write9
+
+\openout9 = main.lof
+LaTeX Info: Redefining \rmfamily on input line 12.
+LaTeX Info: Redefining \sffamily on input line 12.
+LaTeX Info: Redefining \ttfamily on input line 12.
+ [5]
+Package tocbasic Info: character protrusion at lot deactivated on input line 12
+.
+
+(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.lot)
+\tf@lot=\write10
+
+\openout10 = main.lot
+
+(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.gls
+[6
+
+
+]
+Overfull \hbox (11.97629pt too wide) in paragraph at lines 2--82
+[] 
+ []
+
+[7
+
+
+
+
+])
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Info: Redefining \sffamily on input line 14.
+LaTeX Info: Redefining \ttfamily on input line 14.
+ [8] (./content/Kapitel_1.tex
+chapter 1.
+<content/Grafiken/ElyCost.pdf, id=386, 529.22166pt x 247.53922pt>
+File: content/Grafiken/ElyCost.pdf Graphic file (type pdf)
+<use content/Grafiken/ElyCost.pdf>
+Package luatex.def Info: content/Grafiken/ElyCost.pdf  used on input line 8.
+(luatex.def)             Requested size: 309.42377pt x 144.72864pt.
+<content/Grafiken/elycostlegend.pdf, id=387, 91.04922pt x 128.03764pt>
+File: content/Grafiken/elycostlegend.pdf Graphic file (type pdf)
+<use content/Grafiken/elycostlegend.pdf>
+Package luatex.def Info: content/Grafiken/elycostlegend.pdf  used on input line
+ 10.
+(luatex.def)             Requested size: 61.88223pt x 87.02339pt.
+<content/Grafiken/Ely_Capacity.png, id=393, 383.71928pt x 421.14482pt>
+File: content/Grafiken/Ely_Capacity.png Graphic file (type png)
+<use content/Grafiken/Ely_Capacity.png>
+Package luatex.def Info: content/Grafiken/Ely_Capacity.png  used on input line 
+17.
+(luatex.def)             Requested size: 288.79425pt x 316.9824pt.
+
+warning  (file content/Grafiken/Thyristor.pdf) (pdf inclusion): PDF inclusion: f
+ound PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Thyristor.pdf, id=397, 357.4956pt x 161.8848pt>
+File: content/Grafiken/Thyristor.pdf Graphic file (type pdf)
+<use content/Grafiken/Thyristor.pdf>
+Package luatex.def Info: content/Grafiken/Thyristor.pdf  used on input line 24.
+
+(luatex.def)             Requested size: 371.306pt x 168.14871pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+
+
+
+]
+LaTeX Info: Redefining \rmfamily on input line 52.
+LaTeX Info: Redefining \sffamily on input line 52.
+LaTeX Info: Redefining \ttfamily on input line 52.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2<./content/Grafiken/ElyCost.pdf><./content/Grafiken/elycostlegend.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 52.
+LaTeX Info: Redefining \sffamily on input line 52.
+LaTeX Info: Redefining \ttfamily on input line 52.
+
+[3<./content/Grafiken/Ely_Capacity.png><./content/Grafiken/Thyristor.pdf>])
+(./content/Kapitel_2.tex
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [4]
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [5]
+chapter 2.
+<content/Grafiken/Ely-Efficiency.png, id=554, 628.92107pt x 301.125pt>
+File: content/Grafiken/Ely-Efficiency.png Graphic file (type png)
+<use content/Grafiken/Ely-Efficiency.png>
+Package luatex.def Info: content/Grafiken/Ely-Efficiency.png  used on input lin
+e 11.
+(luatex.def)             Requested size: 371.306pt x 177.78166pt.
+[6
+
+
+]
+LaTeX Info: Redefining \rmfamily on input line 18.
+LaTeX Info: Redefining \sffamily on input line 18.
+LaTeX Info: Redefining \ttfamily on input line 18.
+ [7<./content/Grafiken/Ely-Efficiency.png>]
+<content/Grafiken/PLECS_FF2ThermalModel.png, id=581, 414.04688pt x 310.15875pt>
+
+File: content/Grafiken/PLECS_FF2ThermalModel.png Graphic file (type png)
+<use content/Grafiken/PLECS_FF2ThermalModel.png>
+Package luatex.def Info: content/Grafiken/PLECS_FF2ThermalModel.png  used on in
+put line 24.
+(luatex.def)             Requested size: 288.79425pt x 216.33823pt.
+LaTeX Info: Redefining \rmfamily on input line 32.
+LaTeX Info: Redefining \sffamily on input line 32.
+LaTeX Info: Redefining \ttfamily on input line 32.
+ [8]
+<content/Grafiken/Plecs_Diodengleichrichter.pdf, id=604, 172.645pt x 77.28876pt
+>
+File: content/Grafiken/Plecs_Diodengleichrichter.pdf Graphic file (type pdf)
+<use content/Grafiken/Plecs_Diodengleichrichter.pdf>
+Package luatex.def Info: content/Grafiken/Plecs_Diodengleichrichter.pdf  used o
+n input line 47.
+(luatex.def)             Requested size: 330.05328pt x 147.77238pt.
+LaTeX Info: Redefining \rmfamily on input line 50.
+LaTeX Info: Redefining \sffamily on input line 50.
+LaTeX Info: Redefining \ttfamily on input line 50.
+ [9<./content/Grafiken/PLECS_FF2ThermalModel.png>]
+<content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.pdf, id=615, 341.275pt
+ x 284.06125pt>
+File: content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.pdf Graphic file 
+(type pdf)
+<use content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.pdf>
+Package luatex.def Info: content/Grafiken/B6-Diodengleichrichter-Eingangsverlau
+f.pdf  used on input line 54.
+(luatex.def)             Requested size: 330.05328pt x 274.73718pt.
+LaTeX Info: Redefining \rmfamily on input line 61.
+LaTeX Info: Redefining \sffamily on input line 61.
+LaTeX Info: Redefining \ttfamily on input line 61.
+ [10<./content/Grafiken/Plecs_Diodengleichrichter.pdf>]
+warning  (file content/Grafiken/Buck.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Buck.pdf, id=642, 310.15875pt x 147.55125pt>
+File: content/Grafiken/Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/Buck.pdf>
+Package luatex.def Info: content/Grafiken/Buck.pdf  used on input line 65.
+(luatex.def)             Requested size: 371.306pt x 176.63957pt.
+LaTeX Info: Redefining \rmfamily on input line 70.
+LaTeX Info: Redefining \sffamily on input line 70.
+LaTeX Info: Redefining \ttfamily on input line 70.
+[11<./content/Grafiken/B6-Diodengleichrichter-Eingangsverlauf.pdf>]
+warning  (file content/Grafiken/Buck_interleaved.pdf) (pdf inclusion): PDF inclu
+sion: found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Buck_interleaved.pdf, id=668, 351.11176pt x 147.6717pt>
+File: content/Grafiken/Buck_interleaved.pdf Graphic file (type pdf)
+<use content/Grafiken/Buck_interleaved.pdf>
+Package luatex.def Info: content/Grafiken/Buck_interleaved.pdf  used on input l
+ine 82.
+(luatex.def)             Requested size: 288.79425pt x 121.46786pt.
+LaTeX Info: Redefining \rmfamily on input line 86.
+LaTeX Info: Redefining \sffamily on input line 86.
+LaTeX Info: Redefining \ttfamily on input line 86.
+[12<./content/Grafiken/Buck.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 92.
+LaTeX Info: Redefining \sffamily on input line 92.
+LaTeX Info: Redefining \ttfamily on input line 92.
+ [13<./content/Grafiken/Buck_interleaved.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 104.
+LaTeX Info: Redefining \sffamily on input line 104.
+LaTeX Info: Redefining \ttfamily on input line 104.
+[14]
+<content/Grafiken/PLECS_Buck.pdf, id=708, 367.3725pt x 312.16624pt>
+File: content/Grafiken/PLECS_Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_Buck.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_Buck.pdf  used on input line 10
+7.
+(luatex.def)             Requested size: 412.56503pt x 350.59074pt.
+) (./content/Kapitel_3.tex
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [15<./content/Grafiken/PLECS_Buck.pdf>]
+chapter 3.
+<content/Grafiken/TAR4120_PQ.png, id=727, 437.92178pt x 389.74179pt>
+File: content/Grafiken/TAR4120_PQ.png Graphic file (type png)
+<use content/Grafiken/TAR4120_PQ.png>
+Package luatex.def Info: content/Grafiken/TAR4120_PQ.png  used on input line 9.
+
+(luatex.def)             Requested size: 247.54153pt x 220.31155pt.
+[16
+
+
+]
+<content/Grafiken/VDE4120-quasistationarerbetrieb.png, id=739, 770.88pt x 537.0
+0626pt>
+File: content/Grafiken/VDE4120-quasistationarerbetrieb.png Graphic file (type p
+ng)
+<use content/Grafiken/VDE4120-quasistationarerbetrieb.png>
+Package luatex.def Info: content/Grafiken/VDE4120-quasistationarerbetrieb.png  
+used on input line 18.
+(luatex.def)             Requested size: 371.306pt x 258.65323pt.
+<content/Grafiken/Grenzkurve.png, id=740, 357.04822pt x 171.21107pt>
+File: content/Grafiken/Grenzkurve.png Graphic file (type png)
+<use content/Grafiken/Grenzkurve.png>
+Package luatex.def Info: content/Grafiken/Grenzkurve.png  used on input line 21
+.
+(luatex.def)             Requested size: 371.306pt x 178.0553pt.
+<content/Grafiken/VDE-FNN-TAR.pdf, id=750, 665.7945pt x 292.70773pt>
+File: content/Grafiken/VDE-FNN-TAR.pdf Graphic file (type pdf)
+<use content/Grafiken/VDE-FNN-TAR.pdf>
+Package luatex.def Info: content/Grafiken/VDE-FNN-TAR.pdf  used on input line 3
+4.
+(luatex.def)             Requested size: 371.306pt x 163.24078pt.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 38.
+LaTeX Info: Redefining \ttfamily on input line 38.
+ [17<./content/Grafiken/TAR4120_PQ.png>]
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 38.
+LaTeX Info: Redefining \ttfamily on input line 38.
+ [18<./content/Grafiken/VDE4120-quasistationarerbetrieb.png><./content/Grafiken/
+Grenzkurve.png>]
+LaTeX Info: Redefining \rmfamily on input line 47.
+LaTeX Info: Redefining \sffamily on input line 47.
+LaTeX Info: Redefining \ttfamily on input line 47.
+ [19<./content/Grafiken/VDE-FNN-TAR.pdf>]) (./content/Kapitel_4.tex
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [20]
+chapter 4.
+
+warning  (file content/Grafiken/IAF.pdf) (pdf inclusion): PDF inclusion: found P
+DF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/IAF.pdf, id=812, 403.0257pt x 149.71935pt>
+File: content/Grafiken/IAF.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF.pdf>
+Package luatex.def Info: content/Grafiken/IAF.pdf  used on input line 11.
+(luatex.def)             Requested size: 371.306pt x 137.9422pt.
+[21
+
+
+]
+warning  (file content/Grafiken/B6_Buck.pdf) (pdf inclusion): PDF inclusion: fou
+nd PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/B6_Buck.pdf, id=828, 321.3606pt x 147.31035pt>
+File: content/Grafiken/B6_Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/B6_Buck.pdf>
+Package luatex.def Info: content/Grafiken/B6_Buck.pdf  used on input line 22.
+(luatex.def)             Requested size: 371.306pt x 170.21251pt.
+<content/Grafiken/B6+IAF_Sectors.pdf, id=836, 512.09381pt x 318.78151pt>
+File: content/Grafiken/B6+IAF_Sectors.pdf Graphic file (type pdf)
+<use content/Grafiken/B6+IAF_Sectors.pdf>
+Package luatex.def Info: content/Grafiken/B6+IAF_Sectors.pdf  used on input lin
+e 30.
+(luatex.def)             Requested size: 412.56503pt x 256.83502pt.
+LaTeX Info: Redefining \rmfamily on input line 34.
+LaTeX Info: Redefining \sffamily on input line 34.
+LaTeX Info: Redefining \ttfamily on input line 34.
+[22<./content/Grafiken/IAF.pdf>]
+warning  (file content/Grafiken/SixSwitchBoost.pdf) (pdf inclusion): PDF inclusi
+on: found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/SixSwitchBoost.pdf, id=850, 271.4943pt x 149.71935pt>
+File: content/Grafiken/SixSwitchBoost.pdf Graphic file (type pdf)
+<use content/Grafiken/SixSwitchBoost.pdf>
+Package luatex.def Info: content/Grafiken/SixSwitchBoost.pdf  used on input lin
+e 41.
+(luatex.def)             Requested size: 412.56503pt x 227.53462pt.
+LaTeX Info: Redefining \rmfamily on input line 45.
+LaTeX Info: Redefining \sffamily on input line 45.
+LaTeX Info: Redefining \ttfamily on input line 45.
+[23<./content/Grafiken/B6_Buck.pdf><./content/Grafiken/B6+IAF_Sectors.pdf>]
+warning  (file content/Grafiken/SixSwitchBuck.pdf) (pdf inclusion): PDF inclusio
+n: found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/SixSwitchBuck.pdf, id=952, 265.4718pt x 168.1482pt>
+File: content/Grafiken/SixSwitchBuck.pdf Graphic file (type pdf)
+<use content/Grafiken/SixSwitchBuck.pdf>
+Package luatex.def Info: content/Grafiken/SixSwitchBuck.pdf  used on input line
+ 52.
+(luatex.def)             Requested size: 412.56503pt x 261.31715pt.
+
+warning  (file content/Grafiken/Trident.pdf) (pdf inclusion): PDF inclusion: fou
+nd PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Trident.pdf, id=954, 433.8609pt x 139.2402pt>
+File: content/Grafiken/Trident.pdf Graphic file (type pdf)
+<use content/Grafiken/Trident.pdf>
+Package luatex.def Info: content/Grafiken/Trident.pdf  used on input line 61.
+(luatex.def)             Requested size: 412.56503pt x 132.40915pt.
+LaTeX Info: Redefining \rmfamily on input line 65.
+LaTeX Info: Redefining \sffamily on input line 65.
+LaTeX Info: Redefining \ttfamily on input line 65.
+[24<./content/Grafiken/SixSwitchBoost.pdf>]
+warning  (file content/Grafiken/Vienna.pdf) (pdf inclusion): PDF inclusion: foun
+d PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Vienna.pdf, id=965, 322.92645pt x 147.79214pt>
+File: content/Grafiken/Vienna.pdf Graphic file (type pdf)
+<use content/Grafiken/Vienna.pdf>
+Package luatex.def Info: content/Grafiken/Vienna.pdf  used on input line 70.
+(luatex.def)             Requested size: 412.56503pt x 188.82597pt.
+LaTeX Info: Redefining \rmfamily on input line 74.
+LaTeX Info: Redefining \sffamily on input line 74.
+LaTeX Info: Redefining \ttfamily on input line 74.
+[25<./content/Grafiken/SixSwitchBuck.pdf><./content/Grafiken/Trident.pdf>]
+warning  (file content/Grafiken/Swiss.pdf) (pdf inclusion): PDF inclusion: found
+ PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Swiss.pdf, id=979, 345.57104pt x 158.994pt>
+File: content/Grafiken/Swiss.pdf Graphic file (type pdf)
+<use content/Grafiken/Swiss.pdf>
+Package luatex.def Info: content/Grafiken/Swiss.pdf  used on input line 79.
+(luatex.def)             Requested size: 412.56503pt x 189.82141pt.
+
+warning  (file content/Grafiken/23PWMBuckBoost.pdf) (pdf inclusion): PDF inclusi
+on: found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/23PWMBuckBoost.pdf, id=981, 314.3745pt x 174.77295pt>
+File: content/Grafiken/23PWMBuckBoost.pdf Graphic file (type pdf)
+<use content/Grafiken/23PWMBuckBoost.pdf>
+Package luatex.def Info: content/Grafiken/23PWMBuckBoost.pdf  used on input lin
+e 88.
+(luatex.def)             Requested size: 412.56503pt x 229.3809pt.
+LaTeX Info: Redefining \rmfamily on input line 92.
+LaTeX Info: Redefining \sffamily on input line 92.
+LaTeX Info: Redefining \ttfamily on input line 92.
+[26<./content/Grafiken/Vienna.pdf><./content/Grafiken/Swiss.pdf>]
+warning  (file content/Grafiken/Y-Rectifier.pdf) (pdf inclusion): PDF inclusion:
+ found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/Y-Rectifier.pdf, id=993, 348.46185pt x 139.2402pt>
+File: content/Grafiken/Y-Rectifier.pdf Graphic file (type pdf)
+<use content/Grafiken/Y-Rectifier.pdf>
+Package luatex.def Info: content/Grafiken/Y-Rectifier.pdf  used on input line 1
+00.
+(luatex.def)             Requested size: 412.56503pt x 164.86502pt.
+
+warning  (file content/Grafiken/3L-NPC.pdf) (pdf inclusion): PDF inclusion: foun
+d PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/3L-NPC.pdf, id=997, 270.16936pt x 189.1065pt>
+File: content/Grafiken/3L-NPC.pdf Graphic file (type pdf)
+<use content/Grafiken/3L-NPC.pdf>
+Package luatex.def Info: content/Grafiken/3L-NPC.pdf  used on input line 109.
+(luatex.def)             Requested size: 412.56503pt x 288.78952pt.
+LaTeX Info: Redefining \rmfamily on input line 116.
+LaTeX Info: Redefining \sffamily on input line 116.
+LaTeX Info: Redefining \ttfamily on input line 116.
+[27<./content/Grafiken/23PWMBuckBoost.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 116.
+LaTeX Info: Redefining \sffamily on input line 116.
+LaTeX Info: Redefining \ttfamily on input line 116.
+ [28<./content/Grafiken/Y-Rectifier.pdf><./content/Grafiken/3L-NPC.pdf>]
+warning  (file content/Grafiken/ANPC.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/ANPC.pdf, id=1019, 271.61475pt x 190.43146pt>
+File: content/Grafiken/ANPC.pdf Graphic file (type pdf)
+<use content/Grafiken/ANPC.pdf>
+Package luatex.def Info: content/Grafiken/ANPC.pdf  used on input line 119.
+(luatex.def)             Requested size: 371.306pt x 260.34323pt.
+
+warning  (file content/Grafiken/3L-FC-Boost.pdf) (pdf inclusion): PDF inclusion:
+ found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/3L-FC-Boost.pdf, id=1021, 297.15015pt x 190.43146pt>
+File: content/Grafiken/3L-FC-Boost.pdf Graphic file (type pdf)
+<use content/Grafiken/3L-FC-Boost.pdf>
+Package luatex.def Info: content/Grafiken/3L-FC-Boost.pdf  used on input line 1
+29.
+(luatex.def)             Requested size: 412.56503pt x 264.41708pt.
+
+warning  (file content/Grafiken/3L-FC-Boost+Buck.pdf) (pdf inclusion): PDF inclu
+sion: found PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/3L-FC-Boost+Buck.pdf, id=1022, 376.88805pt x 190.43146pt>
+File: content/Grafiken/3L-FC-Boost+Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/3L-FC-Boost+Buck.pdf>
+Package luatex.def Info: content/Grafiken/3L-FC-Boost+Buck.pdf  used on input l
+ine 139.
+(luatex.def)             Requested size: 412.56503pt x 208.46404pt.
+LaTeX Info: Redefining \rmfamily on input line 144.
+LaTeX Info: Redefining \sffamily on input line 144.
+LaTeX Info: Redefining \ttfamily on input line 144.
+[29<./content/Grafiken/ANPC.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 144.
+LaTeX Info: Redefining \sffamily on input line 144.
+LaTeX Info: Redefining \ttfamily on input line 144.
+ [30<./content/Grafiken/3L-FC-Boost.pdf><./content/Grafiken/3L-FC-Boost+Buck.pdf
+>]) (./content/Kapitel_5.tex
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [31]
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [32]
+chapter 5.
+<content/Grafiken/PLECS_Simulationsaufbau.pdf, id=1061, 339.2675pt x 127.47626p
+t>
+File: content/Grafiken/PLECS_Simulationsaufbau.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_Simulationsaufbau.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_Simulationsaufbau.pdf  used on 
+input line 5.
+(luatex.def)             Requested size: 412.56503pt x 155.02284pt.
+<content/Grafiken/Plecs_Out.pdf, id=1063, 358.33875pt x 319.1925pt>
+File: content/Grafiken/Plecs_Out.pdf Graphic file (type pdf)
+<use content/Grafiken/Plecs_Out.pdf>
+Package luatex.def Info: content/Grafiken/Plecs_Out.pdf  used on input line 12.
+
+(luatex.def)             Requested size: 412.56503pt x 367.5166pt.
+[33
+
+
+<./content/Grafiken/PLECS_Simulationsaufbau.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 20.
+LaTeX Info: Redefining \sffamily on input line 20.
+LaTeX Info: Redefining \ttfamily on input line 20.
+ [34<./content/Grafiken/Plecs_Out.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 49.
+LaTeX Info: Redefining \sffamily on input line 49.
+LaTeX Info: Redefining \ttfamily on input line 49.
+ [35]
+Overfull \hbox (2.15086pt too wide) detected at line 54
+ $\TU/LatinModernMath(1)/m/n/12 𝐿[] = [] ⋅ 𝐷 = [] ⋅ [] = 134, 16 []$ 
+ 
+ []
+
+<content/Grafiken/IAF_BuckControl.pdf, id=1108, 352.31625pt x 125.46875pt>
+File: content/Grafiken/IAF_BuckControl.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_BuckControl.pdf>
+Package luatex.def Info: content/Grafiken/IAF_BuckControl.pdf  used on input li
+ne 63.
+(luatex.def)             Requested size: 412.56503pt x 146.92418pt.
+LaTeX Info: Redefining \rmfamily on input line 67.
+LaTeX Info: Redefining \sffamily on input line 67.
+LaTeX Info: Redefining \ttfamily on input line 67.
+[36]
+<content/Grafiken/IAF_Plecs_main.pdf, id=1124, 532.99126pt x 149.55875pt>
+File: content/Grafiken/IAF_Plecs_main.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_Plecs_main.pdf>
+Package luatex.def Info: content/Grafiken/IAF_Plecs_main.pdf  used on input lin
+e 73.
+(luatex.def)             Requested size: 412.56503pt x 115.7699pt.
+<content/Grafiken/IAF_Plecs_Buck.pdf, id=1125, 523.9575pt x 184.69pt>
+File: content/Grafiken/IAF_Plecs_Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_Plecs_Buck.pdf>
+Package luatex.def Info: content/Grafiken/IAF_Plecs_Buck.pdf  used on input lin
+e 79.
+(luatex.def)             Requested size: 412.56503pt x 145.43004pt.
+<content/Grafiken/IAF_Plecs_IVS.pdf, id=1126, 295.1025pt x 163.61125pt>
+File: content/Grafiken/IAF_Plecs_IVS.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_Plecs_IVS.pdf>
+Package luatex.def Info: content/Grafiken/IAF_Plecs_IVS.pdf  used on input line
+ 86.
+(luatex.def)             Requested size: 288.79425pt x 160.11572pt.
+LaTeX Info: Redefining \rmfamily on input line 97.
+LaTeX Info: Redefining \sffamily on input line 97.
+LaTeX Info: Redefining \ttfamily on input line 97.
+ [37<./content/Grafiken/IAF_BuckControl.pdf><./content/Grafiken/IAF_Plecs_main.p
+df>]
+LaTeX Info: Redefining \rmfamily on input line 97.
+LaTeX Info: Redefining \sffamily on input line 97.
+LaTeX Info: Redefining \ttfamily on input line 97.
+ [38<./content/Grafiken/IAF_Plecs_Buck.pdf><./content/Grafiken/IAF_Plecs_IVS.pdf
+>]
+LaTeX Info: Redefining \rmfamily on input line 136.
+LaTeX Info: Redefining \sffamily on input line 136.
+LaTeX Info: Redefining \ttfamily on input line 136.
+ [39]
+<content/Grafiken/IAF_Paper_Control.png, id=1195, 697.10437pt x 521.69907pt>
+File: content/Grafiken/IAF_Paper_Control.png Graphic file (type png)
+<use content/Grafiken/IAF_Paper_Control.png>
+Package luatex.def Info: content/Grafiken/IAF_Paper_Control.png  used on input 
+line 146.
+(luatex.def)             Requested size: 330.05328pt x 247.00562pt.
+<content/Grafiken/PlecsIAFivscontrol.pdf, id=1200, 351.3125pt x 61.22874pt>
+File: content/Grafiken/PlecsIAFivscontrol.pdf Graphic file (type pdf)
+<use content/Grafiken/PlecsIAFivscontrol.pdf>
+Package luatex.def Info: content/Grafiken/PlecsIAFivscontrol.pdf  used on input
+ line 153.
+(luatex.def)             Requested size: 412.56503pt x 71.91013pt.
+LaTeX Info: Redefining \rmfamily on input line 157.
+LaTeX Info: Redefining \sffamily on input line 157.
+LaTeX Info: Redefining \ttfamily on input line 157.
+ [40<./content/Grafiken/IAF_Paper_Control.png>]
+<content/Grafiken/PLECS_IAF_idealePhasenströme.pdf, id=1214, 329.23pt x 151.56
+625pt>
+File: content/Grafiken/PLECS_IAF_idealePhasenströme.pdf Graphic file (type pdf
+)
+<use content/Grafiken/PLECS_IAF_idealePhasenströme.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_IAF_idealePhasenströme.pdf  us
+ed on input line 164.
+(luatex.def)             Requested size: 412.56503pt x 189.93607pt.
+<content/Grafiken/PlecsIAFiy.pdf, id=1215, 436.63126pt x 103.38625pt>
+File: content/Grafiken/PlecsIAFiy.pdf Graphic file (type pdf)
+<use content/Grafiken/PlecsIAFiy.pdf>
+Package luatex.def Info: content/Grafiken/PlecsIAFiy.pdf  used on input line 17
+2.
+(luatex.def)             Requested size: 412.56503pt x 97.68788pt.
+LaTeX Info: Redefining \rmfamily on input line 176.
+LaTeX Info: Redefining \sffamily on input line 176.
+LaTeX Info: Redefining \ttfamily on input line 176.
+ [41<./content/Grafiken/PlecsIAFivscontrol.pdf><./content/Grafiken/PLECS_IAF_ide
+alePhasenströme.pdf>]
+<content/Grafiken/PlecsIAFivsK1.pdf, id=1243, 500.87125pt x 136.51pt>
+File: content/Grafiken/PlecsIAFivsK1.pdf Graphic file (type pdf)
+<use content/Grafiken/PlecsIAFivsK1.pdf>
+Package luatex.def Info: content/Grafiken/PlecsIAFivsK1.pdf  used on input line
+ 185.
+(luatex.def)             Requested size: 412.56503pt x 112.44716pt.
+
+Overfull \hbox (19.79776pt too wide) in paragraph at lines 181--189
+\TU/lmr/m/n/12 er-zeugt und an-schlie-ßend durch ei-ne Ein-schalt-ver-zö-ge-ru
+ng zur Totzeit-Implementierung
+ []
+
+<content/Grafiken/IAF_Temp_0Grad.pdf, id=1249, 426.59375pt x 284.06125pt>
+File: content/Grafiken/IAF_Temp_0Grad.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_Temp_0Grad.pdf>
+Package luatex.def Info: content/Grafiken/IAF_Temp_0Grad.pdf  used on input lin
+e 194.
+(luatex.def)             Requested size: 371.306pt x 247.2613pt.
+LaTeX Info: Redefining \rmfamily on input line 200.
+LaTeX Info: Redefining \sffamily on input line 200.
+LaTeX Info: Redefining \ttfamily on input line 200.
+[42<./content/Grafiken/PlecsIAFiy.pdf><./content/Grafiken/PlecsIAFivsK1.pdf>]
+<content/Grafiken/IAF_Temp_30Grad.pdf, id=1274, 426.59375pt x 284.06125pt>
+File: content/Grafiken/IAF_Temp_30Grad.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_Temp_30Grad.pdf>
+Package luatex.def Info: content/Grafiken/IAF_Temp_30Grad.pdf  used on input li
+ne 203.
+(luatex.def)             Requested size: 371.306pt x 247.2613pt.
+<content/Grafiken/IAF_AC+L.pdf, id=1285, 426.59375pt x 569.12625pt>
+File: content/Grafiken/IAF_AC+L.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_AC+L.pdf>
+Package luatex.def Info: content/Grafiken/IAF_AC+L.pdf  used on input line 212.
+
+(luatex.def)             Requested size: 412.56503pt x 550.44524pt.
+<content/Grafiken/IAF_AC+L_30Grad.pdf, id=1286, 426.59375pt x 569.12625pt>
+File: content/Grafiken/IAF_AC+L_30Grad.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_AC+L_30Grad.pdf>
+Package luatex.def Info: content/Grafiken/IAF_AC+L_30Grad.pdf  used on input li
+ne 218.
+(luatex.def)             Requested size: 412.56503pt x 550.44524pt.
+LaTeX Info: Redefining \rmfamily on input line 223.
+LaTeX Info: Redefining \sffamily on input line 223.
+LaTeX Info: Redefining \ttfamily on input line 223.
+
+[43<./content/Grafiken/IAF_Temp_0Grad.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 223.
+LaTeX Info: Redefining \sffamily on input line 223.
+LaTeX Info: Redefining \ttfamily on input line 223.
+ [44<./content/Grafiken/IAF_Temp_30Grad.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 223.
+LaTeX Info: Redefining \sffamily on input line 223.
+LaTeX Info: Redefining \ttfamily on input line 223.
+ [45<./content/Grafiken/IAF_AC+L.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 223.
+LaTeX Info: Redefining \sffamily on input line 223.
+LaTeX Info: Redefining \ttfamily on input line 223.
+ [46<./content/Grafiken/IAF_AC+L_30Grad.pdf>]
+<content/Grafiken/PLECS_B6.pdf, id=1348, 429.605pt x 185.69376pt>
+File: content/Grafiken/PLECS_B6.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_B6.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_B6.pdf  used on input line 230.
+
+(luatex.def)             Requested size: 412.56503pt x 178.33197pt.
+<content/Grafiken/PLECS_B6Buck.pdf, id=1350, 417.56pt x 218.8175pt>
+File: content/Grafiken/PLECS_B6Buck.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_B6Buck.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_B6Buck.pdf  used on input line 
+237.
+(luatex.def)             Requested size: 371.306pt x 194.59003pt.
+LaTeX Info: Redefining \rmfamily on input line 241.
+LaTeX Info: Redefining \sffamily on input line 241.
+LaTeX Info: Redefining \ttfamily on input line 241.
+ [47<./content/Grafiken/PLECS_B6.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 260.
+LaTeX Info: Redefining \sffamily on input line 260.
+LaTeX Info: Redefining \ttfamily on input line 260.
+[48<./content/Grafiken/PLECS_B6Buck.pdf>]
+<content/Grafiken/B6-Control-orig.pdf, id=1393, 512.09381pt x 290.32877pt>
+File: content/Grafiken/B6-Control-orig.pdf Graphic file (type pdf)
+<use content/Grafiken/B6-Control-orig.pdf>
+Package luatex.def Info: content/Grafiken/B6-Control-orig.pdf  used on input li
+ne 267.
+(luatex.def)             Requested size: 412.56503pt x 233.9113pt.
+<content/Grafiken/PLECS_B6_ControlPout.pdf, id=1399, 462.72874pt x 103.38625pt>
+
+File: content/Grafiken/PLECS_B6_ControlPout.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_B6_ControlPout.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_B6_ControlPout.pdf  used on inp
+ut line 274.
+(luatex.def)             Requested size: 371.306pt x 82.95993pt.
+<content/Grafiken/PLECS_B6_ControlRiGrid.pdf, id=1401, 395.4775pt x 115.43124pt
+>
+File: content/Grafiken/PLECS_B6_ControlRiGrid.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_B6_ControlRiGrid.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_B6_ControlRiGrid.pdf  used on i
+nput line 281.
+(luatex.def)             Requested size: 371.306pt x 108.3768pt.
+<content/Grafiken/PLECS_B6_ControlPWMmid.pdf, id=1405, 364.36125pt x 75.28125pt
+>
+File: content/Grafiken/PLECS_B6_ControlPWMmid.pdf Graphic file (type pdf)
+<use content/Grafiken/PLECS_B6_ControlPWMmid.pdf>
+Package luatex.def Info: content/Grafiken/PLECS_B6_ControlPWMmid.pdf  used on i
+nput line 289.
+(luatex.def)             Requested size: 371.306pt x 76.71921pt.
+<content/Grafiken/B6_Buck_Control.pdf, id=1412, 576.1525pt x 88.33pt>
+File: content/Grafiken/B6_Buck_Control.pdf Graphic file (type pdf)
+<use content/Grafiken/B6_Buck_Control.pdf>
+Package luatex.def Info: content/Grafiken/B6_Buck_Control.pdf  used on input li
+ne 296.
+(luatex.def)             Requested size: 412.56503pt x 63.2525pt.
+LaTeX Info: Redefining \rmfamily on input line 300.
+LaTeX Info: Redefining \sffamily on input line 300.
+LaTeX Info: Redefining \ttfamily on input line 300.
+ [49<./content/Grafiken/B6-Control-orig.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 300.
+LaTeX Info: Redefining \sffamily on input line 300.
+LaTeX Info: Redefining \ttfamily on input line 300.
+ [50<./content/Grafiken/PLECS_B6_ControlPout.pdf><./content/Grafiken/PLECS_B6_Co
+ntrolRiGrid.pdf>]
+<content/Grafiken/B6_Temp_0&30Grad.pdf, id=1568, 426.59375pt x 284.06125pt>
+File: content/Grafiken/B6_Temp_0&30Grad.pdf Graphic file (type pdf)
+<use content/Grafiken/B6_Temp_0&30Grad.pdf>
+Package luatex.def Info: content/Grafiken/B6_Temp_0&30Grad.pdf  used on input l
+ine 305.
+(luatex.def)             Requested size: 412.56503pt x 274.73718pt.
+<content/Grafiken/B6_AC+DC_0Grad.pdf, id=1569, 426.59375pt x 426.59375pt>
+File: content/Grafiken/B6_AC+DC_0Grad.pdf Graphic file (type pdf)
+<use content/Grafiken/B6_AC+DC_0Grad.pdf>
+Package luatex.def Info: content/Grafiken/B6_AC+DC_0Grad.pdf  used on input lin
+e 311.
+(luatex.def)             Requested size: 412.56503pt x 412.59122pt.
+LaTeX Info: Redefining \rmfamily on input line 316.
+LaTeX Info: Redefining \sffamily on input line 316.
+LaTeX Info: Redefining \ttfamily on input line 316.
+ [51<./content/Grafiken/PLECS_B6_ControlPWMmid.pdf><./content/Grafiken/B6_Buck_C
+ontrol.pdf>]
+Overfull \vbox (104.02435pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \rmfamily on input line 316.
+LaTeX Info: Redefining \sffamily on input line 316.
+LaTeX Info: Redefining \ttfamily on input line 316.
+
+[52<./content/Grafiken/B6_Temp_0&30Grad.pdf><./content/Grafiken/B6_AC+DC_0Grad.p
+df>]
+<content/Grafiken/B6_AC+DC_30Grad.pdf, id=1617, 426.59375pt x 426.59375pt>
+File: content/Grafiken/B6_AC+DC_30Grad.pdf Graphic file (type pdf)
+<use content/Grafiken/B6_AC+DC_30Grad.pdf>
+Package luatex.def Info: content/Grafiken/B6_AC+DC_30Grad.pdf  used on input li
+ne 319.
+(luatex.def)             Requested size: 412.56503pt x 412.59122pt.
+) (./content/Kapitel_6.tex
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [53<./content/Grafiken/B6_AC+DC_30Grad.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+
+[54]
+chapter 6.
+
+warning  (file content/Grafiken/DPT.pdf) (pdf inclusion): PDF inclusion: found P
+DF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/DPT.pdf, id=1652, 722.7pt x 285.9502pt>
+File: content/Grafiken/DPT.pdf Graphic file (type pdf)
+<use content/Grafiken/DPT.pdf>
+Package luatex.def Info: content/Grafiken/DPT.pdf  used on input line 8.
+(luatex.def)             Requested size: 391.93552pt x 155.07837pt.
+[55
+
+
+]
+warning  (file content/Grafiken/IAF_surge.pdf) (pdf inclusion): PDF inclusion: f
+ound PDF version '1.7', but at most version '1.5' allowed
+<content/Grafiken/IAF_surge.pdf, id=1663, 400.73715pt x 148.8762pt>
+File: content/Grafiken/IAF_surge.pdf Graphic file (type pdf)
+<use content/Grafiken/IAF_surge.pdf>
+Package luatex.def Info: content/Grafiken/IAF_surge.pdf  used on input line 15.
+
+(luatex.def)             Requested size: 391.93552pt x 145.61145pt.
+LaTeX Info: Redefining \rmfamily on input line 18.
+LaTeX Info: Redefining \sffamily on input line 18.
+LaTeX Info: Redefining \ttfamily on input line 18.
+[56<./content/Grafiken/DPT.pdf>])
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 23.
+LaTeX Info: Redefining \sffamily on input line 23.
+LaTeX Info: Redefining \ttfamily on input line 23.
+[57<./content/Grafiken/IAF_surge.pdf>]
+chapter without number
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (1.43654pt too wide) in paragraph at lines 25--25
+\TU/lmr/m/it/12 de-run-gen an Elek-tro-ly-se-an-la-gen\TU/lmr/m/n/12 . 2023. \T
+U/lmr/m/sc/12 url\TU/lmr/m/n/12 : []$\TU/lmtt/m/n/12 https : / / www . netztrans
+parenz .
+ []
+
+
+Overfull \hbox (11.12364pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 fileadmin / dena / SDL _ Symposium / 6 _ Bohn _ FNN . pdf$[] \T
+U/lmr/m/n/12 (be-sucht am 27.12.2023). 
+ []
+
+
+Overfull \hbox (18.49852pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 workshop _ publications / _ _ ECPE _ Seminar _ Augsburg _ 3ph _ PFC _ rectifiers _
+ []
+
+[58
+
+
+
+
+]
+Overfull \hbox (4.72578pt too wide) in paragraph at lines 25--25
+\TU/lmr/m/it/12 dul\TU/lmr/m/n/12 . 2023. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [
+]$\TU/lmtt/m/n/12 https : / / www . infineon . com / dgdl / Infineon - FF2MR12KM
+1H -
+ []
+
+
+Overfull \hbox (7.05054pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 DataSheet - v00 _ 20 - DE . pdf ? fileId = 8ac78c8c8afe5bd0018b1
+8a60b2d37e2$[]
+ []
+
+
+Overfull \hbox (13.37778pt too wide) in paragraph at lines 25--25
+\TU/lmr/m/it/12 dul\TU/lmr/m/n/12 . 2022. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [
+]$\TU/lmtt/m/n/12 https : / / www . infineon . com / dgdl / Infineon - FF2MR12W3
+M1H _
+ []
+
+
+Overfull \hbox (31.4705pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 B11 - DataSheet - v01 _ 10 - DE . pdf ? fileId = 8ac78c8c80027ec
+d0180f12eb1075411$[]
+ []
+
+
+Overfull \hbox (111.78642pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 FF4MR12W2M1H _ B11 - DataSheet - v00 _ 20 - DE . pdf ? fileId = 8ac78c8c8b6555fe018bed1b5e6c4ec4$[]
+ []
+
+
+Overfull \hbox (7.00256pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 DataSheet - v01 _ 00 - EN . pdf ? fileId = 5546d46270c4f93e0170f
+18ea895736e$[]
+ []
+
+
+Overfull \hbox (18.81052pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 infineon . com / dgdl / Infineon - Green _ Hydrogen - Efficient _ electrolysis _
+ []
+
+
+Overfull \hbox (65.77846pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 through _ comprehensive _ power _ conversion _ solutions - Appli
+cationPresentation -
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 24.
+LaTeX Info: Redefining \sffamily on input line 24.
+LaTeX Info: Redefining \ttfamily on input line 24.
+[59]
+LaTeX Info: Redefining \rmfamily on input line 24.
+LaTeX Info: Redefining \sffamily on input line 24.
+LaTeX Info: Redefining \ttfamily on input line 24.
+ [60]
+Overfull \hbox (30.15056pt too wide) in paragraph at lines 25--25
+\TU/lmtt/m/n/12 www . vde . com / resource / blob / 2226594 / 279eeea65a48407ecb
+d2227be6f190e9 /
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 25.
+LaTeX Info: Redefining \sffamily on input line 25.
+LaTeX Info: Redefining \ttfamily on input line 25.
+[61] (./content/Anhang.tex
+chapter without number
+<content/Anhang/B6_Regelung.pdf, id=1765, 512.09381pt x 290.32877pt>
+File: content/Anhang/B6_Regelung.pdf Graphic file (type pdf)
+<use content/Anhang/B6_Regelung.pdf>
+Package luatex.def Info: content/Anhang/B6_Regelung.pdf  used on input line 26.
+
+(luatex.def)             Requested size: 598.21803pt x 339.17383pt.
+
+Overfull \hbox (8.53104pt too wide) in paragraph at lines 33--97
+[][]
+ []
+
+)
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {en-US}
+>  {latex/bcp47-language}  =>  {en}
+>  {latex/bcp47-region}  =>  {US}
+>  {latex/bcp47-script}  =>  {Latn}
+>  {latex/bcp47-variant}  =>  {}
+>  {latex/bcp47-extension-t}  =>  {}
+>  {latex/bcp47-extension-u}  =>  {}
+>  {latex/bcp47-extension-x}  =>  {}
+>  {latex/bcp47-casing}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}
+>  {german/script}  =>  {latin}
+>  {german/lcscript}  =>  {latin}
+>  {german/scripttag}  =>  {}
+>  {german/language}  =>  {German}
+>  {german/langtag}  =>  {DEU}
+>  {german/bcp47}  =>  {de-DE}
+>  {german/bcp47-language}  =>  {de}
+>  {german/bcp47-region}  =>  {DE}
+>  {german/bcp47-script}  =>  {Latn}
+>  {german/bcp47-variant}  =>  {1996}
+>  {german/bcp47-extension-t}  =>  {}
+>  {german/bcp47-extension-u}  =>  {}
+>  {german/bcp47-extension-x}  =>  {}
+>  {german/bcp47-casing}  =>  {}
+>  {german/hyphennames}  =>  {}
+>  {german/direction}  =>  {LR}
+>  {german/hyphenmins}  =>  {2,2}
+>  {german/frenchspacing}  =>  {true}
+>  {german/indentfirst}  =>  {false}
+>  {german/fontsetup}  =>  {true}
+>  {german/envname}  =>  {german}
+>  {german/babelname}  =>  {ngerman}
+>  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {german/DefineCommandsCmd}  =>  {xpg_define_language_commands:e}.
+The property list \__xpg_alias contains the pairs (without outer braces):
+>  {latex/target}  =>  {latex}
+>  {german/target}  =>  {german}
+>  {de/target}  =>  {german}
+>  {de-CH/target}  =>  {german}
+>  {de-CH/variant}  =>  {swiss}
+>  {de-CH/options}  =>  {variant=swiss,spelling=new}
+>  {de-AT/target}  =>  {german}
+>  {de-AT/variant}  =>  {austrian}
+>  {de-AT/options}  =>  {variant=austrian,spelling=new}
+>  {de-DE/target}  =>  {german}
+>  {de-DE/variant}  =>  {german}
+>  {de-DE/options}  =>  {variant=german,spelling=new}
+>  {de-Latf-CH/target}  =>  {german}
+>  {de-Latf-CH/variant}  =>  {swiss}
+>  {de-Latf-CH/options}  =>  {variant=swiss,spelling=new,script=blackletter}
+>  {de-Latf-DE/target}  =>  {german}
+>  {de-Latf-DE/variant}  =>  {german}
+>  {de-Latf-DE/options}  =>  {variant=german,spelling=new,script=blackletter}
+>  {de-Latf-AT/target}  =>  {german}
+>  {de-Latf-AT/variant}  =>  {austrian}
+>  {de-Latf-AT/options}  => 
+{variant=austrian,spelling=new,script=blackletter}
+>  {de-AT-1901/target}  =>  {german}
+>  {de-AT-1901/variant}  =>  {austrian}
+>  {de-AT-1901/options}  =>  {variant=austrian,spelling=old}
+>  {de-CH-1996/target}  =>  {german}
+>  {de-CH-1996/variant}  =>  {swiss}
+>  {de-CH-1996/options}  =>  {variant=swiss,spelling=new}
+>  {de-AT-1996/target}  =>  {german}
+>  {de-AT-1996/variant}  =>  {austrian}
+>  {de-AT-1996/options}  =>  {variant=austrian,spelling=new}
+>  {de-DE-1901/target}  =>  {german}
+>  {de-DE-1901/variant}  =>  {german}
+>  {de-DE-1901/options}  =>  {variant=german,spelling=old}
+>  {de-Latf-CH-1901/target}  =>  {german}
+>  {de-Latf-CH-1901/variant}  =>  {swiss}
+>  {de-Latf-CH-1901/options}  => 
+{variant=swiss,spelling=old,script=blackletter}
+>  {de-CH-1901/target}  =>  {german}
+>  {de-CH-1901/variant}  =>  {swiss}
+>  {de-CH-1901/options}  =>  {variant=swiss,spelling=old}
+>  {de-Latf-AT-1901/target}  =>  {german}
+>  {de-Latf-AT-1901/variant}  =>  {austrian}
+>  {de-Latf-AT-1901/options}  => 
+{variant=austrian,spelling=old,script=blackletter}
+>  {de-Latf-CH-1996/target}  =>  {german}
+>  {de-Latf-CH-1996/variant}  =>  {swiss}
+>  {de-Latf-CH-1996/options}  => 
+{variant=swiss,spelling=new,script=blackletter}
+>  {de-Latf/target}  =>  {german}
+>  {de-Latf/options}  =>  {script=blackletter}
+>  {de-DE-1996/target}  =>  {german}
+>  {de-DE-1996/variant}  =>  {german}
+>  {de-DE-1996/options}  =>  {variant=german,spelling=new}
+>  {de-Latf-DE-1901/target}  =>  {german}
+>  {de-Latf-DE-1901/variant}  =>  {german}
+>  {de-Latf-DE-1901/options}  => 
+{variant=german,spelling=old,script=blackletter}
+>  {de-Latf-DE-1996/target}  =>  {german}
+>  {de-Latf-DE-1996/variant}  =>  {german}
+>  {de-Latf-DE-1996/options}  => 
+{variant=german,spelling=new,script=blackletter}
+>  {de-Latf-AT-1996/target}  =>  {german}
+>  {de-Latf-AT-1996/variant}  =>  {austrian}
+>  {de-Latf-AT-1996/options}  => 
+{variant=austrian,spelling=new,script=blackletter}
+>  {austrian/target}  =>  {german}
+>  {austrian/variant}  =>  {austrian}
+>  {austrian/options}  =>  {variant=austrian,spelling=old}
+>  {naustrian/target}  =>  {german}
+>  {naustrian/variant}  =>  {austrian}
+>  {naustrian/options}  =>  {variant=austrian,spelling=new}
+>  {germanb/target}  =>  {german}
+>  {germanb/variant}  =>  {german}
+>  {germanb/options}  =>  {variant=german,spelling=old}
+>  {ngerman/target}  =>  {german}
+>  {ngerman/variant}  =>  {german}
+>  {ngerman/options}  =>  {variant=german,spelling=new}
+>  {swissgerman/target}  =>  {german}
+>  {swissgerman/variant}  =>  {swiss}
+>  {swissgerman/options}  =>  {variant=swiss,spelling=old}
+>  {nswissgerman/target}  =>  {german}
+>  {nswissgerman/variant}  =>  {swiss}
+>  {nswissgerman/options}  =>  {variant=swiss,spelling=new}.
+ [62
+
+
+
+
+]
+LaTeX Info: Redefining \rmfamily on input line 27.
+LaTeX Info: Redefining \sffamily on input line 27.
+LaTeX Info: Redefining \ttfamily on input line 27.
+ [63<./content/Anhang/B6_Regelung.pdf>]
+LaTeX Info: Redefining \rmfamily on input line 27.
+LaTeX Info: Redefining \sffamily on input line 27.
+LaTeX Info: Redefining \ttfamily on input line 27.
+ [64]
+(C:/Users/jheinemann/BIBcloud/Master/Thesis/LaTex/MA_Latex/build/main.aux)
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 3C4E666C5DCA9546987D14A839B9FF23;55789.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 3B468CA6EDCEE9D1FC7B45EF0205110E;4892.
+Package rerunfilecheck Info: File `main.lof' has not changed.
+(rerunfilecheck)             Checksum: 44D0636A6E3011441DC7EDB306DE7E92;7743.
+Package rerunfilecheck Info: File `main.lot' has not changed.
+(rerunfilecheck)             Checksum: DF670D6A84C60101143043E4FDBDCEB5;1153.
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
 
 Here is how much of LuaTeX's memory you used:
- 88758 strings out of 478278
- 100000,4101490 words of node,token memory allocated
- 778 words of node memory still in use:
-   5 hlist, 1 vlist, 2 rule, 1 dir, 4 kern, 1 glyph, 17 attribute, 81 glue_spec,
- 17 attribute_list, 2 if_stack, 1 open, 40 write, 1 close, 1 pdf_colorstack node
-s
-   avail lists: 1:1,2:17,3:1,4:1,5:126,6:1,7:29,8:1,9:6,10:1,11:3,12:1
- 106712 multiletter control sequences out of 65536+600000
- 50 fonts using 19446963 bytes
- 113i,1n,107p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 91948 strings out of 478278
+ 125007,4101490 words of node,token memory allocated
+ 1198 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 3 glyph, 62
+ attribute, 91 glue_spec, 62 attribute_list, 2 write, 36 pdf_action nodes
+   avail lists: 1:9,2:1976,3:574,4:369,5:651,6:180,7:10298,8:208,9:1648,10:28,11
+:1249,12:2
+ 109036 multiletter control sequences out of 65536+600000
+ 96 fonts using 34133679 bytes
+ 113i,20n,117p,10917b,2936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<//?/c:/program files/miktex/fonts/opentype/public/lm/lmmono12-regular.otf><//?/
+c:/program files/miktex/fonts/opentype/public/lm/lmromancaps10-regular.otf><//?/
+c:/program files/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:/pr
+ogram files/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/program f
+iles/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><//?/c:/program files
+/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><C:/Program Files/MiKTeX/fon
+ts/opentype/public/lm-math/latinmodern-math.otf><C:/Program Files/MiKTeX/fonts/o
+pentype/public/lm-math/latinmodern-math.otf><//?/c:/program files/miktex/fonts/o
+pentype/public/lm/lmromanslant12-regular.otf><//?/c:/program files/miktex/fonts/
+opentype/public/lm/lmsans10-bold.otf><//?/c:/program files/miktex/fonts/opentype
+/public/lm/lmsans12-regular.otf><//?/c:/program files/miktex/fonts/opentype/publ
+ic/lm/lmroman12-regular.otf>
+Output written on main.pdf (74 pages, 7343594 bytes).
+
+PDF statistics: 2156 PDF objects out of 2487 (max. 8388607)
+ 285 named destinations out of 1000 (max. 131072)
+ 464 words of extra memory for PDF output out of 10000 (max. 100000000)
+

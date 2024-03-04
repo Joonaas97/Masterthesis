@@ -2,21 +2,21 @@
 Um die möglichen Optionen einzugrenzen, werden im Folgenden die Topologien aufgelistet und die Auswahl anhand einfacher Kriterien eingegrenzt. Einen guten Überblick über Schaltungen für dreiphasige Gleichrichter mit Blindleistungskompensation geben die Präsentationen von Dominik Bortis et al. \cite{Advanced3PhPFC} und Johann W. Kolar \cite{Essenceof3pKolar}. Dabei handelt es sich um Systeme mit aktiver Leistungsfaktorkorrektur. Aufgrund der gewünschten Systemdienstleistungen, wie z.~B. Blindleistungsbereitstellung, sind Systeme mit hybrider Kompensation nicht ausreichend.
 
 \section{Mögliche Topologien}
-Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec} vorgestellte dreiphasige Diodengleichrichter. Die anderen Topologien sind nachfolgend aufgeführt. Die beiden im Detail betracheteten Schaltungen werden als erste ausführlicher Dargestellt
+Die als Vergleichstopologie verwendete ist der bereits in Abschnitt \ref{sec:Rec} vorgestellte dreiphasige Diodengleichrichter. Die anderen Topologien sind nachfolgend aufgeführt. Die beiden im Detail betracheteten Schaltungen werden im Folgenden ausführlicher dargestellt.
 	\subsection{Integrated Active Filter Rectifier (IAF)} \label{sec:IAF}
 	Der \gls{IAF} Gleichrichter wurde erstmals 1997 in \cite{IAFfirst} für den Einsatz in Photovoltaikanwendungen vorgestellt. Er besteht aus einem Diodengleichrichter für den Hauptleistungspfad. Um sinusförmige Ströme in allen drei Phasen einzuprägen, wird dieser durch ein Netzwerk aus bidirektional sperrenden Leistungshalbleitern mit einer Induktivität und einer Halbbrücke, der sogenannten \gls{THI}-Schaltung, ergänzt. Durch die Integration des Filters in den Leistungspfad ist keine externe Blindleistungskompensation erforderlich und die Filter können kleiner dimensioniert werden. Aufgrund des ungesteuerten Diodengleichrichters ist jedoch eine nachträgliche Spannungsregelung durch einen Tiefsetzsteller erforderlich \cite{ThesisSchrittwieserBuckTypePFC_2017}.\\
 	Das Netzwerk aus bidirektionalen Schaltern, auch \glsentrylong{IVS} (\gls{IVS}) genannt, ermöglicht das Umschalten zwischen den einzelnen Phasen, in die durch die Induktivität und die Halbbrücke der gewünschte sinusförmige Stromverlauf eingeprägt wird. Dazu schaltet die Halbbrücke hinter der Induktivität entweder auf das positive oder auf das negative Potential der \gls{Upn}. Da der Diodengleichrichter immer nur aus zwei Phasen Strom bezieht, prägt die Schaltung ohne Phasenverschiebung nur in die jeweils dritte Phase Strom ein. Der \gls{IVS} schaltet mit Netzfrequenz und benötigt bidirektionale Schalter, um den Stromfluss während der gesamten Sinusperiode steuern zu können. Bei der Blindleistungsbereitstellung kommt es aufgrund der Phasenverschiebung zu einer Verschiebung zwischen Phasenstrom und Spannung. Dadurch ändert sich der Stromverlauf in der Drossel von einer Dreiecksfunktion ohne Blindleistung zu einer gekrümmten Funktion.
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF}
-		\caption{\gls{IAF} Gleichrichter Topologie mit Tiefsetzsteller}
+		\caption{\gls{IAF} Gleichrichtertopologie mit Tiefsetzsteller}
 		\label{fig:iaf}
 	\end{figure}
 	
 	
 	\subsection{B6-1/3-PWM PFC (+ Buck) Rectifier}
 	\label{sec:GrundlagenB6}
-	Diese Topologie ist eine weit verbreitete B6-Topologie, die aus drei Halbbrücken besteht, die jeweils an eine Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite werden die Schaltverluste und \glsentrylong{SDL} (\gls{SDL}) reduziert. Das Verfahren wurde von Menzi, Bortis und Kolar \cite{13PWMPFC} ausführlich beschrieben. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller verwendet.
+	Diese Topologie ist eine weitverbreitete B6-Topologie, die aus drei Halbbrücken besteht, die jeweils an eine Phase angeschlossen sind. Durch ein adaptives Modulationsverfahren unter Verwendung von Induktivitäten auf der Netzseite werden die Schaltverluste und \glsentrylong{SDL} (\gls{SDL}) reduziert. Das Verfahren wurde von Menzi, Bortis und Kolar \cite{13PWMPFC} ausführlich beschrieben. Zur Regelung der Ausgangsspannung wird ein entkoppelter Tiefsetzsteller verwendet.
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Buck}
@@ -35,7 +35,7 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 	
 	
 	\subsection{6-Switch Boost PFC Rectifier}
-				Bei dieser Topologie wurden im Prinzip beim Diodengleichrichter die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost} Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Boost-Verhalten und die Modulation der Eingangsströme über verschiedene \gls{PWM}-Verfahren zum gewünschten sinusförmigen Eingangsstrom.
+				Bei dieser Topologie wurden im Prinzip beim Diodengleichrichter die Dioden durch Schalter ersetzt, siehe Abbildung \ref{fig:sixswitchboost}. Dies ermöglicht im Zusammenspiel mit den Eingangsimpedanzen ein Boost-Verhalten und die Modulation der Eingangsströme über verschiedene \gls{PWM}-Verfahren zum gewünschten sinusförmigen Eingangsstrom.
 			\begin{figure} 
 				\centering
 				\includegraphics[width=1\linewidth]{content/Grafiken/SixSwitchBoost}
@@ -55,7 +55,7 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 		\end{figure}
 		
 		\subsection{Trident Rectifier}
-		Diese Topologie basiert auf dem 6-Switch Boost Rectifier. An jeder Phasenhalbbrücke ist ein eigener Tiefsetzsteller angeschlossen. Dadurch besitzt jede Phase einen unabhängigen, identischen parallelen Aufbau zwischen AC- und DC-Pfad (siehe Abbildung \ref{fig:trident}). Dies ermöglicht kontinuierliche Ein- und Ausgangsströme und durch die Wahl des Hoch- oder Tiefsetzenden Strompfades verringern sich die Schaltverluste.
+		Diese Topologie basiert auf dem 6-Switch Boost Rectifier. An jeder Phasenhalbbrücke ist ein eigener Tiefsetzsteller angeschlossen. Dadurch besitzt jede Phase einen unabhängigen, identischen parallelen Aufbau zwischen AC- und DC-Pfad (siehe Abbildung \ref{fig:trident}). Dies ermöglicht kontinuierliche Ein- und Ausgangsströme und durch die Wahl des hoch- oder tiefsetzenden Strompfades verringern sich die Schaltverluste.
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{content/Grafiken/Trident}
@@ -82,7 +82,7 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 		\end{figure}
 		
 	\subsection{2/3 PWM Buck \& Boost Current Source Rectifier} \label{sec:2/3BuckBoost}
-		Um einen größeren Bereich an Ausgangsspannungen abdecken zu können, wird der 6-Switch Buck mit Bidirektionalen Schaltern und durch einen Hochsetzsteller am Ausgang erweitert. Dies zeigt die Abbildung \ref{fig:23pwmbuckboost}. 
+		Um einen größeren Bereich an Ausgangsspannungen abdecken zu können, wird der 6-Switch Buck mit bidirektionalen Schaltern und durch einen Hochsetzsteller am Ausgang erweitert. Dies zeigt die Abbildung \ref{fig:23pwmbuckboost}. 
 		\begin{figure}
 			\centering
 			\includegraphics[width=1\linewidth]{content/Grafiken/23PWMBuckBoost}
@@ -92,7 +92,7 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 	
 		
 	\subsection{Y-Rectifier}
-		Anstelle der Topologie aus \ref{sec:2/3BuckBoost} mit Hoch- und Tiefsetzsteller wird hier die umgekehrte Variante mit Tief- und Hochsetzsteller verwendet. Dies ermöglicht kontinuierliche Ein- und Ausgangsspannungen. Außerdem sinken die Schaltverluste, da jeweils nur der Hoch- oder Tiefsetzende Pfad geschaltet wird. Die Schaltung ist in Abbildung \ref{fig:y-rectifier} gezeigt.
+		Anstelle der Topologie aus \ref{sec:2/3BuckBoost} mit Hoch- und Tiefsetzsteller wird hier die umgekehrte Variante mit Tief- und Hochsetzsteller verwendet. Dies ermöglicht kontinuierliche Ein- und Ausgangsspannungen. Außerdem sinken die Schaltverluste, da jeweils nur der hoch- oder tiefsetzende Pfad geschaltet wird. Die Schaltung ist in Abbildung \ref{fig:y-rectifier} gezeigt.
 		
 	
 		\begin{figure}
@@ -143,10 +143,9 @@ Die als Vergleichstopologie verwendete ist der bereits im Abschnitt \ref{sec:Rec
 
 \section{Auswahl der Topologien}
 Zur Eingrenzung des Lösungsraums wird zunächst eine Auflistung der möglichen Schaltungstopologien zum Anschluss an das dreiphasige Stromnetz erstellt, vergleiche Tabelle \ref{tab:vorauswahl}. Die 15 aufgelisteten Topologien, beginnend mit dem in Abbildung \ref{fig:B6DiodRect} dargestellten Diodengleichrichter, werden anhand der benötigten Induktivitäten, Dioden, Schalter und Stufen, sowie der Funktionen hoch- bzw. tiefstellend bewertet.\\
-Aufgrund ihres simpleren Aufbaus sind Dioden günstiger als Leistungsschalter und fallen daher nicht so stark ins Gewicht. \\
-Daher ist der Swiss Rectifier trotz seiner 8 Dioden aber lediglich benötigter 8 Schalter von Interesse. Reine hochsetzende (Boost) Topologien kommen für die Anwendung nicht infrage, da eine niedrige Spannung als Anforderung gestellt wird um den Elektrolyseur hochzufahren. \\
+Aufgrund ihres simpleren Aufbaus sind Dioden günstiger als Leistungsschalter und müssen daher nicht so stark berücksichtigt werden. Daher ist der Swiss Rectifier trotz seiner acht Dioden und zusätzlich benötigter acht Schalter von Interesse. Reine hochsetzende (Boost) Topologien kommen für die Anwendung nicht infrage, da eine niedrige Spannung als Anforderung gestellt wird um den Elektrolyseur hochzufahren. \\
 Die Tabelle \ref{tab:vorauswahl} zeigt, dass sich die vier Topologien, die grün hervorgehoben sind, für eine engere Betrachtung eignen, da sie im Vergleich zu anderen Topologien weniger Induktivitäten und Halbleiter benötigen. Die Anzahl der Halbleiter beeinflusst die Kosten und Effizienz der Schaltung und spielen daher eine essentielle Rolle. Anhand der Anzahl an Induktivitäten im Hauptstrompfad wird der Einfluss dieser verglichen. \\
-Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in dieser Arbeit der \gls{IAF} und \gls{B6PFC} betrachtet und die Ergebnisse für eine finale Bewertung aufbereitet. Die beiden anderen Topologien, 6-Switch Buck und Swiss Rectifier, werden in  der Arbeit von Steffen Isfort betrachtet.
+Aufgrund der Komplexität der Schaltungen und benötigten Regelungen werden in dieser Arbeit der \gls{IAF} und \gls{B6PFC} betrachtet und die Ergebnisse für eine finale Bewertung aufbereitet. Die beiden anderen Topologien, 6-Switch Buck und Swiss Rectifier, werden in  der Arbeit von Steffen Isfort betrachtet \cite{Isfort}.
 
 \begin{table}
 	\caption{Topologievergleich zur Vorauswahl}

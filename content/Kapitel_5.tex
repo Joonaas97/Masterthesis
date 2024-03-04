@@ -47,7 +47,7 @@ Für die Auswertung wird der eingeschwungene Zustand des Systems betrachtet, die
 \section{Tiefsetzsteller}
 Der Tiefsetzsteller kann entkoppelt vom Gleichrichter betrachtet werden, was für die Auslegung der Induktivität von Vorteil ist. Die Regelung kann ebenfalls entkoppelt erfolgen, sodass eine getrennte Stabilitätsbetrachtung und Optimierung möglich ist. 
 	\subsection{Auslegung der Induktivität}
-	Die Speicherdrossel wird nach der Formel \ref{eq:BuckL} ausgelegt, wobei die Netzspannung maximal $U_{LLmaxPeak}=1,1 \cdot 617\, \si{\V} \cdot \sqrt{2}=959,8\, \si{\V}$ und die Ausgangsspannung $U_{a,min}$ liegt bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller realisieren muss. Es ergibt sich eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die gespeicherte Energie beträgt 7,78 Joule bei einem Ausgangsstrom von 295 A. 
+	Die Speicherdrossel wird nach der Formel \ref{eq:BuckL} ausgelegt, wobei die Netzspannung maximal $U_{LLmaxPeak}=1,1 \cdot 617\, \si{\V} \cdot \sqrt{2}=959,8\, \si{\V}$ und die Ausgangsspannung $U_{a,min}$ liegt bei mindestens 482 \si{\V}. Daraus ergeben sich die maximalen Parameter, die der Tiefsetzsteller realisieren muss. Es ergibt sich eine Induktivität von 134,16 \si{\micro \henry}, siehe Formel \ref{eq:BuckLwert}. Die gespeicherte Energie beträgt 7,78 \si{\joule} bei einem Ausgangsstrom von 295 A. 
 	\begin{equation}
 	\label{eq:BuckLwert}
 	L_{T}= \dfrac{U_{LLmaxPeak}-U_{amin}}{f_{sw} \cdot \Delta I} \cdot D = \dfrac{959,8\,\si{\V} - 482\, \si{\V}}{20\, \si{\kilo \hertz}\cdot 0,3 \cdot 295\, \si{\ampere}} \cdot \dfrac{482\, \si{\V}}{959,8\, \si{\V}}= 134,16 \,\si{\micro \henry} 
@@ -101,7 +101,7 @@ Der Tiefsetzsteller kann entkoppelt vom Gleichrichter betrachtet werden, was fü
 		I_{IAF0°}= sin(30°)\cdot \hat{I}_{max}=sin(30°)\cdot 294,07 \,A = 147,04\, \si{\A}
 	\end{equation}
 	
-	Der Rippelstrom wird auf 30 \% des Nennstroms ausgelegt. Daher muss die Induktivität einen Wert von 272 \si{\micro \henry} haben, siehe Formel \ref{eq:Livs0}. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, diese berechnet sich nach Formel \ref{eq:EL_IVS0}
+	Der Rippelstrom wird auf 30 \% des Nennstroms ausgelegt. Daher muss die Induktivität einen Wert von 272 \si{\micro \henry} haben, siehe Formel \ref{eq:Livs0}. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, diese berechnet sich nach Formel \ref{eq:EL_IVS0}.
 		
 		\begin{equation}
 			\label{eq:Livs0}
@@ -123,7 +123,7 @@ Der Tiefsetzsteller kann entkoppelt vom Gleichrichter betrachtet werden, was fü
 		\end{equation}
 		
 		
-		Die in der Drossel gespeicherte Energie, welche eine relevante Größe für die Bewertung darstellt, beträgt 8,82 Joule (siehe Formel \ref{eq:EL_IVS30}).
+		Die in der Drossel gespeicherte Energie, welche eine relevante Größe für die Bewertung darstellt, beträgt 8,82 \si{\joule} (siehe Formel \ref{eq:EL_IVS30}).
 		
 		\begin{equation}
 			\label{eq:EL_IVS30}
@@ -132,7 +132,7 @@ Der Tiefsetzsteller kann entkoppelt vom Gleichrichter betrachtet werden, was fü
 		
 		
 		
-		Zusätzlich wird eingangsseitig eine Filterinduktivität $L_{IAF-N}$ mit dem Wert 1~\si{\micro \henry} eingesetzt, um das Verhalten des Netztrafos nachzubilden. Zur Bewertung der Induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, dazu wird der Scheitelwert des Stroms $\hat{I}_{max}$ benötigt, siehe Formel \ref{eq:Idachmax}. Die Netzdrossel hat somit eine gespeicherte Energie von 0,1 Joule, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
+		Zusätzlich wird eingangsseitig eine Filterinduktivität $L_{IAF-N}$ mit dem Wert 1~\si{\micro \henry} eingesetzt, um das Verhalten des Netztrafos nachzubilden. Zur Bewertung der induktiven Komponenten wird die gespeicherte Energie in der Drossel verwendet, dazu wird der Scheitelwert des Stroms $\hat{I}_{max}$ benötigt, siehe Formel \ref{eq:Idachmax}. Die Netzdrossel hat somit eine gespeicherte Energie von 0,1 \si{\joule}, siehe Formel \ref{eq:E_IAF_ACL}. Aufgrund der dreiphasigen Anwendung wird der Wert direkt mit dem Faktor 3 multipliziert.
 			
 			\begin{equation}
 			\label{eq:E_IAF_ACL}
@@ -188,7 +188,7 @@ Die Stromregelung erfolgt mithilfe eines diskreten PI-Reglerblocks aus der PLECS
 		\end{figure}
 		
 		\subsection{Ergebnisse}
-		Für die Auswertung werden die Simulationen für eine Dauer von bis zu zehn Sekunden durchgeführt, da zu diesem Zeitpunkt ein eingeschwungener Zustand erreicht ist. Wie in Abbildung \ref{fig:iaftemp0} zu erkennen ist, ist die Kühlplattentemperatur als Startpunkt auf 80~°C festgelegt. Die Temperatur der Dioden des Gleichrichters, welche den Hauptstrom führen, sind in grün dargestellt und ändern sich nur minimal aufgrund der Blindleistungsbereitstellung, siehe Abbildung \ref{fig:iaftemp30}. Die Temperatur beträgt knapp über 120~°C und liegt somit unterhalb der erlaubten Maximaltemperatur von 175~°C \cite{IFAGFF2}. Die Temperatur der T+/- Halbbrücke wird in Pink dargestellt und steigt bei Blindleistungsbereitstellung auf knapp 160~°C und bietet damit 15~°C Abstand zur zulässigen Maximaltemperatur.  Diese hohe Temperatur führt zwar nicht zu einem direkten Ausfall der Halbleiter, hat aber einen starken Einfluss auf die Lebensdauererwartung. Die Anzahl der Temperaturzyklen bei Temperaturen über 150~°C führt zu einem wahrscheinlichen Ausfall bei weniger als 10~000 Zyklen \cite{SicTemp}. Daher sollte eine Erhöhung der Chipfläche für die Halbbrücke am \gls{IVS} überlegt werden. Die Temperatur des Tiefsetzstellers wird in Rot dargestellt und sinkt aufgrund der reduzierten Ausgangsleistung bei Blindleistungsbereitstellung.  
+		Für die Auswertung werden die Simulationen für eine Dauer von bis zu zehn Sekunden durchgeführt, da zu diesem Zeitpunkt ein eingeschwungener Zustand erreicht ist. Wie in Abbildung \ref{fig:iaftemp0} zu erkennen ist, ist die Kühlplattentemperatur als Startpunkt auf 80~°C festgelegt. Die Temperatur der Dioden des Gleichrichters, welche den Hauptstrom führen, sind in grün dargestellt und ändern sich nur minimal aufgrund der Blindleistungsbereitstellung, siehe Abbildung \ref{fig:iaftemp30}. Die Temperatur beträgt knapp über 120°C und liegt somit unterhalb der erlaubten Maximaltemperatur von 175°C \cite{IFAGFF2}. Die Temperatur der T+/- Halbbrücke wird in Pink dargestellt und steigt bei Blindleistungsbereitstellung auf knapp 160°C und bietet damit 15~°C Abstand zur zulässigen Maximaltemperatur. Diese hohe Temperatur führt zwar nicht zu einem direkten Ausfall der Halbleiter, hat aber einen starken Einfluss auf die Lebensdauererwartung. Die Anzahl der Temperaturzyklen bei Temperaturen über 150°C führt zu einem wahrscheinlichen Ausfall bei weniger als 10~000 Zyklen \cite{SicTemp}. Daher sollte eine Erhöhung der Chipfläche für die Halbbrücke am \gls{IVS} überlegt werden. Die Temperatur des Tiefsetzstellers wird in Rot dargestellt und sinkt aufgrund der reduzierten Ausgangsleistung bei Blindleistungsbereitstellung.  
 		\begin{figure} 
 			\centering
 			\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_Temp_0Grad}
@@ -219,7 +219,7 @@ Die Stromregelung erfolgt mithilfe eines diskreten PI-Reglerblocks aus der PLECS
 			\caption{Simulationsergebnisse des IAF bei 30 Grad Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }
 			\label{fig:iafacl30grad}
 		\end{figure}
-		Die Topologie hat aufgrund der Anforderung an Blindleistungsbereitstellung einen Nachteil durch den IVS, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die THD des Stroms deutlich verschlechtert wird. Die THD liegt bereits ohne Phasenverschiebung bei etwa 15~\%, und mit Phasenverschiebung verdoppelt sich dieser Wert auf etwa 32 \%. Dies ist proportional zum vom \gls{IVS} geschalteten Drosselstrom, der sich ebenfalls etwa verdoppelt.  Somit kann der IAF den Anforderungen nur schwer gerecht werden, da weitere Filterstufen benötigt würden. Dies lässt sich auch gut anhand der Arbeit von Schrittwieser et al. sehen, welche den SWISS und \gls{IAF} mit 8~kW Leistung beschreibt. Bei ihrem Prototyp macht der EMI-Filter knapp 5\% mehr des Volumens aus als beim SWISS Rectifier \cite{IAF99}.
+		Die Topologie hat aufgrund der Anforderung an Blindleistungsbereitstellung einen Nachteil durch den IVS, da dieser sprunghafte Änderungen des Stromverlaufs verursacht. Diese starken Sprünge führen dazu, dass die THD des Stroms deutlich verschlechtert wird. Die THD liegt bereits ohne Phasenverschiebung bei etwa 15~\%, und mit Phasenverschiebung verdoppelt sich dieser Wert auf etwa 32 \%. Dieser Wert ist proportional zum vom \gls{IVS} geschalteten Drosselstrom, der sich ebenfalls etwa verdoppelt.  Somit kann der IAF den Anforderungen nur schwer gerecht werden, da weitere Filterstufen benötigt würden. Dies lässt sich auch gut anhand der Arbeit von Schrittwieser et al. sehen, welche den SWISS und \gls{IAF} mit 8~kW Leistung beschreibt. Bei ihrem Prototyp macht der EMI-Filter knapp 5\% mehr des Volumens aus als beim SWISS Rectifier \cite{IAF99}.
 		
 	
 
@@ -252,7 +252,7 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 				\label{eq:L_B6}
 				L_{B6}= \dfrac{U_{LLmaxPeak}}{4\cdot f{sw} \cdot I_{\Delta max B6}} = \dfrac{959,8\, \si{\volt}}{4 \cdot 20\, \si{\kilo \hertz} \cdot 88,2\, \si{\ampere}} =136\, \si{\micro \henry}
 			\end{equation}
-			Die in der Induktivität gespeicherte Energie wird ebenfalls durch den Zusammenhang zwischen Netzspannung und Ausgangsleistung definiert, erhöht sich jedoch nicht durch die Bereitstellung von Blindleistung. Die gespeicherte Energie pro Phase beträgt 5,88 Joule nach Formel \ref{eq:EL_B6} und muss aufgrund der dreiphasigen Ausführung mit dem Faktor drei multipliziert werden. Somit ergibt sich eine Gesamtenergie von 17,64 Joule für die Netzinduktivität der Topologie.
+			Die in der Induktivität gespeicherte Energie wird ebenfalls durch den Zusammenhang zwischen Netzspannung und Ausgangsleistung definiert, erhöht sich jedoch nicht durch die Bereitstellung von Blindleistung. Die gespeicherte Energie pro Phase beträgt 5,88 \si{\joule} nach Formel \ref{eq:EL_B6} und muss aufgrund der dreiphasigen Ausführung mit dem Faktor drei multipliziert werden. Somit ergibt sich eine Gesamtenergie von 17,64 \si{\joule} für die Netzinduktivität der Topologie.
 			
 			\begin{equation}
 			\label{eq:EL_B6}
@@ -299,7 +299,7 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 \end{figure}		
 \subsection{Ergebnisse}
 			Es zeigt sich, dass der \gls{B6PFC} deutliche Nachteile bei den Induktivitäten und damit bei den Hardwarekosten hat. Die erforderliche dreiphasige Drossel führt dazu, dass der IAF in dieser Kategorie um mehr als 50\% besser abschneidet.
-			Anders sieht es in den anderen Kategorien aus, wo weniger Kondensatoren benötigt werden. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigen, durch die Reduzierung der Ausgangsleistung ist die Temperatur im \gls{MOSFET} FET7 des Tiefsetzsteller etwas niedriger, rosa dargestellt. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen. Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf.
+			In den anderen Kategorien ist dies anders. Hier werden weniger Kondensatoren benötigt. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigen. Durch die Reduzierung der Ausgangsleistung ist die Temperatur im \gls{MOSFET} FET7 des Tiefsetzsteller etwas niedriger. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen. Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf.
 			\begin{figure}
 				\centering
 				\includegraphics[width=1\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
@@ -321,7 +321,7 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 				\label{fig:b6acdc30grad}
 			\end{figure}
 \section{Bewertung}
-Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgeführt. Diese Tabelle enthält Informationen über die Hardware, insbesondere die Induktivitäten, sowie über die Kapazitäten, Halbleiter und Treiber. Zusätzlich werden die Ergebnisse der Simulation anhand der Verlustleistung der Halbleiter bewertet.  Zur Durchführung eines Vergleichs der Kategorien und einer Gesamtbewertung werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor summiert. Die Kapazitäten haben nur einen vergleichsweise geringen Einfluss auf die Gesamtsystemkosten und werden daher nur mit fünf Prozent bewertet. Da die Drosseln einen größeren Einfluss haben, werden sie mit 50~\% gewichtet. Der Einfluss der Kondensatoren wird mit 5~\% berücksichtigt. Die restlichen 45~\% entfallen auf die Halbleiter in Form der Chipfläche (über den RDSON), die Anzahl der Treiber und die Verlustleistung. Die jeweiligen Punkte sind proportional zu erwartenden Systemkosten und Volumen. Daher stellt eine niedrigere Punktzahl eine bessere Bewertung dar. \\
+Die Ergebnisse der Gesamtbewertung sind in Tabelle \ref{tab:Auswertung} aufgeführt. Diese Tabelle enthält Informationen über die Hardware, insbesondere die Induktivitäten, sowie über die Kapazitäten, Halbleiter und Treiber. Zusätzlich werden die Ergebnisse der Simulation anhand der Verlustleistung der Halbleiter bewertet. Zur Durchführung eines Vergleichs der Kategorien und einer Gesamtbewertung werden die Einzelkategorien zwischen null und eins normiert und mit einem Gewichtungsfaktor summiert. Die Kapazitäten haben nur einen vergleichsweise geringen Einfluss auf die Gesamtsystemkosten und werden daher nur mit fünf Prozent bewertet. Da die Drosseln einen größeren Einfluss haben, werden sie mit 50~\% gewichtet. Der Einfluss der Kondensatoren wird mit 5~\% berücksichtigt. Die restlichen 45~\% entfallen auf die Halbleiter in Form der Chipfläche (über den RDSON), die Anzahl der Treiber und die Verlustleistung. Die jeweiligen Punkte sind proportional zu erwartenden Systemkosten und Volumen. Daher stellt eine niedrigere Punktzahl eine bessere Bewertung dar. \\
 \begin{table}
 	\centering
 	\caption{Auflistung der Simulationsergebnisse und Bewertung}
