@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[150] biber-MSWIN64:340> INFO - === 
-[850] Utils.pm:410> ERROR - Cannot find 'main.bcf'!
-[850] Biber.pm:136> INFO - ERRORS: 1
+[1] Config.pm:310> INFO - Logfile is 'main.blg'
+[206] biber-MSWIN64:340> INFO - === 
+[1127] Utils.pm:410> ERROR - Cannot find 'main.bcf'!
+[1128] Biber.pm:136> INFO - ERRORS: 1
