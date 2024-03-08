@@ -26,9 +26,9 @@
 \contentsline {figure}{\numberline {4-7}{\ignorespaces Vienna Rectifier}}{26}{figure.caption.31}%
 \contentsline {figure}{\numberline {4-8}{\ignorespaces Swiss Rectifier}}{26}{figure.caption.32}%
 \contentsline {figure}{\numberline {4-9}{\ignorespaces 2/3 PWM Buck \& Boost Current Source Rectifier}}{27}{figure.caption.33}%
-\contentsline {figure}{\numberline {4-10}{\ignorespaces Y Rectifier}}{28}{figure.caption.34}%
+\contentsline {figure}{\numberline {4-10}{\ignorespaces Y Rectifier}}{27}{figure.caption.34}%
 \contentsline {figure}{\numberline {4-11}{\ignorespaces 3-Level Neutral Point Clamped}}{28}{figure.caption.35}%
-\contentsline {figure}{\numberline {4-12}{\ignorespaces 3-Level ANPC}}{29}{figure.caption.36}%
+\contentsline {figure}{\numberline {4-12}{\ignorespaces 3-Level Active Neutral Point Clamped}}{29}{figure.caption.36}%
 \contentsline {figure}{\numberline {4-13}{\ignorespaces Three Level Flying Capacitor Boost-Type}}{30}{figure.caption.37}%
 \contentsline {figure}{\numberline {4-14}{\ignorespaces 3L FC + Tiefsetzsteller}}{30}{figure.caption.38}%
 \addvspace {10\p@ }
@@ -48,11 +48,11 @@
 \contentsline {figure}{\numberline {5-14}{\ignorespaces Simulationsergebnisse des IAF ohne Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }}{45}{figure.caption.54}%
 \contentsline {figure}{\numberline {5-15}{\ignorespaces Simulationsergebnisse des IAF bei 30 Grad Phasenverschiebung, Eingangsspannung und Ströme, Strom in der IVS Induktivität }}{46}{figure.caption.55}%
 \contentsline {figure}{\numberline {5-16}{\ignorespaces PLECS Aufbau der B6 Leistungshalbleiter}}{47}{figure.caption.56}%
-\contentsline {figure}{\numberline {5-17}{\ignorespaces PLECS Aufbau des Tiefsetzstellers der B6 Topologie}}{48}{figure.caption.57}%
+\contentsline {figure}{\numberline {5-17}{\ignorespaces PLECS Aufbau des Tiefsetzstellers der B6 Topologie}}{47}{figure.caption.57}%
 \contentsline {figure}{\numberline {5-18}{\ignorespaces Regelung des \gls {B6PFC} \blx@tocontentsinit {0}\cite {13PWMPFC}}}{49}{figure.caption.58}%
-\contentsline {figure}{\numberline {5-19}{\ignorespaces PLECS Regelung der Ausgangsleistung als Sollgröße}}{50}{figure.caption.59}%
+\contentsline {figure}{\numberline {5-19}{\ignorespaces PLECS Regelung der Ausgangsleistung als Sollgröße}}{49}{figure.caption.59}%
 \contentsline {figure}{\numberline {5-20}{\ignorespaces PLECS Regelung der Netzimpedanz und Phasenabschnittserkennung}}{50}{figure.caption.60}%
-\contentsline {figure}{\numberline {5-21}{\ignorespaces PLECS PWM Erzeugung des B6 Gleichrichters mit \gls {PFC}}}{51}{figure.caption.61}%
+\contentsline {figure}{\numberline {5-21}{\ignorespaces PLECS PWM Erzeugung des B6 Gleichrichters mit \gls {PFC}}}{50}{figure.caption.61}%
 \contentsline {figure}{\numberline {5-22}{\ignorespaces Regelung des Tiefsetzstellers beim \gls {B6PFC}}}{51}{figure.caption.62}%
 \contentsline {figure}{\numberline {5-23}{\ignorespaces Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}}{52}{figure.caption.63}%
 \contentsline {figure}{\numberline {5-24}{\ignorespaces Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}}{52}{figure.caption.64}%

@@ -42,8 +42,7 @@ Für den Gleichrichter werden grundlegende Parameter festgelegt, um die Auslegun
 	\label{tab:Betriebspara}
 \end{table}
 
-Für die Auswertung wird der eingeschwungene Zustand des Systems betrachtet, dieser wird anhand des Temperaturverhaltens der Halbleiter kontrolliert. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Schwingungen auftreten. Außerdem wird für die Auswertung die letzte Periode der Simulation verwendet, da hier der thermische Vorgang eingeschwungen ist. Dieser Abschnitt wird für eine spätere Betrachtung gespeichert.
-
+Für die Auswertung wird der eingeschwungene Zustand des Systems betrachtet, dieser wird anhand des Temperaturverhaltens der Halbleiter kontrolliert. Dies erleichtert die Auslegung der Regler, die Parameter werden so gewählt, dass ein stabiler Zustand erreicht wird und keine Schwingungen auftreten. Außerdem wird für die Auswertung die letzte Periode der Simulation verwendet, da hier der thermische Vorgang eingeschwungen ist. Dieser Abschnitt wird für eine spätere Betrachtung gespeichert. \pagebreak
 \section{Tiefsetzsteller}
 Der Tiefsetzsteller kann entkoppelt vom Gleichrichter betrachtet werden, was für die Auslegung der Induktivität von Vorteil ist. Die Regelung kann ebenfalls entkoppelt erfolgen, sodass eine getrennte Stabilitätsbetrachtung und Optimierung möglich ist. 
 	\subsection{Auslegung der Induktivität}
@@ -188,24 +187,20 @@ Die Stromregelung erfolgt mithilfe eines diskreten PI-Reglerblocks aus der PLECS
 		\end{figure}
 		
 		\subsection{Ergebnisse}
-		Für die Auswertung werden die Simulationen für eine Dauer von bis zu zehn Sekunden durchgeführt, da zu diesem Zeitpunkt ein eingeschwungener Zustand erreicht ist. Wie in Abbildung \ref{fig:iaftemp0} zu erkennen ist, ist die Kühlplattentemperatur als Startpunkt auf 80~°C festgelegt. Die Temperatur der Dioden des Gleichrichters, welche den Hauptstrom führen, sind in grün dargestellt und ändern sich nur minimal aufgrund der Blindleistungsbereitstellung, siehe Abbildung \ref{fig:iaftemp30}. Die Temperatur beträgt knapp über 120°C und liegt somit unterhalb der erlaubten Maximaltemperatur von 175°C \cite{IFAGFF2}. Die Temperatur der T+/- Halbbrücke wird in Pink dargestellt und steigt bei Blindleistungsbereitstellung auf knapp 160°C und bietet damit 15~°C Abstand zur zulässigen Maximaltemperatur. Diese hohe Temperatur führt zwar nicht zu einem direkten Ausfall der Halbleiter, hat aber einen starken Einfluss auf die Lebensdauererwartung. Die Anzahl der Temperaturzyklen bei Temperaturen über 150°C führt zu einem wahrscheinlichen Ausfall bei weniger als 10~000 Zyklen \cite{SicTemp}. Daher sollte eine Erhöhung der Chipfläche für die Halbbrücke am \gls{IVS} überlegt werden. Die Temperatur des Tiefsetzstellers wird in Rot dargestellt und sinkt aufgrund der reduzierten Ausgangsleistung bei Blindleistungsbereitstellung.  
-		\begin{figure} 
+		Für die Auswertung werden die Simulationen für eine Dauer von bis zu zehn Sekunden durchgeführt, da zu diesem Zeitpunkt ein eingeschwungener Zustand erreicht ist. Wie in Abbildung \ref{fig:iaftemp0} zu erkennen ist, ist die Kühlplattentemperatur als Startpunkt auf 80~°C festgelegt. Die Temperatur der Dioden des Gleichrichters, welche den Hauptstrom führen, sind in grün dargestellt und ändern sich nur minimal aufgrund der Blindleistungsbereitstellung, siehe Abbildung \ref{fig:iaftemp30}. Die Temperatur beträgt knapp über 120°C und liegt somit unterhalb der erlaubten Maximaltemperatur von 175°C \cite{IFAGFF2}. Die Temperatur der T+/- Halbbrücke wird in Pink dargestellt und steigt bei Blindleistungsbereitstellung auf knapp 160°C und bietet damit 15~°C Abstand zur zulässigen Maximaltemperatur. Diese hohe Temperatur führt zwar nicht zu einem direkten Ausfall der Halbleiter, hat aber einen starken Einfluss auf die Lebensdauererwartung. Die Anzahl der Temperaturzyklen bei Temperaturen über 150°C führt zu einem wahrscheinlichen Ausfall bei weniger als 10~000 Zyklen \cite{SicTemp}. Daher sollte eine Erhöhung der Chipfläche für die Halbbrücke am \gls{IVS} überlegt werden. Die Temperatur des Tiefsetzstellers wird in Rot dargestellt und sinkt aufgrund der reduzierten Ausgangsleistung bei Blindleistungsbereitstellung.
+		\begin{figure}[t]
 			\centering
-			\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_Temp_0Grad}
-			
-			
+			\includegraphics[width=0.8\linewidth]{content/Grafiken/IAF_Temp_0Grad}
 			\caption{Temperaturverhalten der Halbleiter des IAF ohne Phasenverschiebung}
 			\label{fig:iaftemp0}
 		\end{figure}
-		
 		\begin{figure} 
 			\centering
-			\includegraphics[width=0.9\linewidth]{content/Grafiken/IAF_Temp_30Grad}
+			\includegraphics[width=0.8\linewidth]{content/Grafiken/IAF_Temp_30Grad}
 			\caption{Temperaturverhalten der Halbleiter des IAF mit  Phasenverschiebung}
 			\label{fig:iaftemp30}
 		\end{figure}
-		
-		Die Simulationsergebnisse zeigen den erwarteten Strom- und Spannungsverlauf für die \gls{IVS} Induktivität mit einer Dreiecksform, siehe Abbildung. \ref{fig:iafacl}. Zusätzlich ist dem Eingangsstrom ein hochfrequenter Anteil überlagert, der durch die Schaltfrequenz des Tiefsetzstellers erklärt werden kann. Beim Schaltvorgang des \gls{IVS} treten starke Sprünge im Stromverlauf auf, da der Strom in der Induktivität zwischen den Phasen wechselt. Aufgrund der Eigenschaft der Spule, den gespeicherten Stromfluss aufrecht erhalten zu wollen, führt dies zu Sprüngen im Stromverlauf, da die Phasenströme zu diesem Zeitpunkt unterschiedlich sind und die Schaltvorgänge durch Totzeiten verzögert werden. Der Schaltpunkt liegt beim Maximum des Stromes in der Induktivität.\\
+		Die Simulationsergebnisse zeigen den erwarteten Strom- und Spannungsverlauf für die \gls{IVS} Induktivität mit einer Dreiecksform, siehe Abbildung. \ref{fig:iafacl}. Zusätzlich ist dem Eingangsstrom ein hochfrequenter Anteil überlagert, der durch die Schaltfrequenz des Tiefsetzstellers erklärt werden kann. Beim Schaltvorgang des \gls{IVS} treten starke Sprünge im Stromverlauf auf, da der Strom in der Induktivität zwischen den Phasen wechselt. Aufgrund der Eigenschaft der Spule, den gespeicherten Stromfluss aufrecht erhalten zu wollen, führt dies zu Sprüngen im Stromverlauf, da die Phasenströme zu diesem Zeitpunkt unterschiedlich sind und die Schaltvorgänge durch Totzeiten verzögert werden. Der Schaltpunkt liegt beim Maximum des Stromes in der Induktivität.
 		In Abb. \ref{fig:iafacl30grad} wird dieses Problem durch den höheren Strom welcher in der Drossel des \gls{IVS} Pfades gespeichert und umgeschaltet werden muss noch verstärkt. Außerdem wird dadurch mehr Verlustleistung erzeugt. Dies ist auch in der Temperaturkurve in Abb. \ref{fig:iaftemp30} dargestellt. Es werden nur die höchsten Temperaturen dargestellt, dies sind die Eingangsdioden, beispielhaft an D1 in grün dargestellt sowie die \gls{MOSFET}s des T+ in pink (der Halbbrücke am \gls{IVS}), der \gls{IVS} in Gelb sowie des Tiefsetzstellers in rot. Ohne Blindleistung ist die Temperatur des IVS unter 90~°C und steigt durch den höheren Strom aufgrund der Phasenverschiebung um über 20~°C. Um den Sinusverlauf im Mittel besser erkennen zu können, ist in Abbildung \ref{fig:iafacl30grad} der Stromverlauf nach einer Tiefpassfilterung für die Schaltfrequenzanteile dargestellt. Dadurch ist die Phasenverschiebung besser ersichtlich, siehe Verlauf A Filter.
 		\begin{figure}
 			\centering
@@ -269,14 +264,15 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 			\label{fig:b6-control-orig}
 			\end{figure}
 		Die Ausgangsleistungsregelung in PLECS besteht aus einem PI-Regler (siehe Abbildung \ref{fig:plecsb6controlpout}), der die nominale Netzspannung mit der äquivalenten Netzimpedanz multipliziert und dann durch die aktuelle Netzspannung in die Soll-Phasenströme umwandelt. Um die Phasenverschiebung zu implementieren, wird der Sollstrom entsprechend des Phasenwinkels verzögert an die Regelung der B6-Ansteuerung weitergegeben.\\
-				\begin{figure}
+				\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlPout}
 				\caption{PLECS Regelung der Ausgangsleistung als Sollgröße}
 				\label{fig:plecsb6controlpout}
 			\end{figure}
+			\pagebreak
 			Im nächsten Schritt wird die Regelung des Netzstroms durch einen weiteren PI-Regler implementiert. Die Erkennung der Phasenabschnitte wird mittels PLL und C-Skript umgesetzt. Siehe Abbildung \ref{fig:plecsb6controlrigrid}.  
-				\begin{figure}
+				\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlRiGrid}
 				\caption{PLECS Regelung der Netzimpedanz und Phasenabschnittserkennung}
@@ -284,7 +280,7 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 			\end{figure}
 			Der Ausgang dieses Blocks dient einerseits mit der Sollgröße für die Zwischenkreisspannung $u\_pn*$ als Eingang für den Tiefsetzsteller und andererseits wird die Sollgröße der mittleren Spannung $u\_mid*$ als Eingang für die PWM-Erzeugung des \gls{B6PFC} Gleichrichters verwendet.\\
 			Die Sollspannung der Mittenphase $U\_mid*$ dient als Eingangsgröße zur Erzeugung des PWM-Signals für die \gls{MOSFET}s. Dieses wird wiederum von einem PWM-Generator erzeugt und mit Hilfe eines C-Codes werden die Signale den entsprechenden Phasen im Sektor zugeordnet. Die Einschaltverzögerung dient der Totzeit-Implementierung, siehe Bild \ref{fig:plecsb6controlpwmmid}.\\
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.9\linewidth]{content/Grafiken/PLECS_B6_ControlPWMmid}
 				\caption{PLECS PWM Erzeugung des B6 Gleichrichters mit \gls{PFC}}
@@ -302,21 +298,21 @@ Die in Kapitel \ref{sec:GrundlagenB6} beschriebene Schaltung wird mit insgesamt 
 			In den anderen Kategorien ist dies anders. Hier werden weniger Kondensatoren benötigt. Die erforderliche B6-Schaltung enthält mehr \gls{MOSFET}, dafür aber keine Dioden. Bei der Verlustleistung zeigt sich der klare Vorteil der Topologie bei der Bereitstellung von \gls{SDL}, da sie fast keinen Einfluss auf die Verluste in den Halbleitern hat. Dies lässt sich anhand des Temperaturverhaltens in Abb. \ref{fig:b6temp030grad} bestätigen. Durch die Reduzierung der Ausgangsleistung ist die Temperatur im \gls{MOSFET} FET7 des Tiefsetzsteller etwas niedriger. Bei den Halbleitern der B6-Brücke ist praktisch kein Unterschied zu erkennen. Die Eingangsströme sind lediglich durch die Schaltimpulse leicht verrauscht und der Sinusverlauf folgt der Eingangsspannung wie gewünscht, siehe Abbildung \ref{fig:b6acdc0grad}.  Der Stromverlauf weist eine THD von nur etwa 5,8 \% auf.
 			\begin{figure}
 				\centering
-				\includegraphics[width=1\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
+				\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_Temp_0&30Grad}
 				\caption{Temperaturverhalten der Halbleiter des B6 mit und ohne Phasenverschiebung}
 				\label{fig:b6temp030grad}
 			\end{figure}
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
+				\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_AC+DC_0Grad}
 				\caption{Eingangs- und Ausgangsgrößen ohne Phasenverschiebung}
 				\label{fig:b6acdc0grad}
 			\end{figure}
-			\pagebreak
-			Mit einer Phasenverschiebung von 30 Grad sieht das Verhalten ähnlich aus, siehe Abbildung \ref{fig:b6acdc30grad}.  Der Stromverlauf weist eine etwas höhere THD von 7,1 \% auf, die jedoch durch geeignete Filter ausgeglichen werden kann.
+			
+			Mit einer Phasenverschiebung von 30 Grad sieht das Verhalten ähnlich aus, siehe Abbildung \ref{fig:b6acdc30grad}. Der Stromverlauf weist eine etwas höhere THD von 7,1 \% auf, die jedoch durch geeignete Filter ausgeglichen werden kann.
 			\begin{figure}
 				\centering
-				\includegraphics[width=1\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
+				\includegraphics[width=0.9\linewidth]{content/Grafiken/B6_AC+DC_30Grad}
 				\caption{Eingangs- und Ausgangsgrößen mit Phasenverschiebung}
 				\label{fig:b6acdc30grad}
 			\end{figure}
